@@ -152,5 +152,5 @@ fig.text(
     f"https://opendata.cbs.nl/ODataApi/OData/{DATASET}",
     ha="center", fontsize=8, color="gray"
 )
-plt.savefig("onderwijsdata_analyse.png", dpi=150, bbox_inches="tight")
-print("Opgeslagen: onderwijsdata_analyse.png")
+plt.savefig("voorbeelden/output/ho_ingeschrevenen.png", dpi=150, bbox_inches="tight")
+print("Opgeslagen: voorbeelden/output/ho_ingeschrevenen.png")

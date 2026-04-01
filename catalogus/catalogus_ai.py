@@ -14,8 +14,8 @@ from anthropic.types.message_create_params import MessageCreateParamsNonStreamin
 from anthropic.types.messages.batch_create_params import Request
 
 MODEL    = "claude-haiku-4-5"
-DATASETS = "cbs_datasets.json"
-OUTPUT   = "cbs_datasets_ai.json"
+DATASETS = "data/02-prepared/cbs_datasets.json"
+OUTPUT   = "data/02-prepared/cbs_datasets_ai.json"
 ID_FILE  = ".batch_id"
 
 SYSTEM = """Je bent een assistent die CBS onderwijsdatasets samenvat voor Nederlandse

@@ -170,5 +170,5 @@ fig.text(
     f"https://opendata.cbs.nl/ODataApi/OData/{DATASET}",
     ha="center", fontsize=8, color="gray"
 )
-plt.savefig("mbo_analyse.png", dpi=150, bbox_inches="tight")
-print("Opgeslagen: mbo_analyse.png")
+plt.savefig("voorbeelden/output/mbo_deelnemers.png", dpi=150, bbox_inches="tight")
+print("Opgeslagen: voorbeelden/output/mbo_deelnemers.png")

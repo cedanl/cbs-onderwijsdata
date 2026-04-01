@@ -138,7 +138,7 @@ def main():
         except Exception as e:
             print(f"    FOUT: {e}")
 
-    output = "cbs_datasets.json"
+    output = "data/02-prepared/cbs_datasets.json"
     with open(output, "w", encoding="utf-8") as f:
         json.dump(entries, f, ensure_ascii=False, indent=2)
 
