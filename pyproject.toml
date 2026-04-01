@@ -1,0 +1,17 @@
+[project]
+name = "onderwijsdata"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx",
+    "pandas",
+    "matplotlib",
+    "anthropic>=0.87.0",
+]
+
+[dependency-groups]
+dev = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
