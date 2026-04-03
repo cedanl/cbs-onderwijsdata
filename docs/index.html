@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBS Onderwijsdata Catalogus</title>
+  <style>
+    :root {
+      --primary: #1a56db;
+      --bg: #f9fafb;
+      --card-bg: #ffffff;
+      --border: #e5e7eb;
+      --text: #111827;
+      --muted: #6b7280;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); }
+
+    header { background: #1e3a5f; color: white; padding: 2rem; }
+    header h1 { font-size: 1.5rem; font-weight: 700; }
+    header p { margin-top: 0.4rem; color: #93c5fd; font-size: 0.9rem; }
+
+    .controls {
+      padding: 1.25rem 2rem;
+      background: white;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .search {
+      width: 100%;
+      padding: 0.6rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+    }
+    .search:focus { border-color: var(--primary); }
+
+    .filter-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; }
+    .filter-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+    .chip {
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: white;
+      font-size: 0.78rem;
+      cursor: pointer;
+      color: var(--muted);
+      transition: all 0.12s;
+    }
+    .chip:hover { border-color: var(--primary); color: var(--primary); }
+    .chip.active { background: var(--primary); border-color: var(--primary); color: white; }
+
+    main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+    .count { font-size: 0.85rem; color: var(--muted); margin-bottom: 1.25rem; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1.25rem; }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      transition: box-shadow 0.15s;
+    }
+    .card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+
+    .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem; }
+    .card-title { font-weight: 600; font-size: 0.92rem; line-height: 1.45; }
+    .card-periode { font-size: 0.72rem; color: var(--muted); white-space: nowrap; flex-shrink: 0; }
+
+    .badges { display: flex; gap: 0.3rem; flex-wrap: wrap; }
+    .badge {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .badge-po  { background: #dcfce7; color: #166534; }
+    .badge-vo  { background: #fce7f3; color: #9d174d; }
+    .badge-mbo { background: #fef3c7; color: #92400e; }
+    .badge-ho  { background: #ede9fe; color: #5b21b6; }
+    .badge-allen { background: #f3f4f6; color: #4b5563; }
+
+    .card-doel { font-size: 0.84rem; color: #374151; line-height: 1.55; }
+
+    details.card-vragen { font-size: 0.8rem; }
+    details.card-vragen summary {
+      cursor: pointer;
+      color: var(--primary);
+      list-style: none;
+      user-select: none;
+    }
+    details.card-vragen summary::-webkit-details-marker { display: none; }
+    details.card-vragen ol {
+      margin-top: 0.5rem;
+      padding-left: 1.25rem;
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .card-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+    .tag {
+      padding: 0.15rem 0.55rem;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      cursor: pointer;
+    }
+    .tag:hover { background: #dbeafe; }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+      padding-top: 0.6rem;
+      border-top: 1px solid var(--border);
+    }
+    .card-meta { font-size: 0.72rem; color: var(--muted); }
+    .card-link { font-size: 0.78rem; color: var(--primary); text-decoration: none; font-weight: 500; }
+    .card-link:hover { text-decoration: underline; }
+
+    .empty { text-align: center; padding: 4rem; color: var(--muted); font-size: 0.95rem; }
+
+    @media (max-width: 640px) {
+      header { padding: 1.25rem 1rem; }
+      .controls { padding: 1rem; }
+      main { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>CBS Onderwijsdata Catalogus</h1>
+  <p>68 publieke CBS-datasets over het Nederlandse onderwijs — doorzoekbaar op trefwoord, niveau en tag.</p>
+</header>
+
+<div class="controls">
+  <input class="search" type="text" id="search" placeholder="Zoek op titel, trefwoord, voorbeeldvraag, tag…">
+  <div class="filter-row">
+    <span class="filter-label">Niveau</span>
+    <div id="type-filters"></div>
+  </div>
+  <div class="filter-row">
+    <span class="filter-label">Tag</span>
+    <div id="tag-filters" style="display:flex;flex-wrap:wrap;gap:0.4rem;"></div>
+  </div>
+</div>
+
+<main>
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+</main>
+
+<script>
+const TYPE_LABEL = { PO: 'PO', MBO: 'MBO', HBO: 'HBO', WO: 'WO', Allen: 'Alle niveaus' };
+const TYPE_CLASS = { PO: 'badge-po', MBO: 'badge-mbo', HBO: 'badge-ho', WO: 'badge-ho', Allen: 'badge-allen' };
+
+let data = [];
+let activeTypes = new Set();
+let activeTags = new Set();
+let query = '';
+
+async function init() {
+  const res = await fetch('data.json');
+  data = await res.json();
+  buildFilters();
+  render();
+}
+
+function buildFilters() {
+  const types = [...new Set(data.flatMap(d => d.onderwijstype))].sort();
+  const typeRow = document.getElementById('type-filters');
+  typeRow.style.cssText = 'display:flex;flex-wrap:wrap;gap:0.4rem;';
+  types.forEach(t => {
+    const btn = chip(TYPE_LABEL[t] || t, () => toggle(activeTypes, t, btn));
+    typeRow.appendChild(btn);
+  });
+
+  const tagCount = {};
+  data.forEach(d => (d.tags || []).forEach(t => tagCount[t] = (tagCount[t] || 0) + 1));
+  const topTags = Object.entries(tagCount).sort((a, b) => b[1] - a[1]).slice(0, 20).map(e => e[0]);
+  const tagRow = document.getElementById('tag-filters');
+  topTags.forEach(t => {
+    const btn = chip(t, () => toggle(activeTags, t, btn), t);
+    tagRow.appendChild(btn);
+  });
+}
+
+function chip(label, onClick, dataValue) {
+  const btn = document.createElement('button');
+  btn.className = 'chip';
+  btn.textContent = label;
+  if (dataValue) btn.dataset.value = dataValue;
+  btn.addEventListener('click', onClick);
+  return btn;
+}
+
+function toggle(set, value, btn) {
+  if (set.has(value)) { set.delete(value); btn.classList.remove('active'); }
+  else { set.add(value); btn.classList.add('active'); }
+  render();
+}
+
+window.addTagFilter = function(tag) {
+  if (activeTags.has(tag)) return;
+  activeTags.add(tag);
+  const btn = document.querySelector(`#tag-filters [data-value="${tag}"]`);
+  if (btn) btn.classList.add('active');
+  render();
+};
+
+function matches(d) {
+  if (activeTypes.size && !d.onderwijstype.some(t => activeTypes.has(t))) return false;
+  if (activeTags.size && ![...activeTags].every(t => (d.tags || []).includes(t))) return false;
+  if (query) {
+    const q = query.toLowerCase();
+    const hay = [d.bron, d.doel, ...(d.tags||[]), ...(d.voorbeeldvragen||[]), d._thema, d._cbs_id].join(' ').toLowerCase();
+    if (!hay.includes(q)) return false;
+  }
+  return true;
+}
+
+function render() {
+  const filtered = data.filter(matches);
+  document.getElementById('count').textContent = `${filtered.length} van ${data.length} datasets`;
+  const grid = document.getElementById('grid');
+  if (!filtered.length) {
+    grid.innerHTML = '<div class="empty">Geen datasets gevonden voor deze zoekopdracht.</div>';
+    return;
+  }
+  grid.innerHTML = filtered.map(d => {
+    const badges = d.onderwijstype.map(t =>
+      `<span class="badge ${TYPE_CLASS[t]||'badge-allen'}">${TYPE_LABEL[t]||t}</span>`
+    ).join('');
+    const tags = (d.tags||[]).map(t =>
+      `<span class="tag" onclick="addTagFilter('${t}')">${t}</span>`
+    ).join('');
+    const vragen = d.voorbeeldvragen?.length ? `
+      <details class="card-vragen">
+        <summary>▸ ${d.voorbeeldvragen.length} voorbeeldvragen</summary>
+        <ol>${d.voorbeeldvragen.map(v => `<li>${v}</li>`).join('')}</ol>
+      </details>` : '';
+    return `
+      <div class="card">
+        <div class="card-top">
+          <div class="card-title">${d.bron}</div>
+          <div class="card-periode">${d.periode}</div>
+        </div>
+        <div class="badges">${badges}</div>
+        <div class="card-doel">${d.doel}</div>
+        ${vragen}
+        <div class="card-tags">${tags}</div>
+        <div class="card-footer">
+          <span class="card-meta">${d.frequentie} · ${d._cbs_id}</span>
+          <a class="card-link" href="${d.documentatie.url}" target="_blank" rel="noopener">CBS Open Data →</a>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+document.getElementById('search').addEventListener('input', e => {
+  query = e.target.value.trim();
+  render();
+});
+
+init();
+</script>
+</body>
+</html>
