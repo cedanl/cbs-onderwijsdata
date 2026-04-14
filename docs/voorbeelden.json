@@ -70,5 +70,23 @@
     "plot": "vwo_examen_herkomst.png",
     "interpretatie": "vwo_examen_herkomst_INTERPRETATIE.md",
     "status": "experimenteel"
+  },
+  {
+    "id": "mbo_diploma_trend",
+    "titel": "MBO-gediplomeerden 2011–2025: trend per niveau en leerweg",
+    "vraag": "Hoe heeft het aantal MBO-gediplomeerden zich ontwikkeld per niveau en leerweg, en wat zegt dat over studentsucces?",
+    "datasets": ["85357NED", "85354NED"],
+    "plot": "mbo_diploma_trend.png",
+    "interpretatie": "mbo_diploma_trend_INTERPRETATIE.md",
+    "status": "experimenteel"
+  },
+  {
+    "id": "havo_slagingspercentage_rotterdam",
+    "titel": "HAVO slagingspercentage: Rotterdam vs. Nederland",
+    "vraag": "Hoe verhoudt het HAVO-slagingspercentage in Rotterdam zich tot het landelijk gemiddelde?",
+    "datasets": ["85382NED"],
+    "plot": "havo_slagingspercentage_rotterdam.png",
+    "interpretatie": "havo_slagingspercentage_rotterdam_INTERPRETATIE.md",
+    "status": "experimenteel"
   }
 ]
