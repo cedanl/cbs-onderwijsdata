@@ -1362,5 +1362,252 @@
     "publieke_producten": [],
     "_cbs_id": "85834NED",
     "_thema": "Onderwijsniveau bevolking"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Voortijdig schoolverlaters; geslacht, onderwijssoort en herkomst",
+    "periode": "2012/'13 - 2023/'24",
+    "onderwijstype": [
+      "VO",
+      "MBO"
+    ],
+    "doel": "Voortijdig schoolverlaters (VSV) naar geslacht, onderwijssoort en herkomstland. Meetwaarden: aantal VSV.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Voortijdig schoolverlaten",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85368NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85368NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85368NED",
+    "_thema": "Onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Voortijdig schoolverlaters (VSV); terugkeer in onderwijs na schoolverlaten",
+    "periode": "2007/'08-2021/'22",
+    "onderwijstype": [
+      "VO",
+      "MBO"
+    ],
+    "doel": "Terugkeer van voortijdig schoolverlaters in het onderwijs na schoolverlaten. Uitgesplitst naar persoonskenmerken, onderwijspositie en startkwalificatie.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Voortijdig schoolverlaten",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85948NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85948NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85948NED",
+    "_thema": "Onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "VSV; arbeidsmarktpositie na verlaten onderwijs",
+    "periode": "2007/'08 - 2022/'23",
+    "onderwijstype": [
+      "VO",
+      "MBO"
+    ],
+    "doel": "Arbeidsmarktpositie van voortijdig schoolverlaters na het verlaten van het onderwijs. Uitgesplitst naar persoonskenmerken.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Voortijdig schoolverlaten",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85859NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85859NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85859NED",
+    "_thema": "Onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "VSV; arbeidskenmerken na verlaten onderwijs",
+    "periode": "2007/'08-2022/'23",
+    "onderwijstype": [
+      "VO",
+      "MBO"
+    ],
+    "doel": "Arbeidskenmerken van voortijdig schoolverlaters na het verlaten van het onderwijs. Uitgesplitst naar leeftijd en arbeidskenmerken.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Voortijdig schoolverlaten",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85860NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85860NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85860NED",
+    "_thema": "Onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "VSV; uitkeringen na verlaten onderwijs",
+    "periode": "2007/'08-2022/'23",
+    "onderwijstype": [
+      "VO",
+      "MBO"
+    ],
+    "doel": "Uitkeringen ontvangen door voortijdig schoolverlaters na het verlaten van het onderwijs. Uitgesplitst naar persoonskenmerken.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Voortijdig schoolverlaten",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85861NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85861NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85861NED",
+    "_thema": "Onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "VSV met werk; bedrijfstak na verlaten onderwijs",
+    "periode": "2007/'08-2022/'23",
+    "onderwijstype": [
+      "VO",
+      "MBO"
+    ],
+    "doel": "Bedrijfstak van voortijdig schoolverlaters met werk na het verlaten van het onderwijs. Uitgesplitst naar persoonskenmerken.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Voortijdig schoolverlaten",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85862NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85862NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85862NED",
+    "_thema": "Onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "VSV werkzaam als werknemers; uurloon na verlaten onderwijs",
+    "periode": "2007/'08 - 2022/'23",
+    "onderwijstype": [
+      "VO",
+      "MBO"
+    ],
+    "doel": "Uurloon van voortijdig schoolverlaters die als werknemer werkzaam zijn na het verlaten van het onderwijs. Uitgesplitst naar geslacht.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Voortijdig schoolverlaten",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 84534NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/84534NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "84534NED",
+    "_thema": "Onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Arbeidsdeelname; onderwijsniveau",
+    "periode": "2013 - 2025",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Arbeidsparticipatie en werkloosheidspercentage van de bevolking, uitgesplitst naar onderwijsniveau, geslacht en leeftijd.",
+    "frequentie": "Per kwartaal",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85266NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85266NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85266NED",
+    "_thema": "Onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Binding met de arbeidsmarkt, beroeps- en niet-beroepsbevolking; onderwijs",
+    "periode": "2013 - 2025",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Binding van de bevolking met de arbeidsmarkt, uitgesplitst naar onderwijsniveau, onderwijsrichting, geslacht en leeftijd.",
+    "frequentie": "Per kwartaal",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85650NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85650NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85650NED",
+    "_thema": "Onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Vacatures; overheid en onderwijs",
+    "periode": "1997 - 2025",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Aantal vacatures in de sectoren overheid en onderwijs per kwartaal. Geschikt voor analyse van arbeidsmarktspanning en lerarentekort.",
+    "frequentie": "Per kwartaal",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 80857NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/80857NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "80857NED",
+    "_thema": "Onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Gezonde levensverwachting; geslacht, leeftijd en onderwijsniveau",
+    "periode": "2007/2010 - 2021/2024",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Gezonde levensverwachting, ervaren gezondheid en beperkingen, uitgesplitst naar geslacht, leeftijd en onderwijsniveau.",
+    "frequentie": "Tweejaarlijks",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 84842NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/84842NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "84842NED",
+    "_thema": "Onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Ziekteverzuim volgens werknemers; herkomst en onderwijsniveau",
+    "periode": "2014-2025",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Ziekteverzuimpercentage, verzuimduur en verzuimfrequentie van werknemers, uitgesplitst naar herkomst en onderwijsniveau.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 86011NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/86011NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "86011NED",
+    "_thema": "Onderwijs"
   }
 ]
