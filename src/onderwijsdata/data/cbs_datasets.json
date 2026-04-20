@@ -1,0 +1,1366 @@
+[
+  {
+    "leverancier": "CBS",
+    "bron": "Gediplomeerden; onderwijssoort, woonregio",
+    "periode": "2011/'12-2023/'24",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Gediplomeerden; onderwijssoort, woonregio Uitgesplitst naar: Geslacht, Onderwijssoort. Meetwaarden: Gediplomeerden.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85702NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85702NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85702NED",
+    "_thema": "Onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Leerlingen en studenten; onderwijssoort, woonregio",
+    "periode": "2011/'12-2024/'25",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Leerlingen en studenten; onderwijssoort, woonregio Uitgesplitst naar: Geslacht, Onderwijssoort. Meetwaarden: Leerlingen/studenten.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85701NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85701NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85701NED",
+    "_thema": "Onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Gediplomeerden en afgestudeerden; onderwijssoort, vanaf 1900",
+    "periode": "1900/'01 - 2023/'24",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Gediplomeerden en afgestudeerden; onderwijssoort, vanaf 1900 Uitgesplitst naar: Geslacht. Meetwaarden: Vwo-lyceum totaal, Gymnasium, Atheneum/hbs.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 80384ned",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/80384ned"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "80384ned",
+    "_thema": "Onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Leerlingen en studenten; onderwijssoort, vanaf 1900",
+    "periode": "1900/'01 - 2024/'25",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Leerlingen en studenten; onderwijssoort, vanaf 1900 Uitgesplitst naar: Geslacht. Meetwaarden: Kleuteronderwijs, Basisonderwijs, Speciaal basisonderwijs.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 37220",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/37220"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "37220",
+    "_thema": "Onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Onderwijsinstellingen; grootte, soort, levensbeschouwelijke grondslag",
+    "periode": "1990/'91 - 2024/'25",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Onderwijsinstellingen; grootte, soort, levensbeschouwelijke grondslag Uitgesplitst naar: Onderwijssoort, Levensbeschouwelijke grondslag, Schoolgrootte. Meetwaarden: Onderwijsinstellingen, Leerlingen - studenten.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 03753",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/03753"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "03753",
+    "_thema": "Onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Leerlingen in (speciaal) basisonderwijs; herkomst, woonregio",
+    "periode": "2011/'12 - 2025/'26",
+    "onderwijstype": [
+      "PO"
+    ],
+    "doel": "Leerlingen in (speciaal) basisonderwijs; herkomst, woonregio Uitgesplitst naar: Geslacht, Onderwijssoort, Herkomstland, Geboorteland (ouders). Meetwaarden: Leerlingen in (speciaal) basisonderwijs.",
+    "frequentie": "Perjaar",
+    "categorie": "Primair Onderwijs",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85489NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85489NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85489NED",
+    "_thema": "Primair onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Leerlingen op speciale scholen; herkomst, woonregio",
+    "periode": "2011/'12 - 2025/'26",
+    "onderwijstype": [
+      "PO"
+    ],
+    "doel": "Leerlingen op speciale scholen; herkomst, woonregio Uitgesplitst naar: Geslacht, Onderwijssoort, Cluster, Herkomstland. Meetwaarden: Leerlingen op speciale scholen.",
+    "frequentie": "Perjaar",
+    "categorie": "Primair Onderwijs",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85490NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85490NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85490NED",
+    "_thema": "Primair onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "(Speciaal) basisonderwijs en speciale scholen; leerlingen, schoolregio",
+    "periode": "2000/'01-2024/'25",
+    "onderwijstype": [
+      "PO"
+    ],
+    "doel": "(Speciaal) basisonderwijs en speciale scholen; leerlingen, schoolregio Uitgesplitst naar: Geslacht, Leeftijd, Onderwijssoorten. Meetwaarden: Aantal leerlingen.",
+    "frequentie": "Perjaar",
+    "categorie": "Primair Onderwijs",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 71478ned",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/71478ned"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "71478ned",
+    "_thema": "Primair onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Schooladvies en herziening advies basisonderwijs; achtergrondkenmerken",
+    "periode": "2014/'15-2023/'24",
+    "onderwijstype": [
+      "PO"
+    ],
+    "doel": "Schooladvies en herziening advies basisonderwijs; achtergrondkenmerken Uitgesplitst naar: Geslacht, Schooladvies, Herkomstland, Gestandaardiseerd inkomen. Meetwaarden: Totaal voorlopig schooladvies, Toetsadvies lager of gelijk, Totaal toetsadvies hoger.",
+    "frequentie": "Perjaar",
+    "categorie": "Primair Onderwijs",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 84274NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/84274NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "84274NED",
+    "_thema": "Primair onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Vo; examenkandidaten en gediplomeerden, onderwijssoort, woonregio",
+    "periode": "2011/'12-2024/'25",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Vo; examenkandidaten en gediplomeerden, onderwijssoort, woonregio Uitgesplitst naar: Geslacht, Onderwijssoort, Regiokenmerken. Meetwaarden: Examenkandidaten, Gediplomeerden, Gediplomeerden, relatief.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85382NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85382NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85382NED",
+    "_thema": "Vo gediplomeerden"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Vo; examenkandidaten en gediplomeerden, onderwijssoort in detail, herkomst",
+    "periode": "2011/'12-2024/'25",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Vo; examenkandidaten en gediplomeerden, onderwijssoort in detail, herkomst Uitgesplitst naar: Geslacht, Onderwijssoort in detail, Herkomstland, Geboorteland (ouders). Meetwaarden: Examenkandidaten, Gediplomeerden, Gediplomeerden, relatief.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85381NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85381NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85381NED",
+    "_thema": "Vo gediplomeerden"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Vo; leerlingen, onderwijssoort, leerjaar, woonregio",
+    "periode": "2021/'22-2025/'26",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Vo; leerlingen, onderwijssoort, leerjaar, woonregio Uitgesplitst naar: Geslacht, Onderwijssoort, Leerjaar, Regiokenmerken. Meetwaarden: Aantal leerlingen.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85380NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85380NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85380NED",
+    "_thema": "Vo leerlingen"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Vo; leerlingen, onderwijssoort in detail, leerjaar, herkomst",
+    "periode": "2020/'21-2025/'26",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Vo; leerlingen, onderwijssoort in detail, leerjaar, herkomst Uitgesplitst naar: Geslacht, Onderwijssoort in detail, Leerjaar, Herkomstland. Meetwaarden: Aantal leerlingen.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85379NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85379NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85379NED",
+    "_thema": "Vo leerlingen"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Vo en vso; doorstroom en uitstroom, achtergrondkenmerken",
+    "periode": "2015/'16 naar 2016/'17 t/m 2022/'23 naar 2023/'24",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Vo en vso; doorstroom en uitstroom, achtergrondkenmerken Uitgesplitst naar: Geslacht, Onderwijs positie basisjaar, Onderwijs positie volgend schooljaar, Geboorteland (ouders). Meetwaarden: Leerlingen.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85566NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85566NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85566NED",
+    "_thema": "Vo stromen"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Vo-cohorten; hoogst behaald diploma, achtergrondkenmerken",
+    "periode": "2008, 2010, 2012, 2014, 2016, 2018",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Vo-cohorten; hoogst behaald diploma, achtergrondkenmerken Uitgesplitst naar: Diploma op peilmoment, Geslacht, Herkomstkenmerken, Definitief schooladvies. Meetwaarden: Leerlingen (aantal).",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85534NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85534NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85534NED",
+    "_thema": "Vo studievoortgang"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Mbo; studenten, niveau, leerweg, studierichting, regiokenmerken",
+    "periode": "2015/'16-2025/'26",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Mbo; studenten, niveau, leerweg, studierichting, regiokenmerken Uitgesplitst naar: Geslacht, Niveau, Leerweg, Studierichting. Meetwaarden: Mbo-studenten.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85353NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85353NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85353NED",
+    "_thema": "Mbo studenten"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Mbo; studenten naar niveau, leerweg, herkomst",
+    "periode": "2011/'12 - 2025/'26",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Mbo; studenten naar niveau, leerweg, herkomst Uitgesplitst naar: Geslacht, Niveau, Leerweg, Herkomstland. Meetwaarden: Mbo-studenten.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85354NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85354NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85354NED",
+    "_thema": "Mbo studenten"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Mbo; studenten naar niveau, leerweg, studierichting, herkomst",
+    "periode": "2015/'16-2025/26",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Mbo; studenten naar niveau, leerweg, studierichting, herkomst Uitgesplitst naar: Geslacht, Niveau, Leerweg, Studierichting. Meetwaarden: Mbo-studenten.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85352NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85352NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85352NED",
+    "_thema": "Mbo studenten"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Mbo; gediplomeerden, niveau, leerweg, studierichting, regiokenmerken",
+    "periode": "2015/'16-2024/'25",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Mbo; gediplomeerden, niveau, leerweg, studierichting, regiokenmerken Uitgesplitst naar: Geslacht, Niveau, Leerweg, Studierichting. Meetwaarden: Gediplomeerden mbo.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85356NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85356NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85356NED",
+    "_thema": "Mbo gediplomeerden"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Mbo; gediplomeerden, niveau, leerweg, studierichting, herkomst",
+    "periode": "2015/'16-2024/'25",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Mbo; gediplomeerden, niveau, leerweg, studierichting, herkomst Uitgesplitst naar: Geslacht, Niveau, Leerweg, Studierichting. Meetwaarden: Gediplomeerden mbo.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85355NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85355NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85355NED",
+    "_thema": "Mbo gediplomeerden"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Mbo; gediplomeerden, niveau, leerweg, herkomst",
+    "periode": "2011/'12-2024/'25",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Mbo; gediplomeerden, niveau, leerweg, herkomst Uitgesplitst naar: Geslacht, Niveau, Leerweg, Herkomstland. Meetwaarden: Gediplomeerden mbo.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85357NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85357NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85357NED",
+    "_thema": "Mbo gediplomeerden"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Instromers mbo; bedrijfstakken 1 jaar eerder",
+    "periode": "2018/19-2024/25",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Instromers mbo; bedrijfstakken 1 jaar eerder Uitgesplitst naar: Geslacht, Niveau, Leerweg, Sectorkamer. Meetwaarden: Instromers mbo.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85574NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85574NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85574NED",
+    "_thema": "Mbo stromen"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Instromers mbo; maatschappelijke positie 1 jaar eerder, persoonskenmerken",
+    "periode": "2018/19-2024/'25",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Instromers mbo; maatschappelijke positie 1 jaar eerder, persoonskenmerken Uitgesplitst naar: Geslacht, Niveau, Leerweg, Sectorkamer. Meetwaarden: Instromers totaal.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85569NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85569NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85569NED",
+    "_thema": "Mbo stromen"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Mbo door- en uitstroom, achtergrondkenmerken",
+    "periode": "2022/'23 naar studiejaar 2023/'24",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Mbo door- en uitstroom, achtergrondkenmerken Uitgesplitst naar: Geslacht, Geboorteland (ouders), Herkomstland, Onderwijspositie basisjaar. Meetwaarden: Studenten mbo.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85519NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85519NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85519NED",
+    "_thema": "Mbo stromen"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Gepromoveerden; ervaringen en duur promotietraject",
+    "periode": "2019",
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
+    "doel": "Gepromoveerden; ervaringen en duur promotietraject Uitgesplitst naar: Geslacht, Marges, Promotiekenmerken. Meetwaarden: Tevreden met promotietraject in geheel, Hoge tot zeer hoge werkdruk ervaren, Ongewenst gedrag ervaren.",
+    "frequentie": "Onregelmatig",
+    "categorie": "Inschrijvingen en Studievoortgang",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 86238NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/86238NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "86238NED",
+    "_thema": "Hoger onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Werkzame gepromoveerden; arbeidskenmerken",
+    "periode": "2019",
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
+    "doel": "Werkzame gepromoveerden; arbeidskenmerken Uitgesplitst naar: Geslacht, Marges, Promotiekenmerken. Meetwaarden: Voltijd, Werknemer met vaste arbeidsrelatie, Werknemer met tijdelijke arbeidsrelatie.",
+    "frequentie": "Onregelmatig",
+    "categorie": "Inschrijvingen en Studievoortgang",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 86240NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/86240NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "86240NED",
+    "_thema": "Hoger onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Studeren in het buitenland; studiepuntmobiliteit hbo en wo",
+    "periode": "2022 - 2025",
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
+    "doel": "Studeren in het buitenland; studiepuntmobiliteit hbo en wo Uitgesplitst naar: Onderwijs. Meetwaarden: Buitenlandervaring tijdens opleiding, 5 dagen of langer in het buitenland, Studiepuntmobiel.",
+    "frequentie": "Perjaar",
+    "categorie": "Inschrijvingen en Studievoortgang",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85907NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85907NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85907NED",
+    "_thema": "Hoger onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Wetenschappelijk onderwijs; promoties, studierichting",
+    "periode": "2017/'18 - 2023/'24",
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
+    "doel": "Wetenschappelijk onderwijs; promoties, studierichting Uitgesplitst naar: Geslacht, Studierichting. Meetwaarden: Promoties.",
+    "frequentie": "Perjaar",
+    "categorie": "Inschrijvingen en Studievoortgang",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 83966NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83966NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "83966NED",
+    "_thema": "Hoger onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Ho; gediplomeerden, soort diploma, opleidingsvorm",
+    "periode": "2011/'12 - 2024/'25",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Ho; gediplomeerden, soort diploma, opleidingsvorm Uitgesplitst naar: Geslacht, Onderwijssoort, Diplomasoort, Opleidingsvorm. Meetwaarden: Gediplomeerden.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85424NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85424NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85424NED",
+    "_thema": "Ho gediplomeerden"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Ho; gediplomeerden, soort diploma, studierichting, herkomst",
+    "periode": "2015/'16 - 2024/'25",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Ho; gediplomeerden, soort diploma, studierichting, herkomst Uitgesplitst naar: Geslacht, Onderwijssoort, Studierichting, Soort diploma. Meetwaarden: Gediplomeerden.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85425NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85425NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85425NED",
+    "_thema": "Ho gediplomeerden"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Hoger onderwijs; eerste- en ouderejaarsstudenten, studierichting, herkomst",
+    "periode": "2011/'12 - 2025/'26",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Hoger onderwijs; eerste- en ouderejaarsstudenten, studierichting, herkomst Uitgesplitst naar: Geslacht, Onderwijssoort, Studierichting, Herkomstland. Meetwaarden: Totaal ingeschrevenen, Eerstejaarsstudenten, Ouderejaarsstudenten.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85421NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85421NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85421NED",
+    "_thema": "Ho ingeschrevenen"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Hoger onderwijs; ingeschrevenen, onderwijssoort, opleidingsfase en -vorm",
+    "periode": "2011/'12 - 2025/'26",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Hoger onderwijs; ingeschrevenen, onderwijssoort, opleidingsfase en -vorm Uitgesplitst naar: Geslacht, Onderwijssoort, Opleidingsfase, Opleidingsvorm. Meetwaarden: Totaal ingeschrevenen.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85423NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85423NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85423NED",
+    "_thema": "Ho ingeschrevenen"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Hoger onderwijs; eerstejaarsstudenten, vooropleiding en opleidingsfase",
+    "periode": "2011/'12 - 2025/'26",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Hoger onderwijs; eerstejaarsstudenten, vooropleiding en opleidingsfase Uitgesplitst naar: Geslacht, Onderwijssoort, Vooropleiding, Opleidingsfase. Meetwaarden: Eerstejaarsstudenten.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85422NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85422NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85422NED",
+    "_thema": "Ho ingeschrevenen"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Hoger onderwijs; internationale studenten, nationaliteit",
+    "periode": "2005/'06 - 2025/'26",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Hoger onderwijs; internationale studenten, nationaliteit Uitgesplitst naar: Geslacht, Nationaliteit. Meetwaarden: Internationale studenten.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85124NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85124NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85124NED",
+    "_thema": "Ho ingeschrevenen"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Hoger onderwijs; internationale studenten, onderwijskenmerken",
+    "periode": "2005/'06 - 2025/'26",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Hoger onderwijs; internationale studenten, onderwijskenmerken Uitgesplitst naar: Geslacht, Verblijfsjaar, Onderwijssoort, Studierichting. Meetwaarden: Totaal ingeschrevenen, Totaal niet-internationale studenten, Totaal internationale studenten.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85125NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85125NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85125NED",
+    "_thema": "Ho ingeschrevenen"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Hbo-cohorten; eerste hbo-diploma, studierichting",
+    "periode": "2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2023",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Hbo-cohorten; eerste hbo-diploma, studierichting Uitgesplitst naar: Geslacht, Startjaar, Vooropleiding, Peilmoment. Meetwaarden: Totaal studenten startjaar, Totaal gediplomeerden, Associate degree.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 83286NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83286NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "83286NED",
+    "_thema": "Ho studievoortgang"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Ho-cohorten; behaalde hbo- en wo-diploma's",
+    "periode": "2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2023",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Ho-cohorten; behaalde hbo- en wo-diploma's Uitgesplitst naar: Geslacht, Startjaar, Onderwijssoort startjaar, Peilmoment. Meetwaarden: Totaal studenten startjaar, Totaal gediplomeerden, Bachelor hbo.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 83282NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83282NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "83282NED",
+    "_thema": "Ho studievoortgang"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Wo-cohorten; eerste wo-diploma, studierichting",
+    "periode": "2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2023",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Wo-cohorten; eerste wo-diploma, studierichting Uitgesplitst naar: Geslacht, Startjaar, Studiefase startjaar, Peilmoment. Meetwaarden: Totaal studenten startjaar, Totaal gediplomeerden, Bachelor.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 83285NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83285NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "83285NED",
+    "_thema": "Ho studievoortgang"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Wo-cohorten; hoogst behaalde wo-diploma, vooropleiding",
+    "periode": "2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2023",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Wo-cohorten; hoogst behaalde wo-diploma, vooropleiding Uitgesplitst naar: Geslacht, Vooropleiding, Startjaar, Studiefase startjaar. Meetwaarden: Totaal studenten startjaar, Totaal gediplomeerden, Bachelor.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 83305NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83305NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "83305NED",
+    "_thema": "Ho studievoortgang"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Vavo-gediplomeerden; onderwijssoort, geslacht, leeftijd",
+    "periode": "2006/'07 - 2024/'25",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Vavo-gediplomeerden; onderwijssoort, geslacht, leeftijd Uitgesplitst naar: Geslacht, Leeftijd, Onderwijssoort. Meetwaarden: Gediplomeerden vavo.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85328NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85328NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85328NED",
+    "_thema": "Volwasseneneducatie"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Vavo-studenten; onderwijssoort, geslacht, leeftijd",
+    "periode": "2006/'07 - 2025/'26",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Vavo-studenten; onderwijssoort, geslacht, leeftijd Uitgesplitst naar: Geslacht, Leeftijd, Onderwijssoort. Meetwaarden: Vavo-studenten.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85329NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85329NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85329NED",
+    "_thema": "Volwasseneneducatie"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Bedrijfsopleidingen; kerncijfers",
+    "periode": "1986-2020",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Bedrijfsopleidingen; kerncijfers Meetwaarden: Bedrijven met bedrijfsopleiding, Bedrijven met cursussen, Totaal.",
+    "frequentie": "Onregelmatig",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 81850NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/81850NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "81850NED",
+    "_thema": "Levenlang leren"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Bedrijfsopleidingen; deelname, kosten en beleid",
+    "periode": "2010-2020",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Bedrijfsopleidingen; deelname, kosten en beleid Uitgesplitst naar: Bedrijfskenmerken, Perioden. Meetwaarden: Ontvangsten collectief opleidingsfonds, Bijdragen collectief opleidingsfonds, Eigen opleidingscentrum.",
+    "frequentie": "Onregelmatig",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 81848NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/81848NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "81848NED",
+    "_thema": "Levenlang leren"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Cursusdeelnemers; bedrijfskenmerken, 2022",
+    "periode": "2023",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Cursusdeelnemers; bedrijfskenmerken, 2022 Uitgesplitst naar: Bedrijfskenmerken. Meetwaarden: Werkzame beroepsbevolking, Niet cursusdeelnemers, Cursusdeelnemers.",
+    "frequentie": "Eenmalig",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85989NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85989NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85989NED",
+    "_thema": "Levenlang leren"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Cursusdeelnemers; bedrijfskenmerken, 2016",
+    "periode": "2016",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Cursusdeelnemers; bedrijfskenmerken, 2016 Uitgesplitst naar: Bedrijfskenmerken. Meetwaarden: Werkzame beroepsbevolking, Niet cursusdeelnemers, Cursusdeelnemers.",
+    "frequentie": "Eenmalig",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 83917NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83917NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "83917NED",
+    "_thema": "Levenlang leren"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Cursusdeelnemers; persoonskenmerken, 2022",
+    "periode": "2023",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Cursusdeelnemers; persoonskenmerken, 2022 Uitgesplitst naar: Persoonskenmerken. Meetwaarden: Werkzame beroepsbevolking, Niet cursusdeelnemers, Cursusdeelnemers.",
+    "frequentie": "Eenmalig",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85987NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85987NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85987NED",
+    "_thema": "Levenlang leren"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Cursusdeelnemers; persoonskenmerken, 2016",
+    "periode": "2016",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Cursusdeelnemers; persoonskenmerken, 2016 Uitgesplitst naar: Persoonskenmerken. Meetwaarden: Werkzame beroepsbevolking, Niet cursusdeelnemers, Cursusdeelnemers.",
+    "frequentie": "Eenmalig",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 83916NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83916NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "83916NED",
+    "_thema": "Levenlang leren"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Leven lang ontwikkelen; werkzame beroepsbevolking, arbeidskenmerken",
+    "periode": "2013-2025",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Leven lang ontwikkelen; werkzame beroepsbevolking, arbeidskenmerken Uitgesplitst naar: Geslacht, Leeftijd, Arbeidskenmerken, Leven lang ontwikkelen. Meetwaarden: Werkzame beroepsbevolking 15 tot 75 jaar.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85314NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85314NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85314NED",
+    "_thema": "Levenlang leren"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Leven lang ontwikkelen; onderwijskenmerken",
+    "periode": "2021 - 2024",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Leven lang ontwikkelen; onderwijskenmerken Uitgesplitst naar: Geslacht, Leeftijd, Onderwijsniveau, Onderwijsvolgend. Meetwaarden: Deelnemers leven lang ontwikkelen.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85624NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85624NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85624NED",
+    "_thema": "Levenlang leren"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Leven lang ontwikkelen; bevolking (15 tot 75 jaar)",
+    "periode": "2013-2025",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Leven lang ontwikkelen; bevolking (15 tot 75 jaar) Uitgesplitst naar: Geslacht, Persoonskenmerken, Arbeidspositie, Leven lang ontwikkelen. Meetwaarden: Bevolking 15 tot 75 jaar .",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85315NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85315NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85315NED",
+    "_thema": "Levenlang leren"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Leven lang ontwikkelen; werkzame beroepsbevolking, bedrijfskenmerken",
+    "periode": "2013-2025",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Leven lang ontwikkelen; werkzame beroepsbevolking, bedrijfskenmerken Uitgesplitst naar: Geslacht, Leeftijd, leven lang ontwikkelen, Bedrijfskenmerken. Meetwaarden: Werkzame beroepsbevolking 15 tot 75 jaar.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85316NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85316NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85316NED",
+    "_thema": "Levenlang leren"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Onderwijs; uitgaven aan onderwijs en CBS/OESO indicatoren",
+    "periode": "1995 - 2024",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Onderwijs; uitgaven aan onderwijs en CBS/OESO indicatoren Uitgesplitst naar: Onderwijssectoren. Meetwaarden: Totaal uitgaven aan onderwijs, Totaal overheid, Totaal aan onderwijsinstellingen.",
+    "frequentie": "Perjaar",
+    "categorie": "Financiële gegevens",
+    "sectie": "Institutionele Data",
+    "documentatie": {
+      "tekst": "CBS Open Data 80393ned",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/80393ned"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "80393ned",
+    "_thema": "Financiering en uitgaven onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Overheid; uitgaven aan onderwijs en studietoelagen vanaf 1900",
+    "periode": "1900 - 2024",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Overheid; uitgaven aan onderwijs en studietoelagen vanaf 1900 Meetwaarden: Totaal overheidsuitgaven, Totaal overheidsuitgaven aan onderwijs, Totaal (pre)primair onderwijs.",
+    "frequentie": "Perjaar",
+    "categorie": "Financiële gegevens",
+    "sectie": "Institutionele Data",
+    "documentatie": {
+      "tekst": "CBS Open Data 80509ned",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/80509ned"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "80509ned",
+    "_thema": "Financiering en uitgaven onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Uitstromers mbo; arbeidskenmerken na verlaten onderwijs",
+    "periode": "2007/'08-2022/'23",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Uitstromers mbo; arbeidskenmerken na verlaten onderwijs Uitgesplitst naar: Geslacht, Leeftijd, Uitstromers mbo met en zonder diploma, Arbeidskenmerken. Meetwaarden: Uitstromers mbo.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85698NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85698NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85698NED",
+    "_thema": "Van mbo naar arbeidsmarkt"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Uitstromers mbo; arbeidsmarktpositie na verlaten onderwijs",
+    "periode": "2007/'08-2022/'23",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Uitstromers mbo; arbeidsmarktpositie na verlaten onderwijs Uitgesplitst naar: Geslacht, Persoonskenmerken, Uitstromers mbo met en zonder diploma, Arbeidsmarktpositie. Meetwaarden: Uitstromers mbo.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85696NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85696NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85696NED",
+    "_thema": "Van mbo naar arbeidsmarkt"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Uitstromers mbo; uitkering na verlaten onderwijs",
+    "periode": "2007/'08-2022/'23",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Uitstromers mbo; uitkering na verlaten onderwijs Uitgesplitst naar: Geslacht, Leeftijd, Uitstromers mbo met en zonder diploma, Uitkeringen. Meetwaarden: Uitstromers mbo.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85700NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85700NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85700NED",
+    "_thema": "Van mbo naar arbeidsmarkt"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Uitstromers mbo met werk; bedrijfstak na verlaten onderwijs",
+    "periode": "2007/'08-2022/'23",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Uitstromers mbo met werk; bedrijfstak na verlaten onderwijs Uitgesplitst naar: Geslacht, Leeftijd, Uitstromers mbo met en zonder diploma, Bedrijfstakken (SBI 2008). Meetwaarden: Totaal uitstromers met werk.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85699NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85699NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85699NED",
+    "_thema": "Van mbo naar arbeidsmarkt"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Uitstromers mbo werkzaam als werknemers; uurloon na verlaten onderwijs",
+    "periode": "2007/'08 - 2022/'23",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Uitstromers mbo werkzaam als werknemers; uurloon na verlaten onderwijs Uitgesplitst naar: Geslacht, Uitstromers mbo met en zonder diploma, Bedrijfstakken (SBI 2008), Studierichting. Meetwaarden: Uurloon werknemers na verlaten mbo.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 83832NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83832NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "83832NED",
+    "_thema": "Van mbo naar arbeidsmarkt"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Uitstromers ho; arbeidskenmerken na verlaten onderwijs",
+    "periode": "2006/'07-2022/'23",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Uitstromers ho; arbeidskenmerken na verlaten onderwijs Uitgesplitst naar: Geslacht, Wel/geen internationale student, Uitstromers ho met en zonder diploma, Arbeidskenmerken. Meetwaarden: Uitstromers ho.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85777NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85777NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85777NED",
+    "_thema": "Van ho naar arbeidsmarkt"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Uitstromers ho; arbeidsmarktpositie na verlaten onderwijs",
+    "periode": "2006/'07-2022/'23",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Uitstromers ho; arbeidsmarktpositie na verlaten onderwijs Uitgesplitst naar: Geslacht, Persoonskenmerken, Uitstromers ho met en zonder diploma, Arbeidsmarktpositie. Meetwaarden: Uitstromers ho.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85776NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85776NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85776NED",
+    "_thema": "Van ho naar arbeidsmarkt"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Uitstromers ho met werk; bedrijfstak na verlaten onderwijs",
+    "periode": "2006/'07-2022/'2023",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Uitstromers ho met werk; bedrijfstak na verlaten onderwijs Uitgesplitst naar: Geslacht, Uitstromers ho met en zonder diploma, Bedrijfstakken/branches SBI (2008), Studierichting. Meetwaarden: Uitstromers ho met werk.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85778NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85778NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85778NED",
+    "_thema": "Van ho naar arbeidsmarkt"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Uitstromers ho; uitkering na verlaten onderwijs",
+    "periode": "2006/'07-2022/'23",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Uitstromers ho; uitkering na verlaten onderwijs Uitgesplitst naar: Geslacht, Wel/geen internationale student, Uitstromers ho met en zonder diploma, Uitkeringen. Meetwaarden: Uitstromers ho.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85779NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85779NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85779NED",
+    "_thema": "Van ho naar arbeidsmarkt"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Uitstromers ho werkzaam als werknemers; uurloon na verlaten onderwijs",
+    "periode": "2006/'07 - 2022/'23",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Uitstromers ho werkzaam als werknemers; uurloon na verlaten onderwijs Uitgesplitst naar: Geslacht, Uitstromers ho met en zonder diploma, Bedrijfstakken (SBI 2008), Studierichting. Meetwaarden: Uurloon werknemers na verlaten ho.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 83815NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83815NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "83815NED",
+    "_thema": "Van ho naar arbeidsmarkt"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Bevolking; hoogstbehaald onderwijsniveau en regio",
+    "periode": "2013 - 2024",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Bevolking; hoogstbehaald onderwijsniveau en regio Uitgesplitst naar: Geslacht, Leeftijd. Meetwaarden: Bevolking, 1 Basisonderwijs, vmbo, mbo1, 2 Havo, vwo, mbo2-4.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85525NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85525NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85525NED",
+    "_thema": "Onderwijsniveau bevolking"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Bevolking; hoogst behaald onderwijsniveau en herkomst",
+    "periode": "2013-2025",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Bevolking; hoogst behaald onderwijsniveau en herkomst Uitgesplitst naar: Geslacht, Leeftijd, Geboorteland (ouders), Herkomstland. Meetwaarden: Bevolking.",
+    "frequentie": "Perkwartaal",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85453NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85453NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85453NED",
+    "_thema": "Onderwijsniveau bevolking"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Bevolking; hoogstbehaald onderwijsniveau en onderwijsrichting",
+    "periode": "2013 - 2025",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Bevolking; hoogstbehaald onderwijsniveau en onderwijsrichting Uitgesplitst naar: Geslacht, Leeftijd, Onderwijsniveau, Onderwijsrichting. Meetwaarden: Bevolking .",
+    "frequentie": "Perkwartaal",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85313NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85313NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85313NED",
+    "_thema": "Onderwijsniveau bevolking"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Jongeren (15 tot 25 jaar); onderwijsniveau, kenmerken ouders",
+    "periode": "2011-2019",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Jongeren (15 tot 25 jaar); onderwijsniveau, kenmerken ouders Uitgesplitst naar: Geslacht, Leeftijd, Onderwijsvolgend, Onderwijsniveau. Meetwaarden: Jongeren 15 tot 25 jaar .",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 84337NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/84337NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "84337NED",
+    "_thema": "Onderwijsniveau bevolking"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Onderwijsniveau van personen en partner",
+    "periode": "2013 - 2025",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Onderwijsniveau van personen en partner Uitgesplitst naar: Geslacht, Onderwijsniveau. Meetwaarden: Personen 25 jaar en ouder met partner.",
+    "frequentie": "Perjaar",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85834NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85834NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85834NED",
+    "_thema": "Onderwijsniveau bevolking"
+  }
+]
