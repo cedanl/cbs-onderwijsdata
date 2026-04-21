@@ -16,8 +16,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Kopieer datasets naar docs/
-        run: cp data/02-prepared/cbs_datasets_ai.json docs/data.json
+      - name: Kopieer datasets naar docs/ en src/
+        run: |
+          cp data/02-prepared/cbs_datasets_ai.json docs/data.json
+          cp data/02-prepared/cbs_datasets_ai.json src/onderwijsdata/data/cbs_datasets_ai.json
+          cp data/02-prepared/cbs_datasets.json src/onderwijsdata/data/cbs_datasets.json
 
       - name: Kopieer en flatten voorbeelden naar docs/voorbeelden/
         run: |
@@ -44,5 +47,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/
+          git add docs/ src/onderwijsdata/data/
           git diff --staged --quiet || (git commit -m "chore: update catalogus site" && git push)

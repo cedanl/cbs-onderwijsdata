@@ -1609,5 +1609,65 @@
     "publieke_producten": [],
     "_cbs_id": "86011NED",
     "_thema": "Onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Arbeidsmarktsituatie jongeren (15 tot 27 jaar); regio",
+    "periode": "2005-2024",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Jongeren op de arbeidsmarkt: werkzaam/niet-werkzaam, onderwijsvolgend/niet-onderwijsvolgend, uitkering/geen uitkering. Uitgesplitst naar regio (indeling 2025). Meetwaarden: arbeidsdeelname, onderwijsdeelname, uitkering, UWV-registratie.",
+    "frequentie": "Eenmalig",
+    "categorie": "Arbeidsmarkt",
+    "sectie": "Arbeidsmarkt jongeren",
+    "documentatie": {
+      "tekst": "CBS Open Data 86223NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/86223NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "86223NED",
+    "_thema": "Arbeidsmarkt jongeren"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Arbeidsmarktsituatie jongeren (15 tot 27 jaar); persoonskenmerken",
+    "periode": "2005-2024",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Jongeren op de arbeidsmarkt uitgesplitst naar geslacht, leeftijd en positie in huishouden. Meetwaarden: onderwijsdeelname, kenmerken arbeid, uitkering, UWV-registratie.",
+    "frequentie": "Perjaar",
+    "categorie": "Arbeidsmarkt",
+    "sectie": "Arbeidsmarkt jongeren",
+    "documentatie": {
+      "tekst": "CBS Open Data 84973NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/84973NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "84973NED",
+    "_thema": "Arbeidsmarkt jongeren"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Arbeidsdeelname; jongeren",
+    "periode": "2013-2025",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Beroepsbevolking, werkloosheidspercentage en arbeidsparticipatie van jongeren (15 tot 25 jaar), uitgesplitst naar geslacht en onderwijsdeelname. Kwartaalcijfers.",
+    "frequentie": "Perkwartaal",
+    "categorie": "Arbeidsmarkt",
+    "sectie": "Arbeidsmarkt jongeren",
+    "documentatie": {
+      "tekst": "CBS Open Data 85263NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85263NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85263NED",
+    "_thema": "Arbeidsmarkt jongeren"
   }
 ]
