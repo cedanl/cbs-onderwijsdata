@@ -3,1200 +3,2760 @@
     "leverancier": "CBS",
     "bron": "Gediplomeerden; onderwijssoort, woonregio",
     "periode": "2011/'12-2023/'24",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Toont het aantal gediplomeerden per onderwijssoort en woonregio, uitgesplitst naar geslacht. Geschikt voor instellingen die regionale diplomastromen en man/vrouw-verhouding bij uitstroom willen monitoren.",
     "frequentie": "Jaarlijks",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 85702NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85702NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel gediplomeerden zijn er in mijn regio in 2023?", "Wat is de man/vrouw-verhouding bij diplomering per onderwijssoort?", "Welke regio's kennen de hoogste diplomagroei?"],
-    "tags": ["gediplomeerden", "regio", "geslacht", "uitstroom", "alle-niveaus"],
-    "_cbs_id": "85702NED", "_thema": "Onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 85702NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85702NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel gediplomeerden zijn er in mijn regio in 2023?",
+      "Wat is de man/vrouw-verhouding bij diplomering per onderwijssoort?",
+      "Welke regio's kennen de hoogste diplomagroei?"
+    ],
+    "tags": [
+      "gediplomeerden",
+      "regio",
+      "geslacht",
+      "uitstroom",
+      "alle-niveaus"
+    ],
+    "_cbs_id": "85702NED",
+    "_thema": "Onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Leerlingen en studenten; onderwijssoort, woonregio",
     "periode": "2011/'12-2024/'25",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Geeft een overzicht van alle ingeschreven leerlingen en studenten per onderwijssoort en woonregio, uitgesplitst naar geslacht. Ideaal als startpunt voor een breed beeld van onderwijsdeelname per regio.",
     "frequentie": "Jaarlijks",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 85701NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85701NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel studenten wonen er in mijn regio?", "Hoe ontwikkelt de onderwijsdeelname zich per provincie?", "Wat is het aandeel vrouwen per onderwijssoort in mijn regio?"],
-    "tags": ["inschrijvingen", "regio", "geslacht", "alle-niveaus", "overzicht"],
-    "_cbs_id": "85701NED", "_thema": "Onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 85701NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85701NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel studenten wonen er in mijn regio?",
+      "Hoe ontwikkelt de onderwijsdeelname zich per provincie?",
+      "Wat is het aandeel vrouwen per onderwijssoort in mijn regio?"
+    ],
+    "tags": [
+      "inschrijvingen",
+      "regio",
+      "geslacht",
+      "alle-niveaus",
+      "overzicht"
+    ],
+    "_cbs_id": "85701NED",
+    "_thema": "Onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Gediplomeerden en afgestudeerden; onderwijssoort, vanaf 1900",
     "periode": "1900/'01 - 2023/'24",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Historische tijdreeks van gediplomeerden per onderwijssoort teruggaand tot 1900, uitgesplitst naar geslacht. Uniek voor langetermijntrend-analyses en beleidsevaluaties over decennia.",
     "frequentie": "Jaarlijks",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 80384ned", "url": "https://opendata.cbs.nl/ODataApi/OData/80384ned"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoe is de deelname aan hoger onderwijs door vrouwen historisch gegroeid?", "Wanneer overtroffen vrouwen mannen bij VWO-diplomering?", "Wat is de langetermijntrend in gymnasiumdiploma's?"],
-    "tags": ["historisch", "gediplomeerden", "geslacht", "langetermijn", "vo", "wo"],
-    "_cbs_id": "80384ned", "_thema": "Onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 80384ned",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/80384ned"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe is de deelname aan hoger onderwijs door vrouwen historisch gegroeid?",
+      "Wanneer overtroffen vrouwen mannen bij VWO-diplomering?",
+      "Wat is de langetermijntrend in gymnasiumdiploma's?"
+    ],
+    "tags": [
+      "historisch",
+      "gediplomeerden",
+      "geslacht",
+      "langetermijn",
+      "vo",
+      "wo"
+    ],
+    "_cbs_id": "80384ned",
+    "_thema": "Onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Leerlingen en studenten; onderwijssoort, vanaf 1900",
     "periode": "1900/'01 - 2024/'25",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Historische tijdreeks van onderwijsdeelname per onderwijssoort teruggaand tot 1900. Toont de opbouw van het Nederlandse onderwijsstelsel over meer dan een eeuw.",
     "frequentie": "Jaarlijks",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 37220", "url": "https://opendata.cbs.nl/ODataApi/OData/37220"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoe is basisonderwijs deelname veranderd door de jaren heen?", "Wanneer groeide het speciaal basisonderwijs het snelst?", "Hoe verhouden kleuteronderwijs en basisonderwijs zich historisch?"],
-    "tags": ["historisch", "inschrijvingen", "po", "vo", "langetermijn", "overzicht"],
-    "_cbs_id": "37220", "_thema": "Onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 37220",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/37220"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe is basisonderwijs deelname veranderd door de jaren heen?",
+      "Wanneer groeide het speciaal basisonderwijs het snelst?",
+      "Hoe verhouden kleuteronderwijs en basisonderwijs zich historisch?"
+    ],
+    "tags": [
+      "historisch",
+      "inschrijvingen",
+      "po",
+      "vo",
+      "langetermijn",
+      "overzicht"
+    ],
+    "_cbs_id": "37220",
+    "_thema": "Onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Onderwijsinstellingen; grootte, soort, levensbeschouwelijke grondslag",
     "periode": "1990/'91 - 2024/'25",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Overzicht van onderwijsinstellingen naar type, denominatie en schoolgrootte. Nuttig voor instellingen die hun positie in het landschap van onderwijsaanbieders willen begrijpen.",
     "frequentie": "Jaarlijks",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 03753", "url": "https://opendata.cbs.nl/ODataApi/OData/03753"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel openbare vs. bijzondere scholen zijn er per onderwijssoort?", "Hoe is de gemiddelde schoolgrootte veranderd?", "Welk aandeel instellingen is katholiek vs. protestants?"],
-    "tags": ["instellingen", "denominatie", "schoolgrootte", "po", "vo", "mbo", "ho"],
-    "_cbs_id": "03753", "_thema": "Onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 03753",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/03753"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel openbare vs. bijzondere scholen zijn er per onderwijssoort?",
+      "Hoe is de gemiddelde schoolgrootte veranderd?",
+      "Welk aandeel instellingen is katholiek vs. protestants?"
+    ],
+    "tags": [
+      "instellingen",
+      "denominatie",
+      "schoolgrootte",
+      "po",
+      "vo",
+      "mbo",
+      "ho"
+    ],
+    "_cbs_id": "03753",
+    "_thema": "Onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Leerlingen in (speciaal) basisonderwijs; herkomst, woonregio",
     "periode": "2011/'12 - 2025/'26",
-    "onderwijstype": ["PO"],
+    "onderwijstype": [
+      "PO"
+    ],
     "doel": "Aantal leerlingen in basisonderwijs en speciaal basisonderwijs uitgesplitst naar herkomstland, geboorteland ouders en woonregio. Relevant voor diversiteitsanalyses en kansenbeleid in het primair onderwijs.",
     "frequentie": "Jaarlijks",
     "categorie": "Primair Onderwijs",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85489NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85489NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Wat is het aandeel leerlingen met een niet-westerse achtergrond per regio?", "Hoe verschilt de herkomstsamenstelling tussen SBO en regulier basisonderwijs?", "In welke regio's groeit de diversiteit het snelst?"],
-    "tags": ["po", "herkomst", "diversiteit", "regio", "sbo", "kansengelijkheid"],
-    "_cbs_id": "85489NED", "_thema": "Primair onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 85489NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85489NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Wat is het aandeel leerlingen met een niet-westerse achtergrond per regio?",
+      "Hoe verschilt de herkomstsamenstelling tussen SBO en regulier basisonderwijs?",
+      "In welke regio's groeit de diversiteit het snelst?"
+    ],
+    "tags": [
+      "po",
+      "herkomst",
+      "diversiteit",
+      "regio",
+      "sbo",
+      "kansengelijkheid"
+    ],
+    "_cbs_id": "85489NED",
+    "_thema": "Primair onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Leerlingen op speciale scholen; herkomst, woonregio",
     "periode": "2011/'12 - 2025/'26",
-    "onderwijstype": ["PO"],
+    "onderwijstype": [
+      "PO"
+    ],
     "doel": "Leerlingen in het speciaal onderwijs uitgesplitst naar cluster, herkomst en woonregio. Relevant voor beleid rond inclusief onderwijs en ondersteuningsbehoeften.",
     "frequentie": "Jaarlijks",
     "categorie": "Primair Onderwijs",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85490NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85490NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel leerlingen zitten in cluster 3 of 4 in mijn regio?", "Hoe verhoudt het aandeel SO-leerlingen met een migratieachtergrond zich tot de totale populatie?", "Hoe ontwikkelt de SO-deelname zich per provincie?"],
-    "tags": ["so", "speciaal-onderwijs", "herkomst", "regio", "inclusie", "po"],
-    "_cbs_id": "85490NED", "_thema": "Primair onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 85490NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85490NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel leerlingen zitten in cluster 3 of 4 in mijn regio?",
+      "Hoe verhoudt het aandeel SO-leerlingen met een migratieachtergrond zich tot de totale populatie?",
+      "Hoe ontwikkelt de SO-deelname zich per provincie?"
+    ],
+    "tags": [
+      "so",
+      "speciaal-onderwijs",
+      "herkomst",
+      "regio",
+      "inclusie",
+      "po"
+    ],
+    "_cbs_id": "85490NED",
+    "_thema": "Primair onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "(Speciaal) basisonderwijs en speciale scholen; leerlingen, schoolregio",
     "periode": "2000/'01-2024/'25",
-    "onderwijstype": ["PO"],
+    "onderwijstype": [
+      "PO"
+    ],
     "doel": "Aantal leerlingen in basisonderwijs en speciale scholen per schoolregio, uitgesplitst naar geslacht en leeftijd. Geschikt voor capaciteitsplanning en regionale spreidingsanalyses.",
     "frequentie": "Jaarlijks",
     "categorie": "Primair Onderwijs",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 71478ned", "url": "https://opendata.cbs.nl/ODataApi/OData/71478ned"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoe ontwikkelt het leerlingenaantal in mijn schoolregio zich?", "Welke regio's krimpen of groeien het snelst?", "Wat is de leeftijdsverdeling van basisschoolleerlingen per regio?"],
-    "tags": ["po", "sbo", "regio", "capaciteitsplanning", "krimp", "groei"],
-    "_cbs_id": "71478ned", "_thema": "Primair onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 71478ned",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/71478ned"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe ontwikkelt het leerlingenaantal in mijn schoolregio zich?",
+      "Welke regio's krimpen of groeien het snelst?",
+      "Wat is de leeftijdsverdeling van basisschoolleerlingen per regio?"
+    ],
+    "tags": [
+      "po",
+      "sbo",
+      "regio",
+      "capaciteitsplanning",
+      "krimp",
+      "groei"
+    ],
+    "_cbs_id": "71478ned",
+    "_thema": "Primair onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Schooladvies en herziening advies basisonderwijs; achtergrondkenmerken",
     "periode": "2014/'15-2023/'24",
-    "onderwijstype": ["PO"],
+    "onderwijstype": [
+      "PO"
+    ],
     "doel": "Schooladviezen en bijstellingen in groep 8, uitgesplitst naar geslacht, herkomst en inkomen van ouders. Cruciaal voor kansengelijkheidsonderzoek en het monitoren van adviespraktijken.",
     "frequentie": "Jaarlijks",
     "categorie": "Primair Onderwijs",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 84274NED", "url": "https://opendata.cbs.nl/ODataApi/OData/84274NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["In hoeveel gevallen wordt het schooladvies naar boven bijgesteld na de eindtoets?", "Verschilt het advies naar herkomst bij gelijke toetsscores?", "Hoe correleert inkomen van ouders met het gegeven schooladvies?"],
-    "tags": ["po", "schooladvies", "kansengelijkheid", "herkomst", "inkomen", "eindtoets"],
-    "_cbs_id": "84274NED", "_thema": "Primair onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 84274NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/84274NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "In hoeveel gevallen wordt het schooladvies naar boven bijgesteld na de eindtoets?",
+      "Verschilt het advies naar herkomst bij gelijke toetsscores?",
+      "Hoe correleert inkomen van ouders met het gegeven schooladvies?"
+    ],
+    "tags": [
+      "po",
+      "schooladvies",
+      "kansengelijkheid",
+      "herkomst",
+      "inkomen",
+      "eindtoets"
+    ],
+    "_cbs_id": "84274NED",
+    "_thema": "Primair onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Vo; examenkandidaten en gediplomeerden, onderwijssoort, woonregio",
     "periode": "2011/'12-2024/'25",
-    "onderwijstype": ["VO"],
+    "onderwijstype": [
+      "VO"
+    ],
     "doel": "Examenkandidaten en geslaagden in het voortgezet onderwijs per onderwijssoort en woonregio. Toont slagingspercentages per regio en geslacht.",
     "frequentie": "Jaarlijks",
     "categorie": "Voortgezet Onderwijs",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85382NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85382NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Wat is het slagingspercentage voor VWO in mijn regio?", "Hoe verschilt het slagingspercentage tussen mannen en vrouwen?", "In welke regio's is het slagingspercentage het laagst?"],
-    "tags": ["vo", "examen", "gediplomeerden", "regio", "slagingspercentage", "geslacht"],
-    "_cbs_id": "85382NED", "_thema": "Vo gediplomeerden"
+    "documentatie": {
+      "tekst": "CBS Open Data 85382NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85382NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Wat is het slagingspercentage voor VWO in mijn regio?",
+      "Hoe verschilt het slagingspercentage tussen mannen en vrouwen?",
+      "In welke regio's is het slagingspercentage het laagst?"
+    ],
+    "tags": [
+      "vo",
+      "examen",
+      "gediplomeerden",
+      "regio",
+      "slagingspercentage",
+      "geslacht"
+    ],
+    "_cbs_id": "85382NED",
+    "_thema": "Vo gediplomeerden"
   },
   {
     "leverancier": "CBS",
     "bron": "Vo; examenkandidaten en gediplomeerden, onderwijssoort in detail, herkomst",
     "periode": "2011/'12-2024/'25",
-    "onderwijstype": ["VO"],
+    "onderwijstype": [
+      "VO"
+    ],
     "doel": "Examenkandidaten en geslaagden in het VO uitgesplitst naar gedetailleerd onderwijssoort en herkomst. Relevant voor het analyseren van kansenongelijkheid bij examinering.",
     "frequentie": "Jaarlijks",
     "categorie": "Voortgezet Onderwijs",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85381NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85381NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Verschilt het slagingspercentage naar herkomst bij HAVO?", "Hoe doen leerlingen met niet-westerse achtergrond het bij VWO-examens?", "Is de ongelijkheid bij slagen toe- of afgenomen over de jaren?"],
-    "tags": ["vo", "examen", "herkomst", "kansengelijkheid", "gediplomeerden", "diversiteit"],
-    "_cbs_id": "85381NED", "_thema": "Vo gediplomeerden"
+    "documentatie": {
+      "tekst": "CBS Open Data 85381NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85381NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Verschilt het slagingspercentage naar herkomst bij HAVO?",
+      "Hoe doen leerlingen met niet-westerse achtergrond het bij VWO-examens?",
+      "Is de ongelijkheid bij slagen toe- of afgenomen over de jaren?"
+    ],
+    "tags": [
+      "vo",
+      "examen",
+      "herkomst",
+      "kansengelijkheid",
+      "gediplomeerden",
+      "diversiteit"
+    ],
+    "_cbs_id": "85381NED",
+    "_thema": "Vo gediplomeerden"
   },
   {
     "leverancier": "CBS",
     "bron": "Vo; leerlingen, onderwijssoort, leerjaar, woonregio",
     "periode": "2021/'22-2025/'26",
-    "onderwijstype": ["VO"],
+    "onderwijstype": [
+      "VO"
+    ],
     "doel": "Actuele leerlingenaantallen in het voortgezet onderwijs per onderwijssoort, leerjaar en woonregio. Geschikt voor regionale capaciteitsplanning en instroomanalyses.",
     "frequentie": "Jaarlijks",
     "categorie": "Voortgezet Onderwijs",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85380NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85380NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel VWO-leerlingen zitten er in leerjaar 4 in mijn regio?", "Hoe ontwikkelt het aantal VMBO-leerlingen zich regionaal?", "Welke leerjaren tonen krimp of groei?"],
-    "tags": ["vo", "leerlingen", "leerjaar", "regio", "capaciteitsplanning", "vmbo", "havo", "vwo"],
-    "_cbs_id": "85380NED", "_thema": "Vo leerlingen"
+    "documentatie": {
+      "tekst": "CBS Open Data 85380NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85380NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel VWO-leerlingen zitten er in leerjaar 4 in mijn regio?",
+      "Hoe ontwikkelt het aantal VMBO-leerlingen zich regionaal?",
+      "Welke leerjaren tonen krimp of groei?"
+    ],
+    "tags": [
+      "vo",
+      "leerlingen",
+      "leerjaar",
+      "regio",
+      "capaciteitsplanning",
+      "vmbo",
+      "havo",
+      "vwo"
+    ],
+    "_cbs_id": "85380NED",
+    "_thema": "Vo leerlingen"
   },
   {
     "leverancier": "CBS",
     "bron": "Vo; leerlingen, onderwijssoort in detail, leerjaar, herkomst",
     "periode": "2020/'21-2025/'26",
-    "onderwijstype": ["VO"],
+    "onderwijstype": [
+      "VO"
+    ],
     "doel": "VO-leerlingen uitgesplitst naar gedetailleerd onderwijssoort, leerjaar en herkomstland. Biedt inzicht in diversiteit en doorstroom per schooltype.",
     "frequentie": "Jaarlijks",
     "categorie": "Voortgezet Onderwijs",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85379NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85379NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Wat is het aandeel leerlingen met niet-westerse achtergrond per VO-type?", "Hoe verschilt herkomstsamenstelling tussen leerjaren?", "In welke VO-typen is de diversiteit het hoogst?"],
-    "tags": ["vo", "leerlingen", "herkomst", "diversiteit", "leerjaar", "kansengelijkheid"],
-    "_cbs_id": "85379NED", "_thema": "Vo leerlingen"
+    "documentatie": {
+      "tekst": "CBS Open Data 85379NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85379NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Wat is het aandeel leerlingen met niet-westerse achtergrond per VO-type?",
+      "Hoe verschilt herkomstsamenstelling tussen leerjaren?",
+      "In welke VO-typen is de diversiteit het hoogst?"
+    ],
+    "tags": [
+      "vo",
+      "leerlingen",
+      "herkomst",
+      "diversiteit",
+      "leerjaar",
+      "kansengelijkheid"
+    ],
+    "_cbs_id": "85379NED",
+    "_thema": "Vo leerlingen"
   },
   {
     "leverancier": "CBS",
     "bron": "Vo en vso; doorstroom en uitstroom, achtergrondkenmerken",
     "periode": "2015/'16 naar 2016/'17 t/m 2022/'23 naar 2023/'24",
-    "onderwijstype": ["VO"],
+    "onderwijstype": [
+      "VO"
+    ],
     "doel": "Doorstroom en uitstroom van VO- en VSO-leerlingen naar het volgende schooljaar, uitgesplitst naar herkomst en geslacht. Essentieel voor het analyseren van studieloopbanen en schoolverlaters.",
     "frequentie": "Jaarlijks",
     "categorie": "Voortgezet Onderwijs",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85566NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85566NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel VO-leerlingen stromen door naar een hoger niveau?", "Wat is het percentage vroegtijdig schoolverlaters per herkomstgroep?", "Hoe verschilt doorstroom tussen jongens en meisjes?"],
-    "tags": ["vo", "vso", "doorstroom", "uitstroom", "herkomst", "schoolverlaters", "studievoortgang"],
-    "_cbs_id": "85566NED", "_thema": "Vo stromen"
+    "documentatie": {
+      "tekst": "CBS Open Data 85566NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85566NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel VO-leerlingen stromen door naar een hoger niveau?",
+      "Wat is het percentage vroegtijdig schoolverlaters per herkomstgroep?",
+      "Hoe verschilt doorstroom tussen jongens en meisjes?"
+    ],
+    "tags": [
+      "vo",
+      "vso",
+      "doorstroom",
+      "uitstroom",
+      "herkomst",
+      "schoolverlaters",
+      "studievoortgang"
+    ],
+    "_cbs_id": "85566NED",
+    "_thema": "Vo stromen"
   },
   {
     "leverancier": "CBS",
     "bron": "Vo-cohorten; hoogst behaald diploma, achtergrondkenmerken",
     "periode": "2008, 2010, 2012, 2014, 2016, 2018",
-    "onderwijstype": ["VO"],
+    "onderwijstype": [
+      "VO"
+    ],
     "doel": "Cohortdata van VO-leerlingen die aangeeft welk diploma ze uiteindelijk behaalden, uitgesplitst naar geslacht, herkomst, schooladvies en inkomen ouders. Diepgaand instrument voor rendements- en kansengelijkheidsanalyses.",
     "frequentie": "Jaarlijks",
     "categorie": "Voortgezet Onderwijs",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85534NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85534NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welk percentage van een VO-cohort behaalt uiteindelijk een diploma?", "Hoe beïnvloedt het oorspronkelijk schooladvies het uiteindelijke diploma?", "Verschilt studiesucces significant naar inkomen ouders?"],
-    "tags": ["vo", "cohort", "diploma", "kansengelijkheid", "rendement", "herkomst", "schooladvies"],
-    "_cbs_id": "85534NED", "_thema": "Vo studievoortgang"
+    "documentatie": {
+      "tekst": "CBS Open Data 85534NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85534NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welk percentage van een VO-cohort behaalt uiteindelijk een diploma?",
+      "Hoe beïnvloedt het oorspronkelijk schooladvies het uiteindelijke diploma?",
+      "Verschilt studiesucces significant naar inkomen ouders?"
+    ],
+    "tags": [
+      "vo",
+      "cohort",
+      "diploma",
+      "kansengelijkheid",
+      "rendement",
+      "herkomst",
+      "schooladvies"
+    ],
+    "_cbs_id": "85534NED",
+    "_thema": "Vo studievoortgang"
   },
   {
     "leverancier": "CBS",
     "bron": "Mbo; studenten, niveau, leerweg, studierichting, regiokenmerken",
     "periode": "2015/'16-2025/'26",
-    "onderwijstype": ["MBO"],
+    "onderwijstype": [
+      "MBO"
+    ],
     "doel": "Aantal MBO-studenten uitgesplitst naar niveau (1-4), leerweg (BOL/BBL), studierichting en regio. Het meest complete MBO-inschrijvingsoverzicht voor regionale en sectorale analyses.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85353NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85353NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel MBO niveau 4 studenten zijn er in mijn regio?", "Hoe verhoudt BOL zich tot BBL per studierichting?", "Welke studierichtingen groeien het snelst?"],
-    "tags": ["mbo", "inschrijvingen", "niveau", "leerweg", "bol", "bbl", "studierichting", "regio"],
-    "_cbs_id": "85353NED", "_thema": "Mbo studenten"
+    "documentatie": {
+      "tekst": "CBS Open Data 85353NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85353NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel MBO niveau 4 studenten zijn er in mijn regio?",
+      "Hoe verhoudt BOL zich tot BBL per studierichting?",
+      "Welke studierichtingen groeien het snelst?"
+    ],
+    "tags": [
+      "mbo",
+      "inschrijvingen",
+      "niveau",
+      "leerweg",
+      "bol",
+      "bbl",
+      "studierichting",
+      "regio"
+    ],
+    "_cbs_id": "85353NED",
+    "_thema": "Mbo studenten"
   },
   {
     "leverancier": "CBS",
     "bron": "Mbo; studenten naar niveau, leerweg, herkomst",
     "periode": "2011/'12 - 2025/'26",
-    "onderwijstype": ["MBO"],
+    "onderwijstype": [
+      "MBO"
+    ],
     "doel": "MBO-studenten uitgesplitst naar niveau, leerweg en herkomstland. Biedt lange tijdreeks voor diversiteitsanalyses en beleid rond gelijke kansen in het MBO.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85354NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85354NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Wat is het aandeel studenten met niet-westerse achtergrond per MBO-niveau?", "Hoe heeft de herkomstsamenstelling zich ontwikkeld in BBL?", "Verschilt herkomst significant tussen niveau 2 en niveau 4?"],
-    "tags": ["mbo", "herkomst", "diversiteit", "niveau", "leerweg", "kansengelijkheid"],
-    "_cbs_id": "85354NED", "_thema": "Mbo studenten"
+    "documentatie": {
+      "tekst": "CBS Open Data 85354NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85354NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Wat is het aandeel studenten met niet-westerse achtergrond per MBO-niveau?",
+      "Hoe heeft de herkomstsamenstelling zich ontwikkeld in BBL?",
+      "Verschilt herkomst significant tussen niveau 2 en niveau 4?"
+    ],
+    "tags": [
+      "mbo",
+      "herkomst",
+      "diversiteit",
+      "niveau",
+      "leerweg",
+      "kansengelijkheid"
+    ],
+    "_cbs_id": "85354NED",
+    "_thema": "Mbo studenten"
   },
   {
     "leverancier": "CBS",
     "bron": "Mbo; studenten naar niveau, leerweg, studierichting, herkomst",
     "periode": "2015/'16-2025/26",
-    "onderwijstype": ["MBO"],
+    "onderwijstype": [
+      "MBO"
+    ],
     "doel": "MBO-studenten gecombineerd naar niveau, leerweg, studierichting én herkomst. Meest gedetailleerde MBO-dataset voor intersectionele analyses van diversiteit en studiekeuze.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85352NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85352NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welke studierichtingen trekken relatief meer studenten met migratieachtergrond?", "Hoe is de herkomstverdeling per niveau en leerweg gecombineerd?", "In welke richtingen is oververtegenwoordiging van bepaalde groepen zichtbaar?"],
-    "tags": ["mbo", "herkomst", "studierichting", "niveau", "leerweg", "diversiteit", "intersectioneel"],
-    "_cbs_id": "85352NED", "_thema": "Mbo studenten"
+    "documentatie": {
+      "tekst": "CBS Open Data 85352NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85352NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welke studierichtingen trekken relatief meer studenten met migratieachtergrond?",
+      "Hoe is de herkomstverdeling per niveau en leerweg gecombineerd?",
+      "In welke richtingen is oververtegenwoordiging van bepaalde groepen zichtbaar?"
+    ],
+    "tags": [
+      "mbo",
+      "herkomst",
+      "studierichting",
+      "niveau",
+      "leerweg",
+      "diversiteit",
+      "intersectioneel"
+    ],
+    "_cbs_id": "85352NED",
+    "_thema": "Mbo studenten"
   },
   {
     "leverancier": "CBS",
     "bron": "Mbo; gediplomeerden, niveau, leerweg, studierichting, regiokenmerken",
     "periode": "2015/'16-2024/'25",
-    "onderwijstype": ["MBO"],
+    "onderwijstype": [
+      "MBO"
+    ],
     "doel": "Aantal gediplomeerden in het MBO per niveau, leerweg, studierichting en regio. Kernset voor diplomarendementsanalyses en regionale arbeidsmarktaansluiting.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85356NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85356NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel MBO-diploma's worden er per jaar behaald in mijn regio?", "Welke studierichtingen kennen het hoogste diplomarendement?", "Hoe verhoudt het aantal gediplomeerden zich tot instroom per regio?"],
-    "tags": ["mbo", "gediplomeerden", "rendement", "studierichting", "regio", "niveau", "leerweg"],
-    "_cbs_id": "85356NED", "_thema": "Mbo gediplomeerden"
+    "documentatie": {
+      "tekst": "CBS Open Data 85356NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85356NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel MBO-diploma's worden er per jaar behaald in mijn regio?",
+      "Welke studierichtingen kennen het hoogste diplomarendement?",
+      "Hoe verhoudt het aantal gediplomeerden zich tot instroom per regio?"
+    ],
+    "tags": [
+      "mbo",
+      "gediplomeerden",
+      "rendement",
+      "studierichting",
+      "regio",
+      "niveau",
+      "leerweg"
+    ],
+    "_cbs_id": "85356NED",
+    "_thema": "Mbo gediplomeerden"
   },
   {
     "leverancier": "CBS",
     "bron": "Mbo; gediplomeerden, niveau, leerweg, studierichting, herkomst",
     "periode": "2015/'16-2024/'25",
-    "onderwijstype": ["MBO"],
+    "onderwijstype": [
+      "MBO"
+    ],
     "doel": "MBO-gediplomeerden uitgesplitst naar niveau, leerweg, studierichting en herkomst. Inzicht in diplomarendement per herkomstgroep en kansen op diplomering.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85355NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85355NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Verschilt het diplomarendement per herkomstgroep in het MBO?", "Hoe is de verhouding gediplomeerden/studenten per herkomst over de jaren?", "Welke studierichtingen kennen het laagste rendement bij bepaalde herkomstgroepen?"],
-    "tags": ["mbo", "gediplomeerden", "herkomst", "rendement", "kansengelijkheid", "niveau"],
-    "_cbs_id": "85355NED", "_thema": "Mbo gediplomeerden"
+    "documentatie": {
+      "tekst": "CBS Open Data 85355NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85355NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Verschilt het diplomarendement per herkomstgroep in het MBO?",
+      "Hoe is de verhouding gediplomeerden/studenten per herkomst over de jaren?",
+      "Welke studierichtingen kennen het laagste rendement bij bepaalde herkomstgroepen?"
+    ],
+    "tags": [
+      "mbo",
+      "gediplomeerden",
+      "herkomst",
+      "rendement",
+      "kansengelijkheid",
+      "niveau"
+    ],
+    "_cbs_id": "85355NED",
+    "_thema": "Mbo gediplomeerden"
   },
   {
     "leverancier": "CBS",
     "bron": "Mbo; gediplomeerden, niveau, leerweg, herkomst",
     "periode": "2011/'12-2024/'25",
-    "onderwijstype": ["MBO"],
+    "onderwijstype": [
+      "MBO"
+    ],
     "doel": "Lange tijdreeks van MBO-gediplomeerden naar niveau, leerweg en herkomst. Geschikt voor trendanalyses van diplomarendement per herkomstgroep over meer dan tien jaar.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85357NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85357NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Is de kloof in diplomarendement tussen herkomstgroepen kleiner geworden?", "Hoe heeft BBL-rendement zich ontwikkeld naar herkomst?", "Welk niveau kent de grootste rendementsverschillen naar herkomst?"],
-    "tags": ["mbo", "gediplomeerden", "herkomst", "rendement", "tijdreeks", "niveau", "leerweg"],
-    "_cbs_id": "85357NED", "_thema": "Mbo gediplomeerden"
+    "documentatie": {
+      "tekst": "CBS Open Data 85357NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85357NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Is de kloof in diplomarendement tussen herkomstgroepen kleiner geworden?",
+      "Hoe heeft BBL-rendement zich ontwikkeld naar herkomst?",
+      "Welk niveau kent de grootste rendementsverschillen naar herkomst?"
+    ],
+    "tags": [
+      "mbo",
+      "gediplomeerden",
+      "herkomst",
+      "rendement",
+      "tijdreeks",
+      "niveau",
+      "leerweg"
+    ],
+    "_cbs_id": "85357NED",
+    "_thema": "Mbo gediplomeerden"
   },
   {
     "leverancier": "CBS",
     "bron": "Instromers mbo; bedrijfstakken 1 jaar eerder",
     "periode": "2018/19-2024/25",
-    "onderwijstype": ["MBO"],
+    "onderwijstype": [
+      "MBO"
+    ],
     "doel": "Toont uit welke bedrijfstakken nieuwe MBO-instromers afkomstig zijn. Relevant voor instellingen die willen begrijpen wie zich aanmeldt vanuit de arbeidsmarkt (met name BBL).",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85574NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85574NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Uit welke sectoren komen BBL-studenten het meest?", "Welke bedrijfstakken leveren de meeste instroom voor technische opleidingen?", "Hoe heeft de herkomst uit de zorg als bedrijfstak zich ontwikkeld?"],
-    "tags": ["mbo", "instroom", "bedrijfstak", "arbeidsmarkt", "bbl", "sectorkamer"],
-    "_cbs_id": "85574NED", "_thema": "Mbo stromen"
+    "documentatie": {
+      "tekst": "CBS Open Data 85574NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85574NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Uit welke sectoren komen BBL-studenten het meest?",
+      "Welke bedrijfstakken leveren de meeste instroom voor technische opleidingen?",
+      "Hoe heeft de herkomst uit de zorg als bedrijfstak zich ontwikkeld?"
+    ],
+    "tags": [
+      "mbo",
+      "instroom",
+      "bedrijfstak",
+      "arbeidsmarkt",
+      "bbl",
+      "sectorkamer"
+    ],
+    "_cbs_id": "85574NED",
+    "_thema": "Mbo stromen"
   },
   {
     "leverancier": "CBS",
     "bron": "Instromers mbo; maatschappelijke positie 1 jaar eerder, persoonskenmerken",
     "periode": "2018/19-2024/'25",
-    "onderwijstype": ["MBO"],
+    "onderwijstype": [
+      "MBO"
+    ],
     "doel": "Maatschappelijke positie van MBO-instromers één jaar voor aanmelding (bijv. werkend, werkzoekend, uit onderwijs). Inzicht in wie de MBO instroomt en vanwaar.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85569NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85569NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welk deel van de MBO-instroom was het jaar daarvoor werkzoekend?", "Hoeveel instromers komen rechtstreeks vanuit een andere opleiding?", "Hoe verschilt de maatschappelijke positie voor instroom per niveau?"],
-    "tags": ["mbo", "instroom", "maatschappelijke-positie", "arbeidsmarkt", "zij-instroom", "niveau"],
-    "_cbs_id": "85569NED", "_thema": "Mbo stromen"
+    "documentatie": {
+      "tekst": "CBS Open Data 85569NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85569NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welk deel van de MBO-instroom was het jaar daarvoor werkzoekend?",
+      "Hoeveel instromers komen rechtstreeks vanuit een andere opleiding?",
+      "Hoe verschilt de maatschappelijke positie voor instroom per niveau?"
+    ],
+    "tags": [
+      "mbo",
+      "instroom",
+      "maatschappelijke-positie",
+      "arbeidsmarkt",
+      "zij-instroom",
+      "niveau"
+    ],
+    "_cbs_id": "85569NED",
+    "_thema": "Mbo stromen"
   },
   {
     "leverancier": "CBS",
     "bron": "Mbo door- en uitstroom, achtergrondkenmerken",
     "periode": "2022/'23 naar studiejaar 2023/'24",
-    "onderwijstype": ["MBO"],
+    "onderwijstype": [
+      "MBO"
+    ],
     "doel": "Doorstroom en uitstroom van MBO-studenten van het ene naar het volgende studiejaar, uitgesplitst naar herkomst en geslacht. Inzicht in voortijdig schoolverlaten en overstap.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85519NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85519NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel MBO-studenten verlaten de opleiding zonder diploma?", "Verschilt uitstroom significant naar herkomst?", "Welk deel stroomt door naar een hoger niveau?"],
-    "tags": ["mbo", "doorstroom", "uitstroom", "vsv", "herkomst", "studievoortgang"],
-    "_cbs_id": "85519NED", "_thema": "Mbo stromen"
+    "documentatie": {
+      "tekst": "CBS Open Data 85519NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85519NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel MBO-studenten verlaten de opleiding zonder diploma?",
+      "Verschilt uitstroom significant naar herkomst?",
+      "Welk deel stroomt door naar een hoger niveau?"
+    ],
+    "tags": [
+      "mbo",
+      "doorstroom",
+      "uitstroom",
+      "vsv",
+      "herkomst",
+      "studievoortgang"
+    ],
+    "_cbs_id": "85519NED",
+    "_thema": "Mbo stromen"
   },
   {
     "leverancier": "CBS",
     "bron": "Gepromoveerden; ervaringen en duur promotietraject",
     "periode": "2019",
-    "onderwijstype": ["HBO", "WO"],
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
     "doel": "Ervaringen van gepromoveerden met hun promotietraject, inclusief werkdruk, ongewenst gedrag en tevredenheid. Relevant voor HR-beleid en integriteitsbeleid binnen onderzoeksinstellingen.",
     "frequentie": "Onregelmatig",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 86238NED", "url": "https://opendata.cbs.nl/ODataApi/OData/86238NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoe tevreden zijn promovendi met hun traject?", "Welk percentage ervaart hoge werkdruk of ongewenst gedrag?", "Verschilt tevredenheid naar geslacht of promotiekenmerken?"],
-    "tags": ["wo", "promotie", "werkdruk", "welzijn", "hr", "integriteit"],
-    "_cbs_id": "86238NED", "_thema": "Hoger onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 86238NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/86238NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe tevreden zijn promovendi met hun traject?",
+      "Welk percentage ervaart hoge werkdruk of ongewenst gedrag?",
+      "Verschilt tevredenheid naar geslacht of promotiekenmerken?"
+    ],
+    "tags": [
+      "wo",
+      "promotie",
+      "werkdruk",
+      "welzijn",
+      "hr",
+      "integriteit"
+    ],
+    "_cbs_id": "86238NED",
+    "_thema": "Hoger onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Werkzame gepromoveerden; arbeidskenmerken",
     "periode": "2019",
-    "onderwijstype": ["HBO", "WO"],
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
     "doel": "Arbeidsmarktpositie van gepromoveerden: contractvorm, voltijdwerk en loondienst. Inzicht in de arbeidsmarktwaarde van een promotie.",
     "frequentie": "Onregelmatig",
     "categorie": "Alumni en arbeidsmarkt",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 86240NED", "url": "https://opendata.cbs.nl/ODataApi/OData/86240NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welk deel van gepromoveerden heeft een vaste baan na hun promotie?", "Hoe vaak werken gepromoveerden voltijd?", "Verschilt arbeidsmarktpositie naar geslacht of vakgebied?"],
-    "tags": ["wo", "promotie", "arbeidsmarkt", "contractvorm", "alumni"],
-    "_cbs_id": "86240NED", "_thema": "Hoger onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 86240NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/86240NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welk deel van gepromoveerden heeft een vaste baan na hun promotie?",
+      "Hoe vaak werken gepromoveerden voltijd?",
+      "Verschilt arbeidsmarktpositie naar geslacht of vakgebied?"
+    ],
+    "tags": [
+      "wo",
+      "promotie",
+      "arbeidsmarkt",
+      "contractvorm",
+      "alumni"
+    ],
+    "_cbs_id": "86240NED",
+    "_thema": "Hoger onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Studeren in het buitenland; studiepuntmobiliteit hbo en wo",
     "periode": "2022 - 2025",
-    "onderwijstype": ["HBO", "WO"],
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
     "doel": "Aandeel HBO- en WO-studenten dat studiepunten in het buitenland haalt. Relevant voor internationaliseringsbeleid en het monitoren van mobiliteitsambities.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85907NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85907NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welk percentage studenten is studiepuntmobiel?", "Verschilt internationale mobiliteit tussen HBO en WO?", "Hoe heeft de mobiliteit zich ontwikkeld na corona?"],
-    "tags": ["ho", "hbo", "wo", "internationalisering", "mobiliteit", "buitenland"],
-    "_cbs_id": "85907NED", "_thema": "Hoger onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 85907NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85907NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welk percentage studenten is studiepuntmobiel?",
+      "Verschilt internationale mobiliteit tussen HBO en WO?",
+      "Hoe heeft de mobiliteit zich ontwikkeld na corona?"
+    ],
+    "tags": [
+      "ho",
+      "hbo",
+      "wo",
+      "internationalisering",
+      "mobiliteit",
+      "buitenland"
+    ],
+    "_cbs_id": "85907NED",
+    "_thema": "Hoger onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Wetenschappelijk onderwijs; promoties, studierichting",
     "periode": "2017/'18 - 2023/'24",
-    "onderwijstype": ["WO"],
+    "onderwijstype": [
+      "WO"
+    ],
     "doel": "Aantal promoties per studierichting en geslacht in het wetenschappelijk onderwijs. Inzicht in onderzoeksoutput en diversiteit in de academische pipeline.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 83966NED", "url": "https://opendata.cbs.nl/ODataApi/OData/83966NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["In welke studierichtingen promoveren de meeste mensen?", "Hoe verhoudt het aandeel vrouwelijke promovendi zich per vakgebied?", "Welke richtingen groeien het snelst qua promoties?"],
-    "tags": ["wo", "promotie", "studierichting", "geslacht", "onderzoek", "diversiteit"],
-    "_cbs_id": "83966NED", "_thema": "Hoger onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 83966NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83966NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "In welke studierichtingen promoveren de meeste mensen?",
+      "Hoe verhoudt het aandeel vrouwelijke promovendi zich per vakgebied?",
+      "Welke richtingen groeien het snelst qua promoties?"
+    ],
+    "tags": [
+      "wo",
+      "promotie",
+      "studierichting",
+      "geslacht",
+      "onderzoek",
+      "diversiteit"
+    ],
+    "_cbs_id": "83966NED",
+    "_thema": "Hoger onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Ho; gediplomeerden, soort diploma, opleidingsvorm",
     "periode": "2011/'12 - 2024/'25",
-    "onderwijstype": ["HBO", "WO"],
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
     "doel": "Gediplomeerden in het hoger onderwijs naar soort diploma (bachelor/master/ad) en opleidingsvorm (voltijd/deeltijd/duaal). Kernset voor diplomarendementsanalyse in HO.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85424NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85424NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel bachelor-diploma's worden er jaarlijks behaald in het HBO?", "Hoe verhoudt deeltijd zich tot voltijd bij masteropleidingen?", "Hoe groeit het aandeel associate degrees?"],
-    "tags": ["ho", "hbo", "wo", "gediplomeerden", "diploma", "opleidingsvorm", "rendement"],
-    "_cbs_id": "85424NED", "_thema": "Ho gediplomeerden"
+    "documentatie": {
+      "tekst": "CBS Open Data 85424NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85424NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel bachelor-diploma's worden er jaarlijks behaald in het HBO?",
+      "Hoe verhoudt deeltijd zich tot voltijd bij masteropleidingen?",
+      "Hoe groeit het aandeel associate degrees?"
+    ],
+    "tags": [
+      "ho",
+      "hbo",
+      "wo",
+      "gediplomeerden",
+      "diploma",
+      "opleidingsvorm",
+      "rendement"
+    ],
+    "_cbs_id": "85424NED",
+    "_thema": "Ho gediplomeerden"
   },
   {
     "leverancier": "CBS",
     "bron": "Ho; gediplomeerden, soort diploma, studierichting, herkomst",
     "periode": "2015/'16 - 2024/'25",
-    "onderwijstype": ["HBO", "WO"],
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
     "doel": "HO-gediplomeerden uitgesplitst naar studierichting, diplomasoort en herkomst. Inzicht in studiesucces per richting en herkomstgroep.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85425NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85425NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welke studierichtingen kennen de laagste diplomapercentages voor studenten met migratieachtergrond?", "Hoe is het rendement per studierichting voor internationale studenten?", "Welke richtingen doen het goed op diversiteit bij afstuderen?"],
-    "tags": ["ho", "hbo", "wo", "gediplomeerden", "herkomst", "studierichting", "kansengelijkheid"],
-    "_cbs_id": "85425NED", "_thema": "Ho gediplomeerden"
+    "documentatie": {
+      "tekst": "CBS Open Data 85425NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85425NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welke studierichtingen kennen de laagste diplomapercentages voor studenten met migratieachtergrond?",
+      "Hoe is het rendement per studierichting voor internationale studenten?",
+      "Welke richtingen doen het goed op diversiteit bij afstuderen?"
+    ],
+    "tags": [
+      "ho",
+      "hbo",
+      "wo",
+      "gediplomeerden",
+      "herkomst",
+      "studierichting",
+      "kansengelijkheid"
+    ],
+    "_cbs_id": "85425NED",
+    "_thema": "Ho gediplomeerden"
   },
   {
     "leverancier": "CBS",
     "bron": "Hoger onderwijs; eerste- en ouderejaarsstudenten, studierichting, herkomst",
     "periode": "2011/'12 - 2025/'26",
-    "onderwijstype": ["HBO", "WO"],
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
     "doel": "Ingeschrevenen in het HO uitgesplitst naar eerstejaars/ouderejaars, studierichting en herkomst. Geschikt voor instroomanalyses en diversiteitsmonitoring per richting.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85421NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85421NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel eerstejaars stromen in bij technische opleidingen?", "Wat is het aandeel internationale eerstejaars per studierichting?", "Hoe verhoudt instroom zich tot het totaal ingeschrevenen?"],
-    "tags": ["ho", "hbo", "wo", "instroom", "eerstejaars", "studierichting", "herkomst"],
-    "_cbs_id": "85421NED", "_thema": "Ho ingeschrevenen"
+    "documentatie": {
+      "tekst": "CBS Open Data 85421NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85421NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel eerstejaars stromen in bij technische opleidingen?",
+      "Wat is het aandeel internationale eerstejaars per studierichting?",
+      "Hoe verhoudt instroom zich tot het totaal ingeschrevenen?"
+    ],
+    "tags": [
+      "ho",
+      "hbo",
+      "wo",
+      "instroom",
+      "eerstejaars",
+      "studierichting",
+      "herkomst"
+    ],
+    "_cbs_id": "85421NED",
+    "_thema": "Ho ingeschrevenen"
   },
   {
     "leverancier": "CBS",
     "bron": "Hoger onderwijs; ingeschrevenen, onderwijssoort, opleidingsfase en -vorm",
     "periode": "2011/'12 - 2025/'26",
-    "onderwijstype": ["HBO", "WO"],
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
     "doel": "Totaal ingeschrevenen in HBO en WO per onderwijssoort, opleidingsfase (bachelor/master) en opleidingsvorm (voltijd/deeltijd/duaal). Standaard benchmarkset voor HO-instellingen.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85423NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85423NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel studenten zijn ingeschreven in HBO bachelor?", "Hoe ontwikkelt het aandeel deeltijdstudenten zich?", "Hoe verhoudt WO master zich tot HBO master qua omvang?"],
-    "tags": ["ho", "hbo", "wo", "inschrijvingen", "bachelor", "master", "opleidingsvorm", "benchmark"],
-    "_cbs_id": "85423NED", "_thema": "Ho ingeschrevenen"
+    "documentatie": {
+      "tekst": "CBS Open Data 85423NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85423NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel studenten zijn ingeschreven in HBO bachelor?",
+      "Hoe ontwikkelt het aandeel deeltijdstudenten zich?",
+      "Hoe verhoudt WO master zich tot HBO master qua omvang?"
+    ],
+    "tags": [
+      "ho",
+      "hbo",
+      "wo",
+      "inschrijvingen",
+      "bachelor",
+      "master",
+      "opleidingsvorm",
+      "benchmark"
+    ],
+    "_cbs_id": "85423NED",
+    "_thema": "Ho ingeschrevenen"
   },
   {
     "leverancier": "CBS",
     "bron": "Hoger onderwijs; eerstejaarsstudenten, vooropleiding en opleidingsfase",
     "periode": "2011/'12 - 2025/'26",
-    "onderwijstype": ["HBO", "WO"],
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
     "doel": "Eerstejaars in het HO uitgesplitst naar vooropleiding (MBO, HAVO, VWO) en opleidingsfase. Inzicht in doorstroom vanuit het voorgaande onderwijs naar HO.",
     "frequentie": "Jaarlijks",
     "categorie": "Instroom",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85422NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85422NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welk deel van HBO-instroom komt vanuit MBO?", "Hoe is de verhouding HAVO/VWO-instroom bij WO bachelor veranderd?", "Welk aandeel eerstejaars had eerder een andere HO-opleiding?"],
-    "tags": ["ho", "hbo", "wo", "instroom", "vooropleiding", "doorstroom", "mbo", "havo", "vwo"],
-    "_cbs_id": "85422NED", "_thema": "Ho ingeschrevenen"
+    "documentatie": {
+      "tekst": "CBS Open Data 85422NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85422NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welk deel van HBO-instroom komt vanuit MBO?",
+      "Hoe is de verhouding HAVO/VWO-instroom bij WO bachelor veranderd?",
+      "Welk aandeel eerstejaars had eerder een andere HO-opleiding?"
+    ],
+    "tags": [
+      "ho",
+      "hbo",
+      "wo",
+      "instroom",
+      "vooropleiding",
+      "doorstroom",
+      "mbo",
+      "havo",
+      "vwo"
+    ],
+    "_cbs_id": "85422NED",
+    "_thema": "Ho ingeschrevenen"
   },
   {
     "leverancier": "CBS",
     "bron": "Hoger onderwijs; internationale studenten, nationaliteit",
     "periode": "2005/'06 - 2025/'26",
-    "onderwijstype": ["HBO", "WO"],
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
     "doel": "Aantal internationale studenten in het HO uitgesplitst naar nationaliteit en geslacht. Lange tijdreeks voor internationaliseringsbeleid en monitoring van herkomstlanden.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85124NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85124NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Uit welke landen komen de meeste internationale studenten?", "Hoe is de groei van Aziatische studenten verlopen?", "Hoe verhoudt het aandeel vrouwelijke internationale studenten zich?"],
-    "tags": ["ho", "hbo", "wo", "internationaal", "nationaliteit", "diversiteit", "internationalisering"],
-    "_cbs_id": "85124NED", "_thema": "Ho ingeschrevenen"
+    "documentatie": {
+      "tekst": "CBS Open Data 85124NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85124NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Uit welke landen komen de meeste internationale studenten?",
+      "Hoe is de groei van Aziatische studenten verlopen?",
+      "Hoe verhoudt het aandeel vrouwelijke internationale studenten zich?"
+    ],
+    "tags": [
+      "ho",
+      "hbo",
+      "wo",
+      "internationaal",
+      "nationaliteit",
+      "diversiteit",
+      "internationalisering"
+    ],
+    "_cbs_id": "85124NED",
+    "_thema": "Ho ingeschrevenen"
   },
   {
     "leverancier": "CBS",
     "bron": "Hoger onderwijs; internationale studenten, onderwijskenmerken",
     "periode": "2005/'06 - 2025/'26",
-    "onderwijstype": ["HBO", "WO"],
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
     "doel": "Internationale studenten in HO uitgesplitst naar verblijfsjaar, studierichting en onderwijssoort. Relevant voor beleid rond instroom, retentie en spreiding van internationals.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85125NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85125NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["In welke studierichtingen zitten de meeste internationale studenten?", "Hoe lang blijven internationale studenten gemiddeld ingeschreven?", "Hoe verhoudt het aandeel internationals zich per HBO versus WO?"],
-    "tags": ["ho", "hbo", "wo", "internationaal", "studierichting", "retentie", "internationalisering"],
-    "_cbs_id": "85125NED", "_thema": "Ho ingeschrevenen"
+    "documentatie": {
+      "tekst": "CBS Open Data 85125NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85125NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "In welke studierichtingen zitten de meeste internationale studenten?",
+      "Hoe lang blijven internationale studenten gemiddeld ingeschreven?",
+      "Hoe verhoudt het aandeel internationals zich per HBO versus WO?"
+    ],
+    "tags": [
+      "ho",
+      "hbo",
+      "wo",
+      "internationaal",
+      "studierichting",
+      "retentie",
+      "internationalisering"
+    ],
+    "_cbs_id": "85125NED",
+    "_thema": "Ho ingeschrevenen"
   },
   {
     "leverancier": "CBS",
     "bron": "Hbo-cohorten; eerste hbo-diploma, studierichting",
     "periode": "2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2023",
-    "onderwijstype": ["HBO"],
+    "onderwijstype": [
+      "HBO"
+    ],
     "doel": "Cohortdata van HBO-starters die bijhoudt hoeveel studenten op verschillende peilmomenten hun eerste HBO-diploma hebben behaald. Standaardset voor diplomarendementsanalyse.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 83286NED", "url": "https://opendata.cbs.nl/ODataApi/OData/83286NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welk percentage HBO-studenten behaalt binnen 4 jaar een diploma?", "Hoe verschilt rendement per studierichting en startjaar?", "Hoe heeft het rendement zich ontwikkeld over cohorten?"],
-    "tags": ["hbo", "cohort", "rendement", "diploma", "studierichting", "studievoortgang"],
-    "_cbs_id": "83286NED", "_thema": "Ho studievoortgang"
+    "documentatie": {
+      "tekst": "CBS Open Data 83286NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83286NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welk percentage HBO-studenten behaalt binnen 4 jaar een diploma?",
+      "Hoe verschilt rendement per studierichting en startjaar?",
+      "Hoe heeft het rendement zich ontwikkeld over cohorten?"
+    ],
+    "tags": [
+      "hbo",
+      "cohort",
+      "rendement",
+      "diploma",
+      "studierichting",
+      "studievoortgang"
+    ],
+    "_cbs_id": "83286NED",
+    "_thema": "Ho studievoortgang"
   },
   {
     "leverancier": "CBS",
     "bron": "Ho-cohorten; behaalde hbo- en wo-diploma's",
     "periode": "2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2023",
-    "onderwijstype": ["HBO", "WO"],
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
     "doel": "Cohortdata van HO-starters die bijhoudt hoeveel studenten een HO-diploma behalen op verschillende peilmomenten. Vergelijkt HBO en WO rendement.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 83282NED", "url": "https://opendata.cbs.nl/ODataApi/OData/83282NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoe verschilt het diplomarendement tussen HBO en WO?", "Welk percentage HO-starters behaalt ooit een diploma?", "Hoe ontwikkelt rendement zich over recentere cohorten?"],
-    "tags": ["ho", "hbo", "wo", "cohort", "rendement", "diploma", "benchmark"],
-    "_cbs_id": "83282NED", "_thema": "Ho studievoortgang"
+    "documentatie": {
+      "tekst": "CBS Open Data 83282NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83282NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe verschilt het diplomarendement tussen HBO en WO?",
+      "Welk percentage HO-starters behaalt ooit een diploma?",
+      "Hoe ontwikkelt rendement zich over recentere cohorten?"
+    ],
+    "tags": [
+      "ho",
+      "hbo",
+      "wo",
+      "cohort",
+      "rendement",
+      "diploma",
+      "benchmark"
+    ],
+    "_cbs_id": "83282NED",
+    "_thema": "Ho studievoortgang"
   },
   {
     "leverancier": "CBS",
     "bron": "Wo-cohorten; eerste wo-diploma, studierichting",
     "periode": "2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2023",
-    "onderwijstype": ["WO"],
+    "onderwijstype": [
+      "WO"
+    ],
     "doel": "Cohortdata van WO-starters die bijhoudt hoeveel studenten hun eerste WO-diploma behalen per studierichting. Geschikt voor rendements- en doorstroomanalyses per vakgebied.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 83285NED", "url": "https://opendata.cbs.nl/ODataApi/OData/83285NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welke WO-richtingen kennen het hoogste diplomarendement?", "Hoe lang doen WO-studenten gemiddeld over hun bachelor?", "Zijn er richtingen waar rendement structureel achter loopt?"],
-    "tags": ["wo", "cohort", "rendement", "diploma", "studierichting", "bachelor", "studievoortgang"],
-    "_cbs_id": "83285NED", "_thema": "Ho studievoortgang"
+    "documentatie": {
+      "tekst": "CBS Open Data 83285NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83285NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welke WO-richtingen kennen het hoogste diplomarendement?",
+      "Hoe lang doen WO-studenten gemiddeld over hun bachelor?",
+      "Zijn er richtingen waar rendement structureel achter loopt?"
+    ],
+    "tags": [
+      "wo",
+      "cohort",
+      "rendement",
+      "diploma",
+      "studierichting",
+      "bachelor",
+      "studievoortgang"
+    ],
+    "_cbs_id": "83285NED",
+    "_thema": "Ho studievoortgang"
   },
   {
     "leverancier": "CBS",
     "bron": "Wo-cohorten; hoogst behaalde wo-diploma, vooropleiding",
     "periode": "2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2023",
-    "onderwijstype": ["WO"],
+    "onderwijstype": [
+      "WO"
+    ],
     "doel": "Welk WO-diploma studenten uiteindelijk behalen, uitgesplitst naar vooropleiding en studiefase bij instroom. Inzicht in doorstroom van bachelor naar master.",
     "frequentie": "Jaarlijks",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 83305NED", "url": "https://opendata.cbs.nl/ODataApi/OData/83305NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welk deel van WO-bachelors stroomt door naar een master?", "Verschilt doorstroom naar master per vooropleiding?", "Hoe heeft de bachelor-naar-master doorstroom zich ontwikkeld?"],
-    "tags": ["wo", "cohort", "doorstroom", "bachelor", "master", "vooropleiding", "studievoortgang"],
-    "_cbs_id": "83305NED", "_thema": "Ho studievoortgang"
+    "documentatie": {
+      "tekst": "CBS Open Data 83305NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83305NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welk deel van WO-bachelors stroomt door naar een master?",
+      "Verschilt doorstroom naar master per vooropleiding?",
+      "Hoe heeft de bachelor-naar-master doorstroom zich ontwikkeld?"
+    ],
+    "tags": [
+      "wo",
+      "cohort",
+      "doorstroom",
+      "bachelor",
+      "master",
+      "vooropleiding",
+      "studievoortgang"
+    ],
+    "_cbs_id": "83305NED",
+    "_thema": "Ho studievoortgang"
   },
   {
     "leverancier": "CBS",
     "bron": "Vavo-gediplomeerden; onderwijssoort, geslacht, leeftijd",
     "periode": "2006/'07 - 2024/'25",
-    "onderwijstype": ["VO"],
+    "onderwijstype": [
+      "VO"
+    ],
     "doel": "Gediplomeerden in het voortgezet algemeen volwassenenonderwijs (VAVO) naar onderwijssoort, geslacht en leeftijd. Relevant voor beleid rond tweede kansen en volwasseneneducatie.",
     "frequentie": "Jaarlijks",
     "categorie": "Voortgezet Onderwijs",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85328NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85328NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel mensen behalen via VAVO alsnog een HAVO- of VWO-diploma?", "Wat is de leeftijdsverdeling van VAVO-gediplomeerden?", "Hoe heeft VAVO-deelname zich ontwikkeld?"],
-    "tags": ["vavo", "volwasseneneducatie", "tweede-kans", "vo", "gediplomeerden", "leeftijd"],
-    "_cbs_id": "85328NED", "_thema": "Volwasseneneducatie"
+    "documentatie": {
+      "tekst": "CBS Open Data 85328NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85328NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel mensen behalen via VAVO alsnog een HAVO- of VWO-diploma?",
+      "Wat is de leeftijdsverdeling van VAVO-gediplomeerden?",
+      "Hoe heeft VAVO-deelname zich ontwikkeld?"
+    ],
+    "tags": [
+      "vavo",
+      "volwasseneneducatie",
+      "tweede-kans",
+      "vo",
+      "gediplomeerden",
+      "leeftijd"
+    ],
+    "_cbs_id": "85328NED",
+    "_thema": "Volwasseneneducatie"
   },
   {
     "leverancier": "CBS",
     "bron": "Vavo-studenten; onderwijssoort, geslacht, leeftijd",
     "periode": "2006/'07 - 2025/'26",
-    "onderwijstype": ["VO"],
+    "onderwijstype": [
+      "VO"
+    ],
     "doel": "Ingeschreven studenten in VAVO uitgesplitst naar onderwijssoort, geslacht en leeftijd. Inzicht in de omvang en samenstelling van het tweede-kans onderwijs.",
     "frequentie": "Jaarlijks",
     "categorie": "Voortgezet Onderwijs",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85329NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85329NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel volwassenen zijn ingeschreven voor een HAVO-diploma?", "Wat is de gemiddelde leeftijd van VAVO-studenten?", "Hoe is de man/vrouw-verhouding in VAVO?"],
-    "tags": ["vavo", "volwasseneneducatie", "tweede-kans", "inschrijvingen", "leeftijd", "geslacht"],
-    "_cbs_id": "85329NED", "_thema": "Volwasseneneducatie"
+    "documentatie": {
+      "tekst": "CBS Open Data 85329NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85329NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel volwassenen zijn ingeschreven voor een HAVO-diploma?",
+      "Wat is de gemiddelde leeftijd van VAVO-studenten?",
+      "Hoe is de man/vrouw-verhouding in VAVO?"
+    ],
+    "tags": [
+      "vavo",
+      "volwasseneneducatie",
+      "tweede-kans",
+      "inschrijvingen",
+      "leeftijd",
+      "geslacht"
+    ],
+    "_cbs_id": "85329NED",
+    "_thema": "Volwasseneneducatie"
   },
   {
     "leverancier": "CBS",
     "bron": "Bedrijfsopleidingen; kerncijfers",
     "periode": "1986-2020",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Kerncijfers over bedrijfsopleidingen in Nederland: aandeel bedrijven dat cursussen aanbiedt en totale deelname. Historisch overzicht voor leven-lang-leren-beleid.",
     "frequentie": "Onregelmatig",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 81850NED", "url": "https://opendata.cbs.nl/ODataApi/OData/81850NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welk deel van bedrijven biedt opleidingen aan?", "Hoe heeft het aandeel bedrijven met cursussen zich ontwikkeld?", "Hoe groot is de totale bedrijfsopleidingsmarkt?"],
-    "tags": ["leven-lang-leren", "bedrijfsopleiding", "cursus", "werkgever", "lll"],
-    "_cbs_id": "81850NED", "_thema": "Levenlang leren"
+    "documentatie": {
+      "tekst": "CBS Open Data 81850NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/81850NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welk deel van bedrijven biedt opleidingen aan?",
+      "Hoe heeft het aandeel bedrijven met cursussen zich ontwikkeld?",
+      "Hoe groot is de totale bedrijfsopleidingsmarkt?"
+    ],
+    "tags": [
+      "leven-lang-leren",
+      "bedrijfsopleiding",
+      "cursus",
+      "werkgever",
+      "lll"
+    ],
+    "_cbs_id": "81850NED",
+    "_thema": "Levenlang leren"
   },
   {
     "leverancier": "CBS",
     "bron": "Bedrijfsopleidingen; deelname, kosten en beleid",
     "periode": "2010-2020",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Deelname aan en kosten van bedrijfsopleidingen, inclusief informatie over eigen opleidingscentra en collectieve fondsen. Relevant voor HR en leven-lang-leren-financiering.",
     "frequentie": "Onregelmatig",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 81848NED", "url": "https://opendata.cbs.nl/ODataApi/OData/81848NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel geven bedrijven uit aan opleidingen per werknemer?", "Welk deel financiert via een collectief opleidingsfonds?", "Hoe verhoudt het gebruik van eigen opleidingscentra zich?"],
-    "tags": ["leven-lang-leren", "bedrijfsopleiding", "kosten", "financiering", "hr", "lll"],
-    "_cbs_id": "81848NED", "_thema": "Levenlang leren"
+    "documentatie": {
+      "tekst": "CBS Open Data 81848NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/81848NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel geven bedrijven uit aan opleidingen per werknemer?",
+      "Welk deel financiert via een collectief opleidingsfonds?",
+      "Hoe verhoudt het gebruik van eigen opleidingscentra zich?"
+    ],
+    "tags": [
+      "leven-lang-leren",
+      "bedrijfsopleiding",
+      "kosten",
+      "financiering",
+      "hr",
+      "lll"
+    ],
+    "_cbs_id": "81848NED",
+    "_thema": "Levenlang leren"
   },
   {
     "leverancier": "CBS",
     "bron": "Cursusdeelnemers; bedrijfskenmerken, 2022",
     "periode": "2023",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Aandeel werknemers dat cursussen volgt uitgesplitst naar bedrijfskenmerken (sector, grootte). Momentopname 2022 voor leven-lang-leren-beleid gericht op werkgevers.",
     "frequentie": "Eenmalig",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 85989NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85989NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["In welke sectoren volgen werknemers het meest cursussen?", "Verschilt cursusdeelname naar bedrijfsgrootte?", "Welke sectoren lopen achter op leven-lang-leren?"],
-    "tags": ["leven-lang-leren", "cursus", "werkgever", "sector", "bedrijfsgrootte", "lll"],
-    "_cbs_id": "85989NED", "_thema": "Levenlang leren"
+    "documentatie": {
+      "tekst": "CBS Open Data 85989NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85989NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "In welke sectoren volgen werknemers het meest cursussen?",
+      "Verschilt cursusdeelname naar bedrijfsgrootte?",
+      "Welke sectoren lopen achter op leven-lang-leren?"
+    ],
+    "tags": [
+      "leven-lang-leren",
+      "cursus",
+      "werkgever",
+      "sector",
+      "bedrijfsgrootte",
+      "lll"
+    ],
+    "_cbs_id": "85989NED",
+    "_thema": "Levenlang leren"
   },
   {
     "leverancier": "CBS",
     "bron": "Cursusdeelnemers; bedrijfskenmerken, 2016",
     "periode": "2016",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Aandeel werknemers dat cursussen volgt uitgesplitst naar bedrijfskenmerken (sector, grootte). Momentopname 2016 voor vergelijking met recentere jaren.",
     "frequentie": "Eenmalig",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 83917NED", "url": "https://opendata.cbs.nl/ODataApi/OData/83917NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoe verhoudt cursusdeelname per sector in 2016 zich tot 2022?", "Welke sectoren zijn het meest gegroeid in cursusdeelname?", "Wat was in 2016 de cursusdeelname in het onderwijs zelf?"],
-    "tags": ["leven-lang-leren", "cursus", "werkgever", "sector", "2016", "lll"],
-    "_cbs_id": "83917NED", "_thema": "Levenlang leren"
+    "documentatie": {
+      "tekst": "CBS Open Data 83917NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83917NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe verhoudt cursusdeelname per sector in 2016 zich tot 2022?",
+      "Welke sectoren zijn het meest gegroeid in cursusdeelname?",
+      "Wat was in 2016 de cursusdeelname in het onderwijs zelf?"
+    ],
+    "tags": [
+      "leven-lang-leren",
+      "cursus",
+      "werkgever",
+      "sector",
+      "2016",
+      "lll"
+    ],
+    "_cbs_id": "83917NED",
+    "_thema": "Levenlang leren"
   },
   {
     "leverancier": "CBS",
     "bron": "Cursusdeelnemers; persoonskenmerken, 2022",
     "periode": "2023",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Aandeel werkenden dat cursussen volgt uitgesplitst naar persoonskenmerken (leeftijd, geslacht, opleidingsniveau). Inzicht in wie leven-lang-leren benut.",
     "frequentie": "Eenmalig",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 85987NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85987NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Volgen lager opgeleiden minder cursussen?", "Hoe verschilt cursusdeelname naar leeftijd?", "Zijn er genderverschillen in leven-lang-leren?"],
-    "tags": ["leven-lang-leren", "cursus", "persoonskenmerken", "leeftijd", "opleidingsniveau", "lll"],
-    "_cbs_id": "85987NED", "_thema": "Levenlang leren"
+    "documentatie": {
+      "tekst": "CBS Open Data 85987NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85987NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Volgen lager opgeleiden minder cursussen?",
+      "Hoe verschilt cursusdeelname naar leeftijd?",
+      "Zijn er genderverschillen in leven-lang-leren?"
+    ],
+    "tags": [
+      "leven-lang-leren",
+      "cursus",
+      "persoonskenmerken",
+      "leeftijd",
+      "opleidingsniveau",
+      "lll"
+    ],
+    "_cbs_id": "85987NED",
+    "_thema": "Levenlang leren"
   },
   {
     "leverancier": "CBS",
     "bron": "Cursusdeelnemers; persoonskenmerken, 2016",
     "periode": "2016",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Aandeel werkenden dat cursussen volgt naar persoonskenmerken in 2016. Vergelijkbare dataset met 2022-editie voor trendanalyse in leven-lang-leren per doelgroep.",
     "frequentie": "Eenmalig",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 83916NED", "url": "https://opendata.cbs.nl/ODataApi/OData/83916NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Is de kloof in cursusdeelname naar opleidingsniveau kleiner geworden?", "Hoe is cursusdeelname van ouderen (55+) veranderd?", "Hoe verhouden 2016 en 2022 zich per leeftijdsgroep?"],
-    "tags": ["leven-lang-leren", "cursus", "persoonskenmerken", "leeftijd", "2016", "lll"],
-    "_cbs_id": "83916NED", "_thema": "Levenlang leren"
+    "documentatie": {
+      "tekst": "CBS Open Data 83916NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83916NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Is de kloof in cursusdeelname naar opleidingsniveau kleiner geworden?",
+      "Hoe is cursusdeelname van ouderen (55+) veranderd?",
+      "Hoe verhouden 2016 en 2022 zich per leeftijdsgroep?"
+    ],
+    "tags": [
+      "leven-lang-leren",
+      "cursus",
+      "persoonskenmerken",
+      "leeftijd",
+      "2016",
+      "lll"
+    ],
+    "_cbs_id": "83916NED",
+    "_thema": "Levenlang leren"
   },
   {
     "leverancier": "CBS",
     "bron": "Leven lang ontwikkelen; werkzame beroepsbevolking, arbeidskenmerken",
     "periode": "2013-2025",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Deelname aan leven-lang-ontwikkelen (LLO) door werkenden uitgesplitst naar arbeidskenmerken. Lange tijdreeks voor beleidsevaluatie van LLO-stimulering op de arbeidsmarkt.",
     "frequentie": "Jaarlijks",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 85314NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85314NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoe heeft LLO-deelname zich ontwikkeld bij werknemers vs. zelfstandigen?", "Welke arbeidskenmerken correleren met hogere LLO-deelname?", "Is LLO-deelname toegenomen door beleidsstimulering?"],
-    "tags": ["leven-lang-leren", "lll", "arbeidsmarkt", "werkenden", "tijdreeks"],
-    "_cbs_id": "85314NED", "_thema": "Levenlang leren"
+    "documentatie": {
+      "tekst": "CBS Open Data 85314NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85314NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe heeft LLO-deelname zich ontwikkeld bij werknemers vs. zelfstandigen?",
+      "Welke arbeidskenmerken correleren met hogere LLO-deelname?",
+      "Is LLO-deelname toegenomen door beleidsstimulering?"
+    ],
+    "tags": [
+      "leven-lang-leren",
+      "lll",
+      "arbeidsmarkt",
+      "werkenden",
+      "tijdreeks"
+    ],
+    "_cbs_id": "85314NED",
+    "_thema": "Levenlang leren"
   },
   {
     "leverancier": "CBS",
     "bron": "Leven lang ontwikkelen; onderwijskenmerken",
     "periode": "2021 - 2024",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "LLO-deelname uitgesplitst naar onderwijsniveau en of mensen al onderwijsvolgend zijn. Inzicht in wie leven-lang-leren combineert met werk of al buiten het formele onderwijs staat.",
     "frequentie": "Jaarlijks",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 85624NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85624NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welk deel van LLO-deelnemers heeft al een HO-diploma?", "Hoe verhoudt formeel vs. informeel leren zich per opleidingsniveau?", "Wie combineert regulier onderwijs met LLO?"],
-    "tags": ["leven-lang-leren", "lll", "opleidingsniveau", "formeel-leren", "informeel-leren"],
-    "_cbs_id": "85624NED", "_thema": "Levenlang leren"
+    "documentatie": {
+      "tekst": "CBS Open Data 85624NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85624NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welk deel van LLO-deelnemers heeft al een HO-diploma?",
+      "Hoe verhoudt formeel vs. informeel leren zich per opleidingsniveau?",
+      "Wie combineert regulier onderwijs met LLO?"
+    ],
+    "tags": [
+      "leven-lang-leren",
+      "lll",
+      "opleidingsniveau",
+      "formeel-leren",
+      "informeel-leren"
+    ],
+    "_cbs_id": "85624NED",
+    "_thema": "Levenlang leren"
   },
   {
     "leverancier": "CBS",
     "bron": "Leven lang ontwikkelen; bevolking (15 tot 75 jaar)",
     "periode": "2013-2025",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "LLO-deelname in de totale bevolking (15-75 jaar) uitgesplitst naar geslacht, persoonskenmerken en arbeidspositie. Brede tijdreeks voor populatieniveau LLO-beleid.",
     "frequentie": "Jaarlijks",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 85315NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85315NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welk percentage van de Nederlandse bevolking neemt deel aan LLO?", "Hoe verschilt LLO-deelname tussen werkenden en niet-werkenden?", "Is LLO-deelname gelijk verdeeld naar geslacht en leeftijd?"],
-    "tags": ["leven-lang-leren", "lll", "bevolking", "arbeidsmarkt", "tijdreeks", "populatie"],
-    "_cbs_id": "85315NED", "_thema": "Levenlang leren"
+    "documentatie": {
+      "tekst": "CBS Open Data 85315NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85315NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welk percentage van de Nederlandse bevolking neemt deel aan LLO?",
+      "Hoe verschilt LLO-deelname tussen werkenden en niet-werkenden?",
+      "Is LLO-deelname gelijk verdeeld naar geslacht en leeftijd?"
+    ],
+    "tags": [
+      "leven-lang-leren",
+      "lll",
+      "bevolking",
+      "arbeidsmarkt",
+      "tijdreeks",
+      "populatie"
+    ],
+    "_cbs_id": "85315NED",
+    "_thema": "Levenlang leren"
   },
   {
     "leverancier": "CBS",
     "bron": "Leven lang ontwikkelen; werkzame beroepsbevolking, bedrijfskenmerken",
     "periode": "2013-2025",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "LLO-deelname van werkenden uitgesplitst naar bedrijfskenmerken (sector, bedrijfsgrootte). Inzicht in welke sectoren werkgevers investeren in ontwikkeling van personeel.",
     "frequentie": "Jaarlijks",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 85316NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85316NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["In welke sectoren is LLO-deelname het hoogst?", "Investeren grote bedrijven meer in LLO dan kleine?", "Hoe heeft LLO-deelname per sector zich ontwikkeld?"],
-    "tags": ["leven-lang-leren", "lll", "werkgever", "sector", "bedrijfsgrootte", "tijdreeks"],
-    "_cbs_id": "85316NED", "_thema": "Levenlang leren"
+    "documentatie": {
+      "tekst": "CBS Open Data 85316NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85316NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "In welke sectoren is LLO-deelname het hoogst?",
+      "Investeren grote bedrijven meer in LLO dan kleine?",
+      "Hoe heeft LLO-deelname per sector zich ontwikkeld?"
+    ],
+    "tags": [
+      "leven-lang-leren",
+      "lll",
+      "werkgever",
+      "sector",
+      "bedrijfsgrootte",
+      "tijdreeks"
+    ],
+    "_cbs_id": "85316NED",
+    "_thema": "Levenlang leren"
   },
   {
     "leverancier": "CBS",
     "bron": "Onderwijs; uitgaven aan onderwijs en CBS/OESO indicatoren",
     "periode": "1995 - 2024",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Totale uitgaven aan onderwijs in Nederland inclusief OESO-vergelijkingsindicatoren, uitgesplitst naar onderwijssector. Essentieel voor financieel beleidsonderzoek en internationale benchmarking.",
     "frequentie": "Jaarlijks",
     "categorie": "Financiële gegevens",
     "sectie": "Institutionele Data",
-    "documentatie": {"tekst": "CBS Open Data 80393ned", "url": "https://opendata.cbs.nl/ODataApi/OData/80393ned"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel geeft Nederland uit aan onderwijs als percentage van het BBP?", "Hoe verhouden Nederlandse onderwijsuitgaven zich tot het OESO-gemiddelde?", "Welk onderwijssector ontvangt het grootste aandeel overheidsinvesteringen?"],
-    "tags": ["financiering", "uitgaven", "oeso", "benchmark", "internationaal", "alle-niveaus"],
-    "_cbs_id": "80393ned", "_thema": "Financiering en uitgaven onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 80393ned",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/80393ned"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel geeft Nederland uit aan onderwijs als percentage van het BBP?",
+      "Hoe verhouden Nederlandse onderwijsuitgaven zich tot het OESO-gemiddelde?",
+      "Welk onderwijssector ontvangt het grootste aandeel overheidsinvesteringen?"
+    ],
+    "tags": [
+      "financiering",
+      "uitgaven",
+      "oeso",
+      "benchmark",
+      "internationaal",
+      "alle-niveaus"
+    ],
+    "_cbs_id": "80393ned",
+    "_thema": "Financiering en uitgaven onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Overheid; uitgaven aan onderwijs en studietoelagen vanaf 1900",
     "periode": "1900 - 2024",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Historische tijdreeks van overheidsuitgaven aan onderwijs en studietoelagen teruggaand tot 1900. Uniek voor analyse van onderwijsinvesteringen op de zeer lange termijn.",
     "frequentie": "Jaarlijks",
     "categorie": "Financiële gegevens",
     "sectie": "Institutionele Data",
-    "documentatie": {"tekst": "CBS Open Data 80509ned", "url": "https://opendata.cbs.nl/ODataApi/OData/80509ned"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoe zijn overheidsuitgaven aan onderwijs historisch gegroeid?", "Wanneer zijn studietoelagen geïntroduceerd en hoe zijn ze veranderd?", "Hoe verhouden overheidsuitgaven aan PO vs HO zich historisch?"],
-    "tags": ["financiering", "overheid", "historisch", "studietoelage", "langetermijn", "alle-niveaus"],
-    "_cbs_id": "80509ned", "_thema": "Financiering en uitgaven onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 80509ned",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/80509ned"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe zijn overheidsuitgaven aan onderwijs historisch gegroeid?",
+      "Wanneer zijn studietoelagen geïntroduceerd en hoe zijn ze veranderd?",
+      "Hoe verhouden overheidsuitgaven aan PO vs HO zich historisch?"
+    ],
+    "tags": [
+      "financiering",
+      "overheid",
+      "historisch",
+      "studietoelage",
+      "langetermijn",
+      "alle-niveaus"
+    ],
+    "_cbs_id": "80509ned",
+    "_thema": "Financiering en uitgaven onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Uitstromers mbo; arbeidskenmerken na verlaten onderwijs",
     "periode": "2007/'08-2022/'23",
-    "onderwijstype": ["MBO"],
+    "onderwijstype": [
+      "MBO"
+    ],
     "doel": "Arbeidskenmerken van MBO-uitstromers (met en zonder diploma) na verlaten van de opleiding. Kernset voor arbeidsmarktaansluiting en VSV-beleidsevaluatie.",
     "frequentie": "Jaarlijks",
     "categorie": "Alumni en arbeidsmarkt",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85698NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85698NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoe snel vinden MBO-gediplomeerden een baan?", "Verschilt arbeidsmarktpositie sterk tussen uitstromers met en zonder diploma?", "Hoe heeft arbeidsmarktaansluiting zich ontwikkeld over de jaren?"],
-    "tags": ["mbo", "arbeidsmarkt", "uitstroom", "vsv", "diploma", "aansluiting"],
-    "_cbs_id": "85698NED", "_thema": "Van mbo naar arbeidsmarkt"
+    "documentatie": {
+      "tekst": "CBS Open Data 85698NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85698NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe snel vinden MBO-gediplomeerden een baan?",
+      "Verschilt arbeidsmarktpositie sterk tussen uitstromers met en zonder diploma?",
+      "Hoe heeft arbeidsmarktaansluiting zich ontwikkeld over de jaren?"
+    ],
+    "tags": [
+      "mbo",
+      "arbeidsmarkt",
+      "uitstroom",
+      "vsv",
+      "diploma",
+      "aansluiting"
+    ],
+    "_cbs_id": "85698NED",
+    "_thema": "Van mbo naar arbeidsmarkt"
   },
   {
     "leverancier": "CBS",
     "bron": "Uitstromers mbo; arbeidsmarktpositie na verlaten onderwijs",
     "periode": "2007/'08-2022/'23",
-    "onderwijstype": ["MBO"],
+    "onderwijstype": [
+      "MBO"
+    ],
     "doel": "Arbeidsmarktpositie (werkend/werkzoekend/inactief) van MBO-uitstromers na verlaten onderwijs. Inzicht in succesvolle overgang naar de arbeidsmarkt.",
     "frequentie": "Jaarlijks",
     "categorie": "Alumni en arbeidsmarkt",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85696NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85696NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welk percentage MBO-uitstromers is werkzoekend 1 jaar na afstuderen?", "Hoe verschilt arbeidsmarktpositie per MBO-niveau?", "In hoeverre zijn uitstromers zonder diploma vaker werkloos?"],
-    "tags": ["mbo", "arbeidsmarkt", "uitstroom", "werkloosheid", "aansluiting", "vsv"],
-    "_cbs_id": "85696NED", "_thema": "Van mbo naar arbeidsmarkt"
+    "documentatie": {
+      "tekst": "CBS Open Data 85696NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85696NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welk percentage MBO-uitstromers is werkzoekend 1 jaar na afstuderen?",
+      "Hoe verschilt arbeidsmarktpositie per MBO-niveau?",
+      "In hoeverre zijn uitstromers zonder diploma vaker werkloos?"
+    ],
+    "tags": [
+      "mbo",
+      "arbeidsmarkt",
+      "uitstroom",
+      "werkloosheid",
+      "aansluiting",
+      "vsv"
+    ],
+    "_cbs_id": "85696NED",
+    "_thema": "Van mbo naar arbeidsmarkt"
   },
   {
     "leverancier": "CBS",
     "bron": "Uitstromers mbo; uitkering na verlaten onderwijs",
     "periode": "2007/'08-2022/'23",
-    "onderwijstype": ["MBO"],
+    "onderwijstype": [
+      "MBO"
+    ],
     "doel": "Uitkeringsontvangers onder MBO-uitstromers na verlaten onderwijs, uitgesplitst naar leeftijd en diplomastatus. Relevant voor beleid rond voortijdig schoolverlaten en sociale zekerheid.",
     "frequentie": "Jaarlijks",
     "categorie": "Alumni en arbeidsmarkt",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85700NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85700NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoe groot is de kans op een uitkering voor MBO-uitstromers zonder diploma?", "Hoe verschilt uitkeringsafhankelijkheid per leeftijdsgroep bij uitstroom?", "Is de kans op uitkering na verlaten MBO afgenomen?"],
-    "tags": ["mbo", "uitkering", "vsv", "arbeidsmarkt", "sociale-zekerheid", "uitstroom"],
-    "_cbs_id": "85700NED", "_thema": "Van mbo naar arbeidsmarkt"
+    "documentatie": {
+      "tekst": "CBS Open Data 85700NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85700NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe groot is de kans op een uitkering voor MBO-uitstromers zonder diploma?",
+      "Hoe verschilt uitkeringsafhankelijkheid per leeftijdsgroep bij uitstroom?",
+      "Is de kans op uitkering na verlaten MBO afgenomen?"
+    ],
+    "tags": [
+      "mbo",
+      "uitkering",
+      "vsv",
+      "arbeidsmarkt",
+      "sociale-zekerheid",
+      "uitstroom"
+    ],
+    "_cbs_id": "85700NED",
+    "_thema": "Van mbo naar arbeidsmarkt"
   },
   {
     "leverancier": "CBS",
     "bron": "Uitstromers mbo met werk; bedrijfstak na verlaten onderwijs",
     "periode": "2007/'08-2022/'23",
-    "onderwijstype": ["MBO"],
+    "onderwijstype": [
+      "MBO"
+    ],
     "doel": "In welke bedrijfstakken MBO-uitstromers terechtkomen na verlaten van de opleiding. Inzicht in de match tussen MBO-opleidingen en arbeidsmarkt per sector.",
     "frequentie": "Jaarlijks",
     "categorie": "Alumni en arbeidsmarkt",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85699NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85699NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["In welke sectoren werken MBO-gediplomeerden het vaakst?", "Hoe goed sluit de opleiding aan bij de uiteindelijke bedrijfstak?", "Welke sectoren nemen de meeste MBO-uitstromers op?"],
-    "tags": ["mbo", "arbeidsmarkt", "bedrijfstak", "aansluiting", "uitstroom", "sector"],
-    "_cbs_id": "85699NED", "_thema": "Van mbo naar arbeidsmarkt"
+    "documentatie": {
+      "tekst": "CBS Open Data 85699NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85699NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "In welke sectoren werken MBO-gediplomeerden het vaakst?",
+      "Hoe goed sluit de opleiding aan bij de uiteindelijke bedrijfstak?",
+      "Welke sectoren nemen de meeste MBO-uitstromers op?"
+    ],
+    "tags": [
+      "mbo",
+      "arbeidsmarkt",
+      "bedrijfstak",
+      "aansluiting",
+      "uitstroom",
+      "sector"
+    ],
+    "_cbs_id": "85699NED",
+    "_thema": "Van mbo naar arbeidsmarkt"
   },
   {
     "leverancier": "CBS",
     "bron": "Uitstromers mbo werkzaam als werknemers; uurloon na verlaten onderwijs",
     "periode": "2007/'08 - 2022/'23",
-    "onderwijstype": ["MBO"],
+    "onderwijstype": [
+      "MBO"
+    ],
     "doel": "Uurloon van werkzame MBO-uitstromers na verlaten onderwijs, uitgesplitst naar studierichting en bedrijfstak. Inzicht in de financiële arbeidsmarktwaarde van MBO-diploma's.",
     "frequentie": "Jaarlijks",
     "categorie": "Alumni en arbeidsmarkt",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 83832NED", "url": "https://opendata.cbs.nl/ODataApi/OData/83832NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welke MBO-studierichtingen leiden tot het hoogste uurloon?", "Hoe verschilt beloning voor gediplomeerden vs. uitvallers?", "In welke bedrijfstakken verdienen MBO-uitstromers het meest?"],
-    "tags": ["mbo", "loon", "arbeidsmarkt", "studierichting", "bedrijfstak", "rendement"],
-    "_cbs_id": "83832NED", "_thema": "Van mbo naar arbeidsmarkt"
+    "documentatie": {
+      "tekst": "CBS Open Data 83832NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83832NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welke MBO-studierichtingen leiden tot het hoogste uurloon?",
+      "Hoe verschilt beloning voor gediplomeerden vs. uitvallers?",
+      "In welke bedrijfstakken verdienen MBO-uitstromers het meest?"
+    ],
+    "tags": [
+      "mbo",
+      "loon",
+      "arbeidsmarkt",
+      "studierichting",
+      "bedrijfstak",
+      "rendement"
+    ],
+    "_cbs_id": "83832NED",
+    "_thema": "Van mbo naar arbeidsmarkt"
   },
   {
     "leverancier": "CBS",
     "bron": "Uitstromers ho; arbeidskenmerken na verlaten onderwijs",
     "periode": "2006/'07-2022/'23",
-    "onderwijstype": ["HBO", "WO"],
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
     "doel": "Arbeidskenmerken van HO-uitstromers na verlaten onderwijs, uitgesplitst naar geslacht en diplomastatus. Brede set voor arbeidsmarktaansluitingsanalyses in het hoger onderwijs.",
     "frequentie": "Jaarlijks",
     "categorie": "Alumni en arbeidsmarkt",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85777NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85777NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoe snel vinden HO-afgestudeerden een baan?", "Verschilt arbeidsmarktpositie voor internationale vs. Nederlandse studenten?", "Hoe is aansluiting voor gediplomeerden vs. uitvallers?"],
-    "tags": ["ho", "hbo", "wo", "arbeidsmarkt", "uitstroom", "aansluiting", "alumni"],
-    "_cbs_id": "85777NED", "_thema": "Van ho naar arbeidsmarkt"
+    "documentatie": {
+      "tekst": "CBS Open Data 85777NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85777NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe snel vinden HO-afgestudeerden een baan?",
+      "Verschilt arbeidsmarktpositie voor internationale vs. Nederlandse studenten?",
+      "Hoe is aansluiting voor gediplomeerden vs. uitvallers?"
+    ],
+    "tags": [
+      "ho",
+      "hbo",
+      "wo",
+      "arbeidsmarkt",
+      "uitstroom",
+      "aansluiting",
+      "alumni"
+    ],
+    "_cbs_id": "85777NED",
+    "_thema": "Van ho naar arbeidsmarkt"
   },
   {
     "leverancier": "CBS",
     "bron": "Uitstromers ho; arbeidsmarktpositie na verlaten onderwijs",
     "periode": "2006/'07-2022/'23",
-    "onderwijstype": ["HBO", "WO"],
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
     "doel": "Arbeidsmarktpositie van HO-uitstromers uitgesplitst naar geslacht, herkomst en diplomastatus. Inzicht in kansen op werk na HO per doelgroep.",
     "frequentie": "Jaarlijks",
     "categorie": "Alumni en arbeidsmarkt",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85776NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85776NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welk percentage HO-uitstromers is werkzoekend 1 jaar na afstuderen?", "Verschilt arbeidsmarktpositie naar herkomst bij HO?", "Hoe heeft werkloosheid onder HO-uitstromers zich ontwikkeld?"],
-    "tags": ["ho", "hbo", "wo", "arbeidsmarkt", "werkloosheid", "herkomst", "alumni"],
-    "_cbs_id": "85776NED", "_thema": "Van ho naar arbeidsmarkt"
+    "documentatie": {
+      "tekst": "CBS Open Data 85776NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85776NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welk percentage HO-uitstromers is werkzoekend 1 jaar na afstuderen?",
+      "Verschilt arbeidsmarktpositie naar herkomst bij HO?",
+      "Hoe heeft werkloosheid onder HO-uitstromers zich ontwikkeld?"
+    ],
+    "tags": [
+      "ho",
+      "hbo",
+      "wo",
+      "arbeidsmarkt",
+      "werkloosheid",
+      "herkomst",
+      "alumni"
+    ],
+    "_cbs_id": "85776NED",
+    "_thema": "Van ho naar arbeidsmarkt"
   },
   {
     "leverancier": "CBS",
     "bron": "Uitstromers ho met werk; bedrijfstak na verlaten onderwijs",
     "periode": "2006/'07-2022/'2023",
-    "onderwijstype": ["HBO", "WO"],
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
     "doel": "In welke bedrijfstakken werkzame HO-uitstromers terechtkomen, uitgesplitst naar studierichting. Inzicht in aansluiting tussen HO-opleidingen en arbeidsmarkt per sector.",
     "frequentie": "Jaarlijks",
     "categorie": "Alumni en arbeidsmarkt",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85778NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85778NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["In welke sectoren werken HBO-economen het vaakst?", "Welke studierichtingen leiden tot de meest diverse arbeidsmarktuitstroom?", "Hoe is de spreiding over bedrijfstakken veranderd?"],
-    "tags": ["ho", "hbo", "wo", "arbeidsmarkt", "bedrijfstak", "studierichting", "aansluiting"],
-    "_cbs_id": "85778NED", "_thema": "Van ho naar arbeidsmarkt"
+    "documentatie": {
+      "tekst": "CBS Open Data 85778NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85778NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "In welke sectoren werken HBO-economen het vaakst?",
+      "Welke studierichtingen leiden tot de meest diverse arbeidsmarktuitstroom?",
+      "Hoe is de spreiding over bedrijfstakken veranderd?"
+    ],
+    "tags": [
+      "ho",
+      "hbo",
+      "wo",
+      "arbeidsmarkt",
+      "bedrijfstak",
+      "studierichting",
+      "aansluiting"
+    ],
+    "_cbs_id": "85778NED",
+    "_thema": "Van ho naar arbeidsmarkt"
   },
   {
     "leverancier": "CBS",
     "bron": "Uitstromers ho; uitkering na verlaten onderwijs",
     "periode": "2006/'07-2022/'23",
-    "onderwijstype": ["HBO", "WO"],
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
     "doel": "Uitkeringsontvangers onder HO-uitstromers na verlaten onderwijs. Inzicht in kwetsbaarheid op de arbeidsmarkt, ook voor internationale studenten.",
     "frequentie": "Jaarlijks",
     "categorie": "Alumni en arbeidsmarkt",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85779NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85779NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoe groot is de kans op uitkering voor HO-uitvallers?", "Verschilt uitkeringsrisico voor internationale vs. Nederlandse studenten?", "Hoe heeft uitkeringsafhankelijkheid na HO zich ontwikkeld?"],
-    "tags": ["ho", "hbo", "wo", "uitkering", "arbeidsmarkt", "internationaal", "vsv"],
-    "_cbs_id": "85779NED", "_thema": "Van ho naar arbeidsmarkt"
+    "documentatie": {
+      "tekst": "CBS Open Data 85779NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85779NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe groot is de kans op uitkering voor HO-uitvallers?",
+      "Verschilt uitkeringsrisico voor internationale vs. Nederlandse studenten?",
+      "Hoe heeft uitkeringsafhankelijkheid na HO zich ontwikkeld?"
+    ],
+    "tags": [
+      "ho",
+      "hbo",
+      "wo",
+      "uitkering",
+      "arbeidsmarkt",
+      "internationaal",
+      "vsv"
+    ],
+    "_cbs_id": "85779NED",
+    "_thema": "Van ho naar arbeidsmarkt"
   },
   {
     "leverancier": "CBS",
     "bron": "Uitstromers ho werkzaam als werknemers; uurloon na verlaten onderwijs",
     "periode": "2006/'07 - 2022/'23",
-    "onderwijstype": ["HBO", "WO"],
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
     "doel": "Uurloon van werkzame HO-uitstromers uitgesplitst naar studierichting en bedrijfstak. Inzicht in de financiële arbeidsmarktwaarde van HO-diploma's per richting.",
     "frequentie": "Jaarlijks",
     "categorie": "Alumni en arbeidsmarkt",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 83815NED", "url": "https://opendata.cbs.nl/ODataApi/OData/83815NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welke HO-studierichtingen leiden tot het hoogste uurloon?", "Hoe verschilt beloning tussen HBO en WO per vakgebied?", "In welke sectoren verdienen HO-afgestudeerden het meest?"],
-    "tags": ["ho", "hbo", "wo", "loon", "arbeidsmarkt", "studierichting", "alumni", "rendement"],
-    "_cbs_id": "83815NED", "_thema": "Van ho naar arbeidsmarkt"
+    "documentatie": {
+      "tekst": "CBS Open Data 83815NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83815NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welke HO-studierichtingen leiden tot het hoogste uurloon?",
+      "Hoe verschilt beloning tussen HBO en WO per vakgebied?",
+      "In welke sectoren verdienen HO-afgestudeerden het meest?"
+    ],
+    "tags": [
+      "ho",
+      "hbo",
+      "wo",
+      "loon",
+      "arbeidsmarkt",
+      "studierichting",
+      "alumni",
+      "rendement"
+    ],
+    "_cbs_id": "83815NED",
+    "_thema": "Van ho naar arbeidsmarkt"
   },
   {
     "leverancier": "CBS",
     "bron": "Bevolking; hoogstbehaald onderwijsniveau en regio",
     "periode": "2013 - 2024",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Hoogst behaald onderwijsniveau van de bevolking per regio, geslacht en leeftijd. Basisset voor het in kaart brengen van opleidingsniveau per gemeente of provincie.",
     "frequentie": "Jaarlijks",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 85525NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85525NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welk percentage van de bevolking in mijn regio heeft een HO-diploma?", "Hoe verhoudt het opleidingsniveau van mijn gemeente zich tot het landelijk gemiddelde?", "Hoe heeft het opleidingsniveau per regio zich ontwikkeld?"],
-    "tags": ["bevolking", "opleidingsniveau", "regio", "geslacht", "leeftijd", "benchmark"],
-    "_cbs_id": "85525NED", "_thema": "Onderwijsniveau bevolking"
+    "documentatie": {
+      "tekst": "CBS Open Data 85525NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85525NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welk percentage van de bevolking in mijn regio heeft een HO-diploma?",
+      "Hoe verhoudt het opleidingsniveau van mijn gemeente zich tot het landelijk gemiddelde?",
+      "Hoe heeft het opleidingsniveau per regio zich ontwikkeld?"
+    ],
+    "tags": [
+      "bevolking",
+      "opleidingsniveau",
+      "regio",
+      "geslacht",
+      "leeftijd",
+      "benchmark"
+    ],
+    "_cbs_id": "85525NED",
+    "_thema": "Onderwijsniveau bevolking"
   },
   {
     "leverancier": "CBS",
     "bron": "Bevolking; hoogst behaald onderwijsniveau en herkomst",
     "periode": "2013-2025",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Hoogst behaald onderwijsniveau van de bevolking uitgesplitst naar herkomst en geslacht. Inzicht in opleidingskloof tussen herkomstgroepen in Nederland.",
     "frequentie": "Per kwartaal",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 85453NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85453NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoe verschilt het aandeel HO-opgeleiden per herkomstgroep?", "Is de opleidingskloof tussen herkomstgroepen kleiner geworden?", "Hoe groot is het verschil in opleidingsniveau naar geboorteland ouders?"],
-    "tags": ["bevolking", "opleidingsniveau", "herkomst", "kansengelijkheid", "diversiteit"],
-    "_cbs_id": "85453NED", "_thema": "Onderwijsniveau bevolking"
+    "documentatie": {
+      "tekst": "CBS Open Data 85453NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85453NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe verschilt het aandeel HO-opgeleiden per herkomstgroep?",
+      "Is de opleidingskloof tussen herkomstgroepen kleiner geworden?",
+      "Hoe groot is het verschil in opleidingsniveau naar geboorteland ouders?"
+    ],
+    "tags": [
+      "bevolking",
+      "opleidingsniveau",
+      "herkomst",
+      "kansengelijkheid",
+      "diversiteit"
+    ],
+    "_cbs_id": "85453NED",
+    "_thema": "Onderwijsniveau bevolking"
   },
   {
     "leverancier": "CBS",
     "bron": "Bevolking; hoogstbehaald onderwijsniveau en onderwijsrichting",
     "periode": "2013 - 2025",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Hoogst behaald onderwijsniveau én -richting van de bevolking. Inzicht in welke studierichtingen het meest voorkomen in de beroepsbevolking.",
     "frequentie": "Per kwartaal",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 85313NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85313NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welke studierichtingen zijn het meest vertegenwoordigd in de bevolking?", "Hoe groot is het aandeel technisch opgeleiden in de beroepsbevolking?", "Hoe verandert de richting van het opleidingsniveau over de tijd?"],
-    "tags": ["bevolking", "opleidingsniveau", "studierichting", "arbeidsmarkt", "beroepsbevolking"],
-    "_cbs_id": "85313NED", "_thema": "Onderwijsniveau bevolking"
+    "documentatie": {
+      "tekst": "CBS Open Data 85313NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85313NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welke studierichtingen zijn het meest vertegenwoordigd in de bevolking?",
+      "Hoe groot is het aandeel technisch opgeleiden in de beroepsbevolking?",
+      "Hoe verandert de richting van het opleidingsniveau over de tijd?"
+    ],
+    "tags": [
+      "bevolking",
+      "opleidingsniveau",
+      "studierichting",
+      "arbeidsmarkt",
+      "beroepsbevolking"
+    ],
+    "_cbs_id": "85313NED",
+    "_thema": "Onderwijsniveau bevolking"
   },
   {
     "leverancier": "CBS",
     "bron": "Jongeren (15 tot 25 jaar); onderwijsniveau, kenmerken ouders",
     "periode": "2011-2019",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Onderwijsniveau van jongeren (15-25 jaar) in relatie tot kenmerken van de ouders. Inzicht in intergenerationele onderwijsmobiliteit en kansenongelijkheid.",
     "frequentie": "Jaarlijks",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 84337NED", "url": "https://opendata.cbs.nl/ODataApi/OData/84337NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoe sterk bepaalt het opleidingsniveau van ouders dat van hun kinderen?", "Welk aandeel jongeren stijgt boven het opleidingsniveau van hun ouders?", "Is intergenerationele mobiliteit toe- of afgenomen?"],
-    "tags": ["bevolking", "jongeren", "opleidingsniveau", "ouders", "kansengelijkheid", "mobiliteit"],
-    "_cbs_id": "84337NED", "_thema": "Onderwijsniveau bevolking"
+    "documentatie": {
+      "tekst": "CBS Open Data 84337NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/84337NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe sterk bepaalt het opleidingsniveau van ouders dat van hun kinderen?",
+      "Welk aandeel jongeren stijgt boven het opleidingsniveau van hun ouders?",
+      "Is intergenerationele mobiliteit toe- of afgenomen?"
+    ],
+    "tags": [
+      "bevolking",
+      "jongeren",
+      "opleidingsniveau",
+      "ouders",
+      "kansengelijkheid",
+      "mobiliteit"
+    ],
+    "_cbs_id": "84337NED",
+    "_thema": "Onderwijsniveau bevolking"
   },
   {
     "leverancier": "CBS",
     "bron": "Onderwijsniveau van personen en partner",
     "periode": "2013 - 2025",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Onderwijsniveau van personen (25+) in relatie tot dat van hun partner. Inzicht in educatieve homogamie en partnerselectie naar opleidingsniveau.",
     "frequentie": "Jaarlijks",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 85834NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85834NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoe sterk is educatieve homogamie in Nederland?", "Kiezen hoog opgeleiden vaker een partner met zelfde opleidingsniveau?", "Is partnerselectie naar opleiding toe- of afgenomen?"],
-    "tags": ["bevolking", "opleidingsniveau", "partner", "homogamie", "sociologie"],
-    "_cbs_id": "85834NED", "_thema": "Onderwijsniveau bevolking"
+    "documentatie": {
+      "tekst": "CBS Open Data 85834NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85834NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe sterk is educatieve homogamie in Nederland?",
+      "Kiezen hoog opgeleiden vaker een partner met zelfde opleidingsniveau?",
+      "Is partnerselectie naar opleiding toe- of afgenomen?"
+    ],
+    "tags": [
+      "bevolking",
+      "opleidingsniveau",
+      "partner",
+      "homogamie",
+      "sociologie"
+    ],
+    "_cbs_id": "85834NED",
+    "_thema": "Onderwijsniveau bevolking"
   },
   {
     "leverancier": "CBS",
     "bron": "Voortijdig schoolverlaters; geslacht, onderwijssoort en herkomst",
     "periode": "2012/'13 - 2023/'24",
-    "onderwijstype": ["VO", "MBO"],
+    "onderwijstype": [
+      "VO",
+      "MBO"
+    ],
     "doel": "Voortijdig schoolverlaters (VSV) naar geslacht, onderwijssoort en herkomstland. Meetwaarden: aantal VSV.",
     "frequentie": "Jaarlijks",
     "categorie": "Voortijdig schoolverlaten",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85368NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85368NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel voortijdig schoolverlaters zijn er in het MBO in 2023?", "Wat is het aandeel VSV naar herkomst in het voortgezet onderwijs?", "Hoe ontwikkelt het aantal VSV zich over de jaren per onderwijssoort?"],
-    "tags": ["vsv", "voortijdig schoolverlaten", "herkomst", "geslacht", "vo", "mbo"],
-    "_cbs_id": "85368NED", "_thema": "Onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 85368NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85368NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel voortijdig schoolverlaters zijn er in het MBO in 2023?",
+      "Wat is het aandeel VSV naar herkomst in het voortgezet onderwijs?",
+      "Hoe ontwikkelt het aantal VSV zich over de jaren per onderwijssoort?"
+    ],
+    "tags": [
+      "vsv",
+      "voortijdig schoolverlaten",
+      "herkomst",
+      "geslacht",
+      "vo",
+      "mbo"
+    ],
+    "_cbs_id": "85368NED",
+    "_thema": "Onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Voortijdig schoolverlaters (VSV); terugkeer in onderwijs na schoolverlaten",
     "periode": "2007/'08-2021/'22",
-    "onderwijstype": ["VO", "MBO"],
+    "onderwijstype": [
+      "VO",
+      "MBO"
+    ],
     "doel": "Terugkeer van voortijdig schoolverlaters in het onderwijs na schoolverlaten. Uitgesplitst naar persoonskenmerken, onderwijspositie en startkwalificatie.",
     "frequentie": "Jaarlijks",
     "categorie": "Voortijdig schoolverlaten",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85948NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85948NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welk deel van de VSV-ers keert terug naar het onderwijs?", "Hoe lang duurt het voordat VSV-ers terugkeren in het onderwijs?", "Wat is het aandeel VSV-ers dat alsnog een startkwalificatie behaalt?"],
-    "tags": ["vsv", "terugkeer", "startkwalificatie", "rebound", "herinstroom"],
-    "_cbs_id": "85948NED", "_thema": "Onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 85948NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85948NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welk deel van de VSV-ers keert terug naar het onderwijs?",
+      "Hoe lang duurt het voordat VSV-ers terugkeren in het onderwijs?",
+      "Wat is het aandeel VSV-ers dat alsnog een startkwalificatie behaalt?"
+    ],
+    "tags": [
+      "vsv",
+      "terugkeer",
+      "startkwalificatie",
+      "rebound",
+      "herinstroom"
+    ],
+    "_cbs_id": "85948NED",
+    "_thema": "Onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "VSV; arbeidsmarktpositie na verlaten onderwijs",
     "periode": "2007/'08 - 2022/'23",
-    "onderwijstype": ["VO", "MBO"],
+    "onderwijstype": [
+      "VO",
+      "MBO"
+    ],
     "doel": "Arbeidsmarktpositie van voortijdig schoolverlaters na het verlaten van het onderwijs. Uitgesplitst naar persoonskenmerken.",
     "frequentie": "Jaarlijks",
     "categorie": "Voortijdig schoolverlaten",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85859NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85859NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Wat is de arbeidsmarktpositie van VSV-ers 1 jaar na schoolverlaten?", "Hoe verschilt de arbeidsmarktpositie van VSV-ers naar herkomst?"],
-    "tags": ["vsv", "arbeidsmarkt", "arbeidsmarktpositie", "persoonskenmerken"],
-    "_cbs_id": "85859NED", "_thema": "Onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 85859NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85859NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Wat is de arbeidsmarktpositie van VSV-ers 1 jaar na schoolverlaten?",
+      "Hoe verschilt de arbeidsmarktpositie van VSV-ers naar herkomst?"
+    ],
+    "tags": [
+      "vsv",
+      "arbeidsmarkt",
+      "arbeidsmarktpositie",
+      "persoonskenmerken"
+    ],
+    "_cbs_id": "85859NED",
+    "_thema": "Onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "VSV; arbeidskenmerken na verlaten onderwijs",
     "periode": "2007/'08-2022/'23",
-    "onderwijstype": ["VO", "MBO"],
+    "onderwijstype": [
+      "VO",
+      "MBO"
+    ],
     "doel": "Arbeidskenmerken van voortijdig schoolverlaters na het verlaten van het onderwijs. Uitgesplitst naar leeftijd en arbeidskenmerken.",
     "frequentie": "Jaarlijks",
     "categorie": "Voortijdig schoolverlaten",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85860NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85860NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel uur werken VSV-ers gemiddeld na schoolverlaten?", "Wat zijn de arbeidskenmerken van jonge VSV-ers?"],
-    "tags": ["vsv", "arbeidskenmerken", "leeftijd", "werkuren"],
-    "_cbs_id": "85860NED", "_thema": "Onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 85860NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85860NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel uur werken VSV-ers gemiddeld na schoolverlaten?",
+      "Wat zijn de arbeidskenmerken van jonge VSV-ers?"
+    ],
+    "tags": [
+      "vsv",
+      "arbeidskenmerken",
+      "leeftijd",
+      "werkuren"
+    ],
+    "_cbs_id": "85860NED",
+    "_thema": "Onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "VSV; uitkeringen na verlaten onderwijs",
     "periode": "2007/'08-2022/'23",
-    "onderwijstype": ["VO", "MBO"],
+    "onderwijstype": [
+      "VO",
+      "MBO"
+    ],
     "doel": "Uitkeringen ontvangen door voortijdig schoolverlaters na het verlaten van het onderwijs. Uitgesplitst naar persoonskenmerken.",
     "frequentie": "Jaarlijks",
     "categorie": "Voortijdig schoolverlaten",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85861NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85861NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welk deel van de VSV-ers ontvangt een uitkering na schoolverlaten?", "Hoe verschilt uitkeringsafhankelijkheid van VSV-ers naar geslacht?"],
-    "tags": ["vsv", "uitkeringen", "bijstand", "ww"],
-    "_cbs_id": "85861NED", "_thema": "Onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 85861NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85861NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welk deel van de VSV-ers ontvangt een uitkering na schoolverlaten?",
+      "Hoe verschilt uitkeringsafhankelijkheid van VSV-ers naar geslacht?"
+    ],
+    "tags": [
+      "vsv",
+      "uitkeringen",
+      "bijstand",
+      "ww"
+    ],
+    "_cbs_id": "85861NED",
+    "_thema": "Onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "VSV met werk; bedrijfstak na verlaten onderwijs",
     "periode": "2007/'08-2022/'23",
-    "onderwijstype": ["VO", "MBO"],
+    "onderwijstype": [
+      "VO",
+      "MBO"
+    ],
     "doel": "Bedrijfstak van voortijdig schoolverlaters met werk na het verlaten van het onderwijs. Uitgesplitst naar persoonskenmerken.",
     "frequentie": "Jaarlijks",
     "categorie": "Voortijdig schoolverlaten",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 85862NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85862NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["In welke sectoren werken VSV-ers na het verlaten van school?", "Zijn VSV-ers oververtegenwoordigd in bepaalde bedrijfstakken?"],
-    "tags": ["vsv", "bedrijfstak", "sector", "werk"],
-    "_cbs_id": "85862NED", "_thema": "Onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 85862NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85862NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "In welke sectoren werken VSV-ers na het verlaten van school?",
+      "Zijn VSV-ers oververtegenwoordigd in bepaalde bedrijfstakken?"
+    ],
+    "tags": [
+      "vsv",
+      "bedrijfstak",
+      "sector",
+      "werk"
+    ],
+    "_cbs_id": "85862NED",
+    "_thema": "Onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "VSV werkzaam als werknemers; uurloon na verlaten onderwijs",
     "periode": "2007/'08 - 2022/'23",
-    "onderwijstype": ["VO", "MBO"],
+    "onderwijstype": [
+      "VO",
+      "MBO"
+    ],
     "doel": "Uurloon van voortijdig schoolverlaters die als werknemer werkzaam zijn na het verlaten van het onderwijs. Uitgesplitst naar geslacht.",
     "frequentie": "Jaarlijks",
     "categorie": "Voortijdig schoolverlaten",
     "sectie": "Studentgegevens & Onderwijs",
-    "documentatie": {"tekst": "CBS Open Data 84534NED", "url": "https://opendata.cbs.nl/ODataApi/OData/84534NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Wat verdienen VSV-ers per uur vergeleken met gediplomeerden?", "Is er een loonverschil tussen mannelijke en vrouwelijke VSV-ers?"],
-    "tags": ["vsv", "uurloon", "inkomen", "loon", "geslacht"],
-    "_cbs_id": "84534NED", "_thema": "Onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 84534NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/84534NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Wat verdienen VSV-ers per uur vergeleken met gediplomeerden?",
+      "Is er een loonverschil tussen mannelijke en vrouwelijke VSV-ers?"
+    ],
+    "tags": [
+      "vsv",
+      "uurloon",
+      "inkomen",
+      "loon",
+      "geslacht"
+    ],
+    "_cbs_id": "84534NED",
+    "_thema": "Onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Arbeidsdeelname; onderwijsniveau",
     "periode": "2013 - 2025",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Arbeidsparticipatie en werkloosheidspercentage van de bevolking, uitgesplitst naar onderwijsniveau, geslacht en leeftijd.",
     "frequentie": "Per kwartaal",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 85266NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85266NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Wat is de werkloosheid onder laagopgeleiden in 2024?", "Hoe verschilt arbeidsparticipatie naar onderwijsniveau en geslacht?", "Hoe ontwikkelt de arbeidsdeelname van hoogopgeleiden zich kwartaal per kwartaal?"],
-    "tags": ["arbeidsdeelname", "onderwijsniveau", "werkloosheid", "arbeidsparticipatie", "geslacht", "leeftijd"],
-    "_cbs_id": "85266NED", "_thema": "Onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 85266NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85266NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Wat is de werkloosheid onder laagopgeleiden in 2024?",
+      "Hoe verschilt arbeidsparticipatie naar onderwijsniveau en geslacht?",
+      "Hoe ontwikkelt de arbeidsdeelname van hoogopgeleiden zich kwartaal per kwartaal?"
+    ],
+    "tags": [
+      "arbeidsdeelname",
+      "onderwijsniveau",
+      "werkloosheid",
+      "arbeidsparticipatie",
+      "geslacht",
+      "leeftijd"
+    ],
+    "_cbs_id": "85266NED",
+    "_thema": "Onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Binding met de arbeidsmarkt, beroeps- en niet-beroepsbevolking; onderwijs",
     "periode": "2013 - 2025",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Binding van de bevolking met de arbeidsmarkt, uitgesplitst naar onderwijsniveau, onderwijsrichting, geslacht en leeftijd.",
     "frequentie": "Per kwartaal",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 85650NED", "url": "https://opendata.cbs.nl/ODataApi/OData/85650NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Welke onderwijsrichtingen leiden tot de sterkste binding met de arbeidsmarkt?", "Hoe verschilt arbeidsmarktbinding naar opleidingsniveau en geslacht?"],
-    "tags": ["arbeidsmarkt", "binding", "onderwijsniveau", "onderwijsrichting", "geslacht"],
-    "_cbs_id": "85650NED", "_thema": "Onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 85650NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85650NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welke onderwijsrichtingen leiden tot de sterkste binding met de arbeidsmarkt?",
+      "Hoe verschilt arbeidsmarktbinding naar opleidingsniveau en geslacht?"
+    ],
+    "tags": [
+      "arbeidsmarkt",
+      "binding",
+      "onderwijsniveau",
+      "onderwijsrichting",
+      "geslacht"
+    ],
+    "_cbs_id": "85650NED",
+    "_thema": "Onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Vacatures; overheid en onderwijs",
     "periode": "1997 - 2025",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Aantal vacatures in de sectoren overheid en onderwijs per kwartaal. Geschikt voor analyse van arbeidsmarktspanning en lerarentekort.",
     "frequentie": "Per kwartaal",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 80857NED", "url": "https://opendata.cbs.nl/ODataApi/OData/80857NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel vacatures zijn er in het onderwijs in het laatste kwartaal?", "Hoe ontwikkelt het lerarentekort zich over de jaren?", "Vergelijk vacatures in het onderwijs met die bij de overheid."],
-    "tags": ["vacatures", "onderwijs", "lerarentekort", "arbeidsmarkt", "overheid"],
-    "_cbs_id": "80857NED", "_thema": "Onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 80857NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/80857NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel vacatures zijn er in het onderwijs in het laatste kwartaal?",
+      "Hoe ontwikkelt het lerarentekort zich over de jaren?",
+      "Vergelijk vacatures in het onderwijs met die bij de overheid."
+    ],
+    "tags": [
+      "vacatures",
+      "onderwijs",
+      "lerarentekort",
+      "arbeidsmarkt",
+      "overheid"
+    ],
+    "_cbs_id": "80857NED",
+    "_thema": "Onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Gezonde levensverwachting; geslacht, leeftijd en onderwijsniveau",
     "periode": "2007/2010 - 2021/2024",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Gezonde levensverwachting, ervaren gezondheid en beperkingen, uitgesplitst naar geslacht, leeftijd en onderwijsniveau.",
     "frequentie": "Tweejaarlijks",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 84842NED", "url": "https://opendata.cbs.nl/ODataApi/OData/84842NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Hoeveel jaar langer leven hoogopgeleiden in goede gezondheid?", "Wat is het verschil in gezonde levensverwachting naar opleidingsniveau?"],
-    "tags": ["gezonde levensverwachting", "onderwijsniveau", "gezondheid", "ongelijkheid"],
-    "_cbs_id": "84842NED", "_thema": "Onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 84842NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/84842NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel jaar langer leven hoogopgeleiden in goede gezondheid?",
+      "Wat is het verschil in gezonde levensverwachting naar opleidingsniveau?"
+    ],
+    "tags": [
+      "gezonde levensverwachting",
+      "onderwijsniveau",
+      "gezondheid",
+      "ongelijkheid"
+    ],
+    "_cbs_id": "84842NED",
+    "_thema": "Onderwijs"
   },
   {
     "leverancier": "CBS",
     "bron": "Ziekteverzuim volgens werknemers; herkomst en onderwijsniveau",
     "periode": "2014-2025",
-    "onderwijstype": ["Allen"],
+    "onderwijstype": [
+      "Allen"
+    ],
     "doel": "Ziekteverzuimpercentage, verzuimduur en verzuimfrequentie van werknemers, uitgesplitst naar herkomst en onderwijsniveau.",
     "frequentie": "Jaarlijks",
     "categorie": "Algemene data overzichten",
     "sectie": "Algemene Data Overzichten",
-    "documentatie": {"tekst": "CBS Open Data 86011NED", "url": "https://opendata.cbs.nl/ODataApi/OData/86011NED"},
-    "repositories": [], "publieke_producten": [],
-    "voorbeeldvragen": ["Wat is het ziekteverzuim onder laagopgeleiden in 2024?", "Verschilt het ziekteverzuim naar herkomst en onderwijsniveau?", "Hoe ontwikkelt het verzuimpercentage zich naar opleidingsniveau?"],
-    "tags": ["ziekteverzuim", "onderwijsniveau", "herkomst", "arbeidsmarkt"],
-    "_cbs_id": "86011NED", "_thema": "Onderwijs"
+    "documentatie": {
+      "tekst": "CBS Open Data 86011NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/86011NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Wat is het ziekteverzuim onder laagopgeleiden in 2024?",
+      "Verschilt het ziekteverzuim naar herkomst en onderwijsniveau?",
+      "Hoe ontwikkelt het verzuimpercentage zich naar opleidingsniveau?"
+    ],
+    "tags": [
+      "ziekteverzuim",
+      "onderwijsniveau",
+      "herkomst",
+      "arbeidsmarkt"
+    ],
+    "_cbs_id": "86011NED",
+    "_thema": "Onderwijs"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Arbeidsmarktsituatie jongeren (15 tot 27 jaar); regio",
+    "periode": "2005-2024",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Jongeren op de arbeidsmarkt: werkzaam/niet-werkzaam, onderwijsvolgend/niet-onderwijsvolgend, uitkering/geen uitkering. Uitgesplitst naar regio (indeling 2025). Meetwaarden: arbeidsdeelname, onderwijsdeelname, uitkering, UWV-registratie.",
+    "frequentie": "Eenmalig",
+    "categorie": "Arbeidsmarkt",
+    "sectie": "Arbeidsmarkt jongeren",
+    "documentatie": {
+      "tekst": "CBS Open Data 86223NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/86223NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "86223NED",
+    "_thema": "Arbeidsmarkt jongeren",
+    "tags": [
+      "jongeren",
+      "arbeidsmarkt",
+      "werkzaam",
+      "onderwijsvolgend",
+      "uitkering",
+      "regio",
+      "uwv"
+    ],
+    "voorbeeldvragen": [
+      "Hoeveel jongeren zijn niet werkzaam en niet onderwijsvolgend per regio?",
+      "Wat is het aandeel jongeren met een uitkering per provincie in 2024?",
+      "Hoe verschilt de arbeidsdeelname van jongeren tussen stedelijke en landelijke regio's?"
+    ]
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Arbeidsmarktsituatie jongeren (15 tot 27 jaar); persoonskenmerken",
+    "periode": "2005-2024",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Jongeren op de arbeidsmarkt uitgesplitst naar geslacht, leeftijd en positie in huishouden. Meetwaarden: onderwijsdeelname, kenmerken arbeid, uitkering, UWV-registratie.",
+    "frequentie": "Perjaar",
+    "categorie": "Arbeidsmarkt",
+    "sectie": "Arbeidsmarkt jongeren",
+    "documentatie": {
+      "tekst": "CBS Open Data 84973NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/84973NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "84973NED",
+    "_thema": "Arbeidsmarkt jongeren",
+    "tags": [
+      "jongeren",
+      "arbeidsmarkt",
+      "geslacht",
+      "leeftijd",
+      "uitkering",
+      "onderwijsdeelname"
+    ],
+    "voorbeeldvragen": [
+      "Wat is het verschil in arbeidsdeelname tussen mannelijke en vrouwelijke jongeren?",
+      "Hoeveel jongeren van 15-18 jaar zijn niet werkzaam en niet onderwijsvolgend?",
+      "Hoe ontwikkelt het aandeel uitkeringsontvangers onder jongeren zich over de jaren?"
+    ]
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Arbeidsdeelname; jongeren",
+    "periode": "2013-2025",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Beroepsbevolking, werkloosheidspercentage en arbeidsparticipatie van jongeren (15 tot 25 jaar), uitgesplitst naar geslacht en onderwijsdeelname. Kwartaalcijfers.",
+    "frequentie": "Perkwartaal",
+    "categorie": "Arbeidsmarkt",
+    "sectie": "Arbeidsmarkt jongeren",
+    "documentatie": {
+      "tekst": "CBS Open Data 85263NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85263NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85263NED",
+    "_thema": "Arbeidsmarkt jongeren",
+    "tags": [
+      "jongeren",
+      "arbeidsmarkt",
+      "arbeidsdeelname",
+      "werkloosheid",
+      "beroepsbevolking",
+      "kwartaal"
+    ],
+    "voorbeeldvragen": [
+      "Wat is het werkloosheidspercentage onder jongeren per kwartaal in 2024?",
+      "Hoe verhoudt arbeidsparticipatie van onderwijsvolgende jongeren tot niet-onderwijsvolgende?",
+      "Wat is de trend in arbeidsdeelname van jongeren de afgelopen 5 jaar?"
+    ]
   }
 ]
