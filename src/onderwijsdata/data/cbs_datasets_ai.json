@@ -2758,5 +2758,530 @@
       "Hoe verhoudt arbeidsparticipatie van onderwijsvolgende jongeren tot niet-onderwijsvolgende?",
       "Wat is de trend in arbeidsdeelname van jongeren de afgelopen 5 jaar?"
     ]
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Arbeidsdeelname; kerncijfers",
+    "periode": "2013-2025",
+    "onderwijstype": [],
+    "doel": "Kerncijfers over arbeidsparticipatie, werkloosheid en niet-beroepsbevolking voor Nederland, uitgesplitst naar geslacht en leeftijd. Onmisbaar voor beleidsmonitoring van de arbeidsmarkt.",
+    "frequentie": "Kwartaal",
+    "categorie": "Arbeidsmarkt",
+    "sectie": "Arbeidsmarkt",
+    "documentatie": {
+      "tekst": "CBS Open Data 85264NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85264NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe hoog is de werkloosheid in Nederland in 2024?",
+      "Wat is de arbeidsparticipatie van vrouwen versus mannen?",
+      "Hoe heeft de werkloosheid zich ontwikkeld na de coronacrisis?"
+    ],
+    "tags": [
+      "arbeidsmarkt",
+      "arbeidsparticipatie",
+      "werkloosheid",
+      "beroepsbevolking",
+      "geslacht",
+      "leeftijd"
+    ],
+    "_cbs_id": "85264NED",
+    "_thema": "Arbeidsmarkt"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Werkloosheidsduur; per kwartaal en jaar",
+    "periode": "2013-2025",
+    "onderwijstype": [],
+    "doel": "Duur van werkloosheid uitgesplitst naar geslacht, leeftijd en herkomst. Inzicht in hardnekkige versus conjuncturele werkloosheid — relevant voor activeringsprogramma's en sociale zekerheid.",
+    "frequentie": "Kwartaal",
+    "categorie": "Arbeidsmarkt",
+    "sectie": "Arbeidsmarkt",
+    "documentatie": {
+      "tekst": "CBS Open Data 85312NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85312NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe lang zijn werklozen gemiddeld werkloos in Nederland?",
+      "Welke groepen hebben de langste werkloosheidsduur?",
+      "Is langdurige werkloosheid toegenomen of afgenomen?"
+    ],
+    "tags": [
+      "arbeidsmarkt",
+      "werkloosheid",
+      "werkloosheidsduur",
+      "langdurige-werkloosheid",
+      "herkomst"
+    ],
+    "_cbs_id": "85312NED",
+    "_thema": "Arbeidsmarkt"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Arbeidsdeelname, vanaf 1969",
+    "periode": "1969-2021",
+    "onderwijstype": [],
+    "doel": "Lange tijdreeks van arbeidsdeelname in Nederland vanaf 1969. Geschikt voor structurele trendanalyse van de arbeidsmarkt over meerdere decennia.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Arbeidsmarkt",
+    "sectie": "Arbeidsmarkt",
+    "documentatie": {
+      "tekst": "CBS Open Data 83752NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83752NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe is de arbeidsparticipatie van vrouwen veranderd sinds de jaren '70?",
+      "Wat is de langetermijntrend in werkloosheid in Nederland?",
+      "Wanneer was de arbeidsdeelname het hoogst in Nederland?"
+    ],
+    "tags": [
+      "arbeidsmarkt",
+      "arbeidsparticipatie",
+      "tijdreeks",
+      "historisch",
+      "langetermijn"
+    ],
+    "_cbs_id": "83752NED",
+    "_thema": "Arbeidsmarkt"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Arbeidsdeelname; gemeenten",
+    "periode": "2014-2023",
+    "onderwijstype": [],
+    "doel": "Arbeidsparticipatie en werkloosheid per gemeente. Biedt inzicht in regionale arbeidsmarktverschillen — bruikbaar voor beleid op het gebied van regionale economie en sociale zekerheid.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Arbeidsmarkt",
+    "sectie": "Arbeidsmarkt",
+    "documentatie": {
+      "tekst": "CBS Open Data 86008NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/86008NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "In welke gemeenten is de werkloosheid het hoogst?",
+      "Hoe verschilt de arbeidsparticipatie tussen Amsterdam en Eindhoven?",
+      "Welke regio's hebben de sterkste stijging in arbeidsdeelname?"
+    ],
+    "tags": [
+      "arbeidsmarkt",
+      "arbeidsparticipatie",
+      "gemeente",
+      "regio",
+      "regionaal"
+    ],
+    "_cbs_id": "86008NED",
+    "_thema": "Arbeidsmarkt"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Bevolkingsontwikkeling; per maand",
+    "periode": "1995-2026",
+    "onderwijstype": [],
+    "doel": "Maandelijkse ontwikkeling van de Nederlandse bevolking: geboorten, sterfgevallen, immigratie en emigratie. Biedt actuele en historische demografische kerncijfers voor heel Nederland.",
+    "frequentie": "Maandelijks",
+    "categorie": "Demografie",
+    "sectie": "Demografie",
+    "documentatie": {
+      "tekst": "CBS Open Data 83474NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/83474NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel mensen wonen er momenteel in Nederland?",
+      "Hoe groot is de bevolkingsgroei in Nederland dit jaar?",
+      "Wat is het verschil tussen geboorte- en sterftecijfer in 2023?"
+    ],
+    "tags": [
+      "demografie",
+      "bevolking",
+      "geboorten",
+      "sterfte",
+      "migratie",
+      "bevolkingsgroei"
+    ],
+    "_cbs_id": "83474NED",
+    "_thema": "Demografie"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Bevolkingsontwikkeling; regio per maand",
+    "periode": "2002-2026",
+    "onderwijstype": [],
+    "doel": "Maandelijkse bevolkingsontwikkeling per regio (gemeente, provincie, COROP). Inzicht in regionale demografische trends: krimp, groei, migratiebewegingen.",
+    "frequentie": "Maandelijks",
+    "categorie": "Demografie",
+    "sectie": "Demografie",
+    "documentatie": {
+      "tekst": "CBS Open Data 37230ned",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/37230ned"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welke provincies groeien het snelst qua bevolking?",
+      "Welke gemeenten krimpen demografisch?",
+      "Hoe groot is de bevolking in de Randstad versus de rest van Nederland?"
+    ],
+    "tags": [
+      "demografie",
+      "bevolking",
+      "regio",
+      "gemeente",
+      "provincie",
+      "krimp",
+      "groei"
+    ],
+    "_cbs_id": "37230ned",
+    "_thema": "Demografie"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Immi- en emigratie; nationaliteit",
+    "periode": "2010-2024",
+    "onderwijstype": [],
+    "doel": "Immigratie- en emigratiecijfers per nationaliteit. Inzicht in migratiestromen naar Nederland — relevant voor integratiebeleid, arbeidsmarkt en demografische planning.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Demografie",
+    "sectie": "Demografie",
+    "documentatie": {
+      "tekst": "CBS Open Data 85451NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85451NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel mensen immigreerden er in 2023 naar Nederland?",
+      "Uit welke landen komen de meeste immigranten?",
+      "Hoe heeft de netto migratie zich ontwikkeld over de afgelopen tien jaar?"
+    ],
+    "tags": [
+      "demografie",
+      "migratie",
+      "immigratie",
+      "emigratie",
+      "nationaliteit",
+      "bevolking"
+    ],
+    "_cbs_id": "85451NED",
+    "_thema": "Demografie"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Bevolking; leeftijd, burgerlijke staat",
+    "periode": "1950-2025",
+    "onderwijstype": [],
+    "doel": "Lange tijdreeks van de Nederlandse bevolking naar leeftijd en burgerlijke staat. Toont vergrijzing, ontgroening en huishoudenssamenstelling over meer dan 70 jaar.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Demografie",
+    "sectie": "Demografie",
+    "documentatie": {
+      "tekst": "CBS Open Data 7461bev",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/7461bev"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe is de leeftijdsopbouw van de Nederlandse bevolking veranderd?",
+      "Hoe sterk is de vergrijzing in Nederland?",
+      "Hoeveel 65-plussers telt Nederland in 2025?"
+    ],
+    "tags": [
+      "demografie",
+      "bevolking",
+      "leeftijd",
+      "vergrijzing",
+      "ontgroening",
+      "historisch"
+    ],
+    "_cbs_id": "7461bev",
+    "_thema": "Demografie"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Bevolking; kerncijfers 2025-2070",
+    "periode": "2025-2070",
+    "onderwijstype": [],
+    "doel": "Meest recente CBS-bevolkingsprognose met kerncijfers tot 2070: totale bevolking, geboorten, sterfte en migratie. Essentieel voor langetermijnbeleid op het gebied van wonen, zorg, pensioenen en arbeidsmarkt.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Demografie",
+    "sectie": "Bevolkingsprognoses",
+    "documentatie": {
+      "tekst": "CBS Open Data 86244NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/86244NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe groot is de Nederlandse bevolking in 2050 volgens de CBS-prognose?",
+      "Wanneer bereikt de Nederlandse bevolking haar piek?",
+      "Hoe ontwikkelt de bevolkingsgroei zich richting 2070?"
+    ],
+    "tags": [
+      "demografie",
+      "bevolkingsprognose",
+      "prognose",
+      "bevolking",
+      "2070",
+      "langetermijn"
+    ],
+    "_cbs_id": "86244NED",
+    "_thema": "Demografie"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Bevolking; leeftijd 2025-2070",
+    "periode": "2025-2070",
+    "onderwijstype": [],
+    "doel": "Bevolkingsprognose 2025-2070 uitgesplitst naar leeftijdsgroep. Toont de verwachte vergrijzing en ontgroening in detail — cruciaal voor zorgprognoses, AOW en intergenerationele beleidsanalyse.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Demografie",
+    "sectie": "Bevolkingsprognoses",
+    "documentatie": {
+      "tekst": "CBS Open Data 86041NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/86041NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe ontwikkelt het aandeel 65-plussers zich tot 2070?",
+      "Wanneer is de vergrijzing in Nederland op zijn hoogtepunt?",
+      "Hoe groot is de werkende bevolking (20-65) in 2040?"
+    ],
+    "tags": [
+      "demografie",
+      "bevolkingsprognose",
+      "vergrijzing",
+      "leeftijd",
+      "aow",
+      "zorg",
+      "2070"
+    ],
+    "_cbs_id": "86041NED",
+    "_thema": "Demografie"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Huishoudens; kerncijfers 2025-2070",
+    "periode": "2025-2070",
+    "onderwijstype": [],
+    "doel": "Prognose van het aantal en type huishoudens in Nederland tot 2070. Relevant voor woningbouwopgave, sociale voorzieningen en beleidsplanning op het gebied van wonen en leefomgeving.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Demografie",
+    "sectie": "Bevolkingsprognoses",
+    "documentatie": {
+      "tekst": "CBS Open Data 86030NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/86030NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel huishoudens telt Nederland in 2040?",
+      "Neemt het aantal eenpersoonshuishoudens toe?",
+      "Hoeveel extra woningen zijn er nodig gezien de huishoudensprognose?"
+    ],
+    "tags": [
+      "demografie",
+      "huishoudens",
+      "wonen",
+      "prognose",
+      "woningbouw",
+      "2070"
+    ],
+    "_cbs_id": "86030NED",
+    "_thema": "Demografie"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Overheidsfinanciën; kerncijfers",
+    "periode": "1995-2024",
+    "onderwijstype": [],
+    "doel": "Kerncijfers over de overheidsfinanciën: inkomsten, uitgaven, overheidstekort en staatsschuld als percentage van het BBP. Essentieel voor analyses van begrotingsbeleid en financiële sturing.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Overheidsfinanciën",
+    "sectie": "Overheidsfinanciën",
+    "documentatie": {
+      "tekst": "CBS Open Data 85968NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85968NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe groot is de staatsschuld van Nederland als percentage van het BBP?",
+      "Hoe zijn de overheidsuitgaven en -inkomsten zich de afgelopen tien jaar ontwikkeld?",
+      "Voldoet Nederland aan de Europese begrotingsnormen (3% tekort, 60% schuld)?"
+    ],
+    "tags": [
+      "overheidsfinanciën",
+      "staatsschuld",
+      "begrotingstekort",
+      "overheidsinkomsten",
+      "overheidsuitgaven",
+      "bbp",
+      "eu-norm"
+    ],
+    "_cbs_id": "85968NED",
+    "_thema": "Overheidsfinanciën"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "BBP; kwartalen, waarden",
+    "periode": "1995-2025",
+    "onderwijstype": [],
+    "doel": "Bruto binnenlands product (BBP) per kwartaal in lopende en constante prijzen. Toont de economische groei van Nederland — onmisbaar als context voor beleidseffectiviteit en financiële sturing.",
+    "frequentie": "Kwartaal",
+    "categorie": "Macro-economie",
+    "sectie": "Macro-economie",
+    "documentatie": {
+      "tekst": "CBS Open Data 85879NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85879NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe hoog is het BBP van Nederland?",
+      "Hoe heeft de economische groei zich ontwikkeld na COVID-19?",
+      "In welke kwartalen kromp de Nederlandse economie?"
+    ],
+    "tags": [
+      "macro-economie",
+      "bbp",
+      "economische-groei",
+      "conjunctuur",
+      "kwartaal"
+    ],
+    "_cbs_id": "85879NED",
+    "_thema": "Macro-economie"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Welvaart van huishoudens; kerncijfers",
+    "periode": "2011-2024",
+    "onderwijstype": [],
+    "doel": "Kerncijfers over inkomen, vermogen en bestedingen van huishoudens. Biedt inzicht in de welvaartsontwikkeling van Nederlandse huishoudens — relevant voor brede-welvaartmonitoring.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Brede welvaart",
+    "sectie": "Brede welvaart",
+    "documentatie": {
+      "tekst": "CBS Open Data 86272NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/86272NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe heeft het besteedbaar inkomen van huishoudens zich ontwikkeld?",
+      "Is de vermogensongelijkheid in Nederland toegenomen?",
+      "Hoeveel procent van de huishoudens heeft een vermogen boven €100.000?"
+    ],
+    "tags": [
+      "brede-welvaart",
+      "inkomen",
+      "vermogen",
+      "huishoudens",
+      "bestedingen",
+      "ongelijkheid"
+    ],
+    "_cbs_id": "86272NED",
+    "_thema": "Brede welvaart"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Armoede van personen",
+    "periode": "2018-2024",
+    "onderwijstype": [],
+    "doel": "Aandeel personen in armoede uitgesplitst naar persoonskenmerken. Inzicht in bestaanszekerheid en inkomensproblematiek — relevant voor sociaal beleid en brede-welvaartdoelstellingen.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Brede welvaart",
+    "sectie": "Brede welvaart",
+    "documentatie": {
+      "tekst": "CBS Open Data 86127NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/86127NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel mensen leven in armoede in Nederland?",
+      "Is het aandeel personen in armoede toe- of afgenomen?",
+      "Welke groepen zijn het meest kwetsbaar voor armoede?"
+    ],
+    "tags": [
+      "brede-welvaart",
+      "armoede",
+      "bestaanszekerheid",
+      "inkomen",
+      "sociaal-beleid"
+    ],
+    "_cbs_id": "86127NED",
+    "_thema": "Brede welvaart"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Levensverwachting vanaf 1861",
+    "periode": "1861-2024",
+    "onderwijstype": [],
+    "doel": "Levensverwachting bij geboorte en op hogere leeftijden voor mannen en vrouwen, vanaf 1861. Toont de langetermijnontwikkeling van gezondheid in Nederland — kernindicator voor brede welvaart.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Brede welvaart",
+    "sectie": "Brede welvaart",
+    "documentatie": {
+      "tekst": "CBS Open Data 37360ned",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/37360ned"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe is de levensverwachting in Nederland veranderd de afgelopen 100 jaar?",
+      "Hoe groot is het verschil in levensverwachting tussen mannen en vrouwen?",
+      "Wat was het effect van COVID-19 op de levensverwachting?"
+    ],
+    "tags": [
+      "brede-welvaart",
+      "levensverwachting",
+      "gezondheid",
+      "historisch",
+      "geslacht"
+    ],
+    "_cbs_id": "37360ned",
+    "_thema": "Brede welvaart"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Regionale kerncijfers Nederland",
+    "periode": "1995-2026",
+    "onderwijstype": [],
+    "doel": "Brede set van kerncijfers per gemeente, wijk en buurt: bevolking, woningen, arbeid, inkomen en meer. Geschikt voor vergelijkende regionale analyses en monitor brede welvaart op lokaal niveau.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Regionaal",
+    "sectie": "Regionaal",
+    "documentatie": {
+      "tekst": "CBS Open Data 70072ned",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/70072ned"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe verhouden gemeenten in de Randstad zich qua bevolking en inkomen?",
+      "Welke regio's hebben de hoogste werkloosheid én laagste opleidingsniveau?",
+      "Hoe groot zijn regionale verschillen in gemiddeld inkomen?"
+    ],
+    "tags": [
+      "regionaal",
+      "gemeente",
+      "kerncijfers",
+      "bevolking",
+      "arbeid",
+      "inkomen",
+      "brede-welvaart"
+    ],
+    "_cbs_id": "70072ned",
+    "_thema": "Regionaal"
   }
 ]
