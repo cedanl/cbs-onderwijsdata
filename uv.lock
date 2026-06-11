@@ -606,22 +606,26 @@ name = "onderwijsdata"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
-    { name = "anthropic" },
     { name = "httpx" },
+]
+
+[package.optional-dependencies]
+analyse = [
     { name = "matplotlib" },
     { name = "pandas" },
+]
+catalogus = [
+    { name = "anthropic" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "anthropic", specifier = ">=0.87.0" },
+    { name = "anthropic", marker = "extra == 'catalogus'", specifier = ">=0.87.0" },
     { name = "httpx" },
-    { name = "matplotlib" },
-    { name = "pandas" },
+    { name = "matplotlib", marker = "extra == 'analyse'" },
+    { name = "pandas", marker = "extra == 'analyse'" },
 ]
-
-[package.metadata.requires-dev]
-dev = []
+provides-extras = ["analyse", "catalogus"]
 
 [[package]]
 name = "packaging"

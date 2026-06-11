@@ -10,30 +10,71 @@ API     = "https://opendata.cbs.nl/ODataApi/OData"
 
 # Onderwijsthema IDs in de CBS catalogus
 ONDERWIJS_THEMES = [
+    # Originele themes
     352, 353, 354, 355, 356, 357, 358,
     359, 360, 361, 362, 363, 364, 365,
     366, 367, 368, 369, 370, 371, 372, 373,
+    # Nieuwe themes (2024+)
+    376,                               # Voortijdig schoolverlaters
+    480, 481, 482,                     # Onderwijs en arbeidsmarkt, VSV
+    319, 320, 321, 322, 324,           # Regionaal onderwijs
+    905, 906, 907, 909,                # Onderwijs, PO, VO
+    912, 913, 914, 915, 916,           # MBO
+    917, 918, 919, 920,                # Hoger onderwijs
+    922, 924, 925, 926, 928, 929, 934, # Volwasseneneducatie, Financiering, AM, VSV
 ]
 
 # CBS sectie → categorie mapping (naar data.json conventies)
 SECTIE_MAP = {
-    "Primair onderwijs":              ("Primair Onderwijs",              "Studentgegevens & Onderwijs"),
-    "Voortgezet onderwijs":           ("Voortgezet Onderwijs",           "Studentgegevens & Onderwijs"),
-    "Middelbaar beroepsonderwijs":    ("Inschrijvingen en Studievoortgang", "Studentgegevens & Onderwijs"),
-    "Hoger onderwijs":                ("Inschrijvingen en Studievoortgang", "Studentgegevens & Onderwijs"),
-    "Financiering en uitgaven onderwijs": ("Financiële gegevens",        "Institutionele Data"),
-    "Onderwijs en arbeidsmarkt":      ("Alumni en arbeidsmarkt",         "Studentgegevens & Onderwijs"),
-    "Onderwijsniveau bevolking":      ("Algemene data overzichten",      "Algemene Data Overzichten"),
+    "Primair onderwijs":                    ("Primair Onderwijs",                "Studentgegevens & Onderwijs"),
+    "Voortgezet onderwijs":                 ("Voortgezet Onderwijs",             "Studentgegevens & Onderwijs"),
+    "Middelbaar beroepsonderwijs":          ("Inschrijvingen en Studievoortgang", "Studentgegevens & Onderwijs"),
+    "Hoger onderwijs":                      ("Inschrijvingen en Studievoortgang", "Studentgegevens & Onderwijs"),
+    "Financiering en uitgaven onderwijs":   ("Financiële gegevens",              "Institutionele Data"),
+    "Onderwijs en arbeidsmarkt":            ("Alumni en arbeidsmarkt",            "Studentgegevens & Onderwijs"),
+    "Onderwijsniveau bevolking":            ("Algemene data overzichten",         "Algemene Data Overzichten"),
+    "Voortijdig schoolverlaters (vsv)":     ("Alumni en arbeidsmarkt",            "Studentgegevens & Onderwijs"),
+    "Voortijdig schoolverlaters (VSV)":     ("Alumni en arbeidsmarkt",            "Studentgegevens & Onderwijs"),
+    "MBO'ers naar arbeidsmarkt":            ("Alumni en arbeidsmarkt",            "Studentgegevens & Onderwijs"),
+    "MBO gediplomeerden naar arbeidsmarkt": ("Alumni en arbeidsmarkt",            "Studentgegevens & Onderwijs"),
+    "Wetenschappelijk onderwijs (wo)":      ("Inschrijvingen en Studievoortgang", "Studentgegevens & Onderwijs"),
+    "HBO en WO: deeltijd":                  ("Inschrijvingen en Studievoortgang", "Studentgegevens & Onderwijs"),
+    "HBO en WO: voltijd":                   ("Inschrijvingen en Studievoortgang", "Studentgegevens & Onderwijs"),
+    "MBO Studenten":                        ("Inschrijvingen en Studievoortgang", "Studentgegevens & Onderwijs"),
+    "MBO gediplomeerden":                   ("Alumni en arbeidsmarkt",            "Studentgegevens & Onderwijs"),
+    "MBO stromen":                          ("Inschrijvingen en Studievoortgang", "Studentgegevens & Onderwijs"),
+    "MBO studievoortgang":                  ("Inschrijvingen en Studievoortgang", "Studentgegevens & Onderwijs"),
+    "Vo leerlingen":                        ("Voortgezet Onderwijs",             "Studentgegevens & Onderwijs"),
+    "VO leerlingen":                        ("Voortgezet Onderwijs",             "Studentgegevens & Onderwijs"),
+    "Volwasseneneducatie":                  ("Inschrijvingen en Studievoortgang", "Studentgegevens & Onderwijs"),
+    "Woongemeenten; leerlingen, studenten": ("Regionaal",                         "Studentgegevens & Onderwijs"),
+    "Onderwijs":                            ("Algemene data overzichten",         "Algemene Data Overzichten"),
 }
 
 ONDERWIJSTYPE_MAP = {
-    "Primair onderwijs":              ["PO"],
-    "Voortgezet onderwijs":           ["VO"],
-    "Middelbaar beroepsonderwijs":    ["MBO"],
-    "Hoger onderwijs":                ["HBO", "WO"],
-    "Financiering en uitgaven onderwijs": ["Allen"],
-    "Onderwijs en arbeidsmarkt":      ["Allen"],
-    "Onderwijsniveau bevolking":      ["Allen"],
+    "Primair onderwijs":                    ["PO"],
+    "Voortgezet onderwijs":                 ["VO"],
+    "Vo leerlingen":                        ["VO"],
+    "VO leerlingen":                        ["VO"],
+    "Middelbaar beroepsonderwijs":          ["MBO"],
+    "MBO Studenten":                        ["MBO"],
+    "MBO gediplomeerden":                   ["MBO"],
+    "MBO stromen":                          ["MBO"],
+    "MBO studievoortgang":                  ["MBO"],
+    "MBO'ers naar arbeidsmarkt":            ["MBO"],
+    "MBO gediplomeerden naar arbeidsmarkt": ["MBO"],
+    "Hoger onderwijs":                      ["HBO", "WO"],
+    "Wetenschappelijk onderwijs (wo)":      ["WO"],
+    "HBO en WO: deeltijd":                  ["HBO", "WO"],
+    "HBO en WO: voltijd":                   ["HBO", "WO"],
+    "Financiering en uitgaven onderwijs":   ["Allen"],
+    "Onderwijs en arbeidsmarkt":            ["Allen"],
+    "Onderwijsniveau bevolking":            ["Allen"],
+    "Voortijdig schoolverlaters (vsv)":     ["Allen"],
+    "Voortijdig schoolverlaters (VSV)":     ["Allen"],
+    "Volwasseneneducatie":                  ["Allen"],
+    "Woongemeenten; leerlingen, studenten": ["Allen"],
+    "Onderwijs":                            ["Allen"],
 }
 
 
@@ -77,42 +118,41 @@ def fetch_properties(dataset_id):
 
 def to_data_json_entry(dataset_id, info, dims, topics, theme_name):
     """Converteer CBS metadata naar data.json formaat."""
-    title   = info.get("Title", "").strip()
-    period  = info.get("RecordCount", "")
-    freq    = info.get("Frequency", "").strip() or "Jaarlijks"
-    shortdesc = info.get("ShortDescription", "").strip()
-
-    # Periode string ophalen
+    title      = info.get("Title", "").strip()
+    freq       = info.get("Frequency", "").strip() or "Jaarlijks"
     period_str = info.get("Period", "").strip()
+    modified   = str(info.get("Modified", ""))[:10]
 
-    # Doel: titel + dimensies als context
     doel_parts = [title]
     if dims:
         doel_parts.append(f"Uitgesplitst naar: {', '.join(dims[:4])}.")
     if topics:
         doel_parts.append(f"Meetwaarden: {', '.join(topics[:3])}.")
-    doel = " ".join(doel_parts)
 
     categorie, sectie = SECTIE_MAP.get(theme_name, ("Algemene data overzichten", "Algemene Data Overzichten"))
     onderwijstype     = ONDERWIJSTYPE_MAP.get(theme_name, ["Allen"])
 
+    archief = "stopgezet" in freq.lower() or (bool(modified) and modified < "2021-01-01")
+
     return {
-        "leverancier": "CBS",
-        "bron": title,
-        "periode": period_str,
-        "onderwijstype": onderwijstype,
-        "doel": doel,
-        "frequentie": freq,
-        "categorie": categorie,
-        "sectie": sectie,
+        "leverancier":      "CBS",
+        "bron":             title,
+        "periode":          period_str,
+        "onderwijstype":    onderwijstype,
+        "doel":             " ".join(doel_parts),
+        "frequentie":       freq,
+        "categorie":        categorie,
+        "sectie":           sectie,
         "documentatie": {
             "tekst": f"CBS Open Data {dataset_id}",
-            "url": f"https://opendata.cbs.nl/ODataApi/OData/{dataset_id}",
+            "url":   f"https://opendata.cbs.nl/ODataApi/OData/{dataset_id}",
         },
-        "repositories": [],
+        "repositories":       [],
         "publieke_producten": [],
-        "_cbs_id": dataset_id,
-        "_thema": theme_name,
+        "_cbs_id":            dataset_id,
+        "_thema":             theme_name,
+        "_archief":           archief,
+        "_laatste_update":    modified or None,
     }
 
 

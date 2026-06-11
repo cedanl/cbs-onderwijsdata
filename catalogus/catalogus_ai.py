@@ -44,6 +44,21 @@ def submit():
     with open(DATASETS) as f:
         datasets = json.load(f)
 
+    # Haal bestaande AI-data op om te voorkomen dat al-verrijkte entries opnieuw worden ingediend
+    try:
+        with open(OUTPUT) as f:
+            existing_ai = {e["_cbs_id"] for e in json.load(f) if e.get("samenvatting") or e.get("tags")}
+    except FileNotFoundError:
+        existing_ai = set()
+
+    to_process = [e for e in datasets if e["_cbs_id"] not in existing_ai]
+    skipped    = len(datasets) - len(to_process)
+    print(f"Totaal: {len(datasets)} | Al verrijkt (overgeslagen): {skipped} | In te dienen: {len(to_process)}")
+
+    if not to_process:
+        print("Niets te doen — alle entries zijn al verrijkt.")
+        return
+
     client = anthropic.Anthropic()
 
     requests = [
@@ -56,7 +71,7 @@ def submit():
                 messages=[{"role": "user", "content": make_prompt(entry)}],
             ),
         )
-        for entry in datasets
+        for entry in to_process
     ]
 
     batch = client.messages.batches.create(requests=requests)
@@ -98,22 +113,46 @@ def collect():
             except json.JSONDecodeError:
                 print(f"  JSON parse fout voor {result.custom_id}: {text[:100]}")
 
-    # Verrijken
+    # Merge: bestaande AI-data + nieuwe resultaten
     with open(DATASETS) as f:
         datasets = json.load(f)
 
+    # Laad bestaande AI-output als basis (behoudt eerder verrijkte entries)
+    try:
+        with open(OUTPUT) as f:
+            ai_by_id = {e["_cbs_id"]: e for e in json.load(f)}
+    except FileNotFoundError:
+        ai_by_id = {}
+
+    # Kopieer basisvelden uit cbs_datasets.json (bijv. nieuw toegevoegde _archief/_laatste_update)
+    base_by_id = {e["_cbs_id"]: e for e in datasets}
+    for cbs_id, entry in ai_by_id.items():
+        if cbs_id in base_by_id:
+            for field in ("_archief", "_laatste_update", "periode", "frequentie"):
+                entry[field] = base_by_id[cbs_id].get(field)
+
+    # Verwerk nieuwe batch-resultaten
+    new_count = 0
+    for cbs_id, ai in results.items():
+        base = base_by_id.get(cbs_id, {})
+        entry = dict(base)
+        entry["doel"]            = ai.get("samenvatting", base.get("doel", ""))
+        entry["samenvatting"]    = ai.get("samenvatting", "")
+        entry["voorbeeldvragen"] = ai.get("voorbeeldvragen", [])
+        entry["tags"]            = ai.get("tags", [])
+        ai_by_id[cbs_id] = entry
+        new_count += 1
+
+    # Sla op in volgorde van cbs_datasets.json
+    output_list = []
     for entry in datasets:
         cbs_id = entry["_cbs_id"]
-        if cbs_id in results:
-            ai = results[cbs_id]
-            entry["doel"]             = ai.get("samenvatting", entry["doel"])
-            entry["voorbeeldvragen"]  = ai.get("voorbeeldvragen", [])
-            entry["tags"]             = ai.get("tags", [])
+        output_list.append(ai_by_id.get(cbs_id, entry))
 
     with open(OUTPUT, "w", encoding="utf-8") as f:
-        json.dump(datasets, f, ensure_ascii=False, indent=2)
+        json.dump(output_list, f, ensure_ascii=False, indent=2)
 
-    print(f"\nKlaar: {len(results)}/{len(datasets)} datasets verrijkt → {OUTPUT}")
+    print(f"\nKlaar: {new_count} nieuw verrijkt | {len(output_list)} totaal → {OUTPUT}")
 
 
 if __name__ == "__main__":
