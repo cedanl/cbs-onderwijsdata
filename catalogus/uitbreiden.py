@@ -131,6 +131,8 @@ def build_entry(dataset_id, info, dims, topics, theme_name):
         "_thema":             theme_name,
         "_archief":           is_archief(modified, freq),
         "_laatste_update":    modified or None,
+        "_dimensies":         dims,
+        "_meetwaarden":       topics,
     }
 
 
@@ -235,12 +237,14 @@ def main():
     # Bouw lookup voor bestaande AI-data
     ai_by_id = {e["_cbs_id"]: e for e in ai_existing}
 
-    # Voeg _archief/_laatste_update toe aan bestaande AI-entries
+    # Voeg _archief/_laatste_update en nieuwe metadata toe aan bestaande AI-entries
     for entry in ai_existing:
         src = next((e for e in existing if e["_cbs_id"] == entry["_cbs_id"]), None)
         if src:
-            entry["_archief"]        = src.get("_archief", False)
+            entry["_archief"]     = src.get("_archief", False)
             entry["_laatste_update"] = src.get("_laatste_update")
+            entry["_dimensies"]   = src.get("_dimensies", [])
+            entry["_meetwaarden"] = src.get("_meetwaarden", [])
 
     # Voeg stubs toe voor nieuwe entries (zonder AI-verrijking nog)
     stubs_added = 0

@@ -153,6 +153,8 @@ def to_data_json_entry(dataset_id, info, dims, topics, theme_name):
         "_thema":             theme_name,
         "_archief":           archief,
         "_laatste_update":    modified or None,
+        "_dimensies":         dims,
+        "_meetwaarden":       topics,
     }
 
 
