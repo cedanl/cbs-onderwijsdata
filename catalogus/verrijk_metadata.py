@@ -13,9 +13,7 @@ import sys
 import time
 from pathlib import Path
 
-# helpers.py staat in catalogus/ naast dit script
 sys.path.insert(0, str(Path(__file__).parent))
-from helpers import _infer_perioden_formaat
 
 from onderwijsdata import client
 
@@ -64,6 +62,50 @@ def bepaal_geo_niveau(dataset_id: str, props: list[dict]) -> list[str]:
         return []
 
 
+def bepaal_perioden_formaat(dataset_id: str, dims: list[str]) -> list[str]:
+    """Detecteer periode-formaat via echte CBS Perioden-dimensiewaarden."""
+    if "Perioden" not in dims:
+        return []
+    try:
+        waarden = client.dimension(dataset_id, "Perioden")
+        time.sleep(0.05)
+        eerste_key = next(iter(waarden), None)
+        if not eerste_key:
+            return []
+        for fmt in ("SJ", "JJ", "KW", "MM"):
+            if fmt in eerste_key:
+                return [fmt]
+        return []
+    except Exception:
+        return []
+
+
+def herbereken_perioden(datasets: list[dict]) -> int:
+    """
+    Tweede pass: update _perioden_formaat voor entries die al verrijkt zijn
+    maar nog de heuristische waarde hebben (van vóór deze fix).
+    Retourneert het aantal gewijzigde entries.
+    """
+    kandidaten = [
+        e for e in datasets
+        if "_dimensies" in e and "Perioden" in e.get("_dimensies", [])
+    ]
+    print(f"\nFase 2: perioden-formaat herberekenen voor {len(kandidaten)} entries met Perioden-dimensie...")
+    changed = 0
+    for n, entry in enumerate(kandidaten, 1):
+        dataset_id = entry["_cbs_id"]
+        pf = bepaal_perioden_formaat(dataset_id, entry["_dimensies"])
+        old = entry.get("_perioden_formaat", [])
+        label = f"[{n}/{len(kandidaten)}] {dataset_id}"
+        if pf != old:
+            print(f"  {label}: {old} → {pf}")
+            entry["_perioden_formaat"] = pf
+            changed += 1
+        else:
+            print(f"  {label}: {pf} (ongewijzigd)")
+    return changed
+
+
 def verrijk_entry(entry: dict, i: int, total: int) -> bool:
     """
     Verrijk een entry via CBS API.
@@ -90,10 +132,7 @@ def verrijk_entry(entry: dict, i: int, total: int) -> bool:
     topics = [p["Title"].strip() for p in props if p.get("Type") == "Topic"]
 
     geo_niveau       = bepaal_geo_niveau(dataset_id, props)
-    perioden_formaat = _infer_perioden_formaat(
-        entry.get("frequentie", ""),
-        entry.get("_thema", ""),
-    )
+    perioden_formaat = bepaal_perioden_formaat(dataset_id, dims)
 
     entry["_dimensies"]        = dims
     entry["_meetwaarden"]      = topics
@@ -119,6 +158,13 @@ def main():
     with open(DATASETS, "w", encoding="utf-8") as f:
         json.dump(datasets, f, ensure_ascii=False, indent=2)
     print(f"Opgeslagen: {DATASETS}")
+
+    # ── Fase 2: herbereken perioden-formaat via echte CBS API ─────────────────
+    pf_changed = herbereken_perioden(datasets)
+    if pf_changed:
+        with open(DATASETS, "w", encoding="utf-8") as f:
+            json.dump(datasets, f, ensure_ascii=False, indent=2)
+        print(f"Perioden-formaat bijgewerkt voor {pf_changed} entries — {DATASETS} opgeslagen")
 
     # ── Propageer naar AI-JSON ────────────────────────────────────────────────
     with open(AI_DATASETS, encoding="utf-8") as f:

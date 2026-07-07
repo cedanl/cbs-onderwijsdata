@@ -1307,7 +1307,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -1350,7 +1350,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -1426,7 +1426,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -2032,7 +2032,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -2151,7 +2151,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -2335,7 +2335,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -2372,7 +2372,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -2408,7 +2408,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -2444,7 +2444,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -3625,9 +3625,7 @@
       "LV zonder GALI-beperkingen"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": [
-      "SJ"
-    ]
+    "_perioden_formaat": []
   },
   {
     "leverancier": "CBS",
@@ -3725,7 +3723,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -3768,7 +3766,7 @@
       "landsdeel"
     ],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -3806,7 +3804,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -3991,7 +3989,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -4040,7 +4038,7 @@
       "landsdeel"
     ],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -4173,7 +4171,7 @@
       "landsdeel"
     ],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -4206,7 +4204,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -4258,7 +4256,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -4290,7 +4288,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -4359,7 +4357,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -4414,7 +4412,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -4690,7 +4688,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -4763,7 +4761,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -4797,9 +4795,7 @@
       "Levensverwachting"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": [
-      "SJ"
-    ]
+    "_perioden_formaat": []
   },
   {
     "leverancier": "CBS",
@@ -5157,7 +5153,7 @@
       "landsdeel"
     ],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -5193,7 +5189,7 @@
     ],
     "_geo_niveau": [],
     "_perioden_formaat": [
-      "SJ"
+      "JJ"
     ]
   },
   {
@@ -5230,7 +5226,9 @@
       "Jongeren (15 tot 27 jaar)"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5271,7 +5269,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5312,7 +5312,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5353,7 +5355,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5394,7 +5398,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5435,7 +5441,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5476,7 +5484,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5517,7 +5527,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5558,7 +5570,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5602,7 +5616,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5646,7 +5662,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5688,7 +5706,9 @@
       "Werkloosheidspercentage"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5762,7 +5782,9 @@
       "Loon van werknemers, Wetensch.onderw."
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5796,7 +5818,9 @@
       "Totaal personen (15 tot 65 jaar)"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5832,7 +5856,9 @@
       "Personen met startkwalificatie onbekend"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5865,7 +5891,9 @@
       "Personen met startkwalificatie (%)"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5914,7 +5942,9 @@
       "Bbl, niveau 4"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5963,7 +5993,9 @@
       "Bbl, niveau 4"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -6011,7 +6043,9 @@
       "Bbl, niveau 4"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -6060,7 +6094,9 @@
       "Bbl, niveau 4"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -6114,7 +6150,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -6169,7 +6207,9 @@
       "Bbl niveau 4"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -6224,7 +6264,9 @@
       "Bbl niveau 4"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -6418,7 +6460,9 @@
       "Schoolverlaters met startkwalificatie"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -6456,7 +6500,9 @@
       "Schoolverlaters met startkwalificatie"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -6508,7 +6554,9 @@
       "Extranei"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -6546,7 +6594,9 @@
       "Schoolverlaters met startkwalificatie"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -6597,7 +6647,9 @@
       "Extranei"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -6648,7 +6700,9 @@
       "Extranei"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -6686,7 +6740,9 @@
       "Schoolverlaters met startkwalificatie"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -7007,7 +7063,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -7048,7 +7106,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -7653,7 +7713,9 @@
       "provincie",
       "gemeente"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -7686,7 +7748,9 @@
       "Leerlingen-studenten"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -7773,7 +7837,9 @@
       "Startkwalificatie, onbekend"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -7839,7 +7905,9 @@
       "Aantal dagen ziekteverzuim"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -7895,7 +7963,9 @@
       "Deeltoets informatieverwerking"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -7938,7 +8008,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -7978,7 +8050,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -8015,7 +8089,9 @@
       "Studievaardigheden"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -8052,7 +8128,9 @@
       "Studievaardigheden"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -8105,7 +8183,9 @@
       "14 jaar of ouder"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -8154,7 +8234,9 @@
       "18 jaar of ouder"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -8211,7 +8293,9 @@
       "Praktijkonderwijs"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -8267,7 +8351,9 @@
       "Praktijkonderwijs"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -8450,7 +8536,9 @@
       "Vmbo-b assistentopl. intersect. progr."
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -8492,7 +8580,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -8527,7 +8617,9 @@
       "Leerlingen in %"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -8582,7 +8674,9 @@
       "Praktijkonderwijs"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -8724,7 +8818,9 @@
       "Vmbo-b leerwerktraject techniek"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -8771,7 +8867,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -8820,7 +8918,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -8869,7 +8969,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -8913,7 +9015,9 @@
       "Voortgezette opleiding"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -8961,7 +9065,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -9001,7 +9107,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -9036,7 +9144,9 @@
       "Mbo-studenten"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -9070,7 +9180,9 @@
       "Mbo-studenten"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -9110,7 +9222,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -9159,7 +9273,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -9207,7 +9323,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -9256,7 +9374,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -9300,7 +9420,9 @@
       "Voortgezette opleiding"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -9334,7 +9456,9 @@
       "Gediplomeerden mbo"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -9369,7 +9493,9 @@
       "Gediplomeerden mbo"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -9429,7 +9555,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -9719,7 +9847,9 @@
       "Bbl: niveau 4"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -9773,7 +9903,9 @@
       "Bbl, niveau 4"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -9821,7 +9953,9 @@
       "Bbl: niveau 4"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -9874,7 +10008,9 @@
       "Bbl, niveau 4"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -9910,7 +10046,9 @@
       "Studenten mbo"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -10838,7 +10976,9 @@
       "Studieduur in maanden"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -10874,7 +11014,9 @@
       "Studieduur in maanden"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -10963,7 +11105,9 @@
       "In jaar 9"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11003,7 +11147,9 @@
       "Vervolgopleidingen"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11043,7 +11189,9 @@
       "Vervolgopleidingen"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11077,7 +11225,9 @@
       "Gediplomeerden"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11112,7 +11262,9 @@
       "Gediplomeerden"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11148,7 +11300,9 @@
       "Gediplomeerden"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11184,7 +11338,9 @@
       "Gediplomeerden"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11234,7 +11390,9 @@
       "Onbekend"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11277,7 +11435,9 @@
       "Gepromoveerden"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11312,7 +11472,9 @@
       "Studieduur in maanden"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11344,7 +11506,9 @@
       "Gepromoveerden"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11432,7 +11596,9 @@
       "In jaar 9"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11469,7 +11635,9 @@
       "Studieduur in maanden"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11566,7 +11734,9 @@
       "In jaar 10 of meer"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11683,7 +11853,9 @@
       "In jaar 9"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11780,7 +11952,9 @@
       "In jaar 10"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11896,7 +12070,9 @@
       "In jaar 9"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11993,7 +12169,9 @@
       "In jaar 10 of meer"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12110,7 +12288,9 @@
       "In jaar 9"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12208,7 +12388,9 @@
       "In jaar 10"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12325,7 +12507,9 @@
       "In jaar 9"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12367,7 +12551,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12409,7 +12595,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12441,7 +12629,9 @@
       "Deelnemers"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12508,7 +12698,9 @@
       "Cursusdeelnemers (relatief)"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12590,7 +12782,9 @@
       "Meer dan 12 maanden in %"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12636,7 +12830,9 @@
       "Alfabetisering (inclusief overig)"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12672,7 +12868,9 @@
       "Vavo deelnemers vwo"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12708,7 +12906,9 @@
       "Vavo gediplomeerden vwo"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12746,7 +12946,9 @@
       "Overige baten"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12788,7 +12990,9 @@
       "Aantal leerlingen/studenten"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12858,7 +13062,9 @@
       "Aan niet-onderwijsinstellingen"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12913,7 +13119,9 @@
       "Percentage van bruto binnenlands product"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12987,7 +13195,9 @@
       "Kapitalisatiefactor"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13178,7 +13388,9 @@
       "Saldo inv. inventaris en apparatuur"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13219,7 +13431,9 @@
       "Uitgaven van provincies"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13275,7 +13489,9 @@
       "Wo-deeltijd"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13315,7 +13531,9 @@
       "Wo-voltijd"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13359,7 +13577,9 @@
       "Wo-voltijd"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13401,7 +13621,9 @@
       "Werkloosheidspercentage"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13442,7 +13664,9 @@
       "Werkloosheidspercentage"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13496,7 +13720,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13544,7 +13770,9 @@
       "Bbl, niveau 4"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13593,7 +13821,9 @@
       "Bbl, niveau 4"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13642,7 +13872,9 @@
       "Bbl, niveau 4"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13691,7 +13923,9 @@
       "Bbl, niveau 4"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13727,7 +13961,9 @@
       "Uitstromers mbo"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13763,7 +13999,9 @@
       "Uitstromers mbo"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13799,7 +14037,9 @@
       "Totaal uitstromers met werk"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13835,7 +14075,9 @@
       "Uitstromers mbo"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13869,7 +14111,9 @@
       "Bevolking"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "KW"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13904,7 +14148,9 @@
       "Bevolking"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "KW"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13938,7 +14184,9 @@
       "Bevolking"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "KW"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13973,7 +14221,9 @@
       "Jongeren 15 tot 25 jaar"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -14054,7 +14304,9 @@
       "Onbekend"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -14086,7 +14338,9 @@
       "Personen 25 jaar en ouder met partner"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -14119,7 +14373,9 @@
       "Jongeren 18 tot 25 jaar"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "JJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -14165,7 +14421,9 @@
       "gemeente",
       "landsdeel"
     ],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -14236,7 +14494,9 @@
       "Percentage geslaagde examenkandidaten"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -14271,6 +14531,8 @@
       "Percentage VSV-ers onderzoekspopulatie"
     ],
     "_geo_niveau": [],
-    "_perioden_formaat": []
+    "_perioden_formaat": [
+      "SJ"
+    ]
   }
 ]
