@@ -133,7 +133,28 @@ def build_entry(dataset_id, info, dims, topics, theme_name):
         "_laatste_update":    modified or None,
         "_dimensies":         dims,
         "_meetwaarden":       topics,
+        "_perioden_formaat":  _infer_perioden_formaat(freq, theme_name),
     }
+
+
+_KALENDERJAAR_THEMAS = frozenset({
+    "financiering en uitgaven onderwijs",
+    "onderwijs en arbeidsmarkt",
+    "onderwijsniveau bevolking",
+})
+
+
+def _infer_perioden_formaat(freq: str, theme_name: str) -> list[str]:
+    freq_lower = freq.lower()
+    if "stopgezet" in freq_lower:
+        return []
+    if "maand" in freq_lower:
+        return ["MM"]
+    if "kwartaal" in freq_lower:
+        return ["KW"]
+    if theme_name.lower() in _KALENDERJAAR_THEMAS:
+        return ["JJ"]
+    return ["SJ"]
 
 
 def fetch_modified_bulk(ids: list) -> dict:
@@ -243,8 +264,9 @@ def main():
         if src:
             entry["_archief"]     = src.get("_archief", False)
             entry["_laatste_update"] = src.get("_laatste_update")
-            entry["_dimensies"]   = src.get("_dimensies", [])
-            entry["_meetwaarden"] = src.get("_meetwaarden", [])
+            entry["_dimensies"]        = src.get("_dimensies", [])
+            entry["_meetwaarden"]      = src.get("_meetwaarden", [])
+            entry["_perioden_formaat"] = src.get("_perioden_formaat", [])
 
     # Voeg stubs toe voor nieuwe entries (zonder AI-verrijking nog)
     stubs_added = 0
