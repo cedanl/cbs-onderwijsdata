@@ -10,6 +10,7 @@ Gebruik:
 """
 import json
 import httpx
+from helpers import _infer_geo_niveau, _infer_perioden_formaat, _KALENDERJAAR_THEMAS
 
 CATALOG     = "https://opendata.cbs.nl/ODataCatalog"
 API         = "https://opendata.cbs.nl/ODataApi/OData"
@@ -131,6 +132,10 @@ def build_entry(dataset_id, info, dims, topics, theme_name):
         "_thema":             theme_name,
         "_archief":           is_archief(modified, freq),
         "_laatste_update":    modified or None,
+        "_dimensies":         dims,
+        "_meetwaarden":       topics,
+        "_perioden_formaat":  _infer_perioden_formaat(freq, theme_name),
+        "_geo_niveau":        _infer_geo_niveau(title, dims),
     }
 
 
@@ -235,12 +240,22 @@ def main():
     # Bouw lookup voor bestaande AI-data
     ai_by_id = {e["_cbs_id"]: e for e in ai_existing}
 
-    # Voeg _archief/_laatste_update toe aan bestaande AI-entries
+    # Voeg _archief/_laatste_update en nieuwe metadata toe aan bestaande AI-entries
     for entry in ai_existing:
         src = next((e for e in existing if e["_cbs_id"] == entry["_cbs_id"]), None)
         if src:
-            entry["_archief"]        = src.get("_archief", False)
+            entry["_archief"]     = src.get("_archief", False)
             entry["_laatste_update"] = src.get("_laatste_update")
+            entry["_dimensies"]        = src.get("_dimensies", [])
+            entry["_meetwaarden"]      = src.get("_meetwaarden", [])
+            entry["_perioden_formaat"] = src.get("_perioden_formaat", [])
+            entry["_geo_niveau"]       = src.get("_geo_niveau", [])
+            geo = src.get("_geo_niveau", [])
+            tags = entry.get("tags", [])
+            for geo_tag in ("corop", "provincie", "gemeente"):
+                if geo_tag in geo and geo_tag not in tags:
+                    tags.append(geo_tag)
+            entry["tags"] = tags
 
     # Voeg stubs toe voor nieuwe entries (zonder AI-verrijking nog)
     stubs_added = 0

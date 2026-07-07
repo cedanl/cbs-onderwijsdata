@@ -4,6 +4,7 @@ compatibel met cedanl/overzicht-landelijke-databronnen.
 """
 import json
 import httpx
+from helpers import _infer_geo_niveau, _infer_perioden_formaat, _KALENDERJAAR_THEMAS
 
 CATALOG = "https://opendata.cbs.nl/ODataCatalog"
 API     = "https://opendata.cbs.nl/ODataApi/OData"
@@ -153,6 +154,10 @@ def to_data_json_entry(dataset_id, info, dims, topics, theme_name):
         "_thema":             theme_name,
         "_archief":           archief,
         "_laatste_update":    modified or None,
+        "_dimensies":         dims,
+        "_meetwaarden":       topics,
+        "_perioden_formaat":  _infer_perioden_formaat(freq, theme_name),
+        "_geo_niveau":        _infer_geo_niveau(title, dims),
     }
 
 
