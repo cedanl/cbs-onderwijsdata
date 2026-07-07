@@ -134,7 +134,23 @@ def build_entry(dataset_id, info, dims, topics, theme_name):
         "_dimensies":         dims,
         "_meetwaarden":       topics,
         "_perioden_formaat":  _infer_perioden_formaat(freq, theme_name),
+        "_geo_niveau":        _infer_geo_niveau(title, dims),
     }
+
+
+def _infer_geo_niveau(bron: str, dims: list[str]) -> list[str]:
+    if "RegioS" not in dims:
+        return []
+    bron_lower = bron.lower()
+    if "regiokenmerken" in bron_lower:
+        return ["landelijk", "corop", "provincie", "gemeente"]
+    if "woonregio" in bron_lower:
+        return ["landelijk", "provincie", "gemeente"]
+    if "gemeente" in bron_lower:
+        return ["gemeente"]
+    if "provincie" in bron_lower:
+        return ["provincie"]
+    return ["landelijk", "provincie"]
 
 
 _KALENDERJAAR_THEMAS = frozenset({
@@ -267,6 +283,13 @@ def main():
             entry["_dimensies"]        = src.get("_dimensies", [])
             entry["_meetwaarden"]      = src.get("_meetwaarden", [])
             entry["_perioden_formaat"] = src.get("_perioden_formaat", [])
+            entry["_geo_niveau"]       = src.get("_geo_niveau", [])
+            geo = src.get("_geo_niveau", [])
+            tags = entry.get("tags", [])
+            for geo_tag in ("corop", "provincie", "gemeente"):
+                if geo_tag in geo and geo_tag not in tags:
+                    tags.append(geo_tag)
+            entry["tags"] = tags
 
     # Voeg stubs toe voor nieuwe entries (zonder AI-verrijking nog)
     stubs_added = 0

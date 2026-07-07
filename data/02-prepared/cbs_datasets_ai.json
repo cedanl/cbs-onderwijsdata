@@ -26,13 +26,32 @@
       "regio",
       "geslacht",
       "uitstroom",
-      "alle-niveaus"
+      "alle-niveaus",
+      "provincie",
+      "gemeente"
     ],
     "_cbs_id": "85702NED",
     "_thema": "Onderwijs",
     "_archief": false,
     "_laatste_update": "2026-04-14",
-    "samenvatting": "Toont het aantal gediplomeerden per onderwijssoort en woonregio, uitgesplitst naar geslacht. Geschikt voor instellingen die regionale diplomastromen en man/vrouw-verhouding bij uitstroom willen monitoren."
+    "samenvatting": "Toont het aantal gediplomeerden per onderwijssoort en woonregio, uitgesplitst naar geslacht. Geschikt voor instellingen die regionale diplomastromen en man/vrouw-verhouding bij uitstroom willen monitoren.",
+    "_dimensies": [
+      "Onderwijssoort",
+      "Geslacht",
+      "RegioS",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Gediplomeerden"
+    ],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "_geo_niveau": [
+      "landelijk",
+      "provincie",
+      "gemeente"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -61,13 +80,32 @@
       "regio",
       "geslacht",
       "alle-niveaus",
-      "overzicht"
+      "overzicht",
+      "provincie",
+      "gemeente"
     ],
     "_cbs_id": "85701NED",
     "_thema": "Onderwijs",
     "_archief": false,
     "_laatste_update": "2026-04-14",
-    "samenvatting": "Geeft een overzicht van alle ingeschreven leerlingen en studenten per onderwijssoort en woonregio, uitgesplitst naar geslacht. Ideaal als startpunt voor een breed beeld van onderwijsdeelname per regio."
+    "samenvatting": "Geeft een overzicht van alle ingeschreven leerlingen en studenten per onderwijssoort en woonregio, uitgesplitst naar geslacht. Ideaal als startpunt voor een breed beeld van onderwijsdeelname per regio.",
+    "_dimensies": [
+      "Onderwijssoort",
+      "Geslacht",
+      "RegioS",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Leerlingen en studenten"
+    ],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "_geo_niveau": [
+      "landelijk",
+      "provincie",
+      "gemeente"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -424,13 +462,32 @@
       "capaciteitsplanning",
       "vmbo",
       "havo",
-      "vwo"
+      "vwo",
+      "provincie",
+      "gemeente"
     ],
     "_cbs_id": "85380NED",
     "_thema": "Vo leerlingen",
     "_archief": false,
     "_laatste_update": "2026-04-02",
-    "samenvatting": "Actuele leerlingenaantallen in het voortgezet onderwijs per onderwijssoort, leerjaar en woonregio. Geschikt voor regionale capaciteitsplanning en instroomanalyses."
+    "samenvatting": "Actuele leerlingenaantallen in het voortgezet onderwijs per onderwijssoort, leerjaar en woonregio. Geschikt voor regionale capaciteitsplanning en instroomanalyses.",
+    "_dimensies": [
+      "Onderwijssoort",
+      "Leerjaar",
+      "RegioS",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Leerlingen"
+    ],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "_geo_niveau": [
+      "landelijk",
+      "provincie",
+      "gemeente"
+    ]
   },
   {
     "leverancier": "CBS",
@@ -466,7 +523,21 @@
     "_thema": "Vo leerlingen",
     "_archief": false,
     "_laatste_update": "2026-04-02",
-    "samenvatting": "VO-leerlingen uitgesplitst naar gedetailleerd onderwijssoort, leerjaar en herkomstland. Biedt inzicht in diversiteit en doorstroom per schooltype."
+    "samenvatting": "VO-leerlingen uitgesplitst naar gedetailleerd onderwijssoort, leerjaar en herkomstland. Biedt inzicht in diversiteit en doorstroom per schooltype.",
+    "_dimensies": [
+      "Onderwijssoort",
+      "Leerjaar",
+      "Herkomst",
+      "Geslacht",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Leerlingen"
+    ],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "_geo_niveau": []
   },
   {
     "leverancier": "CBS",
@@ -572,13 +643,35 @@
       "bol",
       "bbl",
       "studierichting",
-      "regio"
+      "regio",
+      "corop",
+      "provincie",
+      "gemeente"
     ],
     "_cbs_id": "85353NED",
     "_thema": "Mbo studenten",
     "_archief": false,
     "_laatste_update": "2026-04-09",
-    "samenvatting": "Aantal MBO-studenten uitgesplitst naar niveau (1-4), leerweg (BOL/BBL), studierichting en regio. Het meest complete MBO-inschrijvingsoverzicht voor regionale en sectorale analyses."
+    "samenvatting": "Aantal MBO-studenten uitgesplitst naar niveau (1-4), leerweg (BOL/BBL), studierichting en regio. Het meest complete MBO-inschrijvingsoverzicht voor regionale en sectorale analyses.",
+    "_dimensies": [
+      "Geslacht",
+      "RegioS",
+      "Niveau",
+      "Leerweg",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Deelnemers"
+    ],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "_geo_niveau": [
+      "landelijk",
+      "corop",
+      "provincie",
+      "gemeente"
+    ]
   },
   {
     "leverancier": "CBS",

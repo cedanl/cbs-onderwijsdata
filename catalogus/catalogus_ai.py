@@ -128,7 +128,8 @@ def collect():
     base_by_id = {e["_cbs_id"]: e for e in datasets}
     for cbs_id, entry in ai_by_id.items():
         if cbs_id in base_by_id:
-            for field in ("_archief", "_laatste_update", "periode", "frequentie", "_dimensies", "_meetwaarden", "_perioden_formaat"):
+            for field in ("_archief", "_laatste_update", "periode", "frequentie",
+                      "_dimensies", "_meetwaarden", "_perioden_formaat", "_geo_niveau"):
                 entry[field] = base_by_id[cbs_id].get(field)
 
     # Verwerk nieuwe batch-resultaten
