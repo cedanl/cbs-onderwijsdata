@@ -1,3 +1,5 @@
+from functools import lru_cache
+
 import httpx
 
 BASE_API  = "https://opendata.cbs.nl/ODataApi/OData"
@@ -51,6 +53,7 @@ def dimension(dataset_id: str, dim: str):
     return {r["Key"].strip(): r["Title"].strip() for r in rows}
 
 
+@lru_cache(maxsize=128)
 def definitions(dataset_id: str) -> dict[str, dict]:
     """Geeft kolomdefinities terug voor een CBS dataset.
 
