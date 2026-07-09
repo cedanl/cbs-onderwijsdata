@@ -49,3 +49,24 @@ def dimension(dataset_id: str, dim: str):
     """Returns a Key→Title dict for a dimension."""
     rows = get(dataset_id, dim)
     return {r["Key"].strip(): r["Title"].strip() for r in rows}
+
+
+def definitions(dataset_id: str) -> dict[str, dict]:
+    """Geeft kolomdefinities terug voor een CBS dataset.
+
+    Returns dict van kolomsleutel → {title, description, unit, type}.
+    Kolommen zonder Key (TopicGroups zonder sleutel) worden overgeslagen.
+    """
+    props = properties(dataset_id)
+    result = {}
+    for p in props:
+        key = (p.get("Key") or "").strip()
+        if not key:
+            continue
+        result[key] = {
+            "title": (p.get("Title") or "").strip(),
+            "description": (p.get("Description") or "").strip(),
+            "unit": (p.get("Unit") or "").strip(),
+            "type": (p.get("Type") or "").strip(),
+        }
+    return result
