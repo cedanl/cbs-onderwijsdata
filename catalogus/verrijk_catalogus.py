@@ -21,6 +21,8 @@ ROOT = Path(__file__).parent.parent
 DEFAULT_INPUT = "data/02-prepared/cbs_datasets_ai.json"
 DEFAULT_OUTPUT = "data/02-prepared/cbs_datasets_enriched.json"
 
+TOP_N_VALUES = 25
+
 
 def parse_args():
     p = argparse.ArgumentParser(description="Verrijkt CBS catalogus met data-metadata.")
@@ -32,43 +34,39 @@ def parse_args():
 
 
 def fetch_dimensions(dataset_id: str, dim_names: list[str]) -> dict[str, dict]:
-    """Haal alle dimensiewaarden op. Returns {dim_name: {code: label, ...}}."""
     result = {}
     for dim in dim_names:
         try:
             result[dim] = client.dimension(dataset_id, dim)
             time.sleep(0.05)
-        except Exception:
+        except Exception as e:
+            print(f" WARN dim {dim}: {e}", end="")
             result[dim] = {}
     return result
 
 
 def fetch_definitions(dataset_id: str) -> dict[str, dict]:
-    """Haal kolomdefinities op. Returns {key: {title, description, unit, type}}."""
     try:
         return client.definitions(dataset_id)
-    except Exception:
+    except Exception as e:
+        print(f" WARN defs: {e}", end="")
         return {}
 
 
 def build_kolommen(dimensions: dict, definitions: dict, dim_names: list, meetwaarden: list) -> dict:
-    """
-    Bouw _kolommen veld: per kolom de top-waarden (labels, niet codes).
-    Structuur: {"Geslacht": ["Totaal", "Mannen", "Vrouwen"], "Perioden": ["2020/'21", ...], ...}
-    """
     kolommen = {}
-
     for dim in dim_names:
+        if dim == "Perioden":
+            continue
         waarden = dimensions.get(dim, {})
-        labels = list(waarden.values())[:25]
+        labels = list(waarden.values())[:TOP_N_VALUES]
         if labels:
             kolommen[dim] = labels
 
     for mw in meetwaarden:
         defn = definitions.get(mw, {})
-        unit = defn.get("unit", "")
-        desc = defn.get("description", "")
         info = defn.get("title", mw)
+        unit = defn.get("unit", "")
         if unit:
             info += f" ({unit})"
         kolommen[mw] = info
@@ -77,7 +75,6 @@ def build_kolommen(dimensions: dict, definitions: dict, dim_names: list, meetwaa
 
 
 def build_kolomtypes(definitions: dict, dim_names: list, meetwaarden: list) -> dict:
-    """Per kolom het type: dimensie, geo-dimensie, tijd-dimensie, of meetwaarde."""
     types = {}
     for dim in dim_names:
         defn = definitions.get(dim, {})
@@ -96,7 +93,6 @@ def build_kolomtypes(definitions: dict, dim_names: list, meetwaarden: list) -> d
 
 
 def enrich_entry(entry: dict) -> dict:
-    """Verrijk één CBS catalogus-entry met gestructureerde metadata."""
     cbs_id = entry.get("_cbs_id", "")
     dim_names = entry.get("_dimensies", [])
     meetwaarden = entry.get("_meetwaarden", [])
@@ -108,14 +104,25 @@ def enrich_entry(entry: dict) -> dict:
     definitions = fetch_definitions(cbs_id)
     time.sleep(0.05)
 
-    entry["_kolommen"] = build_kolommen(dimensions, definitions, dim_names, meetwaarden)
-    entry["_kolomtypes"] = build_kolomtypes(definitions, dim_names, meetwaarden)
+    kolommen = build_kolommen(dimensions, definitions, dim_names, meetwaarden)
+    if kolommen:
+        entry["_kolommen"] = kolommen
+
+    kolomtypes = build_kolomtypes(definitions, dim_names, meetwaarden)
+    if kolomtypes:
+        entry["_kolomtypes"] = kolomtypes
 
     if "Perioden" in dimensions and dimensions["Perioden"]:
         labels = list(dimensions["Perioden"].values())
         entry["_periode_waarden"] = [labels[0], labels[-1]] if len(labels) > 1 else labels
 
     return entry
+
+
+def _save(datasets, existing, output_path):
+    output_list = [existing.get(e["_cbs_id"], e) for e in datasets]
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(output_list, f, ensure_ascii=False, indent=2)
 
 
 def main():
@@ -169,12 +176,6 @@ def main():
 
     _save(datasets, existing, output_path)
     print(f"\nKlaar: {processed} verrijkt, {skipped} overgeslagen, {failed} mislukt → {args.output}")
-
-
-def _save(datasets, existing, output_path):
-    output_list = [existing.get(e["_cbs_id"], e) for e in datasets]
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(output_list, f, ensure_ascii=False, indent=2)
 
 
 if __name__ == "__main__":
