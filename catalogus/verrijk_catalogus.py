@@ -40,7 +40,7 @@ def fetch_dimensions(dataset_id: str, dim_names: list[str]) -> dict[str, dict]:
             result[dim] = client.dimension(dataset_id, dim)
             time.sleep(0.05)
         except Exception as e:
-            print(f" WARN dim {dim}: {e}", end="")
+            print(f" WARN {dim}: {type(e).__name__}", end="")
             result[dim] = {}
     return result
 
@@ -49,7 +49,7 @@ def fetch_definitions(dataset_id: str) -> dict[str, dict]:
     try:
         return client.definitions(dataset_id)
     except Exception as e:
-        print(f" WARN defs: {e}", end="")
+        print(f" WARN defs: {type(e).__name__}", end="")
         return {}
 
 
