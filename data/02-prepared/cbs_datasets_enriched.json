@@ -1,0 +1,3583 @@
+[
+  {
+    "leverancier": "CBS",
+    "bron": "Gediplomeerden; onderwijssoort, woonregio",
+    "periode": "2011/'12-2023/'24",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Toont het aantal gediplomeerden per onderwijssoort en woonregio, uitgesplitst naar geslacht. Geschikt voor instellingen die regionale diplomastromen en man/vrouw-verhouding bij uitstroom willen monitoren.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85702NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85702NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel MBO-diploma's werden er in 2023/'24 in de gemeente Rotterdam uitgereikt, en hoe is de verdeling man/vrouw?",
+      "Welke provincie heeft de grootste toename van HBO-bachelor-diploma's over de periode 2018/'19 tot 2023/'24?",
+      "Wat is het verschil in WO-master-diploma's tussen Noord- en Zuid-Nederland?",
+      "Hoe ontwikkelt het aantal VAVO-diploma's zich landelijk sinds 2015/'16?",
+      "Welke COROP-regio heeft relatief de meeste Vmbo-b-diploma's ten opzichte van Vmbo-k-diploma's?",
+      "Verschilt de man/vrouw-verhouding bij Havo-diploma's per provincie?",
+      "Hoeveel VMBO-g/t-diploma's werden er in de G4-gemeenten uitgereikt in het laatste beschikbare schooljaar?",
+      "Wat is het aandeel vrouwen onder de gediplomeerden in het HBO in de drie Noordelijke provincies?"
+    ],
+    "tags": [
+      "gediplomeerden",
+      "uitstroom",
+      "onderwijssoort",
+      "regio",
+      "geslacht",
+      "provincie",
+      "gemeente",
+      "corop"
+    ],
+    "_cbs_id": "85702NED",
+    "_thema": "Onderwijs",
+    "_archief": false,
+    "_laatste_update": "2026-04-14",
+    "samenvatting": "Deze dataset telt het aantal gediplomeerden in Nederland per onderwijssoort (van VMBO tot en met WO-master) en woonregio, uitgesplitst naar geslacht. De data beslaat schooljaren 2011/'12 tot en met 2023/'24 en is gedetailleerd tot op gemeente- en COROP-niveau. Relevant voor onderwijsinstellingen, regionale overheden en beleidsmakers die diplomastromen, regionale spreiding en man/vrouw-verhoudingen bij uitstroom willen volgen.",
+    "_dimensies": [
+      "Geslacht",
+      "Onderwijssoort",
+      "Regiokenmerken",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Gediplomeerden"
+    ],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "_geo_niveau": [
+      "landelijk",
+      "corop",
+      "provincie",
+      "gemeente",
+      "landsdeel"
+    ],
+    "niet_geschikt_voor": [
+      "Analyse van het aantal studenten dat nog in opleiding is (ingeschrevenen, geen gediplomeerden)",
+      "Inzicht in leerlingprestaties, slaagpercentages of examencijfers",
+      "Analyse van instroom of aanmeldingen bij onderwijsinstellingen"
+    ],
+    "kolomtoelichting": {
+      "Geslacht": "Onderscheid tussen mannen, vrouwen en het totaal (mannen en vrouwen).",
+      "Onderwijssoort": "Het type onderwijs waarvoor het diploma is behaald, variërend van VMBO tot en met WO-master, inclusief VAVO en MBO-niveaus.",
+      "Regiokenmerken": "De woonregio van de gediplomeerde, op verschillende schaalniveaus: landelijk, landdelen, provincies, COROP-regio's, gemeenten en gemeentegrootteklassen.",
+      "Perioden": "Het schooljaar waarin het diploma is behaald, van 2011/'12 tot en met 2023/'24.",
+      "Gediplomeerden_1": "Het aantal uitgereikte diploma's in de betreffende combinatie van dimensies."
+    },
+    "waardenbereik": {
+      "Gediplomeerden_1": {
+        "min": 0,
+        "max": 191090,
+        "beschrijving": "Aantal gediplomeerden; de waarden variëren sterk per onderwijssoort en regio, van enkele tientallen tot bijna 200.000 (landelijke totalen)."
+      },
+      "Geslacht": {
+        "categorieen": [
+          "Totaal mannen en vrouwen",
+          "Mannen",
+          "Vrouwen"
+        ],
+        "beschrijving": "3 categorieën voor uitsplitsing naar geslacht."
+      },
+      "Onderwijssoort": {
+        "aantal": 20,
+        "beschrijving": "20 onderwijssoorten: VO (Vwo, Havo, Vmbo g/t, Vmbo-k, Vmbo-b), VAVO (Vwo, Havo, Vmbo-t), MBO (Niveau 2, 3, 4, Entree), HBO (Associate degree, Bachelor, Master), WO (Bachelor, Master) en totalen per sectie."
+      },
+      "Regiokenmerken": {
+        "aantal": 20,
+        "beschrijving": "20 regiokenmerken op diverse schaalniveaus: Nederland, 5 landdelen, 12+ provincies, COROP-regio's, gemeenten en gemeentegrootteklassen."
+      },
+      "Perioden": {
+        "aantal": 14,
+        "beschrijving": "14 schooljaren van 2011/'12 tot en met 2023/'24."
+      }
+    },
+    "combineerbaar_met": [
+      "CBS 85205NED (Studenten; geslacht, onderwijssoort en woonregio) voor vergelijking van inschrijvingen en uitstroom",
+      "CBS 83639NED (Aanmeldingen bij voortgezet onderwijs) voor relatie aanmelding en diplomering",
+      "CBS 85034NED (Arbeidsdeelname van afgestudeerden MBO/HBO) voor doorstroming naar arbeidsmarkt",
+      "CBS 83647NED (Schoolverlaters vmbo en mbo ohne diploma) voor analyse van uitval naast diplomering",
+      "CBS 83648NED (Gediplomeerden voortgezet onderwijs) voor gedetailleerde VO-diplomastromen",
+      "Regionale bevolkingsgegevens (CBS 83648NED of 37556NED) voor berekeningen van diplomering per 1000 inwoners"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Leerlingen en studenten; onderwijssoort, woonregio",
+    "periode": "2011/'12-2024/'25",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Geeft een overzicht van alle ingeschreven leerlingen en studenten per onderwijssoort en woonregio, uitgesplitst naar geslacht. Ideaal als startpunt voor een breed beeld van onderwijsdeelname per regio.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 85701NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85701NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel leerlingen zitten er in het basisonderwijs per provincie en hoe is dit aantal de afgelopen 10 jaar veranderd?",
+      "Wat is het aandeel vrouwen in het hoger onderwijs (hbo en wo) vergeleken met mannen, en hoe verandert dit over de jaren?",
+      "Hoeveel mbo-studenten zijn er per niveau (entree, 2, 3, 4) en hoe verschilt dit tussen de grote steden en ruralere gemeenten?",
+      "Welke COROP-gebieden hebben de grootste daling of groei in het aantal vo-scholieren?",
+      "Hoe is de verdeling van vmbo-b/k versus vmbo-g/t en havo/vwo over de verschillende provincies?",
+      "Wat is het aantal inschrijvingen in het speciaal onderwijs per gemeente en hoe verhoudt zich dat tot het reguliere onderwijs?",
+      "Hoeveel studenten wonen er in gemeenten met meer dan 100.000 inwoners vergeleken met gemeenten met minder dan 100.000 inwoners, en welke onderwijssoorten overheersen?",
+      "Welke landsdelen hebben het hoogste aantal voortgezet onderwijs-leerlingen en hoe is de genderbalans daar?",
+      "Wat is het totaal aantal leerlingen en studenten in Nederland per schooljaar, en wanneer was het hoogste/laagste punt?",
+      "Hoeveel vavo-studenten (havo, vwo, vmbo-t) zijn er per regio en is er een verschil tussen mannen en vrouwen?"
+    ],
+    "tags": [
+      "inschrijvingen",
+      "leerlingen",
+      "studenten",
+      "onderwijssoort",
+      "woonregio",
+      "geslacht",
+      "alle-niveaus",
+      "overzicht",
+      "provincie",
+      "gemeente",
+      "corop",
+      "landsdeel",
+      "grootteklasse",
+      "schooljaar"
+    ],
+    "_cbs_id": "85701NED",
+    "_thema": "Onderwijs",
+    "_archief": false,
+    "_laatste_update": "2026-04-14",
+    "samenvatting": "Deze dataset bevat het aantal ingeschreven leerlingen en studenten in Nederland, uitgesplitst naar onderwijssoort (van basisonderwijs tot universitair onderwijs), woonregio (van gemeenten tot landsdelen), geslacht en schooljaar. De data loopt van schooljaar 2011/'12 tot en met 2024/'25 en beslaat het volledige onderwijslandschap. Relevant voor beleidsmedewerkers, planning- en controlmedewerkers, en onderzoeken die regionale onderwijsdeelname in kaart willen brengen. De dataset biedt een gedetailleerd geografisch niveau inclusief gemeenten, COROP-gebieden, provincies en gemiddelde grootteklassen.",
+    "_dimensies": [
+      "Geslacht",
+      "Onderwijssoort",
+      "Regiokenmerken",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Leerlingen/studenten"
+    ],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "_geo_niveau": [
+      "landelijk",
+      "corop",
+      "provincie",
+      "gemeente",
+      "landsdeel"
+    ],
+    "niet_geschikt_voor": [
+      "Analyse van uitval, slaagpercentages of prestaties — de dataset telt alleen inschrijvingen, geen outputmaten",
+      "Berekening van onderwijsuitgaven of budgetverdeling — er zijn geen financiële variabelen beschikbaar",
+      "Analyse van leerlingen met een specifieke achtergrond (bijv. migratieachtergrond, sociaal-economische status) — er is geen demografische verdieping naast geslacht"
+    ],
+    "kolomtoelichting": {
+      "Geslacht": "Verdeelt de telling in totaal mannen en vrouwen, mannen en vrouwen apart. Dimensie met 3 categorieën: Totaal mannen en vrouwen, Mannen, Vrouwen.",
+      "Onderwijssoort": "Geeft het type onderwijs aan waarop de leerlingen/studenten zijn ingeschreven. Omvat 25 categorieën van basisonderwijs (regulier en speciaal), voortgezet onderwijs (alle niveaus inclusief praktijkonderwijs), vavo, mbo (entree t/m niveau 4), hbo en wo.",
+      "Regiokenmerken": "Geografische indeling van de woonplaats van de leerling/student. Bevat een volledige hiërarchie: gemeenten (GM-codes), gemiddelde grootteklassen, COROP-gebieden (CR-codes), provincies (PV-codes), landsdelen (LD-codes) en het totaal Nederland (NL01).",
+      "Perioden": "Schooljaar waarop de telling betrekking heeft. Formaat: YYYYSJ00 (bijv. 2024SJ00 = schooljaar 2024/'25). Loopt van 2011/'12 tot en met 2024/'25.",
+      "LeerlingenStudenten_1": "Aantal ingeschreven leerlingen of studenten. Weergegeven als geheel getal. Let op: waarden zijn afgerond en kunnen afwijken van werkelijke aantallen vanwege afronding door het CBS."
+    },
+    "waardenbereik": {
+      "LeerlingenStudenten_1": {
+        "min": 128620,
+        "max": 1559270,
+        "beschrijving": "Aantal ingeschreven leerlingen/studenten per combinatie van dimensies. Het maximum (ca. 1,56 miljoen) betreft het totaal basisonderwijs op landelijk niveau; het minimum betreft een kleiner onderwijssoort in een specifiek gebied."
+      },
+      "Geslacht": {
+        "aantal_categorieen": 3,
+        "beschrijving": "Totaal mannen en vrouwen, Mannen, Vrouwen"
+      },
+      "Onderwijssoort": {
+        "aantal_categorieen": 25,
+        "beschrijving": "Van basisonderwijs (regulier + speciaal) via voortgezet onderwijs (alle niveaus), vavo, mbo (4 niveaus + entree), hbo tot en met wo. Inclusief totalen per sector."
+      },
+      "Regiokenmerken": {
+        "aantal_categorieen": "400+",
+        "beschrijving": "Hiërarchisch: gemeenten (~380), grootteklassen (2), COROP-gebieden (~40), provincies (12+1), landsdelen (4+1), Nederland (1). Codes beginnen met GM, G/A, CR, PV, LD, NL."
+      },
+      "Perioden": {
+        "aantal_categorieen": 15,
+        "beschrijving": "Schooljaren van 2011/'12 (2011SJ00) tot 2024/'25 (2024SJ00)"
+      }
+    },
+    "combineerbaar_met": [
+      "CBS Demografische datasets (bevolking naar leeftijd, geslacht, herkomst per gemeente) voor berekening van onderwijsdeelnamepercentages",
+      "CBS Beroepen- en arbeidsmarktinformatie (bijv.工作zame afgestudeerden) om de doorstroom van onderwijs naar arbeidsmarkt in kaart te brengen",
+      "CBS Financiële onderwijsgegevens (onderwijsuitgaven, leerlingwaardepakketten) voor kosten-per-leerling-analyses per regio",
+      "CBS Gezinsamenstelling en huishoudens voor analyses naar thuissituatie en onderwijsdeelname",
+      "Regionale economische datasets (bbp per gemeente, werkloosheid) voor verbanden tussen economie en onderwijsaanbod",
+      "CBS Onderwijsdeelnamepersonen (levenslooptabellen) voor inzicht in doorstroom tussen onderwijssectoren"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Gediplomeerden en afgestudeerden; onderwijssoort, vanaf 1900",
+    "periode": "1900/'01 - 2023/'24",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Historische tijdreeks van gediplomeerden per onderwijssoort teruggaand tot 1900, uitgesplitst naar geslacht. Uniek voor langetermijntrend-analyses en beleidsevaluaties over decennia.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 80384ned",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/80384ned"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe is het totale aantal gediplomeerden in het voortgezet onderwijs gegroeid van 1950 tot nu?",
+      "Wanneer en hoe snel is de genderkloof in het aantal afgestudeerden aan universiteiten gedicht?",
+      "Hoe verhoudt het aantal doctoraatsdiploma's zich tot het aantal masterdiploma's sinds de invoering van het Bologna-proces?",
+      "Wat is de impact geweest van de invoering van de mammoetwet (1968) op het aantal gediplomeerden in het voortgezet onderwijs?",
+      "Hoe is de verhouding tussen mannen en vrouwen in het hoger onderwijs veranderd over de afgelopen eeuw?",
+      "Welke onderwijssectoren (techniek, zorg, economie) laten de sterkste groei zien in het aantal diploma's?",
+      "Hoe snel is het aantal mbo-diploma's gegroeid sinds de invoering van de wet BIO in 1990?",
+      "Wat is het langetermijneffect van onderwijshervormingen op het aantal afgestudeerden in de beroepsopleidingen?",
+      "Hoe verhouden de aantallen gediplomeerden in het hoger beroepsonderwijs zich tot die in het wetenschappelijk onderwijs over de tijd?",
+      "Welke onderwijsniveaus laten een afname in het aantal diploma's zien en wat zegt dit over verschuivingen in het onderwijsstelsel?"
+    ],
+    "tags": [
+      "historisch",
+      "gediplomeerden",
+      "geslacht",
+      "langetermijn",
+      "tijdreeks",
+      "onderwijsstelsel",
+      "diploma-uitreiking",
+      "onderwijshervorming"
+    ],
+    "_cbs_id": "80384ned",
+    "_thema": "Onderwijs",
+    "_archief": false,
+    "_laatste_update": "2026-04-30",
+    "samenvatting": "Deze dataset bevat een unieke historische tijdreeks van het aantal gediplomeerden en afgestudeerden in Nederland, teruggaand tot het schooljaar 1900/'01. De data is uitgesplitst naar onderwijssoort (van lagere onderwijsakten tot en met masterdiploma's) en geslacht. Vanwege de zeer lange reeks is deze dataset bij uitstek geschikt voor langetermijntrendanalyses, het volgen van onderwijsuitbreiding en het evalueren van beleidswijzigingen over meerdere decennia. Let op: veel meetwaarden zijn alleen beschikbaar vanaf bepaalde jaren, wat resulteert in aanzienlijke null-waarden voor recentere categorieën.",
+    "_dimensies": [
+      "Geslacht",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Vwo-lyceum totaal",
+      "Gymnasium",
+      "Atheneum/hbs",
+      "Vwo-ongedeeld",
+      "Havo/msvm",
+      "Mavo/(m)ulo",
+      "Middenschool",
+      "Handelsdagschool",
+      "Totaal lbo-vbo",
+      "Lto-ito",
+      "Lao-iao",
+      "Leao-lavo (vanaf 1967/'68)",
+      "Lhno-ihno",
+      "Lmo",
+      "Techniek",
+      "Landbouw",
+      "Economie",
+      "Zorg en welzijn",
+      "Avmb",
+      "Vmbo-gt totaal",
+      "Vmbo theoretische leerweg",
+      "Vmbo gemengde leerweg",
+      "Vmbo-bk totaal",
+      "Vmbo kaderberoepsgerichte leerweg",
+      "Vmbo basisberoepsgerichte leerweg",
+      "Techniek totaal",
+      "Techniek gemengde leerweg",
+      "Techniek kaderberoepsgerichte leerweg",
+      "Techniek basisberoepsgerichte leerweg",
+      "Landbouw totaal",
+      "Landbouw gemengde leerweg",
+      "Landbouw kaderberoepsgerichte leerweg",
+      "Landbouw basisberoepsgerichte leerweg",
+      "Economie totaal",
+      "Economie gemengde leerweg",
+      "Economie kaderberoepsgerichte leerweg",
+      "Economie basisberoepsgerichte leerweg",
+      "Zorg en welzijn totaal",
+      "Zorg gemengde leerweg",
+      "Zorg kaderberoepsgerichte leerweg",
+      "Zorg basisberoepsgerichte leerweg",
+      "Intersectorale programma's totaal",
+      "Intersectorale programma's gemengd",
+      "Intersectorale programma's kaderberoeps",
+      "Intersectorale programma's basisberoeps",
+      "Technisch onderwijs",
+      "Nautisch onderwijs",
+      "Nijverheidsschool voor meisjes",
+      "Leerlingstelsel",
+      "Akte kleuter- en hoofdleidster",
+      "Onderwijzersakte",
+      "Hoofdakte en akte volledige bekwaamheid",
+      "Lagere vakakten",
+      "Totaal mbo bol voltijd",
+      "Totaal mbo bol deeltijd",
+      "Totaal mbo bbl",
+      "Totaal extranei",
+      "Landbouw",
+      "Techniek",
+      "Economie",
+      "Zorg en welzijn",
+      "Combinatie van sectoren",
+      "Havo-mbo",
+      "Zorg en welzijn",
+      "Landbouw",
+      "Techniek",
+      "Economie",
+      "Zorg en welzijn",
+      "Combinatie van sectoren",
+      "Landbouw",
+      "Techniek",
+      "Economie",
+      "Zorg en welzijn",
+      "Combinatie van sectoren",
+      "Hbo-voltijd totaal vanaf 1950",
+      "Hoger agrarisch onderwijs",
+      "Hoger technisch onderwijs",
+      "Hoger gezondheidszorgonderwijs",
+      "Hoger economisch onderwijs",
+      "Hoger sociaal-agogisch onderwijs",
+      "Hoger kunstonderwijs",
+      "Hoger pedagogisch onderwijs",
+      "1. Onderwijs",
+      "2. Taalwetenschappen,geschiedenis, kunst",
+      "3. Sociale wetenschappen, bedrijfskunde",
+      "4. Natuurwetenschappen, informatica",
+      "5. Techniek, industrie, bouwkunde",
+      "6. Landbouw, diergeneeskunde",
+      "7. Gezondheidszorg, welzijn",
+      "8. Persoonlijke dienstverlening, vervoer",
+      "Hbo-deeltijd totaal vanaf 1950",
+      "Hoger sociaal-agogisch onderwijs",
+      "Hoger pedagogisch onderwijs",
+      "1. Onderwijs",
+      "2. Taalwetenschappen,geschiedenis, kunst",
+      "3. Sociale wetenschappen, bedrijfskunde",
+      "4. Natuurwetenschappen, informatica",
+      "5. Techniek, industrie, bouwkunde",
+      "6. Landbouw, diergeneeskunde",
+      "7. Gezondheidszorg, welzijn",
+      "8. Persoonlijke dienstverlening, vervoer",
+      "Hbo-voltijd totaal vanaf 1995",
+      "1. Onderwijs",
+      "2. Taalwetenschappen,geschiedenis, kunst",
+      "3. Sociale wetenschappen, bedrijfskunde",
+      "5. Techniek, industrie, bouwkunde",
+      "7. Gezondheidszorg, welzijn",
+      "Hbo-deeltijd totaal vanaf 1990",
+      "1. Onderwijs",
+      "2. Taalwetenschappen,geschiedenis, kunst",
+      "3. Sociale wetenschappen, bedrijfskunde",
+      "5. Techniek, industrie, bouwkunde",
+      "7. Gezondheidszorg, welzijn",
+      "Associate degree",
+      "Bachelor totaal vanaf 1999",
+      "1. Onderwijs",
+      "2. Taalwetenschappen,geschiedenis, kunst",
+      "3. Sociale wetenschappen, bedrijfskunde",
+      "4. Natuurwetenschappen, informatica",
+      "5. Techniek, industrie, bouwkunde",
+      "6. Landbouw, diergeneeskunde",
+      "7. Gezondheidszorg, welzijn",
+      "8. Persoonlijke dienstverlening, vervoer",
+      "Doctoraal totaal vanaf 1900",
+      "Letteren",
+      "Godgeleerdheid",
+      "Wijsbegeerte",
+      "Overige medische wetenschappen",
+      "Wiskunde en natuurwetenschappen",
+      "Technische wetenschappen",
+      "Landbouwwetenschappen",
+      "Rechtsgeleerdheid",
+      "Economische wetenschappen",
+      "Sociale wetenschappen",
+      "Geografie en prehistorie",
+      "Bedrijfskunde",
+      "Lichamelijke opvoeding",
+      "1. Onderwijs",
+      "2. Taalwetenschappen,geschiedenis, kunst",
+      "3. Sociale wetenschappen, bedrijfskunde",
+      "4. Natuurwetenschappen, informatica",
+      "5. Techniek, industrie, bouwkunde",
+      "6. Landbouw, diergeneeskunde",
+      "7. Gezondheidszorg, welzijn",
+      "8. Persoonlijke dienstverlening, vervoer",
+      "Master totaal vanaf 2002",
+      "1. Onderwijs",
+      "2. Taalwetenschappen,geschiedenis, kunst",
+      "3. Sociale wetenschappen, bedrijfskunde",
+      "4. Natuurwetenschappen, informatica",
+      "5. Techniek, industrie, bouwkunde",
+      "6. Landbouw, diergeneeskunde",
+      "7. Gezondheidszorg, welzijn",
+      "8. Persoonlijke dienstverlening, vervoer",
+      "Beroepsdiploma totaal vanaf 1990",
+      "Geneeskunde",
+      "Tandheelkunde",
+      "Diergeneeskunde",
+      "Farmacie",
+      "Economische wetenschappen",
+      "1. Onderwijs",
+      "2. Taalwetenschappen,geschiedenis, kunst",
+      "3. Sociale wetenschappen, bedrijfskunde",
+      "6. Landbouw, diergeneeskunde",
+      "7. Gezondheidszorg, welzijn",
+      "Totaal vavo",
+      "Vwo",
+      "Havo",
+      "Vmbo theoretische leerweg (mavo)",
+      "Totaal vwo",
+      "Gymnasium",
+      "Hbs/atheneum",
+      "Handelsavondschool 3-jarige cursus",
+      "Handelsavondschool 5-jarige cursus"
+    ],
+    "_geo_niveau": [],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "niet_geschikt_voor": [
+      "Real-time monitoring van het huidige studiejaar — de data heeft een publicatievertraging van meerdere jaren",
+      "Analyse van kwaliteit of niveau van diploma's — de dataset telt alleen aantallen, geen cijfers of competenties",
+      "Regionale vergelijkingen — de dataset is niet uitgesplitst naar regio of gemeente"
+    ],
+    "kolomtoelichting": {
+      "Geslacht": "Dimensie met 3 categorieën: Totaal mannen en vrouwen, Mannen, Vrouwen",
+      "Perioden": "Schooljaren vanaf 1900/'01; doorlopende tijdreeks",
+      "VwoLyceumTotaal_1": "Totaal aantal gediplomeerden vwo/lyceum",
+      "Gymnasium_2": "Aantal gediplomeerden gymnasium",
+      "AtheneumHbs_3": "Aantal gediplomeerden atheneum en hogere burger-school",
+      "HavoMsvm_5": "Aantal gediplomeerden havo en mavo/hbs voor meisjes",
+      "MavoMUlo_6": "Aantal gediplomeerden mavo/mulo",
+      "Handelsdagschool_8": "Aantal gediplomeerden handelsdagschool",
+      "TechnischOnderwijs_46": "Aantal gediplomeerden technisch onderwijs",
+      "NautischOnderwijs_47": "Aantal gediplomeerden nautisch onderwijs",
+      "NijverheidsschoolVoorMeisjes_48": "Aantal gediplomeerden nijverheidsschool voor meisjes",
+      "Leerlingstelsel_49": "Aantal gediplomeerden via het leerlingstelsel",
+      "AkteKleuterEnHoofdleidster_50": "Aantal gediplomeerden kleuterleidsters- en hoofdakte",
+      "Onderwijzersakte_51": "Aantal gediplomeerden met onderwijzersakte",
+      "HoofdakteEnAkteVolledigeBekwaamheid_52": "Aantal gediplomeerden met hoofd- of volledige-bekwaamheidsakte",
+      "LagereVakakten_53": "Aantal gediplomeerden met lagere vakakten",
+      "HogerTechnischOnderwijs_77": "Aantal afgestudeerden hoger technisch onderwijs",
+      "HogerGezondheidszorgonderwijs_78": "Aantal afgestudeerden hoger gezondheidszorgonderwijs",
+      "HogerSociaalAgogischOnderwijs_80": "Aantal afgestudeerden hoger sociaal-agogisch onderwijs",
+      "HogerKunstonderwijs_81": "Aantal afgestudeerden hoger kunstonderwijs",
+      "HogerPedagogischOnderwijs_82": "Aantal afgestudeerden hoger pedagogisch onderwijs",
+      "DoctoraalTotaalVanaf1900_124": "Totaal aantal doctoraalsexamens vanaf 1900",
+      "Letteren_125": "Doctoraalsdiploma's richting letteren",
+      "Godgeleerdheid_126": "Doctoraalsdiploma's richting godgeleerdheid",
+      "WiskundeEnNatuurwetenschappen_129": "Doctoraalsdiploma's richting wiskunde en natuurwetenschappen",
+      "TechnischeWetenschappen_130": "Doctoraalsdiploma's richting technische wetenschappen",
+      "Landbouwwetenschappen_131": "Doctoraalsdiploma's richting landbouwwetenschappen",
+      "Rechtsgeleerdheid_132": "Doctoraalsdiploma's richting rechtsgeleerdheid",
+      "EconomischeWetenschappen_133": "Doctoraalsdiploma's richting economische wetenschappen",
+      "SocialeWetenschappen_134": "Doctoraalsdiploma's richting sociale wetenschappen",
+      "GeografieEnPrehistorie_135": "Doctoraalsdiploma's richting geografie en prehistorie",
+      "Geneeskunde_156": "Aantal artsexamens",
+      "Tandheelkunde_157": "Aantal tandheelkundige diploma's",
+      "Diergeneeskunde_158": "Aantal diergeneeskundige diploma's",
+      "Farmacie_159": "Aantal farmaceutische diploma's",
+      "TotaalVwo_170": "Totaal aantal vwo-diploma's",
+      "Gymnasium_171": "Aantal gymnasiumdiploma's (totaal)",
+      "HbsAtheneum_172": "Aantal hbs/atheneumdiploma's (totaal)"
+    },
+    "waardenbereik": {
+      "Geslacht": {
+        "categorieen": [
+          "Totaal mannen en vrouwen",
+          "Mannen",
+          "Vrouwen"
+        ],
+        "beschrijving": "Uitsplitsing naar sekse voor trendanalyses"
+      },
+      "Perioden": {
+        "min": "1900/'01",
+        "max": "2023/'24",
+        "beschrijving": "Doorlopende reeks van 124 schooljaren"
+      },
+      "VwoLyceumTotaal_1": {
+        "min": 832,
+        "max": 8924,
+        "beschrijving": "Aantal gediplomeerden vwo/lyceum per schooljaar"
+      },
+      "Gymnasium_2": {
+        "min": 295,
+        "max": 2016,
+        "beschrijving": "Aantal gediplomeerden gymnasium per schooljaar"
+      },
+      "AtheneumHbs_3": {
+        "min": 537,
+        "max": 7006,
+        "beschrijving": "Aantal gediplomeerden atheneum/HBS per schooljaar"
+      },
+      "DoctoraalTotaalVanaf1900_124": {
+        "min": 341,
+        "max": 1831,
+        "beschrijving": "Totaal doctoraalexamens per jaar"
+      },
+      "Rechtsgeleerdheid_132": {
+        "min": 121,
+        "max": 582,
+        "beschrijving": "Aantal doctoraals rechtsgeleerdheid per jaar"
+      },
+      "Geneeskunde_156": {
+        "min": 137,
+        "max": 573,
+        "beschrijving": "Aantal artsexamens per jaar"
+      }
+    },
+    "combineerbaar_met": [
+      "CBS 85202NED — Studenten in het hoger onderwijs: voor vergelijking van instroom en uitstroom over dezelfde periode",
+      "CBS 83639NED — Aantal leerlingen in het funderend onderwijs: voor het berekenen van doorstroompercentages",
+      "CBS 80391NED — Schoolverlaters voortgezet onderwijs en middelbaar beroepsonderwijs: voor breder beeld van uitval naast diplomering",
+      "CBS 37296NED — Beroepsbevolking naar opleidingsniveau: voor koppeling van diploma's aan arbeidsmarktuitkomsten",
+      "CBS 82295NED — Onderwijsdeelname en uitval in het mbo: voor gedetailleerd mbo-beeld",
+      "Demografische CBS-gegevens over bevolkingsgroei: om diploma-aantallen te contextualiseren ten opzichte van de totale populatie per leeftijdsgroep"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Leerlingen en studenten; onderwijssoort, vanaf 1900",
+    "periode": "1900/'01 - 2024/'25",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Historische tijdreeks van onderwijsdeelname per onderwijssoort teruggaand tot 1900. Toont de opbouw van het Nederlandse onderwijsstelsel over meer dan een eeuw.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 37220",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/37220"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe is het totale aantal leerlingen in het basisonderwijs gegroeid tussen 1900 en 1920?",
+      "Wat was het aandeel vrouwen in het hoger onderwijs (WO) in de periode 1900-1920?",
+      "Hoe verhield het aantal leerlingen in het voortgezet onderwijs (havo, vwo, mavo) zich tot het basisonderwijs in de vroege 20e eeuw?",
+      "Welke onderwijssoorten lieten de sterkste groei zien in de periode 1900-1920?",
+      "Hoe groot was het verschil in onderwijsdeelname tussen mannen en vrouwen in het nijverheidsonderwijs?",
+      "Wanneer werd het kleuteronderwijs voor het eerst opgenomen in de CBS-statistiek en wat was de omvang?",
+      "Hoe ontwikkelde het aantal studenten aan de universiteit zich in de eerste twintig jaar van de 20e eeuw?",
+      "Welke rol speelde het huishoud- en naai-/handwerkonderwijs voor meisjes in het vroeg-20e-eeuwse onderwijslandschap?",
+      "Hoe vergelijkt de leerlingenpopulatie in het voortgezet onderwijs tussen mannen en vrouwen in de periode 1910-1920?",
+      "Wat was de totale leerlingenpopulatie in het Nederlandse onderwijs rond 1920?"
+    ],
+    "tags": [
+      "historisch",
+      "inschrijvingen",
+      "tijdreeks",
+      "onderwijsdeelname",
+      "langetermijn",
+      "geslacht",
+      "onderwijssoort",
+      "eeuw-overzicht"
+    ],
+    "_cbs_id": "37220",
+    "_thema": "Onderwijs",
+    "_archief": false,
+    "_laatste_update": "2026-04-30",
+    "samenvatting": "Deze dataset bevat een historische tijdreeks van leerlingen en studenten in het Nederlandse onderwijs, onderverdeeld per onderwijssoort en geslacht, vanaf het schooljaar 1900/'01. De reeks toont de opbouw en het volume van het complete onderwijsstelsel — van kleuteronderwijs en basisonderwijs via voortgezet en beroepsonderwijs tot hoger onderwijs (WO) — over meer dan een eeuw. Voor beleidsmedewerkers relevant voor langetermijntrendanalyses, vergelijking van onderwijsdeelname tussen mannen en vrouwen, en het in kaart brengen van structurele verschuivingen in het Nederlandse onderwijsbestel.",
+    "_dimensies": [
+      "Geslacht",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Kleuteronderwijs",
+      "Basisonderwijs",
+      "Speciaal basisonderwijs",
+      "Totaal blo-buo",
+      "(Zeer) moeilijk lerende kinderen",
+      "Leer- en opvoedingsmoeilijkheden",
+      "Overig buitengewoon (lager) onderwijs",
+      "Spec. voortgezet onderwijs 1991 tot 1998",
+      "Totaal speciale scholen",
+      "Speciale scholen - basis",
+      "Speciale scholen - voortgezet",
+      "Totaal voortgezet onderwijs",
+      "Avo algemeen leerjaar 1",
+      "Avo algemene leerjaren 2 en 3",
+      "Gymnasium",
+      "Atheneum/hbs",
+      "Vwo ongedeeld/lyceum",
+      "Havo/msvm",
+      "Mavo/(m)ulo",
+      "Handelsdagschool",
+      "Middenschool",
+      "Lbo/ibo brugjaar",
+      "Lto/ito",
+      "Lao/iao",
+      "Leao/lavo/lmo",
+      "Lhno/ihno",
+      "Lwoo/avmb",
+      "Voortgezet onderwijs alg. leerjaren 1-3",
+      "Vwo 3-6",
+      "Havo 3-5",
+      "Mavo 3-4",
+      "Praktijkonderwijs",
+      "Spec. voortgezet onderwijs 1998 tot 2002",
+      "Vbo techniek",
+      "Vbo landbouw",
+      "Vbo economie",
+      "Vbo zorg en welzijn",
+      "Totaal",
+      "Vmbo theoretische leerweg",
+      "Vmbo kaderberoepsgerichte leerweg",
+      "Vmbo gemengde leerweg",
+      "Vmbo basisberoepsgerichte leerweg",
+      "Techniek totaal",
+      "Techniek gemengde leerweg",
+      "Techniek kaderberoepsgerichte leerweg",
+      "Techniek basisberoepsgerichte leerweg",
+      "Landbouw totaal",
+      "Landbouw gemengde leerweg",
+      "Landbouw kaderberoepsgerichte leerweg",
+      "Landbouw basisberoepsgerichte leerweg",
+      "Economie totaal",
+      "Economie gemengde leerweg",
+      "Economie kaderberoepsgerichte leerweg",
+      "Economie basisberoepsgerichte leerweg",
+      "Zorg en welzijn totaal",
+      "Zorg gemengde leerweg",
+      "Zorg kaderberoepsgerichte leerweg",
+      "Zorg basisberoepsgerichte leerweg",
+      "Intersectorale programma's totaal",
+      "Intersectorale progr. gemengde leerweg",
+      "Intersectorale progr. kaderberoeps",
+      "Intersectorale progr. basisberoeps",
+      "Totaal  nijverheidsonderwijs",
+      "Technisch-nautisch onderwijs",
+      "Nijverheidsonderwijs voor meisjes",
+      "Overig nijverheidsonderwijs",
+      "Land- en tuinbouwonderwijs",
+      "Sociaal-pedagogisch onderwijs",
+      "Kleuterleidster opleidingsschool",
+      "Kweekschool",
+      "MO-akten",
+      "Totaal mbo (exclusief extranei)",
+      "Totaal mbo (inclusief extranei)",
+      "Totaal mbo-bol (voltijd)",
+      "Totaal mbo-bol (deeltijd)",
+      "Totaal bbo-bbl",
+      "Totaal extranei",
+      "Sector techniek",
+      "Sector landbouw",
+      "Sector economie",
+      "Sector zorg en welzijn",
+      "Combinatie van sectoren",
+      "Overig mbo",
+      "Sector techniek",
+      "Sector landbouw",
+      "Sector economie",
+      "Sector zorg en welzijn",
+      "Sector techniek",
+      "Sector landbouw",
+      "Sector economie",
+      "Sector zorg en welzijn",
+      "Combinatie van sectoren",
+      "Totaal hbo",
+      "Totaal voltijd hbo",
+      "Hoger agrarisch onderwijs",
+      "Hoger technisch onderwijs",
+      "Hoger gezondheidszorgonderwijs",
+      "Hoger economisch onderwijs",
+      "Hoger sociaal-agogisch onderwijs",
+      "Hoger kunstonderwijs",
+      "Hoger pedagogisch onderwijs",
+      "1. Onderwijs",
+      "2. Taalwetenschappen,geschiedenis, kunst",
+      "3. Sociale wetenschappen, bedrijfskunde",
+      "4. Natuurwetenschappen, informatica",
+      "5. Techniek, industrie, bouwkunde",
+      "6. Landbouw, diergeneeskunde",
+      "7. Gezondheidszorg, welzijn",
+      "8. Persoonlijke dienstverlening, vervoer",
+      "Totaal deeltijd hbo",
+      "Hoger technisch onderwijs",
+      "Hoger gezondheidszorgonderwijs",
+      "Hoger economisch onderwijs",
+      "Hoger sociaal-agogisch onderwijs",
+      "Hoger kunstonderwijs",
+      "Hoger pedagogisch onderwijs",
+      "1. Onderwijs",
+      "2. Taalwetenschappen,geschiedenis, kunst",
+      "3. Sociale wetenschappen, bedrijfskunde",
+      "4. Natuurwetenschappen, informatica",
+      "5. Techniek, industrie, bouwkunde",
+      "6. Landbouw, diergeneeskunde",
+      "7. Gezondheidszorg, welzijn",
+      "8. Persoonlijke dienstverlening, vervoer",
+      "Totaal wo",
+      "Letteren",
+      "Godgeleerdheid",
+      "Wijsbegeerte",
+      "Geneeskunde",
+      "Tandheelkunde",
+      "Diergeneeskunde",
+      "Overige medische wetenschappen",
+      "Wiskunde en natuurwetenschappen",
+      "Technische wetenschappen",
+      "Landbouwwetenschappen",
+      "Rechtsgeleerdheid",
+      "Economische wetenschappen",
+      "Sociale wetenschappen",
+      "Geografie en prehistorie",
+      "Bedrijfskunde",
+      "Lichamelijke opvoeding",
+      "1. Onderwijs",
+      "2. Taalwetenschappen,geschiedenis, kunst",
+      "3. Sociale wetenschappen, bedrijfskunde",
+      "4. Natuurwetenschappen, informatica",
+      "5. Techniek, industrie, bouwkunde",
+      "6. Landbouw, diergeneeskunde",
+      "7. Gezondheidszorg, welzijn",
+      "8. Persoonlijke dienstverlening, vervoer",
+      "Open universiteit",
+      "Totaal",
+      "Vwo-havo",
+      "Vwo",
+      "Havo",
+      "Vmbo theoretische leerweg (mavo)",
+      "Handelsavondonderwijs",
+      "Cursorisch ondernemersonderwijs",
+      "Lager beroepsonderwijs",
+      "Vormingswerk voor jeugdigen",
+      "Basiseducatie",
+      "Educatie"
+    ],
+    "_geo_niveau": [],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "niet_geschikt_voor": [
+      "Actuele beleidsanalyse: de data beslaat uitsluitend de periode 1900-1920 (en mogelijkerwijs doorloopt tot 2024/'25), maar de eerste 20 periodes bevatten alleen vroeg-20e-eeuwse cijfers — niet geschikt voor hedendaagse beleidsvraagstukken zonder aanvulling met recentere periodes",
+      "Fijnmazige regionale analyse: de dataset bevat geen regionale dimensie (provincie, gemeente), dus lokale verschillen in onderwijsdeelname zijn niet te onderzoeken",
+      "Causale analyses: door het ontbreken van verklarende variabelen (beleidswijzigingen, demografische factoren) zijn oorzaak-gevolgvraagstukken niet direct te beantwoorden"
+    ],
+    "kolomtoelichting": {
+      "ID": "Interne identificatienummer van de rij in de dataset",
+      "Geslacht": "Dimensie met drie categorieën: Totaal mannen en vrouwen, Mannen, Vrouwen",
+      "Perioden": "Schooljaar waarop de cijfers betrekking hebben (bijv. 1900/'01)",
+      "Kleuteronderwijs_1": "Aantal leerlingen in het kleuteronderwijs (in duizenden)",
+      "Basisonderwijs_2": "Aantal leerlingen in het basisonderwijs (in duizenden)",
+      "SpeciaalBasisonderwijs_3": "Speciaal basisonderwijs (niet beschikbaar in deze periode)",
+      "TotaalBloBuo_4": "Totaal buitengewoon lager onderwijs en buitengewoon openbaar lager onderwijs",
+      "ZeerMoeilijkLerendeKinderen_5": "Leerlingen met zeer moeilijke leer- en opvoedingsmoeilijkheden",
+      "LeerEnOpvoedingsmoeilijkheden_6": "Leerlingen met leer- en opvoedingsmoeilijkheden",
+      "OverigBuitengewoonLagerOnderwijs_7": "Overig buitengewoon lager onderwijs (niet beschikbaar in deze periode)",
+      "SpecVoortgezetOnderwijs1991Tot1998_8": "Speciaal voortgezet onderwijs 1991-1998 (niet beschikbaar in deze periode)",
+      "TotaalSpecialeScholen_9": "Totaal speciaal voortgezet onderwijs (niet beschikbaar in deze periode)",
+      "SpecialeScholenBasis_10": "Speciaal onderwijs op basisschoonniveau (niet beschikbaar in deze periode)",
+      "SpecialeScholenVoortgezet_11": "Speciaal onderwijs op voortgezetschoonniveau (niet beschikbaar in deze periode)",
+      "TotaalVoortgezetOnderwijs_12": "Totaal aantal leerlingen in het voortgezet onderwijs",
+      "AvoAlgemeenLeerjaar1_13": "Algemeen voortgezet onderwijs, algemeen leerjaar 1 (niet beschikbaar)",
+      "AvoAlgemeneLeerjaren2En3_14": "Algemeen voortgezet onderwijs, leerjaren 2 en 3 (niet beschikbaar)",
+      "Gymnasium_15": "Leerlingen gymnasium (voortgezet onderwijs)",
+      "AtheneumHbs_16": "Leerlingen atheneum en hogere burgerschool (HBS)",
+      "VwoOngedeeldLyceum_17": "Leerlingen VWO ongedeeld lyceum",
+      "HavoMsvm_18": "Leerlingen Havo en Middenschool voortgezet onderwijs",
+      "MavoMUlo_19": "Leerlingen MAVO en Middelbaar Uitgebreid Lager Onderwijs",
+      "Handelsdagschool_20": "Leerlingen handelsdagschool",
+      "Middenschool_21": "Middenschool (niet beschikbaar in deze periode)",
+      "LboIboBrugjaar_22": "Lager beroepsonderwijs / Inservice beroepsonderwijs brugjaar (niet beschikbaar)",
+      "LtoIto_23": "Land- en tuinbouwonderwijs / Internationaal tuinbouwonderwijs (niet beschikbaar)",
+      "LaoIao_24": "Lagere ambachts- en nijverheidsonderwijs / Internationaal ambachts- en nijverheidsonderwijs (niet beschikbaar)",
+      "LeaoLavoLmo_25": "Leerlingwezen ambachtsonderwijs / Leerlingwezen voortgezet onderwijs / Leerlingen maatschappelijk onderwijs (niet beschikbaar)",
+      "LhnoIhno_26": "Lager huishoud- en nijverheidsonderwijs / Internationaal huishoud- en nijverheidsonderwijs (niet beschikbaar)",
+      "LwooAvmb_27": "Leerlingen werkend en wonend onderwijs / Afdeling voorbereidend middelbaar beroepsonderwijs (niet beschikbaar)",
+      "VoortgezetOnderwijsAlgLeerjaren13_28": "Voortgezet onderwijs algemene leerjaren 1-3 (niet beschikbaar)",
+      "Vwo36_29": "VWO leerjaren 3-6 (niet beschikbaar)",
+      "Havo35_30": "HAVO leerjaren 3-5 (niet beschikbaar)",
+      "Mavo34_31": "MAVO leerjaren 3-4 (niet beschikbaar)",
+      "Praktijkonderwijs_32": "Praktijkonderwijs (niet beschikbaar in deze periode)",
+      "SpecVoortgezetOnderwijs1998Tot2002_33": "Speciaal voortgezet onderwijs 1998-2002 (niet beschikbaar)",
+      "VboTechniek_34": "VBO techniek (niet beschikbaar)",
+      "VboLandbouw_35": "VBO landbouw (niet beschikbaar)",
+      "VboEconomie_36": "VBO economie (niet beschikbaar)",
+      "VboZorgEnWelzijn_37": "VBO zorg en welzijn (niet beschikbaar)",
+      "Totaal_38": "Totaal voortgezet onderwijs (niet beschikbaar)",
+      "VmboTheoretischeLeerweg_39": "VMBO theoretische leerweg (niet beschikbaar)",
+      "VmboKaderberoepsgerichteLeerweg_40": "VMBO kaderberoepsgerichte leerweg (niet beschikbaar)",
+      "VmboGemengdeLeerweg_41": "VMBO gemengde leerweg (niet beschikbaar)",
+      "VmboBasisberoepsgerichteLeerweg_42": "VMBO basisberoepsgerichte leerweg (niet beschikbaar)",
+      "TechniekTotaal_43": "Sector techniek totaal in VMBO (niet beschikbaar)",
+      "TechniekGemengdeLeerweg_44": "Sector techniek gemengde leerweg (niet beschikbaar)",
+      "TechniekKaderberoepsgerichteLeerweg_45": "Sector techniek kaderberoepsgerichte leerweg (niet beschikbaar)",
+      "TechniekBasisberoepsgerichteLeerweg_46": "Sector techniek basisberoepsgerichte leerweg (niet beschikbaar)",
+      "LandbouwTotaal_47": "Sector landbouw totaal in VMBO (niet beschikbaar)",
+      "LandbouwGemengdeLeerweg_48": "Sector landbouw gemengde leerweg (niet beschikbaar)",
+      "LandbouwKaderberoepsgerichteLeerweg_49": "Sector landbouw kaderberoepsgerichte leerweg (niet beschikbaar)",
+      "LandbouwBasisberoepsgerichteLeerweg_50": "Sector landbouw basisberoepsgerichte leerweg (niet beschikbaar)",
+      "EconomieTotaal_51": "Sector economie totaal in VMBO (niet beschikbaar)",
+      "EconomieGemengdeLeerweg_52": "Sector economie gemengde leerweg (niet beschikbaar)",
+      "EconomieKaderberoepsgerichteLeerweg_53": "Sector economie kaderberoepsgerichte leerweg (niet beschikbaar)",
+      "EconomieBasisberoepsgerichteLeerweg_54": "Sector economie basisberoepsgerichte leerweg (niet beschikbaar)",
+      "ZorgEnWelzijnTotaal_55": "Sector zorg en welzijn totaal in VMBO (niet beschikbaar)",
+      "ZorgGemengdeLeerweg_56": "Sector zorg en welzijn gemengde leerweg (niet beschikbaar)",
+      "ZorgKaderberoepsgerichteLeerweg_57": "Sector zorg en welzijn kaderberoepsgerichte leerweg (niet beschikbaar)",
+      "ZorgBasisberoepsgerichteLeerweg_58": "Sector zorg en welzijn basisberoepsgerichte leerweg (niet beschikbaar)",
+      "IntersectoraleProgrammaSTotaal_59": "Intersectorale programma's totaal (niet beschikbaar)",
+      "IntersectoraleProgrGemengdeLeerweg_60": "Intersectorale programma's gemengde leerweg (niet beschikbaar)",
+      "IntersectoraleProgrKaderberoeps_61": "Intersectorale programma's kaderberoepsgerichte leerweg (niet beschikbaar)",
+      "IntersectoraleProgrBasisberoeps_62": "Intersectorale programma's basisberoepsgerichte leerweg (niet beschikbaar)",
+      "TotaalNijverheidsonderwijs_63": "Totaal nijverheidsonderwijs (ambachtsscholen)",
+      "TechnischNautischOnderwijs_64": "Technisch en nautisch onderwijs",
+      "NijverheidsonderwijsVoorMeisjes_65": "Nijverheidsonderwijs specifiek voor meisjes",
+      "OverigNijverheidsonderwijs_66": "Overig nijverheidsonderwijs",
+      "LandEnTuinbouwonderwijs_67": "Land- en tuinbouwonderwijs",
+      "SociaalPedagogischOnderwijs_68": "Sociaal-pedagogisch onderwijs",
+      "KleuterleidsterOpleidingsschool_69": "Opleiding voor kleuterleidsters",
+      "Kweekschool_70": "Kweekschool (onderwijzersopleiding)",
+      "MOAkten_71": "MO-akten (uitoefenbaarheidsonderwijs voor onderwijzers)",
+      "TotaalMboExclusiefExtranei_72": "Totaal middelbaar beroepsonderwijs exclusief extranei (niet beschikbaar)",
+      "TotaalMboInclusiefExtranei_73": "Totaal MBO inclusief extranei (niet beschikbaar)",
+      "TotaalMboBolVoltijd_74": "Totaal MBO beroepsopleidende leerweg voltijd (niet beschikbaar)",
+      "TotaalMboBolDeeltijd_75": "Totaal MBO BOL deeltijd (niet beschikbaar)",
+      "TotaalBboBbl_76": "Totaal beroepsbegeleidende leerweg BBL (niet beschikbaar)",
+      "TotaalExtranei_77": "Totaal extranei (niet beschikbaar)",
+      "SectorTechniek_78": "Sector techniek in MBO (niet beschikbaar)",
+      "SectorLandbouw_79": "Sector landbouw in MBO (niet beschikbaar)",
+      "SectorEconomie_80": "Sector economie in MBO (niet beschikbaar)",
+      "SectorZorgEnWelzijn_81": "Sector zorg en welzijn in MBO (niet beschikbaar)",
+      "CombinatieVanSectoren_82": "Combinatie van sectoren in MBO (niet beschikbaar)",
+      "OverigMbo_83": "Overig MBO (niet beschikbaar)",
+      "SectorTechniek_84": "Sector techniek MBO (herhaling, niet beschikbaar)",
+      "SectorLandbouw_85": "Sector landbouw MBO (herhaling, niet beschikbaar)",
+      "SectorEconomie_86": "Sector economie MBO (herhaling, niet beschikbaar)",
+      "SectorZorgEnWelzijn_87": "Sector zorg en welzijn MBO (herhaling, niet beschikbaar)",
+      "SectorTechniek_88": "Sector techniek MBO (herhaling, niet beschikbaar)",
+      "SectorLandbouw_89": "Sector landbouw MBO (herhaling, niet beschikbaar)",
+      "SectorEconomie_90": "Sector economie MBO (herhaling, niet beschikbaar)",
+      "SectorZorgEnWelzijn_91": "Sector zorg en welzijn MBO (herhaling, niet beschikbaar)",
+      "CombinatieVanSectoren_92": "Combinatie van sectoren MBO (niet beschikbaar)",
+      "TotaalHbo_93": "Totaal hoger beroepsonderwijs (niet beschikbaar)",
+      "TotaalVoltijdHbo_94": "Totaal voltijd HBO (niet beschikbaar)",
+      "HogerAgrarischOnderwijs_95": "Hoger agrarisch onderwijs (niet beschikbaar)",
+      "HogerTechnischOnderwijs_96": "Hoger technisch onderwijs (niet beschikbaar)",
+      "HogerGezondheidszorgonderwijs_97": "Hoger gezondheidszorgonderwijs (niet beschikbaar)",
+      "HogerEconomischOnderwijs_98": "Hoger economisch onderwijs (niet beschikbaar)",
+      "HogerSociaalAgogischOnderwijs_99": "Hoger sociaal-agogisch onderwijs (niet beschikbaar)",
+      "HogerKunstonderwijs_100": "Hoger kunstonderwijs (niet beschikbaar)",
+      "HogerPedagogischOnderwijs_101": "Hoger pedagogisch onderwijs (niet beschikbaar)",
+      "k_1Onderwijs_102": "HBO kennisgebied 1: Onderwijs (niet beschikbaar)",
+      "k_2TaalwetenschappenGeschiedenisKunst_103": "HBO kennisgebied 2: Taalwetenschappen, geschiedenis, kunst (niet beschikbaar)",
+      "k_3SocialeWetenschappenBedrijfskunde_104": "HBO kennisgebied 3: Sociale wetenschappen, bedrijfskunde (niet beschikbaar)",
+      "k_4NatuurwetenschappenInformatica_105": "HBO kennisgebied 4: Natuurwetenschappen, informatica (niet beschikbaar)",
+      "k_5TechniekIndustrieBouwkunde_106": "HBO kennisgebied 5: Techniek, industrie, bouwkunde (niet beschikbaar)",
+      "k_6LandbouwDiergeneeskunde_107": "HBO kennisgebied 6: Landbouw, diergeneeskunde (niet beschikbaar)",
+      "k_7GezondheidszorgWelzijn_108": "HBO kennisgebied 7: Gezondheidszorg, welzijn (niet beschikbaar)",
+      "k_8PersoonlijkeDienstverleningVervoer_109": "HBO kennisgebied 8: Persoonlijke dienstverlening, vervoer (niet beschikbaar)",
+      "TotaalDeeltijdHbo_10a": "Totaal deeltijd HBO (niet beschikbaar)",
+      "HogerTechnischOnderwijs_111": "Hoger technisch onderwijs deeltijd (niet beschikbaar)",
+      "HogerGezondheidszorgonderwijs_112": "Hoger gezondheidszorgonderwijs deeltijd (niet beschikbaar)",
+      "HogerEconomischOnderwijs_113": "Hoger economisch onderwijs deeltijd (niet beschikbaar)",
+      "HogerSociaalAgogischOnderwijs_114": "Hoger sociaal-agogisch onderwijs deeltijd (niet beschikbaar)",
+      "HogerKunstonderwijs_115": "Hoger kunstonderwijs deeltijd (niet beschikbaar)",
+      "HogerPedagogischOnderwijs_116": "Hoger pedagogisch onderwijs deeltijd (niet beschikbaar)",
+      "k_1Onderwijs_117": "HBO deeltijd kennisgebied 1: Onderwijs (niet beschikbaar)",
+      "k_2TaalwetenschappenGeschiedenisKunst_118": "HBO deeltijd kennisgebied 2 (niet beschikbaar)",
+      "k_3SocialeWetenschappenBedrijfskunde_119": "HBO deeltijd kennisgebied 3 (niet beschikbaar)",
+      "k_4NatuurwetenschappenInformatica_120": "HBO deeltijd kennisgebied 4 (niet beschikbaar)",
+      "k_5TechniekIndustrieBouwkunde_121": "HBO deeltijd kennisgebied 5 (niet beschikbaar)",
+      "k_6LandbouwDiergeneeskunde_122": "HBO deeltijd kennisgebied 6 (niet beschikbaar)",
+      "k_7GezondheidszorgWelzijn_123": "HBO deeltijd kennisgebied 7 (niet beschikbaar)",
+      "k_8PersoonlijkeDienstverleningVervoer_124": "HBO deeltijd kennisgebied 8 (niet beschikbaar)",
+      "TotaalWo_125": "Totaal aantal studenten wetenschappelijk onderwijs (universiteiten)",
+      "Letteren_126": "Studenten letteren en taalwetenschappen",
+      "Godgeleerdheid_127": "Studenten godgeleerdheid en godsdienstwetenschappen",
+      "Wijsbegeerte_128": "Studenten wijsbegeerte (niet beschikbaar in deze periode)",
+      "Geneeskunde_129": "Studenten geneeskunde",
+      "Tandheelkunde_130": "Studenten tandheelkunde",
+      "Diergeneeskunde_131": "Studenten diergeneeskunde",
+      "OverigeMedischeWetenschappen_132": "Overige medische wetenschappen (niet beschikbaar)",
+      "WiskundeEnNatuurwetenschappen_133": "Studenten wiskunde en natuurwetenschappen",
+      "TechnischeWetenschappen_134": "Studenten technische wetenschappen",
+      "Landbouwwetenschappen_135": "Studenten landbouwwetenschappen",
+      "Rechtsgeleerdheid_136": "Studenten rechtsgeleerdheid",
+      "EconomischeWetenschappen_137": "Studenten economische wetenschappen",
+      "SocialeWetenschappen_138": "Studenten sociale wetenschappen",
+      "GeografieEnPrehistorie_139": "Studenten geografie en prehistorie (niet beschikbaar)",
+      "Bedrijfskunde_140": "Studenten bedrijfskunde (niet beschikbaar)",
+      "LichamelijkeOpvoeding_141": "Studenten lichamelijke opvoeding (niet beschikbaar)",
+      "k_1Onderwijs_142": "WO kennisgebied 1: Onderwijs (niet beschikbaar)",
+      "k_2TaalwetenschappenGeschiedenisKunst_143": "WO kennisgebied 2 (niet beschikbaar)",
+      "k_3SocialeWetenschappenBedrijfskunde_144": "WO kennisgebied 3 (niet beschikbaar)",
+      "k_4NatuurwetenschappenInformatica_145": "WO kennisgebied 4 (niet beschikbaar)",
+      "k_5TechniekIndustrieBouwkunde_146": "WO kennisgebied 5 (niet beschikbaar)",
+      "k_6LandbouwDiergeneeskunde_147": "WO kennisgebied 6 (niet beschikbaar)",
+      "k_7GezondheidszorgWelzijn_148": "WO kennisgebied 7 (niet beschikbaar)",
+      "k_8PersoonlijkeDienstverleningVervoer_149": "WO kennisgebied 8 (niet beschikbaar)",
+      "OpenUniversiteit_150": "Studenten Open Universiteit (niet beschikbaar)",
+      "Totaal_151": "Totaal voortgezet onderwijs herhaling (niet beschikbaar)",
+      "VwoHavo_152": "Combinatie VWO en HAVO (niet beschikbaar)",
+      "Vwo_153": "VWO apart (niet beschikbaar)",
+      "Havo_154": "HAVO apart (niet beschikbaar)",
+      "VmboTheoretischeLeerwegMavo_155": "VMBO-theoretische leerweg / MAVO (niet beschikbaar)",
+      "Handelsavondonderwijs_156": "Leerlingen handelsavondonderwijs",
+      "CursorischOndernemersonderwijs_157": "Cursusgericht ondernemersonderwijs (niet beschikbaar)",
+      "LagerBeroepsonderwijs_158": "Lager beroepsonderwijs (niet beschikbaar)",
+      "VormingswerkVoorJeugdigen_159": "Vormingswerk voor jeugdigen (niet beschikbaar)",
+      "Basiseducatie_160": "Basiseducatie (niet beschikbaar)",
+      "Educatie_161": "Educatie (niet beschikbaar)"
+    },
+    "waardenbereik": {
+      "Kleuteronderwijs_1": {
+        "min": 117.5,
+        "max": 315.7,
+        "beschrijving": "Aantal leerlingen in duizenden; vanaf 1904/'05 beschikbaar, toont de groei van het kleuteronderwijs"
+      },
+      "Basisonderwijs_2": {
+        "min": 755.0,
+        "max": 1202.8,
+        "beschrijving": "Aantal leerlingen in duizenden; vrijwel volledig beschikbaar over alle periodes"
+      },
+      "TotaalBloBuo_4": {
+        "min": 0.5,
+        "max": 26.6,
+        "beschrijving": "Totaal buitengewoon lager onderwijs in duizenden; vanaf circa 1906/'07"
+      },
+      "ZeerMoeilijkLerendeKinderen_5": {
+        "min": 0.2,
+        "max": 24.0,
+        "beschrijving": "Leerlingen met zeer moeilijke leer- en opvoedingsmoeilijkheden in duizenden"
+      },
+      "LeerEnOpvoedingsmoeilijkheden_6": {
+        "min": 0.4,
+        "max": 2.6,
+        "beschrijving": "Leerlingen met leer- en opvoedingsmoeilijkheden in duizenden"
+      },
+      "TotaalVoortgezetOnderwijs_12": {
+        "min": 13.4,
+        "max": 212.9,
+        "beschrijving": "Totaal leerlingen voortgezet onderwijs in duizenden; vanaf circa 1906/'07"
+      },
+      "Gymnasium_15": {
+        "min": 2.9,
+        "max": 11.5,
+        "beschrijving": "Leerlingen gymnasium in duizenden"
+      },
+      "AtheneumHbs_16": {
+        "min": 8.6,
+        "max": 40.6,
+        "beschrijving": "Leerlingen atheneum en HBS in duizenden; stabiel groeiend"
+      },
+      "VwoOngedeeldLyceum_17": {
+        "min": 0.1,
+        "max": 32.9,
+        "beschrijving": "Leerlingen VWO ongedeeld lyceum in duizenden"
+      },
+      "HavoMsvm_18": {
+        "min": 1.5,
+        "max": 4.7,
+        "beschrijving": "Leerlingen HAVO in duizenden; beperkt beschikbaar in vroegste periodes"
+      },
+      "MavoMUlo_19": {
+        "min": 51.5,
+        "max": 127.5,
+        "beschrijving": "Leerlingen MAVO/MULO in duizenden; grootste categorie voortgezet onderwijs in deze periode"
+      },
+      "Handelsdagschool_20": {
+        "min": 0.2,
+        "max": 4.0,
+        "beschrijving": "Leerlingen handelsdagschool in duizenden"
+      },
+      "TotaalNijverheidsonderwijs_63": {
+        "min": 20.7,
+        "max": 235.7,
+        "beschrijving": "Totaal nijverheidsonderwijs in duizenden; omvangrijke sector in vroeg 20e-eeuws onderwijs"
+      },
+      "TechnischNautischOnderwijs_64": {
+        "min": 19.4,
+        "max": 126.1,
+        "beschrijving": "Leerlingen technisch en nautisch onderwijs in duizenden"
+      },
+      "NijverheidsonderwijsVoorMeisjes_65": {
+        "min": 1.3,
+        "max": 106.4,
+        "beschrijving": "Meisjes in nijverheidsonderwijs in duizenden; sterke groei over de periode"
+      },
+      "OverigNijverheidsonderwijs_66": {
+        "min": 1.7,
+        "max": 3.2,
+        "beschrijving": "Overig nijverheidsonderwijs in duizenden"
+      },
+      "LandEnTuinbouwonderwijs_67": {
+        "min": 0.4,
+        "max": 21.6,
+        "beschrijving": "Leerlingen land- en tuinbouwonderwijs in duizenden"
+      },
+      "SociaalPedagogischOnderwijs_68": {
+        "min": 0.2,
+        "max": 1.1,
+        "beschrijving": "Sociaal-pedagogisch onderwijs in duizenden"
+      },
+      "KleuterleidsterOpleidingsschool_69": {
+        "min": 1.1,
+        "max": 4.0,
+        "beschrijving": "Leerlingen kleuterleidsteropleiding in duizenden"
+      },
+      "Kweekschool_70": {
+        "min": 5.2,
+        "max": 13.3,
+        "beschrijving": "Leerlingen kweekschool (onderwijzersopleiding) in duizenden"
+      },
+      "MOAkten_71": {
+        "min": 0.4,
+        "max": 1.7,
+        "beschrijving": "Studenten MO-akten in duizenden"
+      },
+      "TotaalWo_125": {
+        "min": 2.8,
+        "max": 28.6,
+        "beschrijving": "Totaal studenten wetenschappelijk onderwijs in duizenden"
+      },
+      "Letteren_126": {
+        "min": 0.2,
+        "max": 1.8,
+        "beschrijving": "Studenten letteren en taalwetenschappen in duizenden"
+      },
+      "Godgeleerdheid_127": {
+        "min": 0.3,
+        "max": 1.1,
+        "beschrijving": "Studenten godgeleerdheid in duizenden"
+      },
+      "Geneeskunde_129": {
+        "min": 1.3,
+        "max": 7.0,
+        "beschrijving": "Studenten geneeskunde in duizenden"
+      },
+      "Tandheelkunde_130": {
+        "min": 0.7,
+        "max": 0.8,
+        "beschrijving": "Studenten tandheelkunde in duizenden; slechts beperkt beschikbaar"
+      },
+      "Diergeneeskunde_131": {
+        "min": 0.1,
+        "max": 0.5,
+        "beschrijving": "Studenten diergeneeskunde in duizenden"
+      },
+      "WiskundeEnNatuurwetenschappen_133": {
+        "min": 0.4,
+        "max": 3.1,
+        "beschrijving": "Studenten wiskunde en natuurwetenschappen in duizenden"
+      },
+      "TechnischeWetenschappen_134": {
+        "min": 1.1,
+        "max": 5.5,
+        "beschrijving": "Studenten technische wetenschappen in duizenden"
+      },
+      "Landbouwwetenschappen_135": {
+        "min": 0.2,
+        "max": 1.2,
+        "beschrijving": "Studenten landbouwwetenschappen in duizenden"
+      },
+      "Rechtsgeleerdheid_136": {
+        "min": 0.5,
+        "max": 2.8,
+        "beschrijving": "Studenten rechtsgeleerdheid in duizenden"
+      },
+      "EconomischeWetenschappen_137": {
+        "min": 0.1,
+        "max": 2.9,
+        "beschrijving": "Studenten economische wetenschappen in duizenden"
+      },
+      "SocialeWetenschappen_138": {
+        "min": 0.0,
+        "max": 2.2,
+        "beschrijving": "Studenten sociale wetenschappen in duizenden"
+      },
+      "Handelsavondonderwijs_156": {
+        "min": 4.6,
+        "max": 20.5,
+        "beschrijving": "Leerlingen handelsavondonderwijs in duizenden"
+      },
+      "Geslacht": {
+        "categorieen": [
+          "Totaal mannen en vrouwen",
+          "Mannen",
+          "Vrouwen"
+        ],
+        "beschrijving": "Dimensie met 3 categorieën voor het analyseren van verschillen tussen mannen en vrouwen"
+      },
+      "Perioden": {
+        "bereik": "1900/'01 tot 2024/'25",
+        "aantal": 125,
+        "beschrijving": "Schooljaren als tijdreeks; de volledige dataset beslaat meer dan 125 schooljaren"
+      }
+    },
+    "combineerbaar_met": [
+      "CBS 37075 — Beroepen; Indeling SBI2008 (koppeling van onderwijsachtergrond aan beroep voor arbeidsmarktanalyses)",
+      "CBS 84960NED — Aantal personen per opleidingsniveau; geslacht en leeftijd (verrijking met opleidingsniveau-bevolking)",
+      "CBS 82003NED — Bevolking; geslacht, leeftijd en burgerlijke staat (demografische context en bevolkingsgroei)",
+      "CBS 83605NED — Leerlingen in het basisonderwijs; gemeente (aanvulling met gemeentelijke gegevens voor regionale analyses)",
+      "CBS 83618NED — Leerlingen voortgezet onderwijs; leerjaar, schoolsoort en geslacht (verdieping van VO-cijfers)",
+      "CBS 84042NED — Studenten hoger onderwijs; instelling, studierichting en geslacht (doorstroming naar hoger onderwijs)",
+      "CBS 83564NED — Geslaagden en geslaagden basisonderwijs (uitstroom basisonderwijs en doorstroom naar VO)"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Onderwijsinstellingen; grootte, soort, levensbeschouwelijke grondslag",
+    "periode": "1990/'91 - 2024/'25",
+    "onderwijstype": [
+      "Allen"
+    ],
+    "doel": "Overzicht van onderwijsinstellingen naar type, denominatie en schoolgrootte. Nuttig voor instellingen die hun positie in het landschap van onderwijsaanbieders willen begrijpen.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Algemene data overzichten",
+    "sectie": "Algemene Data Overzichten",
+    "documentatie": {
+      "tekst": "CBS Open Data 03753",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/03753"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe is het aantal mbo-instellingen veranderd sinds 2000, en hoe verdeelt zich dat over verschillende schoolgroottes?",
+      "Welke onderwijssoort heeft de grootste groei doorgemaakt in termen van aantal instellingen in de afgelopen 10 jaar?",
+      "Wat is het gemiddelde aantal leerlingen per instelling voor basisonderwijs vergeleken met voortgezet onderwijs?",
+      "Zijn er significante verschil in schoolgrootte tussen confessioneel en openbaar onderwijs?",
+      "Hoeveel instellingen met meer dan 10.000 studenten zijn er momenteel in het hoger beroepsonderwijs?",
+      "Welke onderwijssectoren laten een consolidatie zien waarbij het aantal instellingen daalt maar het aantal studenten stijgt?",
+      "Hoe verhoudt het aantal speciaal basisonderwijs zich tot het reguliere basisonderwijs over de afgelopen 15 jaar?",
+      "Wat is de ontwikkeling van het aantal vo-instellingen sinds de invoering van de Wet op het voortgezet onderwijs?",
+      "Hoe zijn de regionale verschillen in schoolgrootte tussen het noorden en het westen van Nederland?",
+      "Welke onderwijssoort heeft de meest均匀e verdeling over schoolgroottes?"
+    ],
+    "tags": [
+      "instellingen",
+      "denominatie",
+      "schoolgrootte",
+      "po",
+      "vo",
+      "mbo",
+      "ho",
+      "schaalgrootte",
+      "onderwijsstructuur",
+      "bestuursformatie"
+    ],
+    "_cbs_id": "03753",
+    "_thema": "Onderwijs",
+    "_archief": false,
+    "_laatste_update": "2026-05-21",
+    "samenvatting": "Deze dataset geeft een overzicht van het aantal onderwijsinstellingen en leerlingen/studenten in Nederland, uitgesplitst naar onderwijssoort, schoolgrootte en levensbeschouwelijke grondslag. De gegevens beslaan de periode van 1990/'91 tot en met 2024/'25. De dataset is relevant voor beleidsmedewerkers, onderzoekers en bestuurders die inzicht willen in de structuur en omvang van het Nederlandse onderwijslandschap, inclusief trends in institutionalisering en schaalgrootte.",
+    "_dimensies": [
+      "Onderwijssoort",
+      "Levensbeschouwelijke grondslag",
+      "Schoolgrootte",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Onderwijsinstellingen",
+      "Leerlingen - studenten"
+    ],
+    "_geo_niveau": [],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "niet_geschikt_voor": [
+      "Het meten van onderwijskwaliteit of leerprestaties - de dataset bevat geen kwaliteitsindicatoren",
+      "Het analyseren van onderwijsuitgaven of financiële gegevens - er zijn geen financiële variabelen",
+      "Het in kaart brengen van individuele leerlingen - de data is geaggregeerd op instellingsniveau"
+    ],
+    "kolomtoelichting": {
+      "ID": "Interne identificatienummer van de rij in de dataset",
+      "Onderwijssoort": "Type onderwijsinstelling, zoals basisonderwijs, voortgezet onderwijs, mbo of hoger beroepsonderwijs",
+      "LevensbeschouwelijkeGrondslag": "De religieuze of levensbeschouwelijke identiteit van de instelling (bijv. rooms-katholiek, protestants-christelijk, openbaar)",
+      "Schoolgrootte": "Categorisering van het aantal leerlingen/studenten per instelling",
+      "Perioden": "Schooljaar waarop de gegevens betrekking hebben (bijv. 2024/'25)",
+      "Onderwijsinstellingen_1": "Aantal onderwijsinstellingen in de betreffende categorie",
+      "LeerlingenStudenten_2": "Totaal aantal leerlingen of studenten in de betreffende categorie"
+    },
+    "waardenbereik": {
+      "Onderwijsinstellingen_1": {
+        "min": 1378,
+        "max": 9332,
+        "beschrijving": "Aantal instellingen varieert sterk per onderwijssoort; van enkele honderden instellingen voor speciaal onderwijs tot duizenden voor basisonderwijs"
+      },
+      "LeerlingenStudenten_2": {
+        "min": 94839,
+        "max": 1663651,
+        "beschrijving": "Aantal leerlingen/studenten loopt uiteen van kleinere sectoren zoals speciaal onderwijs tot het grote basisonderwijs met ruim 1,6 miljoen leerlingen"
+      },
+      "Onderwijssoort": {
+        "categorieen": "11 onderwijssoorten inclusief totalen voor primair, voortgezet, mbo en hoger onderwijs",
+        "beschrijving": "Indeling naar type onderwijs op het niveau van de instelling"
+      },
+      "Schoolgrootte": {
+        "categorieen": "9 grootteklasse van <=100 tot >10.000 leerlingen/studenten, plus een totaalklasse",
+        "beschrijving": "Categorisering op basis van het aantal leerlingen/studenten per instelling"
+      }
+    },
+    "combineerbaar_met": [
+      "CBS 83573NED - Aantal leerlingen/studenten per onderwijssoort voor gedetailleerde populatiegegevens",
+      "CBS 80072NED - Onderwijsdeelname naar leeftijd en herkomst voor demografische context",
+      "CBS 85220NED - Vestigingen van onderwijsinstellingen voor regionale spreiding",
+      "CBS 03758NED - Personeel in onderwijs voor relatie tussen personeel en instellingsgrootte",
+      "CBS 37101NED - Financiële gegevens onderwijsinstellingen voor kostenanalyse per instellingstype"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Leerlingen in (speciaal) basisonderwijs; herkomst, woonregio",
+    "periode": "2011/'12 - 2025/'26",
+    "onderwijstype": [
+      "PO"
+    ],
+    "doel": "Aantal leerlingen in basisonderwijs en speciaal basisonderwijs uitgesplitst naar herkomstland, geboorteland ouders en woonregio. Relevant voor diversiteitsanalyses en kansenbeleid in het primair onderwijs.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Primair Onderwijs",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85489NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85489NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe is het aandeel leerlingen met een niet-westerse herkomst de afgelopen 15 jaar ontwikkeld in de vier grootste gemeenten?",
+      "Welke provincies hebben het hoogste aandeel leerlingen met een herkomst uit Turkije of Marokko in het regulier basisonderwijs?",
+      "Verschilt de herkomstsamenstelling tussen regulier basisonderwijs en speciaal basisonderwijs en zo ja, hoe?",
+      "In welke gemeenten groeit het aantal leerlingen met een herkomst buiten Europa het snelst?",
+      "Hoe is de totale leerlingenpopulatie in het basisonderwijs veranderd over de periode 2011-2026, en welke herkomstgroepen zijn hier verantwoordelijk voor?",
+      "Wat is het verschil in herkomstsamensteling tussen de G4-gemeenten en gemeenten met minder dan 100.000 inwoners?",
+      "Hoeveel leerlingen met een Surinaamse of Antilliaanse herkomst zitten er in Noord-Nederland ten opzichte van Zuid-Nederland?",
+      "Zijn er regionale verschillen in het aandeel meisjes versus jongens met een niet-Westerse herkomst in het speciaal basisonderwijs?",
+      "Hoe verhoudt het aantal leerlingen met een onbekend herkomstland zich tussen de grote steden en de rest van Nederland?",
+      "Welke trend is zichtbaar in het aandeel leerlingen met een Europese herkomst (exclusief Nederland) in het basisonderwijs over de laatste 5 schooljaren?"
+    ],
+    "tags": [
+      "po",
+      "herkomst",
+      "diversiteit",
+      "regio",
+      "sbo",
+      "kansengelijkheid",
+      "provincie",
+      "gemeente",
+      "migratie",
+      "trends"
+    ],
+    "_cbs_id": "85489NED",
+    "_thema": "Primair onderwijs",
+    "_archief": false,
+    "_laatste_update": "2026-03-02",
+    "samenvatting": "Deze dataset telt het aantal leerlingen in het basisonderwijs en het speciaal basisonderwijs (SBO) in Nederland, uitgesplitst naar herkomstland, geboorteland van de ouders, geslacht, onderwijssoort en woonregio. De reikwijdte loopt van schooljaar 2011/'12 tot en met 2025/'26, met 15 schooljaren aan trends. De data is beschikbaar op niveau van landsdelen, provincies en gemeenten, waarmee regionale diversiteitsverschillen in beeld gebracht kunnen worden. De dataset is met name relevant voor beleidsmedewerkers die zich bezighouden met kansengelijkheid, diversiteitsbeleid en de spreiding van leerlingen met een migratieachtergrond in het primair onderwijs.",
+    "_dimensies": [
+      "Geslacht",
+      "Onderwijssoort",
+      "Herkomstland",
+      "Geboorteland (ouders)",
+      "Regiokenmerken",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Leerlingen in (speciaal) basisonderwijs"
+    ],
+    "_geo_niveau": [
+      "landelijk",
+      "provincie",
+      "gemeente",
+      "landsdeel"
+    ],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "niet_geschikt_voor": [
+      "Onderzoek naar leerprestaties of Cito-scores, want de dataset bevat alleen aantallen geen prestatiedata.",
+      "Analyse van leerlingen in het voortgezet onderwijs of middelbaar beroepsonderwijs, want de dataset beperkt zich tot (speciaal) basisonderwijs.",
+      "Internationale vergelijking van diversiteit, want de herkomstcategorieën zijn specifiek voor het Nederlandse CBS-classificatiesysteem."
+    ],
+    "kolomtoelichting": {
+      "Geslacht": "Geslacht van de leerling: Totaal mannen en vrouwen, Mannen of Vrouwen.",
+      "Onderwijssoort": "Type onderwijs: Totaal (speciaal) basisonderwijs, regulier basisonderwijs of speciaal basisonderwijs (SBO).",
+      "Herkomstland": "Herkomstland van de leerling of diens ouders, gegroepeerd in 10 categorieën waaronder Nederland, Turkije, Marokko, Suriname, Nederlandse Cariben, Indonesië en regionale groepen.",
+      "GeboortelandOuders": "Geboorteland van de ouders van de leerling. In de praktijk valt deze dimensie samen met Herkomstland in deze dataset.",
+      "Regiokenmerken": "Geografische indeling van de woonregio van de leerling, beschikbaar op niveau van landsdelen (LD), provincies (PV) en gemeenten (GM), inclusief de vier grootste gemeenten (G4).",
+      "Perioden": "Schooljaar waarop de gegevens betrekking hebben, van 2011/'12 tot en met 2025/'26.",
+      "LeerlingenInSpeciaalBasisonderwijs_1": "Het aantal leerlingen in het basisonderwijs en het speciaal basisonderwijs zoals opgenomen in de Wet Primair Onderwijs."
+    },
+    "waardenbereik": {
+      "LeerlingenInSpeciaalBasisonderwijs_1": {
+        "min": 128620,
+        "max": 1559270,
+        "beschrijving": "Aantal leerlingen per combinatie van dimensies. De maximale waarde (circa 1.559.270) betreft het totaal aantal leerlingen in heel Nederland in het schooljaar 2011/'12. De minimumwaarde (circa 128.620) betreft een specifieke subgroep per regio."
+      },
+      "Herkomstland": {
+        "aantal_categorieen": 10,
+        "beschrijving": "10 categorieën: Totaal, Nederland, Europa (excl. NL), Turkije, Marokko, Suriname, Nederlandse Cariben, Indonesië, Buiten Europa (excl. 5 grote herkomsten) en Onbekend herkomstland."
+      },
+      "Regiokenmerken": {
+        "aantal_categorieen": 20,
+        "beschrijving": "20 regionale eenheden: 1 landelijk totaal, 4 landsdelen, 12 provincies, 4 gemeentelijke/groepsniveau-indelingen (G4, gemeenten ≥100k, gemeenten <100k, niet in te delen)."
+      },
+      "Geslacht": {
+        "aantal_categorieen": 3,
+        "beschrijving": "3 categorieën: Totaal mannen en vrouwen, Mannen, Vrouwen."
+      },
+      "Onderwijssoort": {
+        "aantal_categorieen": 3,
+        "beschrijving": "3 categorieën: Totaal (speciaal) basisonderwijs, Basisonderwijs, Speciaal basisonderwijs."
+      },
+      "Perioden": {
+        "aantal_categorieen": 15,
+        "beschrijving": "15 schooljaren van 2011/'12 tot en met 2025/'26."
+      }
+    },
+    "combineerbaar_met": [
+      "CBS 85353NED (Leerlingen onderwijsinstellingen PO) voor totalen en doorstroomcijfers binnen het primair onderwijs.",
+      "CBS 85232NED of vergelijkbare dataset met leerlingprestaties (Cito) voor koppeling van herkomst aan onderwijskwaliteit.",
+      "CBS 85423NED (Leerlingen voortgezet onderwijs) voor het volgen van de herkomstsamenstelling van primair naar voortgezet onderwijs.",
+      "CBS datasets over ouders met een bijstandsuitkering per gemeente voor een bredere kijk op kansarmoede en leefbaarheid.",
+      "CBS datasets over jeugdhulp en leerplicht voor analyse van het verband tussen migratieachtergrond en ondersteuningsbehoefte in het onderwijs.",
+      "Kerncijfers wijken en buurten (CBS) voor het koppelen van leerlinggegevens aan sociaal-economische wijkkenmerken."
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "(Speciaal) basisonderwijs en speciale scholen; leerlingen, schoolregio",
+    "periode": "2000/'01-2024/'25",
+    "onderwijstype": [
+      "PO"
+    ],
+    "doel": "Aantal leerlingen in basisonderwijs en speciale scholen per schoolregio, uitgesplitst naar geslacht en leeftijd. Geschikt voor capaciteitsplanning en regionale spreidingsanalyses.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Primair Onderwijs",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 71478ned",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/71478ned"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe ontwikkelt het totale aantal basisschoolleerlingen in mijn schoolregio zich over de afgelopen 10 jaar?",
+      "Welke schoolregio's kennen de grootste krimp in het aantal leerlingen en hoe verhoudt zich tot het landelijk gemiddelde?",
+      "Wat is de verhouding tussen jongens en meisjes in het speciaal basisonderwijs per regio?",
+      "Hoe is de leeftijdsverdeling van leerlingen in het speciaal basisonderwijs vergeleken met regulier basisonderwijs?",
+      "In welke regio's neemt het aantal leerlingen onder de 5 jaar het sterkst toe als indicatie voor toekomstige capaciteitsbehoefte?",
+      "Wat is het aandeel leerlingen op speciale scholen ten opzichte van het totale aantal po-leerlingen per provincie?",
+      "Hoe differentieert de groei van het aantal leerlingen tussen stedelijke en landelijke schoolregio's?",
+      "Welke leeftijdsgroep vertoont de sterkste daling in het aantal leerlingen en in welke regio's is dat het meest zichtbaar?",
+      "Hoe verhoudt het aantal leerlingen in het sbo zich tot het reguliere po in regio's met een hoog aandeel allochtone leerlingen?",
+      "Kan aan de hand van leeftijdsspecifieke data de toekomstige instroom voor het voortgezet onderwijs per regio worden voorspeld?"
+    ],
+    "tags": [
+      "po",
+      "sbo",
+      "speciaal-onderwijs",
+      "regio",
+      "capaciteitsplanning",
+      "krimp",
+      "groei",
+      "leeftijd",
+      "geslacht",
+      "schoolregio"
+    ],
+    "_cbs_id": "71478ned",
+    "_thema": "Primair onderwijs",
+    "_archief": false,
+    "_laatste_update": "2026-04-10",
+    "samenvatting": "Deze dataset telt het aantal leerlingen in het basisonderwijs, speciaal basisonderwijs en speciale scholen per schoolregio, uitgesplitst naar geslacht en leeftijd. Geschikt voor beleidsmedewerkers die regionale capaciteit, krimp/groei en leeftijdsverdeling in het po en sbo willen analyseren. De reikwijdte loopt van schooljaar 2000/01 tot en met 2024/25.",
+    "_dimensies": [
+      "Geslacht",
+      "Leeftijd",
+      "Onderwijssoorten",
+      "Regio's",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Aantal leerlingen"
+    ],
+    "_geo_niveau": [
+      "landelijk",
+      "corop",
+      "provincie",
+      "gemeente",
+      "landsdeel"
+    ],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "niet_geschikt_voor": [
+      "Analyse van onderwijskwaliteit of leerprestaties (geen rendements- of toetsgegevens)",
+      "Landelijk beeld van alle onderwijssectoren (beperkt tot po, sbo en speciale scholen)",
+      "Financiële planning of begrotingsanalyses (geen kosten- of budgetgegevens)"
+    ],
+    "kolomtoelichting": {
+      "Geslacht": "Scheidt de leerlingen in totaal, mannen en vrouwen",
+      "Leeftijd": "Leeftijd van de leerling op 1 januari van het schooljaar, van 5 tot en met 12 jaar, plus een categorie 'jonger dan 5 jaar' en totalen",
+      "Onderwijssoorten": "Onderscheidt regulier basisonderwijs, speciaal basisonderwijs (sbo) en speciale scholen (pro, vso)",
+      "RegioS": "CBS-schoolregio: een regionaal gebiedsindeling voor onderwijsstatistiek, bruikbaar voor analyses op gemeente-, provincie- of corop-niveau",
+      "Perioden": "Schooljaar, van 2000/01 tot en met 2024/25",
+      "AantalLeerlingen_1": "Aantal ingeschreven leerlingen in de betreffende regio, onderwijssoort, leeftijds- en geslachtscategorie"
+    },
+    "waardenbereik": {
+      "AantalLeerlingen_1": {
+        "min": 126580,
+        "max": 1553332,
+        "beschrijving": "Aantal leerlingen per combinatie van regio, onderwijssoort, leeftijd en geslacht; waarden variëren sterk per regio- en categoriecombinatie"
+      },
+      "Geslacht": {
+        "categorieen": [
+          "Totaal mannen en vrouwen",
+          "Mannen",
+          "Vrouwen"
+        ],
+        "beschrijving": "3 categorieën: totaal, mannelijk en vrouwelijk"
+      },
+      "Leeftijd": {
+        "categorieen": "5 tot en met 12 jaar, plus 'jonger dan 5 jaar' en totalen (17 categorieën)",
+        "beschrijving": "Individueleeftjaren van 5 tot 12 jaar; extra categorie voor leerlingen onder de 5 jaar en een totaalcategorie"
+      },
+      "Onderwijssoorten": {
+        "categorieen": [
+          "Basisonderwijs",
+          "Speciaal basisonderwijs",
+          "Speciale scholen"
+        ],
+        "beschrijving": "Drie typen po-onderwijs: regulier, sbo en speciale scholen (pro/vso)"
+      }
+    },
+    "combineerbaar_met": [
+      "CBS 85701NED — Leerlingen en studenten per woonregio: om het aandeel po-leerlingen in de totale onderwijsdeelname per regio te berekenen",
+      "CBS 83625NED — Bevolkingsprognose per gemeente: om toekomstige krimp of groei in leerlingenpopulatie te voorspellen",
+      "CBS 85203NED — Aantal scholen, leerlingen en klassen basisonderwijs: om leerlingaantallen te koppelen aan schaalgrootte en schoolinfrastructuur",
+      "CBS 37173NED — Demografische kerncijfers per gemeente: om correlaties tussen geboortecijfers en toekomstige instroom te onderzoeken",
+      "CBS 84274NED — Schooladvies en herziening advies basisonderwijs: om leeftijdsverdeling te koppelen aan adviespraktijken"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Schooladvies en herziening advies basisonderwijs; achtergrondkenmerken",
+    "periode": "2014/'15-2023/'24",
+    "onderwijstype": [
+      "PO"
+    ],
+    "doel": "Schooladviezen en bijstellingen in groep 8, uitgesplitst naar geslacht, herkomst en inkomen van ouders. Cruciaal voor kansengelijkheidsonderzoek en het monitoren van adviespraktijken.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Primair Onderwijs",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 84274NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/84274NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel leerlingen kregen een vmbo-advies versus een havo-advies in het schooljaar 2022/23?",
+      "Wat is het verschil in adviespatroon tussen leerlingen met een Nederlandse en niet-Nederlandse achtergrond?",
+      "Hoeveel adviezen werden bijgesteld op basis van eindtoetsuitslagen in de afgelopen jaren?",
+      "Is er een verband tussen het inkomen van ouders en het type schooladvies dat leerlingen krijgen?",
+      "Welk percentage leerlingen kreeg een advies dat hoger lag dan de toetsuitslag aangaf?",
+      "Hoe zijn de adviesverdelingen veranderd over de periode 2014/15 tot 2023/24?",
+      "Welke schooladviezen komen het meest voor bij leerlingen met een hoog gestandaardiseerd inkomen?",
+      "Hoeveel leerlingen werden bijgesteld van een lager naar een hoger niveau op basis van de eindtoets?"
+    ],
+    "tags": [
+      "po",
+      "schooladvies",
+      "kansengelijkheid",
+      "herkomst",
+      "inkomen",
+      "eindtoets",
+      "groep8",
+      "bijstelling"
+    ],
+    "_cbs_id": "84274NED",
+    "_thema": "Primair onderwijs",
+    "_archief": false,
+    "_laatste_update": "2026-04-10",
+    "samenvatting": "Deze dataset bevat gegevens over schooladviezen en bijstellingen in groep 8 van het basisonderwijs in Nederland. De data is uitgesplitst naar geslacht, herkomstland van de leerling en gestandaardiseerd inkomen van de ouders. Het gaat om voorlopige adviezen, adviezen op basis van toetsen en definitieve adviezen over de periode 2014/15 tot en met 2023/24. De dataset is relevant voor onderzoek naar kansengelijkheid en het monitoren van adviespraktijken in het primair onderwijs.",
+    "_dimensies": [
+      "Geslacht",
+      "Schooladvies",
+      "Herkomstland",
+      "Gestandaardiseerd inkomen",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Totaal voorlopig schooladvies",
+      "Toetsadvies lager of gelijk",
+      "Totaal toetsadvies hoger",
+      "Advies herzien obv toets",
+      "Advies niet herzien obv toets",
+      "Definitief schooladvies"
+    ],
+    "_geo_niveau": [],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "niet_geschikt_voor": [
+      "Analyse van leerprestaties op individueel leerlingniveau",
+      "Onderzoek naar de kwaliteit van specifieke scholen of schoolbesturen",
+      "Vergelijking van onderwijsuitkomsten tussen verschillende onderwijssectoren"
+    ],
+    "kolomtoelichting": {
+      "ID": "Uniek identificatienummer van de record",
+      "Geslacht": "Geslacht van de leerling (totaal, mannen, vrouwen)",
+      "Schooladvies": "Het type schooladvies dat de leerling heeft ontvangen (van vso/pro/vmbo-b tot vwo)",
+      "Herkomstland": "Land van herkomst van de leerling (totaal, Nederland, Buiten Nederland)",
+      "GestandaardiseerdInkomen": "Gestandaardiseerd inkomen van de ouders in quintielen",
+      "Perioden": "Schooljaar waarop de gegevens betrekking hebben",
+      "TotaalVoorlopigSchooladvies_1": "Totaal aantal leerlingen met een voorlopig schooladvies",
+      "ToetsadviesLagerOfGelijk_2": "Aantal leerlingen waarvan het schooladvies gelijk of lager was dan de toetsuitslag",
+      "TotaalToetsadviesHoger_3": "Totaal aantal leerlingen waarvan het schooladvies hoger was dan de toetsuitslag",
+      "AdviesHerzienObvToets_4": "Aantal leerlingen waarvan het advies is bijgesteld op basis van de toets",
+      "AdviesNietHerzienObvToets_5": "Aantal leerlingen waarvan het advies niet is bijgesteld ondanks toetsuitslag",
+      "DefinitiefSchooladvies_6": "Totaal aantal leerlingen met een definitief schooladvies"
+    },
+    "waardenbereik": {
+      "TotaalVoorlopigSchooladvies_1": {
+        "min": 22390,
+        "max": 185799,
+        "beschrijving": "Aantal leerlingen met een voorlopig schooladvies per categorie"
+      },
+      "ToetsadviesLagerOfGelijk_2": {
+        "min": 12905,
+        "max": 123369,
+        "beschrijving": "Aantal leerlingen waarvan het schooladvies gelijk of lager was dan de toetsuitslag"
+      },
+      "TotaalToetsadviesHoger_3": {
+        "min": 7268,
+        "max": 68941,
+        "beschrijving": "Aantal leerlingen waarvan het schooladvies hoger was dan de toetsuitslag"
+      },
+      "AdviesHerzienObvToets_4": {
+        "min": 903,
+        "max": 39703,
+        "beschrijving": "Aantal leerlingen waarvan het advies is bijgesteld op basis van de toets"
+      },
+      "AdviesNietHerzienObvToets_5": {
+        "min": 1912,
+        "max": 53022,
+        "beschrijving": "Aantal leerlingen waarvan het advies niet is bijgesteld ondanks toetsuitslag"
+      },
+      "DefinitiefSchooladvies_6": {
+        "min": 22390,
+        "max": 185799,
+        "beschrijving": "Aantal leerlingen met een definitief schooladvies"
+      },
+      "Geslacht": {
+        "beschrijving": "Categorieën: Totaal mannen en vrouwen, Mannen, Vrouwen"
+      },
+      "Schooladvies": {
+        "beschrijving": "Categorieën: Totaal, Advies: vso/pro/vmbo-b, vmbo-b/k, vmbo-k, vmbo-k/gt, vmbo-gt, vmbo-gt/havo, havo, havo/vwo, vwo"
+      },
+      "Herkomstland": {
+        "beschrijving": "Categorieën: Totaal, Nederland, Buiten Nederland"
+      },
+      "GestandaardiseerdInkomen": {
+        "beschrijving": "Gestandaardiseerd inkomen verdeeld in quintielen (5 groepen)"
+      },
+      "Perioden": {
+        "beschrijving": "Schooljaren van 2014/'15 tot en met 2023/'24"
+      }
+    },
+    "combineerbaar_met": [
+      "CBS 83534NED - Leerlingen basisonderwijs naar achtergrondkenmerken",
+      "CBS 85201NED - Eindtoets basisonderwijs (Cito, IEP, etc.)",
+      "CBS 83638NED - Docenten in het primair onderwijs",
+      "CBS 85141NED - Schoolkenmerken basisonderwijs"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Vo; examenkandidaten en gediplomeerden, onderwijssoort, woonregio",
+    "periode": "2011/'12-2024/'25",
+    "onderwijstype": [
+      "VO"
+    ],
+    "doel": "Examenkandidaten en geslaagden in het voortgezet onderwijs per onderwijssoort en woonregio. Toont slagingspercentages per regio en geslacht.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Voortgezet Onderwijs",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85382NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85382NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe ontwikkelen de slagingspercentages voor vmbo-b/k zich in Noord- versus Zuid-Nederland over de afgelopen 10 jaar?",
+      "Welke provincies hebben de grootste regionale verschillen in examensucces voor havo-leerlingen?",
+      "Wat is het verschil in slagingspercentage tussen mannen en vrouwen voor vwo-examens?",
+      "Hoe verhouden de absolute aantallen examenkandidaten in het vmbo zich tot die in havo en vwo per regio?",
+      "Zijn er provincies met een structureel hoger of lager slagingspercentage dan het landelijk gemiddelde?",
+      "Hoe zijn de examenresultaten in het vmbo-g/t veranderd sinds de invoer van de nieuwe examenregeling?",
+      "Wat is de correlatie tussen het aantal examenkandidaten en het slagingspercentage per onderwijssoort?",
+      "Welke regio's laten de sterkste groei zien in het aantal gediplomeerden in het voortgezet onderwijs?",
+      "Verschilt het slagingspercentage voor havo-examens tussen stedelijke en landelijke provincies?",
+      "Hoe is het aandeel geslaagden voor vrouwen vergeleken met mannen ontwikkeld over de 14 schooljaren?"
+    ],
+    "tags": [
+      "voortgezet onderwijs",
+      "examens",
+      "slagingspercentage",
+      "regioverschillen",
+      "vmbo",
+      "havo",
+      "vwo",
+      "tijdreeks"
+    ],
+    "_cbs_id": "85382NED",
+    "_thema": "Vo gediplomeerden",
+    "_archief": false,
+    "_laatste_update": "2026-03-27",
+    "samenvatting": "Deze dataset bevat gegevens over examenkandidaten en gediplomeerden in het voortgezet onderwijs (vmbo, havo, vwo) in Nederland, uitgesplitst naar onderwijssoort, geslacht en woonregio. De data beslaat de schooljaren 2011/'12 tot en met 2024/'25 en toont zowel absolute aantallen als slagingspercentages. Relevant voor beleidsmedewerkers die regionale verschillen in slagingspercentages willen analyseren, het effect van onderwijsbeleid willen evalueren of de ontwikkeling van examenresultaten over tijd willen volgen.",
+    "_dimensies": [
+      "Geslacht",
+      "Onderwijssoort",
+      "Regiokenmerken",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Examenkandidaten",
+      "Gediplomeerden",
+      "Gediplomeerden, relatief"
+    ],
+    "_geo_niveau": [
+      "landelijk",
+      "provincie",
+      "gemeente",
+      "landsdeel"
+    ],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "niet_geschikt_voor": [
+      "Analyse van kwaliteit van individuele scholen (dataset bevat alleen geaggregeerde regionale gegevens)",
+      "Onderzoek naar de oorzaken van slaag- of zakgedrag (geen achtergrondkenmerken van leerlingen beschikbaar)",
+      "Vergelijking met MBO- of HBO-opleidingen (alleen vo-sector)"
+    ],
+    "kolomtoelichting": {
+      "ID": "Uniek identificatienummer voor elke rij in de dataset",
+      "Geslacht": "Geslacht van de kandidaten: Totaal mannen en vrouwen, Mannen of Vrouwen",
+      "Onderwijssoort": "Type voortgezet onderwijs: Vmbo (totaal en uitgesplitst naar b/k, g/t), Havo of Vwo",
+      "Regiokenmerken": "Geografische indeling op basis van woonregio: landelijk, Leefgebieden, of Provincies",
+      "Perioden": "Schooljaar waarop de gegevens betrekking hebben (bijv. 2023/'24)",
+      "Examenkandidaten_1": "Aantal leerlingen dat examen heeft gedaan in het betreffende onderwijssoort en regio",
+      "Gediplomeerden_2": "Aantal leerlingen dat daadwerkelijk het diploma heeft behaald",
+      "GediplomeerdenRelatief_3": "Slagingspercentage: aandeel gediplomeerden ten opzichte van examenkandidaten (in procenten)"
+    },
+    "waardenbereik": {
+      "Examenkandidaten_1": {
+        "min": 9310,
+        "max": 109060,
+        "beschrijving": "Aantal examenkandidaten per onderwijssoort-regio-combinatie; laagste waarden betreffen kleinere regio's of specifieke onderwijssoorten, hoogste waarden betreffen het landelijke totaal"
+      },
+      "Gediplomeerden_2": {
+        "min": 8730,
+        "max": 103200,
+        "beschrijving": "Aantal daadwerkelijk geslaagde kandidaten; de absolute aantallen volgen de omvang van de examenpopulatie"
+      },
+      "GediplomeerdenRelatief_3": {
+        "min": 92.0,
+        "max": 100.0,
+        "beschrijving": "Slagingspercentage varieert van 92% tot 100%; de hoge ondergrens wijst op een relatief hoog slagingspercentage in het VO"
+      },
+      "Geslacht": {
+        "beschrijving": "3 categorieën: Totaal (m+v), Mannen, Vrouwen — maakt gendervergelijking mogelijk"
+      },
+      "Onderwijssoort": {
+        "beschrijving": "9 categorieën: Vmbo (totaal), Vmbo-b/k totaal, Vmbo-b, Vmbo-k, Vmbo g/t totaal, Vmbo-g, Vmbo-t, Havo, Vwo — gedetailleerde onderverdeling van het voortgezet onderwijs"
+      },
+      "Regiokenmerken": {
+        "beschrijving": "20 categorieën: landelijk (Nederland), 5 Leefgebieden en 14 Provincies (inclusief 'Niet in te delen') — analyse op meerdere schaalniveaus mogelijk"
+      },
+      "Perioden": {
+        "beschrijving": "14 schooljaren van 2011/'12 tot en met 2024/'25 — ruim een decennium aan trends en ontwikkelingen"
+      }
+    },
+    "combineerbaar_met": [
+      "Demografische datasets (bevolking, migratieachtergrond) voor contextualisering van regionale verschillen",
+      "MBO-instroom- en doorstroomgegevens om de overgang van VO naar vervolgopleidingen te analyseren",
+      "Voortgezet onderwijs - Leerlingen en schoolkenmerken voor informatie over schoolpopulaties",
+      "Arbeidsmarktinformatie (Beroepen in het onderwijs) om de relatie tussen onderwijsuitkomsten en arbeidsmarkt te onderzoeken"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Vo; examenkandidaten en gediplomeerden, onderwijssoort in detail, herkomst",
+    "periode": "2011/'12-2024/'25",
+    "onderwijstype": [
+      "VO"
+    ],
+    "doel": "Examenkandidaten en geslaagden in het VO uitgesplitst naar gedetailleerd onderwijssoort en herkomst. Relevant voor het analyseren van kansenongelijkheid bij examinering.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Voortgezet Onderwijs",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85381NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85381NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe verschilt het slagingspercentage tussen leerlingen met een Nederlandse en niet-Nederlandse herkomst?",
+      "Zijn de kansenverschillen tussen herkomstgroepen in het vo de afgelopen jaren toe- of afgenomen?",
+      "Welke onderwijssoort in detail heeft het hoogste percentage gediplomeerden, uitgesplitst naar herkomst?",
+      "Hoe ontwikkelt het aantal examenkandidaten met een Marokkaanse herkomst zich over de afgelopen 10 jaar?",
+      "Is er een verschil in slagingskans tussen jongens en meisjes per herkomstgroep?",
+      "Welke daling of stijging is zichtbaar in het aantal gediplomeerden na de coronapandemie (2020/'21)?",
+      "Bij welke onderwijssoort is het aandeel gediplomeerden het laagst voor leerlingen uit Caribisch Nederland?",
+      "Hoe verhoudt het slagingspercentage van Turkse-Nederlandse leerlingen zich tot dat van Surinaamse-Nederlandse leerlingen per onderwijssoort?",
+      "Zijn er onderwijssoorten waar herkomst een grotere rol speelt in slagingskans dan gemiddeld?",
+      "Welke combinatie van herkomst en onderwijssoort geeft de grootste kans op het behalen van een diploma?"
+    ],
+    "tags": [
+      "vo",
+      "examen",
+      "herkomst",
+      "kansengelijkheid",
+      "gediplomeerden",
+      "diversiteit",
+      "slagingspercentage",
+      "onderwijssoort"
+    ],
+    "_cbs_id": "85381NED",
+    "_thema": "Vo gediplomeerden",
+    "_archief": false,
+    "_laatste_update": "2026-03-27",
+    "samenvatting": "Deze dataset bevat het aantal examenkandidaten en gediplomeerden in het voortgezet onderwijs, uitgesplitst naar geslacht, gedetailleerd onderwijssoort, herkomstland en geboorteland van ouders. Relevant voor beleidsmedewerkers die kansengelijkheid en studiesucces in het vo willen monitoren en analyseren. De dataset beslaat 14 schooljaren (2011/'12-2024/'25) en biedt zowel absolute aantallen als het relatief percentage gediplomeerden. Belangrijkste dimensies zijn onderwijssoort in detail, herkomstland en geboorteland van ouders.",
+    "_dimensies": [
+      "Geslacht",
+      "Onderwijssoort in detail",
+      "Herkomstland",
+      "Geboorteland (ouders)",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Examenkandidaten",
+      "Gediplomeerden",
+      "Gediplomeerden, relatief"
+    ],
+    "_geo_niveau": [],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "niet_geschikt_voor": [
+      "Analyse van individuele scholen of besturen (CBS data is anoniem en geaggregeerd)",
+      "Doorstroming van vo naar mbo of ho (daarvoor zijn aparte CBS-cohortdatasets beschikbaar)"
+    ],
+    "kolomtoelichting": {
+      "Geslacht": "Geslacht van de examenleerling: totaal, mannen of vrouwen",
+      "OnderwijssoortInDetail": "Gedetailleerde onderwijssoort binnen het vo (bijv. vwo, havo, vmbo-t, vmbo-k, vmbo-b, praktijkonderwijs, en subcategorieën)",
+      "Herkomstland": "Herkomstland van de leerling op basis van geboorteland van de leerling en/of ouders",
+      "GeboortelandOuders": "Geboorteland van de ouders, gebruikt voor herkomstbepaling",
+      "Perioden": "Schooljaar waarop de cijfers betrekking hebben, formaat JJJJ/'JJ",
+      "Examenkandidaten_1": "Totaal aantal examenkandidaten in de categorie",
+      "Gediplomeerden_2": "Aantal geslaagde examenkandidaten dat het diploma heeft behaald",
+      "GediplomeerdenRelatief_3": "Percentage examenkandidaten dat is geslaagd (gediplomeerden / examenkandidaten × 100%)"
+    },
+    "waardenbereik": {
+      "Examenkandidaten_1": {
+        "min": 18390,
+        "max": 109060,
+        "beschrijving": "Het aantal examenkandidaten varieert van ca. 18.000 tot 109.000 per combinatie van dimensies"
+      },
+      "Gediplomeerden_2": {
+        "min": 16190,
+        "max": 103200,
+        "beschrijving": "Het aantal gediplomeerden varieert van ca. 16.000 tot 103.000 per combinatie van dimensies"
+      },
+      "GediplomeerdenRelatief_3": {
+        "min": 88.0,
+        "max": 99.0,
+        "beschrijving": "Het slagingspercentage varieert van 88% tot 99% per combinatie van dimensies"
+      },
+      "OnderwijssoortInDetail": {
+        "min": null,
+        "max": null,
+        "beschrijving": "Dimensie met gedetailleerde onderwijssoorten binnen het vo (onbekend aantal categorieën in de sample)"
+      },
+      "GeboortelandOuders": {
+        "min": null,
+        "max": null,
+        "beschrijving": "Dimensie met 4 categorieën in de sample: totaal, Nederland, buitenland (nader onder te verdelen)"
+      },
+      "Geslacht": {
+        "min": null,
+        "max": null,
+        "beschrijving": "Dimensie met 3 categorieën: totaal, mannen, vrouwen"
+      },
+      "Herkomstland": {
+        "min": null,
+        "max": null,
+        "beschrijving": "Dimensie met 10 herkomstgroepen waaronder Nederland, Turkije, Marokko, Suriname, Caribisch Nederland, Indonesië en overige regio's"
+      },
+      "Perioden": {
+        "min": null,
+        "max": null,
+        "beschrijving": "14 schooljaren van 2011/'12 t/m 2024/'25"
+      }
+    },
+    "combineerbaar_met": [
+      "CBS 85394NED — Vo; leerlingen, onderwijssoort in detail, herkomst (voor leerlingaantallen per onderwijssoort, als context voor slagingspercentages)",
+      "CBS 85007NED — Vo; examenresultaten naar onderwijssoort clusters (voor landelijke benchmarks van examenresultaten)",
+      "CBS 83240NED — Mbo; gediplomeerden naar herkomst (voor doorstroomanalyse van vo-gediplomeerden naar mbo)",
+      "CBS onderwijsachterstandsindicator per gemeente (in combinatie met regio-informatie voor analyse van regionale kansengelijkheid)"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Vo; leerlingen, onderwijssoort, leerjaar, woonregio",
+    "periode": "2021/'22-2025/'26",
+    "onderwijstype": [
+      "VO"
+    ],
+    "doel": "Actuele leerlingenaantallen in het voortgezet onderwijs per onderwijssoort, leerjaar en woonregio. Geschikt voor regionale capaciteitsplanning en instroomanalyses.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Voortgezet Onderwijs",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85380NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85380NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe is het aantal vmbo-leerlingen in de provincie Noord-Holland ontwikkeld tussen 2018/'19 en 2025/'26?",
+      "Welke gemeenten hebben de grootste groei in havo-leerlingen in de afgelopen drie schooljaren?",
+      "Wat is de verdeling van mannelijke en vrouwelijke vwo-leerlingen per provincie in het meest recente schooljaar?",
+      "Hoeveel leerlingen zitten er in leerjaar 1 van het vmbo in Rotterdam en hoe verhoudt zich dat tot drie jaar geleden?",
+      "In welke regio's neemt het aantal vwo-leerlingen proportioneel het sterkst toe?",
+      "Wat is het aandeel meisjes onder de vwo-leerlingen in leerjaar 5 vergeleken met jongens in de provincie Utrecht?",
+      "Hoe zijn de totale leerlingenaantallen in het voortgezet onderwijs verdeeld over de vier Randstedelijke provincies?",
+      "Welke onderwijssoort binnen het vmbo heeft het grootste aantal leerlingen in leerjaar 3 en 4 in Zuid-Holland?",
+      "Hoe is de leerlingenpopulatie in het vo in dunbevolkte provincies (Drenthe, Flevoland) veranderd sinds 2015/'16?",
+      "Wat is het verschil in totale leerlingenaantallen tussen mannen en vrouwen over alle onderwijssoorten heen?"
+    ],
+    "tags": [
+      "vo",
+      "leerlingen",
+      "leerjaar",
+      "regio",
+      "capaciteitsplanning",
+      "vmbo",
+      "havo",
+      "vwo",
+      "provincie",
+      "gemeente",
+      "geslacht",
+      "trends"
+    ],
+    "_cbs_id": "85380NED",
+    "_thema": "Vo leerlingen",
+    "_archief": false,
+    "_laatste_update": "2026-04-02",
+    "samenvatting": "Deze dataset bevat actuele leerlingenaantallen in het voortgezet onderwijs, uitgesplitst naar onderwijssoort (vmbo, havo, vwo), leerjaar (1-6), geslacht en woonregio (provincie, gemeente). De periode loopt van 2011/'12 tot en met 2025/'26, waardoor trends over ruim een decennium zichtbaar zijn. De dataset is relevant voor beleidsmedewerkers die regionale capaciteitsplanning doen, schoolbesturen die de instroom monitoren, en onderzoekers die de geografische verdeling van leerlingen in het vo willen analyseren.",
+    "_dimensies": [
+      "Geslacht",
+      "Onderwijssoort",
+      "Leerjaar",
+      "Regiokenmerken",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Aantal leerlingen"
+    ],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "_geo_niveau": [
+      "landelijk",
+      "provincie",
+      "gemeente",
+      "landsdeel"
+    ],
+    "niet_geschikt_voor": [
+      "Analyse van schoolprestaties of examenresultaten — de dataset bevat alleen leerlingenaantallen, geen kwalitatieve output",
+      "Analyse van leerlingenstromen tussen scholen of onderwijssectoren — er is geen paneldata of individual tracking",
+      "Financiële of budgettaire analyses — er zijn geen kosten- of financieringsgegevens beschikbaar"
+    ],
+    "kolomtoelichting": {
+      "ID": "Uniek record-identificatienummer per rij in de dataset",
+      "Geslacht": "Onderscheid tussen mannen, vrouwen en het totaal; mogelijkheid om genderverdeling per regio en onderwijssoort te analyseren",
+      "Onderwijssoort": "Categorisering van het type voortgezet onderwijs, waaronder vmbo (b/k, g/t), havo, vwo en samengestelde totalen",
+      "Leerjaar": "Het schooljaar waarin de leerling zit, van leerjaar 1 t/m 6; relevant voor doorstroom- en uitvalanalyses",
+      "Regiokenmerken": "Geografische indeling op het niveau van Nederland, landsdelen (LD), provincies (PV) en gemeenten (GM)",
+      "Perioden": "Schooljaar van waarneming in het formaat JJJJ/'YY, bijvoorbeeld 2024/'25",
+      "AantalLeerlingen_1": "Totaal aantal leerlingen dat voldoet aan de combinatie van dimensiewaarden in die rij"
+    },
+    "waardenbereik": {
+      "AantalLeerlingen_1": {
+        "min": 87170,
+        "max": 995480,
+        "beschrijving": "Het aantal leerlingen varieert sterk afhankelijk van de gekozen filters; het maximum (≈995.480) betreft waarschijnlijk het totaal aantal vo-leerlingen over alle onderwijssoorten en leerjaren in heel Nederland in een enkel schooljaar; het minimum (≈87.170) betreft waarschijnlijk een specifieke onderwijssoort in een enkele provincie"
+      },
+      "Geslacht": {
+        "categorieen": [
+          "Totaal mannen en vrouwen",
+          "Mannen",
+          "Vrouwen"
+        ],
+        "beschrijving": "Drie categorieën waarmee de totale populatie en de geslachtsverdeling apart geanalyseerd kunnen worden"
+      },
+      "Onderwijssoort": {
+        "aantal_categorieen": 13,
+        "beschrijving": "Onderverdeling in vmbo-varianten (b/k, g/t), havo, vwo en overkoepelende totalen; ideaal voor gedifferentieerde capaciteitsplanning per onderwijsniveau"
+      },
+      "Leerjaar": {
+        "categorieen": [
+          "Totaal leerjaren",
+          "Leerjaar 1",
+          "Leerjaar 2",
+          "Leerjaar 3",
+          "Leerjaar 4",
+          "Leerjaar 5",
+          "Leerjaar 6"
+        ],
+        "beschrijving": "Zes individuele leerjaren plus een totaaloverzicht; geschikt voor het volgen van cohorten en instroomanalyses"
+      },
+      "Regiokenmerken": {
+        "aantal_categorieen": 20,
+        "beschrijving": "Geografische niveaus van Nederland als geheel, vier landsdelen, twaalf provincies en gemeenten; geschikt voor regionale vergelijkingen"
+      },
+      "Perioden": {
+        "aantal_categorieen": 15,
+        "beschrijving": "Schooljaren van 2011/'12 tot en met 2025/'26; hiermee zijn langetermijntrends over een decennium te analyseren"
+      }
+    },
+    "combineerbaar_met": [
+      "CBS 83648NED — Voortgezet onderwijs: doorstroom en uitval per school (voor relatie tussen leerlingenaantallen en onderwijskwaliteit)",
+      "CBS 85240NED — Voortgezet onderwijs: leerlingen en scholen naar schoolbestuur (voor analyse van leerlingenverdeling per bestuur)",
+      "CBS 83625NED — Leerlingen voortgezet onderwijs naar herkomst en geslacht (voor de relatie tussen migratieachtergrond en onderwijssoortkeuze)",
+      "CBS 85220NED — Mbo: studenten en afgestudeerden (voor doorstroomanalyse van vo naar mbo)",
+      "CBS 85353NED — Ho: ingeschrevenen naar instelling en studierichting (voor doorstroom van vo naar hoger onderwijs)",
+      "CBS 84598NED — Arbeidsmarkt naar opleidingsniveau en beroep (voor relatie tussen onderwijsniveau en arbeidsmarktuitkomsten)",
+      "CBS 83716NED — Bevolking naar leeftijd, geslacht, herkomst en gemeente (voor demografische context achter leerlingenpopulatie)"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Vo; leerlingen, onderwijssoort in detail, leerjaar, herkomst",
+    "periode": "2020/'21-2025/'26",
+    "onderwijstype": [
+      "VO"
+    ],
+    "doel": "VO-leerlingen uitgesplitst naar gedetailleerd onderwijssoort, leerjaar en herkomstland. Biedt inzicht in diversiteit en doorstroom per schooltype.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Voortgezet Onderwijs",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85379NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85379NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe is de verdeling van leerlingen met een migratieachtergrond per onderwijssoort (vmbo-havo-vwo) veranderd?",
+      "Welke herkomstlanden zijn het sterkst vertegenwoordigd in het vwo vergeleken met het vmbo?",
+      "Hoe verschilt de leerjaarsverdeling tussen Nederlandse en niet-Nederlandse leerlingen?",
+      "Zijn er verschillen in de man/vrouw-verhouding per onderwijssoort en herkomstgroep?",
+      "Hoe ontwikkelt het aandeel leerlingen van Turkse, Marokkaanse of Surinaamse herkomst zich over de jaren?",
+      "Welke onderwijssoorten kennen de grootste groei in diversiteit?",
+      "Hoe is het aantal leerlingen met onbekend herkomstland de afgelopen jaren veranderd?",
+      "Wat is de verdeling van herkomstlanden binnen het middelbaar beroepsonderwijs (vmbo)?"
+    ],
+    "tags": [
+      "vo",
+      "leerlingen",
+      "herkomst",
+      "diversiteit",
+      "leerjaar",
+      "kansengelijkheid",
+      "vmbo",
+      "havo",
+      "vwo",
+      "migratieachtergrond"
+    ],
+    "_cbs_id": "85379NED",
+    "_thema": "Vo leerlingen",
+    "_archief": false,
+    "_laatste_update": "2026-04-02",
+    "samenvatting": "Deze dataset bevat het aantal VO-leerlingen uitgesplitst naar gedetailleerd onderwijssoort (vmbo, havo, vwo, etc.), leerjaar (1-6) en herkomstland. Relevant voor schoolbesturen, schoolleiders en beleidsmedewerkers die de diversiteit en doorstroom in het voortgezet onderwijs willen analyseren. Biedt inzicht in de samenstelling van de leerlingenpopulatie per schooltype en herkomst over de periode 2011/'12 tot 2025/'26.",
+    "_dimensies": [
+      "Geslacht",
+      "Onderwijssoort in detail",
+      "Leerjaar",
+      "Herkomstland",
+      "Geboorteland (ouders)",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Aantal leerlingen"
+    ],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "_geo_niveau": [],
+    "niet_geschikt_voor": [
+      "Het analyseren van schoolprestaties of slagingspercentages (geen resultaatgegevens)",
+      "Het maken van regionale vergelijkingen (geen geografische dimensie)",
+      "Het in kaart brengen van leerlingenstromen tussen schooltypen (geen paneldata)"
+    ],
+    "kolomtoelichting": {
+      "ID": "Interne identificatienummer van de rij",
+      "Geslacht": "Geslacht van de leerling: Totaal mannen en vrouwen, Mannen of Vrouwen",
+      "OnderwijssoortInDetail": "Gedetailleerd onderwijssoort binnen het VO (bijv. vmbo-basis, vmbo-kader, havo, vwo-atheneum, vwo-gymnasium)",
+      "Leerjaar": "Leerjaar waarin de leerling zit (1 tot en met 6, of Totaal)",
+      "Herkomstland": "Herkomstland van de leerling: Nederland, Europa (excl. NL), Turkije, Marokko, Suriname, Nederlandse Cariben, Indonesië, Buiten Europa (excl. 5 grote), Onbekend, of Totaal",
+      "GeboortelandOuders": "Geboorteland van de ouders van de leerling",
+      "Perioden": "Schooljaar (bijv. 2020/'21, 2021/'22)",
+      "AantalLeerlingen_1": "Aantal leerlingen dat voldoet aan de combinatie van dimensies"
+    },
+    "waardenbereik": {
+      "AantalLeerlingen_1": {
+        "min": 165890,
+        "max": 995480,
+        "beschrijving": "Het aantal leerlingen per categorie. Waarden variëren sterk afhankelijk van de gekozen dimensiecombinatie."
+      },
+      "Geslacht": {
+        "beschrijving": "3 categorieën: Totaal mannen en vrouwen, Mannen, Vrouwen"
+      },
+      "Leerjaar": {
+        "beschrijving": "7 categorieën: Totaal leerjaren, Leerjaar 1 t/m 6"
+      },
+      "Herkomstland": {
+        "beschrijving": "10 categorieën: Totaal, Nederland, Europa (excl. NL), Turkije, Marokko, Suriname, Nederlandse Cariben, Indonesië, Buiten Europa (excl. 5 grote), Onbekend herkomstland"
+      },
+      "Perioden": {
+        "beschrijving": "15 schooljaren van 2011/'12 tot en met 2025/'26"
+      }
+    },
+    "combineerbaar_met": [
+      "CBS 85353NED — MBO leerlingen voor vergelijking diversiteit VO-MBO",
+      "CBS 83832NED — Doorstroom voortgezet onderwijs naar vervolgonderwijs",
+      "CBS 85702NED — Gediplomeerden per regio voor regionale analyses",
+      "Demografische CBS-datasets over bevolkingssamenstelling per gemeente"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Vo en vso; doorstroom en uitstroom, achtergrondkenmerken",
+    "periode": "2015/'16 naar 2016/'17 t/m 2022/'23 naar 2023/'24",
+    "onderwijstype": [
+      "VO"
+    ],
+    "doel": "Doorstroom en uitstroom van VO- en VSO-leerlingen naar het volgende schooljaar, uitgesplitst naar herkomst en geslacht. Essentieel voor het analyseren van studieloopbanen en schoolverlaters.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Voortgezet Onderwijs",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85566NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85566NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel VMBO-T leerlingen stromen door naar HAVO in vergelijking met VMBO-B leerlingen?",
+      "Wat is het percentage leerlingen dat uitstroomt naar MBO na het behalen van een HAVO-diploma, en hoe verschilt dit per herkomstgroep?",
+      "Hoeveel VWO-leerlingen verlaten het voortgezet onderwijs zonder diploma in de regio Amsterdam vs. de G4?",
+      "Welke onderwijsposities hebben het hoogste aandeel leerlingen met een buitenlands herkomstland die uitstromen naar niet-VO onderwijs?",
+      "Hoe is de doorstroom van leerjaar 1 naar leerjaar 2 geëvolueerd over de periode 2015/'16 tot 2023/'24?",
+      "Wat is het verschil in uitstroomprofiel tussen mannen en vrouwen na VWO 6 met diploma?",
+      "Hoeveel leerlingen uit het praktijkonderwijs stromen door naar mbo entreeopleiding per gemeente?",
+      "Welke gemeenten hebben de hoogste uitval van VMBO-4 leerlingen naar niet-onderwijs en hoe corrleert dit met socioeconomic indicators?",
+      "Hoeveel leerlingen met geboorteland buiten Nederland stromen door van HAVO naar VWO vergeleken met leerlingen geboren in Nederland?",
+      "Wat is de trend in doorstroom van VWO naar universiteit (via vavo) over de afgelopen 10 schooljaren?"
+    ],
+    "tags": [
+      "vo",
+      "vso",
+      "doorstroom",
+      "uitstroom",
+      "herkomst",
+      "schoolverlaters",
+      "studievoortgang",
+      "gemeente",
+      "vmbo",
+      "havo",
+      "vwo",
+      "mbo",
+      "onderwijspositie",
+      "diplomering",
+      "onderwijskansen"
+    ],
+    "_cbs_id": "85566NED",
+    "_thema": "Vo stromen",
+    "_archief": false,
+    "_laatste_update": "2026-06-05",
+    "samenvatting": "Deze dataset meet de doorstroom en uitstroom van leerlingen in het voortgezet onderwijs (VO) en voortgezet speciaal onderwijs (VSO) naar het volgende schooljaar, uitgesplitst naar onderwijspositie in het basisjaar en volgende schooljaar, geslacht, herkomstland, geboorteland van ouders en regiokenmerken. De data beslaat schooljaren vanaf 2010/'11 tot en met 2024/'25 en is beschikbaar op landelijk en gemeentelijk niveau. Relevant voor beleidsmedewerkers op scholen, schoolbesturen en gemeenten die studieloopbanen, schoolverlaters en onderwijskansenongelijkheid willen analyseren. De dataset bevat gedetailleerde onderwijspositiecategorieën inclusief alle VMBO-varianten (basis, kader, gemengd, theoretisch), HAVO, VWO, en doorstroom naar MBO en VAVO.",
+    "_dimensies": [
+      "Geslacht",
+      "Onderwijs positie basisjaar",
+      "Onderwijs positie volgend schooljaar",
+      "Geboorteland (ouders)",
+      "Herkomstland",
+      "Regiokenmerken",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Leerlingen"
+    ],
+    "_geo_niveau": [
+      "landelijk",
+      "gemeente"
+    ],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "niet_geschikt_voor": [
+      "Analyse van leerprestaties of cijfers van individuele leerlingen — de dataset bevat alleen aggregaataantallen, geen individuele resultaten",
+      "Real-time monitoring van leerlingenstromen — de data wordt jaarlijks gepubliceerd met vertraging van een schooljaar",
+      "Vergelijking met onderwijsinstelling-specifieke uitkomsten — de dataset bevat alleen regionale en landelijke totalen, geen schoolniveau-data"
+    ],
+    "kolomtoelichting": {
+      "Geslacht": "Geslacht van de leerling: Totaal mannen en vrouwen, Mannen, Vrouwen",
+      "OnderwijsPositieBasisjaar": "De onderwijspositie van de leerling in het basisjaar (het schooljaar waarvan de data betrekking heeft). Omvat alle VO- en VSO-niveaus inclusief leerjaren, VMBO-varianten (b/k/g/t), HAVO, VWO, en TOTAAL-rijen",
+      "OnderwijsPositieVolgendSchooljaar": "De onderwijspositie van de leerling in het volgende schooljaar na doorstroom of uitstroom. Omvat naast VO-posities ook MBO (entree, niveau 2/3/4), VAVO, Praktijkonderwijs, en TOTAAL-rijen",
+      "GeboortelandOuders": "Geboorteland van de ouders van de leerling: Geboren in NL (ouders ook in NL), Geboren in NL (ouder(s) buiten NL), Geboren buiten NL, Totaal",
+      "Herkomstland": "Herkomstland van de leerling zelf: Nederland, Europa (excl. NL), Buiten Europa, Onbekend, Totaal",
+      "Regiokenmerken": "Regionale indeling: landelijk (NL01), G4-steden, inwonersgrootte-klassen, individuele G4-gemeenten (Amsterdam, Den Haag, Rotterdam, Utrecht), en niet-verdeelbare gemeenten",
+      "Perioden": "Schooljaar waarop de gegevens betrekking hebben, in het formaat YYYY/'YY naar YY/'YY (bijv. 2022/'23 naar 2023/'24)"
+    },
+    "waardenbereik": {
+      "Leerlingen_1": {
+        "min": 0,
+        "max": 995480,
+        "beschrijving": "Aantal leerlingen in het voortgezet onderwijs of voortgezet speciaal onderwijs en hun positie in het volgende schooljaar. Waarden variëren van kleine groepen (specifieke doorstroom per herkomst per gemeente) tot bijna een miljoen (totaal landelijk)"
+      },
+      "Geslacht": {
+        "categorieen": [
+          "Totaal mannen en vrouwen",
+          "Mannen",
+          "Vrouwen"
+        ],
+        "beschrijving": "3 categorieën voor geslachtsuitsplitsing"
+      },
+      "OnderwijsPositieBasisjaar": {
+        "categorieen": "Meer dan 40 categorieën",
+        "beschrijving": "Gedetailleerde onderwijsposities inclusief: Totaal VO, Totaal VO excl. pro, Leerjaar 1-2, VMBO 3-4 (b/k/g/t varianten, met/zonder diploma), HAVO 3-5, VWO 3-6, en TOTAAL-rijen"
+      },
+      "OnderwijsPositieVolgendSchooljaar": {
+        "categorieen": "Meer dan 40 categorieën",
+        "beschrijving": "Gedetailleerde onderwijsposities inclusief alle VO-niveaus plus: Praktijkonderwijs, Totaal VSO, Totaal VAVO, Totaal MBO (incl. extranei), MBO entree/niveau 2/3/4"
+      },
+      "Herkomstland": {
+        "categorieen": [
+          "Totaal",
+          "Nederland",
+          "Europa (exclusief Nederland)",
+          "Buiten Europa",
+          "Onbekend herkomstland"
+        ],
+        "beschrijving": "5 categorieën voor de herkomst van de leerling"
+      },
+      "Regiokenmerken": {
+        "categorieen": [
+          "Nederland",
+          "G4",
+          "Meer dan 100.000 inwoners",
+          "Minder dan 100.000 inwoners",
+          "Amsterdam",
+          "'s-Gravenhage",
+          "Rotterdam",
+          "Utrecht",
+          "Gemeenten; niet in te delen"
+        ],
+        "beschrijving": "9 categorieën voor regionale indeling"
+      }
+    },
+    "combineerbaar_met": [
+      "CBS 83648NED (Leerlingen voortgezet onderwijs) voor absolute aantallen per school en type",
+      "CBS 85242NED (Vo en vso; geslaagden en uitstroom) voor diplomering en uitstroompercentages",
+      "CBS 83522NED (Leerlingen en promovendi in het hoger onderwijs) voor doorstroom naar HBO/WO",
+      "CBS 85353NED (Mbo; inschrijvingen en kwalificaties) voor vervolgopleiding na uitstroom VO",
+      "CBS 37296NED (Bevolking; generatie, migratieachtergrond) voor demografische context per gemeente",
+      "CBS 84987NED (Arbeidsdeelname; persoonlijke kenmerken) voor arbeidsmarktpositie van schoolverlaters"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Vo-cohorten; hoogst behaald diploma, achtergrondkenmerken",
+    "periode": "2008, 2010, 2012, 2014, 2016, 2018",
+    "onderwijstype": [
+      "VO"
+    ],
+    "doel": "Cohortdata van VO-leerlingen die aangeeft welk diploma ze uiteindelijk behaalden, uitgesplitst naar geslacht, herkomst, schooladvies en inkomen ouders. Diepgaand instrument voor rendements- en kansengelijkheidsanalyses.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Voortgezet Onderwijs",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85534NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85534NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe verschilt het diplomarendement tussen leerlingen met een Nederlandse en een niet-Westerse achtergrond binnen 7 jaar na schoolstart?",
+      "Welk effect heeft het definitieve schooladvies op de kans om uiteindelijk een vwo-diploma te behalen?",
+      "In hoeverre is er sprake van 'overstijging' (hoger diploma dan het schooladvies) en verschilt dit per herkomstgroep?",
+      "Hveel leerlingen hebben binnen 4 jaar versus 7 jaar na startjaar hun diploma behaald, en is dat verschil veranderd tussen cohort 2008 en 2018?",
+      "Wat is het aandeel niet-gediplomeerde leerlingen per herkomstgroep na 7 jaar, en hoe evolueert dat over de cohorten?",
+      "Zijn er verschillen in rendement tussen mannen en vrouwen bij de verschillende diplomavmogelijkheden (vmbo-b tot vwo)?",
+      "Hoeveel leerlingen zitten 7 jaar na startjaar nog steeds in het voortgezet onderwijs en welke herkomstkenmerken hebben zij?",
+      "Welke schooladvies-categorieën hebben het hoogste aandeel leerlingen dat het adviesniveau niet bereikt?",
+      "Hoe ontwikkelt het totale aantal startende vo-leerlingen zich over de cohorten 2008-2018?"
+    ],
+    "tags": [
+      "vo",
+      "cohort",
+      "diploma",
+      "kansengelijkheid",
+      "rendement",
+      "herkomst",
+      "schooladvies",
+      "studievoortgang",
+      "overstijging",
+      "vmbo",
+      "havo",
+      "vwo"
+    ],
+    "_cbs_id": "85534NED",
+    "_thema": "Vo studievoortgang",
+    "_archief": false,
+    "_laatste_update": "2025-09-18",
+    "samenvatting": "Deze dataset bevat cohortgegevens van vo-leerlingen en laat zien welk diploma zij op verschillende peilmomenten (4 tot 7 jaar na startjaar) hebben behaald. De data is uitgesplitst naar geslacht, herkomstkenmerken, definitief schooladvies en onderwijspositie. Het is een essentieel instrument voor het analyseren van rendement en kansengelijkheid in het voortgezet onderwijs over de periode 2008 tot 2018.",
+    "_dimensies": [
+      "Diploma op peilmoment",
+      "Geslacht",
+      "Herkomstkenmerken",
+      "Definitief schooladvies",
+      "Onderwijspositie op peilmoment",
+      "Startjaar",
+      "Peilmoment"
+    ],
+    "_meetwaarden": [
+      "Leerlingen (aantal)"
+    ],
+    "_geo_niveau": [],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "niet_geschikt_voor": [
+      "Analyse van individuele leerlingtrajecten of schoolspecifieke prestaties (geen microdata op leerling- of scholenniveau)",
+      "Real-time monitoring van het huidige schooljaar (data betreft historische cohorten met maximaal 7 jaar terugblik)",
+      "Financiële analyses of kosten-batenberekeningen van onderwijsbeleid (geen financiële variabelen in de dataset)"
+    ],
+    "kolomtoelichting": {
+      "DiplomaOpPeilmoment": "Het diploma dat de leerlingen op het peilmoment hebben behaald. Categorieën lopen van vmbo-b (laagst) tot vwo (hoogst), plus totalen voor gediplomeerden en niet-gediplomeerden.",
+      "Geslacht": "Verdeling van leerlingen naar geslacht: mannen, vrouwen, of totaal.",
+      "Herkomstkenmerken": "Etnische en geboorteherkomst van leerlingen. Onderverdeeld in herkomstland (Nederland, Turkije, Marokko, Suriname, etc.) en geboortestatus (geboren in NL met respectievelijk beide ouders in NL, één ouder buiten NL, twee ouders buiten NL, of geboren buiten Nederland).",
+      "DefinitiefSchooladvies": "Het definitieve schooladvies dat leerlingen aan het einde van de basisschool ontvingen. Loopt van vso/pro/vmbo-b (laagst) via vmbo-k, vmbo-gt, havo, tot vwo (hoogst), inclusief dubbele adviezen en onbekend.",
+      "OnderwijspositieOpPeilmoment": "Of de leerlingen op het peilmoment nog in het voortgezet onderwijs zitten (in VO), het voortgezet onderwijs hebben verlaten (uit VO), of het totaal.",
+      "Startjaar": "Het cohortjaar waarin de leerlingen zijn begonnen in het voortgezet onderwijs: 2008, 2010, 2012, 2014, 2016 of 2018.",
+      "Peilmoment": "Het tijdstip waarop de status wordt gemeten: 4, 5, 6 of 7 jaar na het startjaar.",
+      "LeerlingenAantal_1": "Het aantal leerlingen in de betreffende snede. Waarden variëren van enkele honderden tot bijna 200.000. Kan 8% nullen bevatten bij kleine subgroepen."
+    },
+    "waardenbereik": {
+      "LeerlingenAantal_1": {
+        "min": 630,
+        "max": 197280,
+        "beschrijving": "Aantal leerlingen per combinatie van dimensies. De bovengrenzen betreffen totalen per startjaar; lagere waarden betreffen specifieke subgroepen per herkomst, advies of diploma."
+      },
+      "DiplomaOpPeilmoment": {
+        "categorieen": 8,
+        "beschrijving": "8 categorieën: Totaal leerlingen startjaar, Totaal gediplomeerden, Vmbo-b, Vmbo-k, Vmbo g/t, Havo, Vwo, Totaal niet gediplomeerden. Geen numeriek bereik."
+      },
+      "DefinitiefSchooladvies": {
+        "categorieen": 12,
+        "beschrijving": "12 categorieën van laag (vso/pro/vmbo-b) tot hoog (vwo), inclusief dubbele adviezen (bijv. vmbo-gt/havo), totaal met advies en onbekend."
+      },
+      "OnderwijspositieOpPeilmoment": {
+        "categorieen": 3,
+        "beschrijving": "3 categorieën: Totaal, Leerlingen in VO, Leerlingen uit VO."
+      },
+      "Startjaar": {
+        "waarden": [
+          2008,
+          2010,
+          2012,
+          2014,
+          2016,
+          2018
+        ],
+        "beschrijving": "6 cohortjaren met een interval van 2 jaar."
+      },
+      "Peilmoment": {
+        "waarden": [
+          "4 jaar na startjaar",
+          "5 jaar na startjaar",
+          "6 jaar na startjaar",
+          "7 jaar na startjaar"
+        ],
+        "beschrijving": "4 peilmomenten die de longitudinale opvolging van het cohort weergeven."
+      }
+    },
+    "combineerbaar_met": [
+      "83646NED (MBO-slaagpercentages per opleiding en school) — om te onderzoeken wat er met niet-gediplomeerde VO-leerlingen gebeurt na overstap naar het mbo",
+      "85269NED (Voortgezet onderwijs; leerlingen, kenmerken) — om absolute aantallen en trends in leerlingenpopulatie te koppelen aan cohortrendementen",
+      "85011NED (Voortgezet onderwijs; doorstroom en uitval naar mbo, hbo, wo) — voor analyse van doorstroompatronen na het VO-diploma",
+      "37376NED (Gemiddeld inkomen per huishouden; wijk, buurt) — om rendementsverschillen te koppelen aan sociaaleconomische status van wijken",
+      "85250NED (Voortgezet onderwijs; leerlingen per school) — voor schoolvergelijkende analyses van advies versus behaald diploma",
+      "40108NED (Leerlingen, onderwijssoort en herkomst) — om herkomstgroepen in de volledige onderwijskolom te contextualiseren"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Mbo; studenten, niveau, leerweg, studierichting, regiokenmerken",
+    "periode": "2015/'16-2025/'26",
+    "onderwijstype": [
+      "MBO"
+    ],
+    "doel": "Aantal MBO-studenten uitgesplitst naar niveau (1-4), leerweg (BOL/BBL), studierichting en regio. Het meest complete MBO-inschrijvingsoverzicht voor regionale en sectorale analyses.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Inschrijvingen en Studievoortgang",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85353NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85353NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel MBO-studenten wonen er per provincie en hoe is de verdeling over de niveaus?",
+      "Wat is het aandeel BBL-studenten per studierichting en hoe ontwikkelt zich dat over de jaren?",
+      "Welke regio's kennen de sterkste groei in MBO-inschrijvingen voor techniek en zorg?",
+      "Hoe verschilt de man/vrouw-verhouding per MBO-niveau en studierichting?",
+      "Welke studierichtingen zijn het populairst op niveau 4 versus niveau 2?",
+      "Hoe is de regionale spreiding van MBO-studenten in de Randstad versus de periferie?",
+      "Wat is het aandeel vrouwelijke studenten in technische opleidingen op niveau 3 en 4?",
+      "Hoe heeft het aantal studenten in de zorgopleidingen zich ontwikkeld sinds 2020?"
+    ],
+    "tags": [
+      "mbo",
+      "inschrijvingen",
+      "niveau",
+      "leerweg",
+      "bol",
+      "bbl",
+      "studierichting",
+      "regio",
+      "provincie",
+      "gemeente",
+      "corop",
+      "landsdeel",
+      "geslacht",
+      "capaciteit"
+    ],
+    "_cbs_id": "85353NED",
+    "_thema": "Mbo studenten",
+    "_archief": false,
+    "_laatste_update": "2026-04-09",
+    "samenvatting": "Deze dataset bevat het totale aantal ingeschreven MBO-studenten in Nederland, uitgesplitst naar niveau (entree, 2, 3, 4), leerweg (BOL/BBL), studierichting, regio en geslacht. Het is de meest complete regionale MBO-inschrijvingsoverzicht en loopt van schooljaar 2015/'16 tot en met 2025/'26. De dataset is essentieel voor regionale capaciteitsplanning, beleidsmonitoring van BBL versus BOL, en het volgen van ontwikkelingen per studierichting en niveau.",
+    "_dimensies": [
+      "Geslacht",
+      "Niveau",
+      "Leerweg",
+      "Studierichting",
+      "Regio",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Mbo-studenten"
+    ],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "_geo_niveau": [
+      "landelijk",
+      "provincie",
+      "gemeente",
+      "landsdeel"
+    ],
+    "niet_geschikt_voor": [
+      "Analyse van diplomarendement of uitval — daarvoor zijn de MBO-gediplomeerden-datasets (85356NED, 85355NED) geschikter",
+      "Arbeidsmarktaansluiting en baankansen na het MBO — daarvoor zijn de Van mbo naar arbeidsmarkt-datasets (85696NED, 85698NED, 85699NED) bedoeld",
+      "Demografische analyses van herkomst of migratieachtergrond — hiervoor is 85352NED of 85354NED nodig"
+    ],
+    "kolomtoelichting": {
+      "Geslacht": "Geslacht van de student: Totaal mannen en vrouwen, Mannen of Vrouwen",
+      "Niveau": "MBO-niveau van de opleiding: entreeopleiding, niveau 2, niveau 3 of niveau 4 (plus Totaal)",
+      "Leerweg": "Leerwijze van de opleiding: BOL (beroepsopleidende leerweg, voltijd), BBL (beroepsbegeleidende leerweg, deeltijd met werk), Extranei, of totalen",
+      "Studierichting": "Sectorale indeling van de opleiding in 19 richtingen (bijv. Techniek, Zorg en welzijn, Economie, Informatica)",
+      "Regio": "Geografisch gebied: Nederland, landsdelen, provincies, COROP-regio's en gemeenten",
+      "Perioden": "Schooljaar van inschrijving (bijv. 2023/'24)",
+      "MboStudenten_1": "Aantal ingeschreven MBO-studenten"
+    },
+    "waardenbereik": {
+      "MboStudenten_1": {
+        "min": 55660,
+        "max": 518940,
+        "beschrijving": "Aantal ingeschreven MBO-studenten; het bereik loopt van individuele subgroepen (ca. 55.660 studenten in een specifieke regio-richting-combinatie) tot het totale aantal studenten in een regio (ca. 518.940)"
+      },
+      "Geslacht": {
+        "min": null,
+        "max": null,
+        "beschrijving": "3 categorieën: Totaal mannen en vrouwen, Mannen, Vrouwen"
+      },
+      "Niveau": {
+        "min": null,
+        "max": null,
+        "beschrijving": "5 categorieën: Totaal, Mbo-entreeopleiding, Mbo niveau 2, Mbo niveau 3, Mbo niveau 4"
+      },
+      "Leerweg": {
+        "min": null,
+        "max": null,
+        "beschrijving": "5 categorieën: Totaal mbo (incl. extranei), Totaal mbo (excl. extranei), BOL totaal, BBL totaal, Extranei"
+      },
+      "Studierichting": {
+        "min": null,
+        "max": null,
+        "beschrijving": "20 categorieën waaronder Totaal en 19 sectorale richtingen zoals Onderwijs, Techniek, Zorg en welzijn, Economie, Informatica, Landbouw, etc."
+      },
+      "Regio": {
+        "min": null,
+        "max": null,
+        "beschrijving": "20+ regionale eenheden: Nederland, 5 landsdelen, 12 provincies, COROP-regio's en gemeenten"
+      },
+      "Perioden": {
+        "min": null,
+        "max": null,
+        "beschrijving": "11 schooljaren van 2015/'16 tot en met 2025/'26"
+      }
+    },
+    "combineerbaar_met": [
+      "CBS 85356NED (MBO-gediplomeerden per regio) — voor het berekenen van diplomarendement per regio: gediplomeerden / ingeschrevenen",
+      "CBS 85354NED / 85352NED (MBO-studenten naar herkomst) — voor kruistabel van inschrijvingen met herkomstachtergrond per regio",
+      "CBS 85519NED (MBO door- en uitstroom) — voor analyse van doorstroom en voortijdig schoolverlaten naast inschrijvingen",
+      "CBS 85574NED (Instromers MBO uit bedrijfstakken) — voor inzicht in waar BBL-studenten vandaan komen",
+      "CBS 85696NED / 85698NED (Uitstromers MBO naar arbeidsmarkt) — voor het koppelen van inschrijvingscijfers aan arbeidsmarktpositie na diplomering",
+      "CBS 85701NED (Leerlingen en studenten alle onderwijssoorten) — voor het vergelijken van MBO-inschrijvingen met andere onderwijssectoren"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Mbo; studenten naar niveau, leerweg, herkomst",
+    "periode": "2011/'12 - 2025/'26",
+    "onderwijstype": [
+      "MBO"
+    ],
+    "doel": "MBO-studenten uitgesplitst naar niveau, leerweg en herkomstland. Biedt lange tijdreeks voor diversiteitsanalyses en beleid rond gelijke kansen in het MBO.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Inschrijvingen en Studievoortgang",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85354NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85354NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Wat is het aandeel studenten met een niet-Nederlandse achtergrond per MBO-niveau?",
+      "Hoe verschilt de herkomstsamenstelling tussen BOL en BBL studenten?",
+      "Welk MBO-niveau heeft het grootste aandeel studenten met een migratieachtergrond?",
+      "Hoe heeft het aantal studenten met Turkse, Marokkaanse of Surinaamse herkomst zich ontwikkeld over de afgelopen 10 jaar?",
+      "Wat is de man/vrouw-verhouding binnen verschillende herkomstgroepen in het MBO?",
+      "Verschilt de herkomstverdeling tussen niveau 2 en niveau 4 significant?",
+      "Hoeveel studenten hebben een onbekend herkomstland en varieert dit per niveau?",
+      "Wat is de groeitrend van MBO-inschrijvingen per herkomstgroep sinds 2018?",
+      "Hoe groot is het aandeel extranei-studenten per herkomstland?",
+      "Wat is het trendbeeld van de diversiteit in het MBO over de volle periode 2011-2026?"
+    ],
+    "tags": [
+      "mbo",
+      "herkomst",
+      "diversiteit",
+      "niveau",
+      "leerweg",
+      "kansengelijkheid",
+      "migratieachtergrond",
+      "tijdreeks"
+    ],
+    "_cbs_id": "85354NED",
+    "_thema": "Mbo studenten",
+    "_archief": false,
+    "_laatste_update": "2026-04-09",
+    "samenvatting": "Deze dataset bevat het aantal MBO-studenten uitgesplitst naar niveau (entree, 2, 3, 4), leerweg (BOL, BBL, extranei), herkomstland (10 categorieën waaronder Nederland, Turkije, Marokko, Suriname), geslacht en geboorteland van de ouders. De tijdreeks loopt van 2011/'12 tot en met 2025/'26 (15 schooljaren). De dataset is relevant voor beleidsmedewerkers op mbo-instellingen en het ministerie van OCW die diversiteit, gelijke kansen en integratiebeleid in het beroepsonderwijs monitoren. Belangrijkste kenmerk is de combinatie van herkomst met niveau en leerweg, waarmee ongelijkheid in het MBO in kaart kan worden gebracht.",
+    "_dimensies": [
+      "Geslacht",
+      "Niveau",
+      "Leerweg",
+      "Herkomstland",
+      "Geboorteland (ouders)",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Mbo-studenten"
+    ],
+    "_geo_niveau": [],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "niet_geschikt_voor": [
+      "Regionale analyse — de dataset bevat geen geografische dimensie (provincie, gemeente, COROP)",
+      "Analyse van studiesucces of uitval — er worden alleen inschrijfgegevens getoond, geen diplomering of uitval",
+      "Individuele leerlingvolggegevens — de data is geaggregeerd op dimensieniveau, niet herleidbaar tot individuen"
+    ],
+    "kolomtoelichting": {
+      "Geslacht": "Geslacht van de student. Drie categorieën: Totaal mannen en vrouwen, Mannen en Vrouwen.",
+      "Niveau": "MBO-niveau van de opleiding. Vijf categorieën: Totaal, Mbo-entreeopleiding, Mbo niveau 2, Mbo niveau 3 en Mbo niveau 4.",
+      "Leerweg": "Type leerweg waarin de student is ingeschreven. Vijf categorieën: Totaal mbo (incl. extranei), Totaal mbo (excl. extranei), BOL totaal, BBL totaal en Extranei.",
+      "Herkomstland": "Herkomstland van de student, gebaseerd op het geboorteland van de student zelf en/of de ouders. Tien categorieën waaronder Nederland, Europa (excl. Nederland), Turkije, Marokko, Suriname, Nederlandse Cariben, Indonesië, Buiten Europa (excl. 5 grote herkomstlanden) en Onbekend herkomstland.",
+      "GeboortelandOuders": "Geboorteland van de ouders van de student. Wordt niet voor alle rijen ingevuld (partiële dimensie).",
+      "Perioden": "Schooljaar van de meting, in het formaat YYYY/'YY. Loopt van 2011/'12 tot en met 2025/'26.",
+      "MboStudenten_1": "Aantal ingeschreven MBO-studenten voor de betreffende combinatie van dimensiewaarden."
+    },
+    "waardenbereik": {
+      "MboStudenten_1": {
+        "min": 91090,
+        "max": 534650,
+        "beschrijving": "Aantal ingeschreven MBO-studenten per dimensiecombinatie. Het maximum van 534.650 betreft het totaal aantal studenten in een enkel schooljaar; individuele cellen (bijv. mannen op niveau 4 in BBL met Turkse herkomst) liggen aanzienlijk lager."
+      },
+      "Geslacht": {
+        "aantal_categorieen": 3,
+        "beschrijving": "Totaal mannen en vrouwen, Mannen, Vrouwen — waarmeeGender-verhoudingen per herkomstgroep en niveau berekend kunnen worden."
+      },
+      "Niveau": {
+        "aantal_categorieen": 5,
+        "beschrijving": "Totaal, Mbo-entreeopleiding (niveau 1), Mbo niveau 2, Mbo niveau 3, Mbo niveau 4 — van laag naar hoog opleidingsniveau."
+      },
+      "Leerweg": {
+        "aantal_categorieen": 5,
+        "beschrijving": "Totaal mbo (incl. extranei), Totaal mbo (excl. extranei), BOL totaal (voltijd), Bbl totaal (deeltijd/werkend leren), Extranei (scholieren die niet bij een instelling ingeschreven zijn)."
+      },
+      "Herkomstland": {
+        "aantal_categorieen": 10,
+        "beschrijving": "Totaal, Nederland, Europa (excl. Nederland), Turkije, Marokko, Suriname, Nederlandse Cariben, Indonesië, Buiten Europa (excl. 5 grote herkomstlanden), Onbekend herkomstland — gedetailleerde herkomstindeling voor diversiteitsanalyses."
+      },
+      "Perioden": {
+        "aantal_categorieen": 15,
+        "beschrijving": "Schooljaren van 2011/'12 tot en met 2025/'26 — 15 opeenvolgende schooljaren voor trendanalyse."
+      }
+    },
+    "combineerbaar_met": [
+      "MBO diplomastromen (85357NED) — vergelijk inschrijvingen met uitstroom per herkomstgroep en niveau om drempels in het studieverloop in kaart te brengen",
+      "MBO studenten richting/sector (85359NED) — koppel herkomst aan opleidingsrichting om te onderzoeken welke sectoren meer of minder divers zijn",
+      "VO doorstroom naar MBO (40296NED) — analyseer de instroom vanuit het VO naar het MBO per herkomstgroep en niveau",
+      "Arbeidsmarkt MBO-gediplomeerden (82330NED) — volg de arbeidsmarktpositie van MBO-afgestudeerden met verschillende achtergronden",
+      "Leerlingen PO/PO met migratieachtergrond (40072NED) — leg de basis voor een doorlopende leerlijn van primair onderwijs naar MBO",
+      "Kansengelijkheid in het onderwijs (diverse CBS-indicatoren) — contextualiseer de herkomstsamenstelling met bredere kansengelijkheidsindicatoren"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Mbo; studenten naar niveau, leerweg, studierichting, herkomst",
+    "periode": "2015/'16-2025/26",
+    "onderwijstype": [
+      "MBO"
+    ],
+    "doel": "MBO-studenten gecombineerd naar niveau, leerweg, studierichting én herkomst. Meest gedetailleerde MBO-dataset voor intersectionele analyses van diversiteit en studiekeuze.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Inschrijvingen en Studievoortgang",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85352NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85352NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe is de verdeling van MBO-studenten naar herkomstland en niveau over de afgelopen 10 jaar veranderd?",
+      "Welke studierichtingen hebben het hoogste aandeel studenten met een niet-Nederlandse achtergrond?",
+      "Verschilt de bbl/bol-verhouding tussen studenten met verschillende herkomstlanden?",
+      "Zijn er verschillen tussen mannen en vrouwen in de keuze voor technische vs. zorgopleidingen binnen het MBO?",
+      "Hoe ontwikkelt het aantal MBO-studenten uit Turkije, Marokko en Suriname zich per niveau over tijd?",
+      "Welke SBC-sectoren groeien het sterkst en hoe is de groei verdeeld naar herkomst?",
+      "Wat is het aandeel extranei-studenten per herkomstland en studierichting?",
+      "Hoe verhoudt het aantal MBO-studenten in de zorg zich naar herkomstland vergeleken met de techniek?",
+      "Welke regio's hebben de grootste concentratie niet-westerse MBO-studenten in entreeopleidingen?"
+    ],
+    "tags": [
+      "mbo",
+      "herkomst",
+      "studierichting",
+      "niveau",
+      "leerweg",
+      "diversiteit",
+      "intersectioneel",
+      "dynamisch",
+      "overstaptijd"
+    ],
+    "_cbs_id": "85352NED",
+    "_thema": "Mbo studenten",
+    "_archief": false,
+    "_laatste_update": "2026-04-09",
+    "samenvatting": "Deze dataset bevat het aantal MBO-studenten in Nederland, uitgesplitst naar onderwijsniveau (entree t/m niveau 4), leerweg (bol, bbl, extranei), studierichting (20 SBC-sectoren plus subsectoren), herkomstland (10 categorieën waaronder Turkije, Marokko, Suriname) en geslacht. De data loopt van schooljaar 2015/'16 tot en met 2025/'26. Dit is de meest gedetailleerde MBO-dataset voor intersectionele analyses van diversiteit en studiekeuze, en is relevant voor beleidsmedewerkers diversiteit, onderwijsplanning en arbeidsmarktanalyses.",
+    "_dimensies": [
+      "Geslacht",
+      "Niveau",
+      "Leerweg",
+      "Studierichting",
+      "Herkomstland",
+      "Geboorteland (ouders)",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Mbo-studenten"
+    ],
+    "_geo_niveau": [],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "niet_geschikt_voor": [
+      "Arbeidsmarktuitstroom en baankans — deze dataset bevat alleen instroom/aantallen, geen uitstroom- of werkgelegenheidsgegevens",
+      "Financiële verantwoording of kosten per student — er zijn geen financiële variabelen in deze dataset",
+      "Regionale analyses op gemeenteniveau — de dataset heeft geen regiokenmerken, alleen landelijke cijfers"
+    ],
+    "kolomtoelichting": {
+      "Geslacht": "Geslacht van de student: Totaal mannen en vrouwen, Mannen of Vrouwen",
+      "Niveau": "Onderwijsniveau van de opleiding: entreeopleiding, mbo-niveau 2, 3 of 4, of totaal",
+      "Leerweg": "Leerwijze van de opleiding: bol (theorie), bbl (praktijk), extranei, of totalen",
+      "Studierichting": "Sectorrichting van de opleiding conform SBC-classificatie (20 hoofdcategorieën plus subsectoren)",
+      "Herkomstland": "Herkomstland van de student: Nederland, Europa, Turkije, Marokko, Suriname, Indonesië, Nederlandse Cariben, buiten Europa, onbekend",
+      "GeboortelandOuders": "Geboorteouders: dimensie aanwezig maar onbruikbaar (404 bij API-aanroep, mogelijk deprecated)",
+      "Perioden": "Schooljaar waarop de cijfers betrekking hebben, van 2015/'16 tot 2025/'26",
+      "MboStudenten_1": "Aantal MBO-studenten (opeengehoopte telling per combinatie van dimensiewaarden)"
+    },
+    "waardenbereik": {
+      "MboStudenten_1": {
+        "min": 40290,
+        "max": 518940,
+        "beschrijving": "Aantal MBO-studenten per unieke combinatie van dimensiewaarden; totalen liggen rond 480k-512k, deelpopulaties variëren van ~40k tot ~520k"
+      },
+      "Herkomstland": {
+        "aantal_categorieen": 10,
+        "beschrijving": "Totaal, Nederland, Europa (excl. NL), Turkije, Marokko, Suriname, Nederlandse Cariben, Indonesië, Buiten Europa (excl. 5 grote), Onbekend"
+      },
+      "Studierichting": {
+        "aantal_categorieen": 38,
+        "beschrijving": "20 SBC-hoofdsectoren (01-10), plus 8 sectorkamers, entree, bovensectoraal, en gedetailleerde subsectoren zoals bouw, infra, zorg, etc."
+      },
+      "Niveau": {
+        "aantal_categorieen": 5,
+        "beschrijving": "Totaal, Entreeopleiding, MBO-niveau 2, MBO-niveau 3, MBO-niveau 4"
+      },
+      "Leerweg": {
+        "aantal_categorieen": 5,
+        "beschrijving": "Totaal (incl. extranei), Totaal (excl. extranei), BOL, BBL, Extranei"
+      },
+      "Geslacht": {
+        "aantal_categorieen": 3,
+        "beschrijving": "Totaal, Mannen, Vrouwen"
+      },
+      "Perioden": {
+        "aantal_categorieen": 11,
+        "beschrijving": "Schooljaren 2015/'16 t/m 2025/'26"
+      }
+    },
+    "combineerbaar_met": [
+      "CBS 85204NED — Mbo; studenten en geslaagden: voor uitstroomgegevens per studierichting en herkomst",
+      "CBS 85276NED — Voortgezet onderwijs; leerlingen naar herkomst: voor doorstroom VO→MBO",
+      "CBS 83625NED — Hoger onderwijs; inschrijvingen naar herkomst: voor doorstroom MBO→HBO",
+      "CBS 37056NED — Arbeidsdeelname; voor koppeling MBO-opleiding aan arbeidsmarktpositie",
+      "CBS 83644NED — Beroepen in de arbeidsmarkt (BIB): voor relatie tussen MBO-studierichting en beroepenstructuur"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Mbo; gediplomeerden, niveau, leerweg, studierichting, regiokenmerken",
+    "periode": "2015/'16-2024/'25",
+    "onderwijstype": [
+      "MBO"
+    ],
+    "doel": "Aantal gediplomeerden in het MBO per niveau, leerweg, studierichting en regio. Kernset voor diplomarendementsanalyses en regionale arbeidsmarktaansluiting.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Inschrijvingen en Studievoortgang",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85356NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85356NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel mbo-gediplomeerden waren er in regio Noord-Nederland in 2023/'24, en hoe verhoudt zich dat tot voorgaande jaren?",
+      "Welke studierichting heeft het grootste aandeel gediplomeerden op mbo-niveau 4 in de provincie Zuid-Holland?",
+      "Wat is het verschil in aantal gediplomeerden tussen BOL- en BBL-leerweg over de afgelopen 5 jaar?",
+      "Zijn er regionale verschillen in het aandeel vrouwelijke gediplomeerden binnen technische studierichtingen?",
+      "Hoeveel gediplomeerden op entreeopleiding zijn er in 2024/'25 vergeleken met 2015/'16?",
+      "Welke regio heeft de grootste groei in mbo-gediplomeerden doorgemaakt over de volledige periode?",
+      "Hoeveel gediplomeerden in de zorg- en welzijnssector zijn er in mbo-niveau 3 versus niveau 4?",
+      "Wat is de verdeling van gediplomeerden over de verschillende mbo-niveaus per provincie?",
+      "Is er een relatie tussen het aantal gediplomeerden in informatica en de arbeidsmarktvraag in die regio?",
+      "Hoe wijzigt het aantal gediplomeerden in landbouw- en natuurwetenschappen zich over de jaren heen?"
+    ],
+    "tags": [
+      "mbo",
+      "gediplomeerden",
+      "diplomarendement",
+      "arbeidsmarkt",
+      "regionaal",
+      "studierichting",
+      "leerweg",
+      "niveaus"
+    ],
+    "_cbs_id": "85356NED",
+    "_thema": "Mbo gediplomeerden",
+    "_archief": false,
+    "_laatste_update": "2026-02-05",
+    "samenvatting": "Deze dataset telt het aantal gediplomeerden in het middelbaar beroepsonderwijs (MBO) in Nederland, uitgesplitst naar niveau, leerweg, studierichting en regio over de periode 2015/'16 tot en met 2024/'25. Het is relevant voor beleidsmedewerkers bij mbo-instellingen, regionale overheden en arbeidsmarktanalisten die de diplomarendementen en regionale aansluiting op de arbeidsmarkt willen volgen. De dataset biedt inzicht in trends over 10 schooljaren en kan op diverse snijvlakken worden geanalyseerd.",
+    "_dimensies": [
+      "Geslacht",
+      "Niveau",
+      "Leerweg",
+      "Studierichting",
+      "Regio",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Gediplomeerden mbo"
+    ],
+    "_geo_niveau": [
+      "landelijk",
+      "provincie",
+      "gemeente",
+      "landsdeel"
+    ],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "niet_geschikt_voor": [
+      "Analyse van leeruitkomsten of kwaliteit van onderwijs — de dataset bevat alleen aantallen gediplomeerden, geen prestatiescores",
+      "Voorspelling van toekomstige arbeidsmarktbehoefte op basis van gediplomeerden — er ontbreekt koppeling met werkgelegenheidsdata",
+      "Vergelijking met othererwijstype zoals hbo of po — de dataset bevat uitsluitend mbo-gediplomeerden"
+    ],
+    "kolomtoelichting": {
+      "ID": "Unieke regelidentificatie van het record",
+      "Geslacht": "Onderscheid tussen mannen, vrouwen en het totaal van beide geslachten",
+      "Niveau": "Mbo-opleidingsniveau: entreeopleiding, niveau 2, niveau 3 en niveau 4, plus totaalcijfer",
+      "Leerweg": "Type beroepsopleiding: BOL (beroepsopleidende leerweg), BBL (beroepsbegeleidende leerweg), extranei, plus totalen",
+      "Studierichting": "Indeling in 19 beroepssectoren zoals techniek, zorg, informatica, onderwijs en handel",
+      "Regio": "Geografische indeling op niveau van Nederland, landsdelen (LD) en provincies (PV)",
+      "Perioden": "Schooljaar van september tot en met augustus, bijvoorbeeld 2023/'24",
+      "GediplomeerdenMbo_1": "Aantal personen dat in het betreffende schooljaar een diploma heeft behaald in het mbo"
+    },
+    "waardenbereik": {
+      "GediplomeerdenMbo_1": {
+        "min": 17400,
+        "max": 157400,
+        "beschrijving": "Aantal gediplomeerden in het mbo; varieert sterk per combinatie van dimensies (bijv. totaal Nederland vs. specifieke regio en richting)"
+      },
+      "Geslacht": {
+        "beschrijving": "3 categorieën: Totaal mannen en vrouwen, Mannen, Vrouwen"
+      },
+      "Niveau": {
+        "beschrijving": "5 categorieën: Totaal mbo, Mbo-entreeopleiding, Mbo niveau 2, Mbo niveau 3, Mbo niveau 4"
+      },
+      "Leerweg": {
+        "beschrijving": "5 categorieën: Totaal mbo (incl. extranei), Totaal mbo (excl. extranei), BOL totaal, BBL totaal, Extranei"
+      },
+      "Studierichting": {
+        "beschrijving": "20 categorieën waaronder Totaal en 19 beroepssectoren variërend van onderwijs en techniek tot zorg en informatica"
+      },
+      "Regio": {
+        "beschrijving": "20 categorieën: Nederland, 5 landsdelen en 12 provincies plus niet in te delen"
+      },
+      "Perioden": {
+        "beschrijving": "10 schooljaren van 2015/'16 tot en met 2024/'25"
+      }
+    },
+    "combineerbaar_met": [
+      "CBS 85203NED — Mbo; ingeschrevenen, opleiding, regio (voor vergelijking instroom versus uitstroom)",
+      "CBS 85258NED — Arbeidsmarkt beroepen en opleidingen (voor koppeling gediplomeerden aan arbeidsmarktvraag)",
+      "CBS 83648NED — Werkloosheid naar opleidingsniveau en regio (voor analyse arbeidsmarktpositie afgestudeerden)",
+      "CBS 83766NED — Bevolking; onderwijssoort en geslacht (voor demografische context en aandelenuitkeringen)",
+      "CBS 85353NED — Mbo; studenten, opleiding en regio (voor vergelijking huidige studentenpopulatie met gediplomeerden)",
+      "Regionale economische datasets van CBS voor analyse van relatie gediplomeerden en regionale economische bedrijvigheid"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Mbo; gediplomeerden, niveau, leerweg, studierichting, herkomst",
+    "periode": "2015/'16-2024/'25",
+    "onderwijstype": [
+      "MBO"
+    ],
+    "doel": "MBO-gediplomeerden uitgesplitst naar niveau, leerweg, studierichting en herkomst. Inzicht in diplomarendement per herkomstgroep en kansen op diplomering.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Inschrijvingen en Studievoortgang",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85355NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85355NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel MBO-gediplomeerden zijn er per niveau (entree, 2, 3, 4) in het schooljaar 2023/24?",
+      "Wat is het aandeel gediplomeerden met een niet-Westerse migratieachtergrond bij MBO niveau 4?",
+      "Welke studierichting heeft het hoogste aandeel gediplomeerden met een herkomst uit Turkije of Marokko?",
+      "Hoe verschilt het aantal gediplomeerden tussen BOL en BBL per herkomstgroep?",
+      "Is er een verschil in diplomering tussen mannen en vrouwen bij MBO-niveau 3?",
+      "Hoe ontwikkelt het aantal gediplomeerden met een migratieachtergrond zich over de periode 2015-2024?",
+      "Welke herkomstgroep heeft het hoogste aandeel gediplomeerden op MBO niveau 4?",
+      "Wat is de trend van gediplomeerden in de technische sector (studierichting 07) per herkomstland?",
+      "Hoeveel procent van alle MBO-gediplomeerden heeft een herkomst buiten Europa?",
+      "Wat is het verschil in diplomering tussen Nederlandse en niet-Nederlandse gediplomeerden per opleidingsniveau?"
+    ],
+    "tags": [
+      "mbo",
+      "gediplomeerden",
+      "herkomst",
+      "rendement",
+      "kansengelijkheid",
+      "niveau",
+      "migratie",
+      "diplomering"
+    ],
+    "_cbs_id": "85355NED",
+    "_thema": "Mbo gediplomeerden",
+    "_archief": false,
+    "_laatste_update": "2026-02-05",
+    "samenvatting": "Deze dataset bevat het aantal MBO-gediplomeerden van 2015/16 tot en met 2024/25, uitgesplitst naar niveau, leerweg, studierichting en herkomstland. Het geeft inzicht in diplomarendement en kansengelijkheid per herkomstgroep. Relevant voor beleidsmedewerkers op MBO-instellingen en het ministerie die de doorstroom en inclusie van diverse studentengroepen willen monitoren.",
+    "_dimensies": [
+      "Geslacht",
+      "Niveau",
+      "Leerweg",
+      "Studierichting",
+      "Herkomstland",
+      "Geboorteland (ouders)",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Gediplomeerden mbo"
+    ],
+    "_geo_niveau": [],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "niet_geschikt_voor": [
+      "Studievoortgang en uitval: de dataset bevat alleen gediplomeerden, niet de tussenliggende uitval of doorstroom",
+      "Arbeidsmarktuitkomsten na diplomering: er is geen informatie over werkgelegenheid of beroep na het MBO-diploma",
+      "Individuele leerlingdata: de data is geaggregeerd op groepsniveau, niet geschikt voor individuele analyses"
+    ],
+    "kolomtoelichting": {
+      "Geslacht": "Geslacht van de gediplomeerde (Totaal mannen en vrouwen, Mannen, Vrouwen)",
+      "Niveau": "MBO-niveau van de opleiding: entreeopleiding, niveau 2, 3 of 4",
+      "Leerweg": "Type opleidingsweg: BOL (beroepsopleidende leerweg), BBL (beroepsbegeleidende leerweg), of extranei",
+      "Studierichting": "Sector of vakgebied van de opleiding (20 categorieën, zoals Techniek, Gezondheidszorg, Onderwijs)",
+      "Herkomstland": "Land van herkomst van de gediplomeerde (10 categorieën)",
+      "GeboortelandOuders": "Geboorteland van de ouders van de gediplomeerde (indien beschikbaar)",
+      "Perioden": "Schooljaar van diplomering (bijv. 2023/24)",
+      "GediplomeerdenMbo_1": "Aantal gediplomeerden in de betreffende categorie"
+    },
+    "waardenbereik": {
+      "GediplomeerdenMbo_1": {
+        "min": 14110,
+        "max": 157400,
+        "beschrijving": "Aantal gediplomeerden; de range loopt van kleinere categorieën (bijv. specifieke herkomstgroep per studierichting) tot totals"
+      }
+    },
+    "combineerbaar_met": [
+      "MBO-inschrijvingen (85353NED) voor het berekenen van diplomarendement (aantal gediplomeerden / aantal inschrijvingen)",
+      "Arbeidsmarktdata (bijv. 37056NED) voor het analyseren van doorstroom naar werk na diplomering",
+      "PO/VO-diplomering (83639NED) voor het volgen van doorstroom vanuit het voortgezet onderwijs naar het MBO",
+      "Demografische datasets voor het vergelijken van herkomstsamenstelling met bevolkingsopbouw"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Instromers mbo; bedrijfstakken 1 jaar eerder",
+    "periode": "2018/19-2024/25",
+    "onderwijstype": [
+      "MBO"
+    ],
+    "doel": "Toont uit welke bedrijfstakken nieuwe MBO-instromers afkomstig zijn. Relevant voor instellingen die willen begrijpen wie zich aanmeldt vanuit de arbeidsmarkt (met name BBL).",
+    "frequentie": "Jaarlijks",
+    "categorie": "Inschrijvingen en Studievoortgang",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85574NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85574NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Uit welke bedrijfstakken komen de meeste BBL-stromers in het mbo?",
+      "Hoe verandert de instroom vanuit de zorgsector naar het mbo-niveau 4 over de afgelopen jaren?",
+      "Welke leeftijdsgroepen stromen het meest in vanuit de bouw naar een mbo-opleiding?",
+      "Is er een verschil in herkomst uit de arbeidsmarkt tussen mannen en vrouwen die instromen in het mbo?",
+      "Welke sectorkamers laten de grootste groei in arbeidsmarktinstroom zien sinds 2020?",
+      "Hoe hoog is de instroom vanuit de ICT-sector naar mbo-niveau 3 en 4?",
+      "Wat is het aandeel van instromers vanuit de handel in relatie tot de totale arbeidsmarktinstroom in het mbo?",
+      "Welke bedrijfstakken leveren relatief veel entree-opleidingsstudenten?",
+      "Hoe verschilt de leeftijdsverdeling van instromers uit de horeca ten opzichte van de techniek?",
+      "Zijn er seizoen- of coronagebonden pieken zichtbaar in de arbeidsmarktinstroom naar het mbo?"
+    ],
+    "tags": [
+      "mbo",
+      "instroom",
+      "bedrijfstak",
+      "arbeidsmarkt",
+      "bbl",
+      "sectorkamer",
+      "sbi",
+      "arbeidsmarktmigratie",
+      "levenslang-leren",
+      "bijscholing"
+    ],
+    "_cbs_id": "85574NED",
+    "_thema": "Mbo stromen",
+    "_archief": false,
+    "_laatste_update": "2025-09-11",
+    "samenvatting": "Deze dataset telt het aantal nieuwe MBO-studenten dat een jaar eerder werkzaam was (maar geen onderwijs volgde) en afkomstig is uit verschillende bedrijfstakken. Hiermee is inzichtelijk vanuit welke sectoren arbeidsmarktinstroom naar het MBO plaatsvindt, vooral relevant voor BBL-opleidingen. De data is beschikbaar per geslacht, mbo-niveau, leerweg, sectorkamer, leeftijd en bedrijfstak over schooljaren 2018/'19 tot en met 2024/'25.",
+    "_dimensies": [
+      "Geslacht",
+      "Niveau",
+      "Leerweg",
+      "Sectorkamer",
+      "Leeftijd",
+      "Bedrijfstakken/branches SBI (2008)",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Instromers mbo"
+    ],
+    "_geo_niveau": [],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "niet_geschikt_voor": [
+      "Analyse van totale mbo-inschrijvingen (alleen betreft instromers vanuit de arbeidsmarkt, niet de totale populatie)",
+      "Voorspelling van arbeidsmarktbehoefte per bedrijfstak (deze dataset toont instroom naar onderwijs, niet vacatures)",
+      "Vergelijking met niet-bekostigd onderwijs of private opleidingen (alleen bekostigd mbo)"
+    ],
+    "kolomtoelichting": {
+      "Geslacht": "Onderscheid tussen mannen, vrouwen en totaal (T001038 = Totaal mannen en vrouwen)",
+      "Niveau": "Mbo-opleidingsniveau: entree, niveau 2, 3 of 4 (T001336 = Totaal middelbaar beroepsonderwijs)",
+      "Leerweg": "Onderscheid beroepsopleidende (bol), beroepsbegeleidende (bbl) en extraneileerweg; T001637 = Totaal incl. extranei",
+      "Sectorkamer": "Overkoepelende sectorindeling van de mbo-opleiding (12 categorieën, waaronder techniek, zorg, handel, ICT, etc.)",
+      "Leeftijd": "Leeftijdscategorie van de instromende student op moment van inschrijving (9 categorieën van 15 tot 50+ jaar)",
+      "BedrijfstakkenBranchesSBI2008": "Bedrijfstak waar de student een jaar eerder werkzaam was, conform SBI 2008-indeling van CBS",
+      "Perioden": "Schooljaar (augustus-juli), bijv. 2018SJ00 = schooljaar 2018/'19",
+      "InstromersMbo_1": "Aantal studenten dat op 1 oktober in bekostigd mbo stond ingeschreven en een jaar eerder werk had maar geen bekostigd onderwijs volgde"
+    },
+    "waardenbereik": {
+      "InstromersMbo_1": {
+        "min": 80,
+        "max": 36890,
+        "beschrijving": "Aantal instromers vanuit de arbeidsmarkt; waarden lopen sterk uiteen afhankelijk van bedrijfstak, periode en demografische filters"
+      },
+      "Geslacht": {
+        "categorieen": [
+          "Totaal mannen en vrouwen",
+          "Mannen",
+          "Vrouwen"
+        ],
+        "beschrijving": "3 categorieën voor geslachtsontleding"
+      },
+      "Niveau": {
+        "categorieen": [
+          "Totaal",
+          "Entreeopleiding",
+          "Niveau 2",
+          "Niveau 3",
+          "Niveau 4"
+        ],
+        "beschrijving": "5 categorieën voor mbo-opleidingsniveau"
+      },
+      "Leerweg": {
+        "categorieen": [
+          "Totaal incl. extranei",
+          "Totaal excl. extranei",
+          "Bol totaal",
+          "Bbl totaal",
+          "Extranei"
+        ],
+        "beschrijving": "5 categorieën; extranei = studenten die niet in loondienst zijn bij een erkend leerbedrijf"
+      },
+      "Sectorkamer": {
+        "aantal": 12,
+        "beschrijving": "12 overkoepelende sectorindelingen van mbo-opleidingen, plus bovensectoraal en niet-gespecificeerd"
+      },
+      "Leeftijd": {
+        "categorieen": [
+          "15-20",
+          "20-25",
+          "25-30",
+          "30-35",
+          "35-40",
+          "40-45",
+          "45-50",
+          "50+"
+        ],
+        "beschrijving": "8 leeftijdscategorieën plus totalen; waarde 10000 = totalen per leeftijdscategorie"
+      },
+      "BedrijfstakkenBranchesSBI2008": {
+        "aantal_categorieen": "variabel (meerdere SBI-codes)",
+        "beschrijving": "Bedrijfstak op basis van SBI 2008; codes als 301000 (mijnbouw), 300002 (verwerkende industrie), T001081 (totaal)"
+      },
+      "Perioden": {
+        "categorieen": [
+          "2018/'19",
+          "2019/'20",
+          "2020/'21",
+          "2021/'22",
+          "2022/'23",
+          "2023/'24",
+          "2024/'25"
+        ],
+        "beschrijving": "7 schooljaren"
+      }
+    },
+    "combineerbaar_met": [
+      "CBS 85204NED — Instroom mbo (totale instroom incl. uit vo en andere bronnen) om het aandeel arbeidsmarktinstroom te bepalen",
+      "CBS 85273NED — Arbeidsmarkt mbo-afgestudeerden om de relatie te leggen tussen instroom en uitstroom per sector",
+      "CBS 85127NED — Mbo-succesvolle uitstroom om te onderzoeken of arbeidsmarktinstromers vaker slagen",
+      "CBS 83639NED — Werkloosheid naar bedrijfstak (SBI) om correlatie te leggen tussen sectorale werkloosheid en mbo-instroom",
+      "CBS 85229NED — BBL-inschrijvingen mbo voor gedetailleerde analyse van leerwegspecifieke instroom",
+      "CBS 85007NED — Demografische kenmerken mbo-studenten voor aanvullende doelgroepanalyse"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Instromers mbo; maatschappelijke positie 1 jaar eerder, persoonskenmerken",
+    "periode": "2018/19-2024/'25",
+    "onderwijstype": [
+      "MBO"
+    ],
+    "doel": "Maatschappelijke positie van MBO-instromers één jaar voor aanmelding (bijv. werkend, werkzoekend, uit onderwijs). Inzicht in wie de MBO instroomt en vanwaar.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Inschrijvingen en Studievoortgang",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85569NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85569NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welk deel van de mbo-instromers was één jaar voor aanmelding werkzend en in welke sectorkamers is dit het sterkst?",
+      "Hoe verschilt de herkomst van instromers tussen bol- en bbl-opleidingen over de periode 2018-2025?",
+      "Is het aandeel zij-instromers (werkenden of werkzoekenden) toegenomen in de periode 2018/'19 tot 2024/'25?",
+      "Welke sectorkamers trekken relatief veel instromers die voorafgaand aan hun opleiding werkzoekend waren?",
+      "Hoe verhoudt de maatschappelijke positie van mannelijke en vrouwelijke instromers zich per mbo-niveau?",
+      "Welke persoonskenmerken kenmerken de groep instromers die direct vanuit het onderwijs overstroomt vergeleken met zij-instromers?",
+      "Is er een verschil in maatschappelijke positie vóór instroom tussen Nederlandse en niet-Nederlandse instromers?",
+      "Hoe is de ontwikkeling van het aantal instromers uit de bbl-totaal met een werkgerelateerde achtergrond over de jaren?",
+      "Welke sectorkamers hebben het hoogste aandeel instromers met een migratieachtergrond en hoe is dat over tijd veranderd?"
+    ],
+    "tags": [
+      "mbo",
+      "instroom",
+      "maatschappelijke-positie",
+      "arbeidsmarkt",
+      "zij-instroom",
+      "persoonskenmerken",
+      "herkomst",
+      "onderwijsloopbaan"
+    ],
+    "_cbs_id": "85569NED",
+    "_thema": "Mbo stromen",
+    "_archief": false,
+    "_laatste_update": "2025-09-11",
+    "samenvatting": "Deze dataset meet het aantal mbo-instromers uitgesplitst naar hun maatschappelijke positie één jaar voor aanmelding (bijv. werkend, werkzoekend, uit onderwijs), gecombineerd met persoonskenmerken zoals herkomst, geslacht, niveau en sectorkamer. De data besloeg het schooljaar 2018/'19 tot en met 2024/'25. Relevant voor beleidsmakers die de instroomsamenstelling willen begrijpen, zij-instroom willen monitoren of de relatie tussen arbeidsmarkt en mbo-opleidingen willen analyseren. Belangrijkste kenmerk is de koppeling van maatschappelijke positie vóór instroom aan demografische en opleidingskenmerken.",
+    "_dimensies": [
+      "Geslacht",
+      "Niveau",
+      "Leerweg",
+      "Sectorkamer",
+      "Persoonskenmerken",
+      "Maatschappelijke positie 1 jaar eerder",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Instromers totaal"
+    ],
+    "_geo_niveau": [],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "niet_geschikt_voor": [
+      "Het meten van uitval of doorstroom binnen het mbo; de dataset bevat alleen instroomgegevens, geen prestaties of voortgang.",
+      "Analyse van absolute arbeidsmarktuitkomsten na het mbo; er is geen koppeling met latere arbeidsmarktpositie of beroep.",
+      "Vergelijking met andere onderwijssectoren (hbo, wo, po); de dataset beperkt zich tot mbo-instroom."
+    ],
+    "kolomtoelichting": {
+      "Geslacht": "Onderscheid tussen mannen en vrouwen, inclusief totalen.",
+      "Niveau": "Mbo-opleidingsniveau: entree, niveau 2, niveau 3 en niveau 4.",
+      "Leerweg": "Onderscheid in leervormen: bol (voltijd), bbl (deeltijd), extranei en totalen.",
+      "Sectorkamer": "Sector van de opleiding, zoals techniek, zorg, handel, ICT, voedsel en zakelijke dienstverlening.",
+      "Persoonskenmerken": "Achtergrondkenmerken van instromers: geboorteland, herkomstland en ouderachtergrond.",
+      "MaatschappelijkePositie1JaarEerder": "De maatschappelijke positie van de instromer één jaar voor aanmelding, zoals werkend, werkzoekend of vanuit onderwijs.",
+      "Perioden": "Schooljaar van de instroom (bijv. 2018/'19).",
+      "InstromersTotaal_1": "Totaal aantal mbo-instromers in de betreffende categorie en periode."
+    },
+    "waardenbereik": {
+      "InstromersTotaal_1": {
+        "min": 2350,
+        "max": 165980,
+        "beschrijving": "Aantal instromers; varieert sterk per combinatie van dimensies, van kleine subgroepen tot totaalcijfers."
+      },
+      "Geslacht": {
+        "categorieen": [
+          "Totaal mannen en vrouwen",
+          "Mannen",
+          "Vrouwen"
+        ],
+        "beschrijving": "3 categorieën: twee geslachten en een totaal."
+      },
+      "Niveau": {
+        "categorieen": [
+          "Totaal middelbaar beroepsonderwijs",
+          "Mbo-entreeopleiding",
+          "Mbo niveau 2",
+          "Mbo niveau 3",
+          "Mbo niveau 4"
+        ],
+        "beschrijving": "5 categorieën: vier mbo-niveaus en een totaal."
+      },
+      "Leerweg": {
+        "categorieen": [
+          "Totaal mbo (incl. extranei)",
+          "Totaal mbo (excl. extranei)",
+          "Bol totaal",
+          "Bbl totaal",
+          "Extranei"
+        ],
+        "beschrijving": "5 categorieën: voltijd, deeltijd, extranei en twee totalen."
+      },
+      "Sectorkamer": {
+        "aantal": 12,
+        "beschrijving": "12 categorieën: 10 sectorkamers plus 'niet gespecificeerd' en een totaal."
+      },
+      "Persoonskenmerken": {
+        "aantal": 20,
+        "beschrijving": "20 categorieën: diverse combinaties van geboorteland, herkomstland en ouderachtergrond."
+      },
+      "MaatschappelijkePositie1JaarEerder": {
+        "aantal": "variabel",
+        "beschrijving": "Maatschappelijke positie één jaar vóór aanmelding (bijv. werkend, werkzoekend, in onderwijs). Exacte categorieën vereisen dimensie-oproep."
+      },
+      "Perioden": {
+        "categorieen": [
+          "2018/'19",
+          "2019/'20",
+          "2020/'21",
+          "2021/'22",
+          "2022/'23",
+          "2023/'24",
+          "2024/'25"
+        ],
+        "beschrijving": "7 schooljaren van 2018/'19 tot en met 2024/'25."
+      }
+    },
+    "combineerbaar_met": [
+      "Mbo-diploma-uitreikingen (CBS 85353NED) om instroom en uitstroom te koppelen en doorstroompercentages te berekenen.",
+      "Arbeidsmarktgegevens per sector (bijv. CBS 85240NED of vergelijkbare werkgelegenheidsdatasets) om relatie tussen instroomachtergrond en arbeidsmarktvraag te analyseren.",
+      "Mbo-uitvalgegevens (indien beschikbaar) om te onderzoeken of maatschappelijke positie vóór instroom samenhangt met uitval.",
+      "Bevolkingskenmerken per gemeente/regio om regionale instroomsamenstelling te contextualiseren.",
+      "Hbo-instroomgegevens om cross-sectorale vergelijking van zij-instroom te maken."
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Mbo door- en uitstroom, achtergrondkenmerken",
+    "periode": "2022/'23 naar studiejaar 2023/'24",
+    "onderwijstype": [
+      "MBO"
+    ],
+    "doel": "Doorstroom en uitstroom van MBO-studenten van het ene naar het volgende studiejaar, uitgesplitst naar herkomst en geslacht. Inzicht in voortijdig schoolverlaten en overstap.",
+    "frequentie": "Jaarlijks",
+    "categorie": "Inschrijvingen en Studievoortgang",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85519NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85519NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoeveel MBO-studenten stromen door naar het volgende studiejaar en hoeveel vallen uit, en hoe verschilt dit per herkomstgroep?",
+      "Welke sectorkamers hebben het hoogste aandeel voortijdig schoolverlaters?",
+      "Is er een verschil in doorstroom tussen mannelijke en vrouwelijke MBO-studenten over de afgelopen 10 jaar?",
+      "Hoe verandert het percentage uitstroom naar een hoger of lager opleidingsniveau over tijd?",
+      "Welke herkomstgroep heeft de grootste achterstand bij doorstroom binnen het MBO?",
+      "Hoe beïnvloedt de positie in het basisjaar (instroom op niveau 1, 2, 3 of 4) de kans op doorstroom?",
+      "Wat is het aandeel studenten dat na uitstroom naar een andere sectorkamer overstapt?",
+      "Zijn errends zichtbaar in de doorstroom sinds de invoer van het stelsel van kwalificatiedossiers?",
+      "Hoe is de verhouding tussen doorstroom en uitstroom verdeeld over de twaalf sectorkamers in het meest recente studiejaar?",
+      "Welke sectorkamers laten een groeiende groep onbekende herkomstlanden zien in hun doorstroomcijfers?"
+    ],
+    "tags": [
+      "mbo",
+      "doorstroom",
+      "uitstroom",
+      "vsv",
+      "herkomst",
+      "studievoortgang",
+      "sektorkamer",
+      "kansengelijkheid",
+      "voortijdig-schoolverlater",
+      "onderwijspositie"
+    ],
+    "_cbs_id": "85519NED",
+    "_thema": "Mbo stromen",
+    "_archief": false,
+    "_laatste_update": "2025-05-09",
+    "samenvatting": "Deze dataset meet de doorstroom en uitstroom van MBO-studenten van het ene studiejaar naar het volgende, uitgesplitst naar geslacht, herkomstland, sectorkamer en positie in het volgende studiejaar. De data beslaat 13 periodes van schooljaar 2011/'12 tot en met 2023/'24 en is relevant voor beleidsmedewerkers die de studievoortgang en kansengelijkheid in het mbo monitoren. Het geeft specifiek inzicht in voortijdig schoolverlaten (vsv) en de overgang tussen opleidingsniveaus.",
+    "_dimensies": [
+      "Geslacht",
+      "Geboorteland (ouders)",
+      "Herkomstland",
+      "Onderwijspositie basisjaar",
+      "Sectorkamer",
+      "Positie in volgend studiejaar",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Studenten mbo"
+    ],
+    "_geo_niveau": [],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "niet_geschikt_voor": [
+      "Het volgen van individuele leerpaden van studenten over meerdere jaren (geen longitudinale microdata)",
+      "Analyse van kwaliteitsverschillen tussen MBO-instellingen (geen instellingsniveau in de dimensies)",
+      "Regionale analyses op gemeente- of/provincieniveau (geen geografische dimensie aanwezig)"
+    ],
+    "kolomtoelichting": {
+      "Geslacht": "Indeling van studenten naar mannelijk of vrouwelijk, inclusief totalen. Wordt gebruikt om sekseverschillen in doorstroom en uitstroom in kaart te brengen.",
+      "Geboorteland (ouders)": "Geboorteland van de ouders van de student. Geeft inzicht in de migratieachtergrond van studenten.",
+      "Herkomstland": "Indeling van de herkomst van de student in vijf categorieën: Nederland, Europa (excl. Nederland), Buiten Europa, Onbekend, en Totaal.",
+      "Onderwijspositie basisjaar": "De onderwijspositie waarin de student het basisjaar startte, bijvoorbeeld niveau 1, 2, 3 of 4 van het MBO.",
+      "Sectorkamer": "Indeling van de opleiding naar een van de twaalf sectorkamers binnen het MBO, zoals techniek, zorg, handel of ICT.",
+      "PositieInVolgendStudiejaar": "De positie waarin de student in het volgende studiejaar verkeert: doorstromend, uitgestroomd, of andere positie.",
+      "Perioden": "Het studiejaar waarop de gegevens betrekking hebben, in het formaat YYYY/'YY naar YYYY/'YY.",
+      "StudentenMbo_1": "Aantal MBO-studenten in de betreffende categorie. Dit is de enige measure in deze dataset."
+    },
+    "waardenbereik": {
+      "StudentenMbo_1": {
+        "min": 1740,
+        "max": 519960,
+        "beschrijving": "Aantal MBO-studenten. Het bereik varieert sterk per subgroep: van ongeveer 1.740 studenten in een specifieke achtergrondgroep tot ruim 519.960 voor totaalcategorieën."
+      },
+      "Geslacht": {
+        "categorieen": [
+          "Totaal mannen en vrouwen",
+          "Mannen",
+          "Vrouwen"
+        ],
+        "beschrijving": "3 categorieën voor sekse-indeling."
+      },
+      "Herkomstland": {
+        "categorieen": [
+          "Totaal",
+          "Nederland",
+          "Europa (exclusief Nederland)",
+          "Buiten Europa",
+          "Onbekend herkomstland"
+        ],
+        "beschrijving": "5 categorieën voor herkomstland van de student."
+      },
+      "Sectorkamer": {
+        "categorieen": [
+          "Totaal",
+          "Niet gespecificeerd",
+          "Techniek en gebouwde omgeving",
+          "Mobiliteit, transport en logistiek",
+          "Zorg, welzijn en sport",
+          "Handel",
+          "Creatieve industrie en ICT",
+          "Voedsel, groen en gastvrijheid",
+          "Zakelijke dienstverlening",
+          "Specialistisch vakmanschap",
+          "Overig"
+        ],
+        "beschrijving": "12 categorieën, waaronder tien specifieke sectorkamers, een totalencategorie en een 'niet gespecificeerd'."
+      },
+      "Perioden": {
+        "aantal": 13,
+        "beschrijving": "13 studiejaren van 2011/'12 naar 2012/'13 tot en met 2023/'24 naar 2024/'25."
+      }
+    },
+    "combineerbaar_met": [
+      "CBS 85252NED — MBO resultaten en kwalificaties: koppelen van doorstroomcijfers aan daadwerkelijke diplomering",
+      "CBS 83639NED — Arbeidsmarkt en opleidingsniveau: na uitstroom analyseren wat de arbeidsmarktpositie is van niet-doorstromende MBO-studenten",
+      "CBS 85035NED — Voortijdig schoolverlaten VMBO: de pipeline van voortijdig schoolverlaten van VMBO naar MBO in beeld brengen",
+      "CBS 85249NED — MBO studenten en inschrijvingen: context bieden met totale instroomcijfers per sector en niveau",
+      "CBS 83920NED — Demografische ontwikkeling bevolking: bevolkingsprofiel van de doelgroep MBO-studenten benchmarken tegen landelijke cijfers"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Gepromoveerden; ervaringen en duur promotietraject",
+    "periode": "2019",
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
+    "doel": "Ervaringen van gepromoveerden met hun promotietraject, inclusief werkdruk, ongewenst gedrag en tevredenheid. Relevant voor HR-beleid en integriteitsbeleid binnen onderzoeksinstellingen.",
+    "frequentie": "Onregelmatig",
+    "categorie": "Inschrijvingen en Studievoortgang",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 86238NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/86238NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Welk percentage gepromoveerden ervaart hoge tot zeer hoge werkdruk tijdens hun promotietraject?",
+      "Hoe verschilt de tevredenheid met het promotietraject tussen mannen en vrouwen?",
+      "Wat is de gemiddelde tijd om te promoveren per wetenschappelijke discipline?",
+      "Hoeveel gepromoveerden hebben ongewenst gedrag ervaren tijdens hun promotie?",
+      "Welk percentage van de gepromoveerden die ongewenst gedrag ervaarden, werkt nog binnen de academische wereld?",
+      "Hoe verhoudt de werkdruk zich tussen verschillende wetenschappelijke disciplines?",
+      "Is de tevredenheid met promotietrajecten verbeterd tussen 2019 en 2025?",
+      "Welk percentage van de recent gepromoveerden (5 jaar of korter) is tevreden met hun traject?",
+      "Wat is het verband tussen ervaring van ongewenst gedrag en het verlaten van de academische wereld?"
+    ],
+    "tags": [
+      "wo",
+      "promotie",
+      "werkdruk",
+      "welzijn",
+      "hr",
+      "integriteit",
+      "tevredenheid",
+      "wetenschap"
+    ],
+    "_cbs_id": "86238NED",
+    "_thema": "Hoger onderwijs",
+    "_archief": false,
+    "_laatste_update": "2026-03-25",
+    "samenvatting": "Deze dataset meet de ervaringen van gepromoveerden in Nederland met hun promotietraject, waaronder tevredenheid, hoge werkdruk, ongewenst gedrag en gemiddelde promotieduur. De gegevens zijn uitgesplitst naar geslacht en promotiekenmerken (tijd sinds promoveren en wetenschappelijke discipline). De data is relevant voor HR-beleidsmedewerkers, integriteitscommissies en bestuurders van onderzoeksinstellingen en universiteiten.",
+    "_dimensies": [
+      "Geslacht",
+      "Marges",
+      "Promotiekenmerken",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Tevreden met promotietraject in geheel",
+      "Hoge tot zeer hoge werkdruk ervaren",
+      "Ongewenst gedrag ervaren",
+      "Binnen de academische wereld",
+      "Buiten de academische wereld",
+      "Gemiddelde tijd voor behalen doctoraat"
+    ],
+    "_geo_niveau": [],
+    "_perioden_formaat": [
+      "JJ"
+    ],
+    "niet_geschikt_voor": [
+      "Analyseren van uitval tijdens het promotietraject (dataset bevat alleen afgestudeerden)",
+      "Vergelijken van salarissen of financiële compensatie van gepromoveerden",
+      "Voorspellen van toekomstige promotiepercentages op basis van deze data"
+    ],
+    "kolomtoelichting": {
+      "Geslacht": "Geslacht van de gepromoveerde (totaal mannen en vrouwen, mannen, vrouwen)",
+      "Marges": "Statistische marges: waarheid, ondergrens 95%-interval, bovengrens 95%-interval",
+      "Promotiekenmerken": "Kenmerken van de promovendus: tijd sinds promoveren (5 jaar of korter, langer dan 5 jaar) en wetenschappelijke discipline",
+      "Perioden": "Referentiejaar van de gegevens (2019 of 2025)",
+      "TevredenMetPromotietrajectInGeheel_1": "Percentage dat tevreden is met het promotietraject in zijn geheel",
+      "HogeTotZeerHogeWerkdrukErvaren_2": "Percentage dat hoge tot zeer hoge werkdruk heeft ervaren tijdens het promotietraject",
+      "OngewenstGedragErvaren_3": "Percentage dat ongewenst gedrag heeft ervaren tijdens het promotietraject",
+      "BinnenDeAcademischeWereld_4": "Percentage dat ongewenst gedrag heeft ervaren binnen de academische wereld",
+      "BuitenDeAcademischeWereld_5": "Percentage dat ongewenst gedrag heeft ervaren buiten de academische wereld",
+      "GemiddeldeTijdVoorBehalenDoctoraat_6": "Gemiddelde tijd in maanden van inschrijving tot het behalen van het doctoraat"
+    },
+    "waardenbereik": {
+      "TevredenMetPromotietrajectInGeheel_1": {
+        "min": 79.9,
+        "max": 95.0,
+        "beschrijving": "Percentage van gepromoveerden dat tevreden is met hun promotietraject"
+      },
+      "HogeTotZeerHogeWerkdrukErvaren_2": {
+        "min": 54.5,
+        "max": 78.3,
+        "beschrijving": "Percentage van gepromoveerden dat hoge tot zeer hoge werkdruk heeft ervaren"
+      },
+      "OngewenstGedragErvaren_3": {
+        "min": 22.3,
+        "max": 38.1,
+        "beschrijving": "Percentage van gepromoveerden dat ongewenst gedrag heeft ervaren"
+      },
+      "BinnenDeAcademischeWereld_4": {
+        "min": 20.9,
+        "max": 50.0,
+        "beschrijving": "Percentage van gepromoveerden dat ongewenst gedrag heeft ervaren binnen de academische wereld"
+      },
+      "BuitenDeAcademischeWereld_5": {
+        "min": 3.1,
+        "max": 30.2,
+        "beschrijving": "Percentage van gepromoveerden dat ongewenst gedrag heeft ervaren buiten de academische wereld"
+      },
+      "GemiddeldeTijdVoorBehalenDoctoraat_6": {
+        "min": 60.7,
+        "max": 79.7,
+        "beschrijving": "Gemiddelde tijd in maanden om het doctoraat te behalen"
+      }
+    },
+    "combineerbaar_met": [
+      "CBS 83625NED - Arbeidsmarkt voor personen met een wetenschappelijke opleiding (vervolgstudie en arbeidsmarkt)",
+      "CBS 85035NED - Werk en loopbaan van academici (carrièreverloop na promotie)",
+      "CBS 85353NED - MBO-uitstroom en arbeidsmarkt (vergelijking tussen opleidingsniveaus)"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Werkzame gepromoveerden; arbeidskenmerken",
+    "periode": "2019",
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
+    "doel": "Arbeidsmarktpositie van gepromoveerden: contractvorm, voltijdwerk en loondienst. Inzicht in de arbeidsmarktwaarde van een promotie.",
+    "frequentie": "Onregelmatig",
+    "categorie": "Alumni en arbeidsmarkt",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 86240NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/86240NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "voorbeeldvragen": [
+      "Hoe groot is het aandeel gepromoveerden met een vaste aanstelling vergeleken met tijdelijke contracten?",
+      "Welke disciplines hebben het hoogste aandeel gepromoveerden die als onderzoeker werkzaam zijn?",
+      "Is het aandeel gepromoveerden dat binnen de academische wereld werkt toegenomen tussen 2019 en 2025?",
+      "Hoe verschilt het werkzame percentage voltijds tussen mannen en vrouwen onder gepromoveerden?",
+      "Welke promotiekenmerken (disciplines) hebben het hoogste percentage zelfstandigen?",
+      "In welke discipline is het aandeel gepromoveerden dat werk heeft dat gerelateerd is aan hun promotieonderzoek het grootst?",
+      "Wat is het verschil in arbeidsmarktpositie tussen gepromoveerden kort na hun promotie en gepromoveerden langer dan 5 jaar geleden?"
+    ],
+    "tags": [
+      "wo",
+      "promotie",
+      "arbeidsmarkt",
+      "contractvorm",
+      "alumni",
+      "gepromoveerden",
+      "voltijd",
+      "academische_carriere",
+      "onderzoeker"
+    ],
+    "_cbs_id": "86240NED",
+    "_thema": "Hoger onderwijs",
+    "_archief": false,
+    "_laatste_update": "2026-03-25",
+    "samenvatting": "Deze dataset meet de arbeidsmarktpositie van gepromoveerden in Nederland, uitgesplitst naar contractvorm, voltijdwerk en relatie tot promotieonderzoek. De data beslaat de jaren 2019 en 2025 en biedt inzicht in de arbeidsmarktwaarde van een promotie. Relevante doelgroepen zijn beleidsmedewerkers bij universiteiten, onderzoekers arbeidsmarkt en hogeronderwijsplanners.",
+    "_dimensies": [
+      "Geslacht",
+      "Marges",
+      "Promotiekenmerken",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Voltijd",
+      "Werknemer met vaste arbeidsrelatie",
+      "Werknemer met tijdelijke arbeidsrelatie",
+      "Zelfstandige",
+      "Onbekend",
+      "Werkzaam als onderzoeker",
+      "Werkzaam binnen de academische wereld",
+      "Werk gerelateerd aan promotieonderzoek"
+    ],
+    "_geo_niveau": [],
+    "_perioden_formaat": [
+      "JJ"
+    ],
+    "niet_geschikt_voor": [
+      "Analyse van inkomensverschillen of salarisgegevens (geen looninformatie beschikbaar)",
+      "Voorspellingen van arbeidsmarktuitkomsten op individueel niveau (data is op geaggregeerd niveau)",
+      "Vergelijking met niet-gepromoveerde academisch opgeleiden (die data ontbreekt in deze dataset)"
+    ],
+    "kolomtoelichting": {
+      "ID": "Uniek identificatienummer van de rij in de dataset",
+      "Geslacht": "Onderscheid tussen mannen, vrouwen en totaal",
+      "Marges": "Statistische betrouwbaarheidsmarges: puntenschatting of 95%-interval",
+      "Promotiekenmerken": "Onderscheid naar tijd sinds promoveren en het wetenschappelijke domein waarin de promotie is afgerond",
+      "Perioden": "Het kalenderjaar waarop de meting betrekking heeft",
+      "Voltijd_1": "Percentage gepromoveerden dat voltijds werkt",
+      "WerknemerMetVasteArbeidsrelatie_2": "Percentage gepromoveerden in loondienst met een vaste arbeidsrelatie",
+      "WerknemerMetTijdelijkeArbeidsrelatie_3": "Percentage gepromoveerden in loondienst met een tijdelijke arbeidsrelatie",
+      "Zelfstandige_4": "Percentage gepromoveerden dat als zelfstandige (zzp'er/ondernemer) werkzaam is",
+      "Onbekend_5": "Percentage gepromoveerden waarvan de arbeidsrelatie onbekend is",
+      "WerkzaamAlsOnderzoeker_6": "Percentage gepromoveerden dat werkzaam is als onderzoeker",
+      "WerkzaamBinnenDeAcademischeWereld_7": "Percentage gepromoveerden dat binnen de universitaire/academische sector werkt",
+      "WerkGerelateerdAanPromotieonderzoek_8": "Percentage gepromoveerden dat werk uitvoert dat verband houdt met hun promotieonderzoek"
+    },
+    "waardenbereik": {
+      "Voltijd_1": {
+        "min": 45.9,
+        "max": 83.3,
+        "beschrijving": "Percentage voltijds werkenden, varieert sterk per discipline en tijd sinds promotie"
+      },
+      "WerknemerMetVasteArbeidsrelatie_2": {
+        "min": 55.8,
+        "max": 86.3,
+        "beschrijving": "Percentage met vaste aanstelling, hogere waarden bij langer werkzame gepromoveerden"
+      },
+      "WerknemerMetTijdelijkeArbeidsrelatie_3": {
+        "min": 4.6,
+        "max": 36.8,
+        "beschrijving": "Percentage met tijdelijk contract, hoger kort na promotie"
+      },
+      "Zelfstandige_4": {
+        "min": 1.8,
+        "max": 21.1,
+        "beschrijving": "Percentage zelfstandigen, varieert sterk per sector"
+      },
+      "Onbekend_5": {
+        "min": 0.0,
+        "max": 1.4,
+        "beschrijving": "Percentage onbekende arbeidsrelatie, klein"
+      },
+      "WerkzaamAlsOnderzoeker_6": {
+        "min": 58.5,
+        "max": 90.8,
+        "beschrijving": "Percentage onderzoekers, hoog in wetenschappelijke disciplines"
+      },
+      "WerkzaamBinnenDeAcademischeWereld_7": {
+        "min": 10.4,
+        "max": 44.3,
+        "beschrijving": "Percentage in de academische wereld, varieert sterk per sector"
+      },
+      "WerkGerelateerdAanPromotieonderzoek_8": {
+        "min": 58.9,
+        "max": 83.4,
+        "beschrijving": "Percentage met werk gerelateerd aan promotie"
+      }
+    },
+    "combineerbaar_met": [
+      "CBS 83648NED (Afstudeerrichting en beroep van afgestudeerden in het hoger onderwijs) voor vergelijking masters vs. gepromoveerden",
+      "CBS 37056NED (Arbeidsdeelname; kenmerken van werknemers) voor vergelijking met bredere beroepsbevolking",
+      "CBS 83559NED (Aantal毕业 en gepromoveerden in het hoger onderwijs) voor instroom-analyse",
+      "CBS 85220NED (Werkzame afgestudeerden hoger onderwijs) voor vergelijking op opleidingsniveau"
+    ],
+    "_llm_model": "opencode/big-pickle"
+  }
+]
