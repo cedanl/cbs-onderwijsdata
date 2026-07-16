@@ -2291,7 +2291,7 @@
     "_cbs_id": "83286NED",
     "_thema": "Ho studievoortgang",
     "_archief": false,
-    "_laatste_update": "2025-10-10",
+    "_laatste_update": "2026-06-18",
     "samenvatting": "Cohortdata van HBO-starters die bijhoudt hoeveel studenten op verschillende peilmomenten hun eerste HBO-diploma hebben behaald. Standaardset voor diplomarendementsanalyse.",
     "_dimensies": [
       "Geslacht",
@@ -2352,7 +2352,7 @@
     "_cbs_id": "83282NED",
     "_thema": "Ho studievoortgang",
     "_archief": false,
-    "_laatste_update": "2025-10-10",
+    "_laatste_update": "2026-06-18",
     "samenvatting": "Cohortdata van HO-starters die bijhoudt hoeveel studenten een HO-diploma behalen op verschillende peilmomenten. Vergelijkt HBO en WO rendement.",
     "_dimensies": [
       "Geslacht",
@@ -2421,7 +2421,7 @@
     "_cbs_id": "83285NED",
     "_thema": "Ho studievoortgang",
     "_archief": false,
-    "_laatste_update": "2025-10-10",
+    "_laatste_update": "2026-06-18",
     "samenvatting": "Cohortdata van WO-starters die bijhoudt hoeveel studenten hun eerste WO-diploma behalen per studierichting. Geschikt voor rendements- en doorstroomanalyses per vakgebied.",
     "_dimensies": [
       "Geslacht",
@@ -2481,7 +2481,7 @@
     "_cbs_id": "83305NED",
     "_thema": "Ho studievoortgang",
     "_archief": false,
-    "_laatste_update": "2025-10-10",
+    "_laatste_update": "2026-06-18",
     "samenvatting": "Welk WO-diploma studenten uiteindelijk behalen, uitgesplitst naar vooropleiding en studiefase bij instroom. Inzicht in doorstroom van bachelor naar master.",
     "_dimensies": [
       "Geslacht",
@@ -4705,7 +4705,7 @@
     "_cbs_id": "80857NED",
     "_thema": "Onderwijs",
     "_archief": false,
-    "_laatste_update": null,
+    "_laatste_update": "2026-04-30",
     "samenvatting": "Aantal vacatures in de sectoren overheid en onderwijs per kwartaal. Geschikt voor analyse van arbeidsmarktspanning en lerarentekort.",
     "_dimensies": [
       "Overheidssectoren",
@@ -5328,7 +5328,7 @@
     "_cbs_id": "83474NED",
     "_thema": "Demografie",
     "_archief": false,
-    "_laatste_update": "2026-05-29",
+    "_laatste_update": "2026-06-30",
     "samenvatting": "Maandelijkse ontwikkeling van de Nederlandse bevolking: geboorten, sterfgevallen, immigratie en emigratie. Biedt actuele en historische demografische kerncijfers voor heel Nederland.",
     "_dimensies": [
       "Perioden"
@@ -5381,7 +5381,7 @@
     "_cbs_id": "37230ned",
     "_thema": "Demografie",
     "_archief": false,
-    "_laatste_update": "2026-05-29",
+    "_laatste_update": "2026-06-30",
     "samenvatting": "Maandelijkse bevolkingsontwikkeling per regio (gemeente, provincie, COROP). Inzicht in regionale demografische trends: krimp, groei, migratiebewegingen.",
     "_dimensies": [
       "Regio's",
@@ -5752,7 +5752,7 @@
     "_cbs_id": "85968NED",
     "_thema": "Overheidsfinanciën",
     "_archief": false,
-    "_laatste_update": "2026-03-26",
+    "_laatste_update": "2026-07-02",
     "samenvatting": "Kerncijfers over de overheidsfinanciën: inkomsten, uitgaven, overheidstekort en staatsschuld als percentage van het BBP. Essentieel voor analyses van begrotingsbeleid en financiële sturing.",
     "_dimensies": [
       "Perioden"
@@ -5820,7 +5820,7 @@
     "_cbs_id": "85879NED",
     "_thema": "Macro-economie",
     "_archief": false,
-    "_laatste_update": "2026-04-30",
+    "_laatste_update": "2026-07-01",
     "samenvatting": "Bruto binnenlands product (BBP) per kwartaal in lopende en constante prijzen. Toont de economische groei van Nederland — onmisbaar als context voor beleidseffectiviteit en financiële sturing.",
     "_dimensies": [
       "Soort gegevens",
@@ -6071,7 +6071,7 @@
     "_cbs_id": "86272NED",
     "_thema": "Brede welvaart",
     "_archief": false,
-    "_laatste_update": "2026-02-06",
+    "_laatste_update": "2026-07-03",
     "samenvatting": "Kerncijfers over inkomen, vermogen en bestedingen van huishoudens. Biedt inzicht in de welvaartsontwikkeling van Nederlandse huishoudens — relevant voor brede-welvaartmonitoring.",
     "_dimensies": [
       "Kenmerken van huishoudens",
@@ -6209,7 +6209,7 @@
     "_cbs_id": "37360ned",
     "_thema": "Brede welvaart",
     "_archief": false,
-    "_laatste_update": "2025-05-28",
+    "_laatste_update": "2026-06-22",
     "samenvatting": "Levensverwachting bij geboorte en op hogere leeftijden voor mannen en vrouwen, vanaf 1861. Toont de langetermijnontwikkeling van gezondheid in Nederland — kernindicator voor brede welvaart.",
     "_dimensies": [
       "Geslacht",
@@ -6259,7 +6259,7 @@
     "_cbs_id": "70072ned",
     "_thema": "Regionaal",
     "_archief": false,
-    "_laatste_update": "2026-03-06",
+    "_laatste_update": "2026-06-30",
     "samenvatting": "Brede set van kerncijfers per gemeente, wijk en buurt: bevolking, woningen, arbeid, inkomen en meer. Geschikt voor vergelijkende regionale analyses en monitor brede welvaart op lokaal niveau.",
     "_dimensies": [
       "Regio's",
@@ -8704,7 +8704,7 @@
     "_cbs_id": "84780NED",
     "_thema": "Onderwijs",
     "_archief": false,
-    "_laatste_update": "2025-06-03",
+    "_laatste_update": "2026-06-26",
     "samenvatting": "Dataset over voortijdig schoolverlaters uitgesplitst naar geslacht en woonregio, met aantallen leerlingen, vsv'ers en niet-vsv'ers (2012/13–2023/24). Relevant voor regionaal vsv-beleid en monitoring.",
     "voorbeeldvragen": [
       "In welke regio's is het percentage voortijdig schoolverlaters het hoogst?",
