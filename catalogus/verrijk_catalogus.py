@@ -92,6 +92,52 @@ def build_kolomtypes(definitions: dict, dim_names: list, meetwaarden: list) -> d
     return types
 
 
+def build_niet_geschikt_voor(entry: dict) -> str | None:
+    """Genereert een waarschuwingstekst op basis van geo-niveau en periode."""
+    redenen = []
+
+    geo_niveaus = entry.get("_geo_niveau", [])
+    if geo_niveaus == ["landelijk"]:
+        redenen.append(
+            "Niet geschikt voor analyses op gemeente-, wijk- of schoolniveau"
+            " — alleen landelijke totalen beschikbaar."
+        )
+
+    periode_waarden = entry.get("_periode_waarden", [])
+    if periode_waarden:
+        last_label = periode_waarden[-1]
+        try:
+            last_year = int(last_label[:4])
+            if last_year < 2020:
+                redenen.append(
+                    f"Mogelijk verouderd — recentste data is uit {last_year}."
+                )
+        except ValueError:
+            pass
+
+    return " ".join(redenen) if redenen else None
+
+
+def build_samenvatting(entry: dict) -> str:
+    """Bouwt een factuele één-regel beschrijving vanuit beschikbare metadata."""
+    bron = entry.get("bron", "CBS dataset")
+    dimensies = [d for d in entry.get("_dimensies", []) if d != "Perioden"]
+    geo = entry.get("_geo_niveau", [])
+    periode = entry.get("_periode_waarden", [])
+
+    dim_str = ", ".join(dimensies) if dimensies else "meerdere dimensies"
+    geo_str = ", ".join(geo) if geo else "landelijk"
+
+    if len(periode) >= 2:
+        periode_str = f"{periode[0]}–{periode[-1]}"
+    elif len(periode) == 1:
+        periode_str = periode[0]
+    else:
+        periode_str = "onbekend"
+
+    return f"CBS dataset over {bron} met {dim_str} per {geo_str}, periode {periode_str}."
+
+
 def enrich_entry(entry: dict) -> dict:
     cbs_id = entry.get("_cbs_id", "")
     dim_names = entry.get("_dimensies", [])
@@ -115,6 +161,9 @@ def enrich_entry(entry: dict) -> dict:
     if "Perioden" in dimensions and dimensions["Perioden"]:
         labels = list(dimensions["Perioden"].values())
         entry["_periode_waarden"] = [labels[0], labels[-1]] if len(labels) > 1 else labels
+
+    entry.setdefault("niet_geschikt_voor", build_niet_geschikt_voor(entry))
+    entry.setdefault("samenvatting", build_samenvatting(entry))
 
     return entry
 
