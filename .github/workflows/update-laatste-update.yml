@@ -33,5 +33,6 @@ jobs:
           git diff --staged --quiet || (
             GEWIJZIGD=$(git diff --cached data/02-prepared/cbs_datasets_ai.json | grep '^+.*_laatste_update' | wc -l | tr -d ' ')
             git commit -m "chore: update _laatste_update (${GEWIJZIGD} datasets) [$(date +%Y-%m-%d)]"
+            git pull --rebase
             git push
           )
