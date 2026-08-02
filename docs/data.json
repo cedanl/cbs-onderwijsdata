@@ -4586,7 +4586,7 @@
     "_cbs_id": "85266NED",
     "_thema": "Onderwijs",
     "_archief": false,
-    "_laatste_update": "2026-04-30",
+    "_laatste_update": "2026-07-30",
     "samenvatting": "Arbeidsparticipatie en werkloosheidspercentage van de bevolking, uitgesplitst naar onderwijsniveau, geslacht en leeftijd.",
     "_dimensies": [
       "Geslacht",
@@ -4705,7 +4705,7 @@
     "_cbs_id": "80857NED",
     "_thema": "Onderwijs",
     "_archief": false,
-    "_laatste_update": "2026-04-30",
+    "_laatste_update": "2026-07-30",
     "samenvatting": "Aantal vacatures in de sectoren overheid en onderwijs per kwartaal. Geschikt voor analyse van arbeidsmarktspanning en lerarentekort.",
     "_dimensies": [
       "Overheidssectoren",
@@ -5097,7 +5097,7 @@
     "_cbs_id": "85264NED",
     "_thema": "Arbeidsmarkt",
     "_archief": false,
-    "_laatste_update": "2026-04-30",
+    "_laatste_update": "2026-07-30",
     "samenvatting": "Kerncijfers over arbeidsparticipatie, werkloosheid en niet-beroepsbevolking voor Nederland, uitgesplitst naar geslacht en leeftijd. Onmisbaar voor beleidsmonitoring van de arbeidsmarkt.",
     "_dimensies": [
       "Geslacht",
@@ -5328,7 +5328,7 @@
     "_cbs_id": "83474NED",
     "_thema": "Demografie",
     "_archief": false,
-    "_laatste_update": "2026-06-30",
+    "_laatste_update": "2026-07-30",
     "samenvatting": "Maandelijkse ontwikkeling van de Nederlandse bevolking: geboorten, sterfgevallen, immigratie en emigratie. Biedt actuele en historische demografische kerncijfers voor heel Nederland.",
     "_dimensies": [
       "Perioden"
@@ -5381,7 +5381,7 @@
     "_cbs_id": "37230ned",
     "_thema": "Demografie",
     "_archief": false,
-    "_laatste_update": "2026-06-30",
+    "_laatste_update": "2026-07-30",
     "samenvatting": "Maandelijkse bevolkingsontwikkeling per regio (gemeente, provincie, COROP). Inzicht in regionale demografische trends: krimp, groei, migratiebewegingen.",
     "_dimensies": [
       "Regio's",
@@ -5820,7 +5820,7 @@
     "_cbs_id": "85879NED",
     "_thema": "Macro-economie",
     "_archief": false,
-    "_laatste_update": "2026-07-01",
+    "_laatste_update": "2026-07-30",
     "samenvatting": "Bruto binnenlands product (BBP) per kwartaal in lopende en constante prijzen. Toont de economische groei van Nederland — onmisbaar als context voor beleidseffectiviteit en financiële sturing.",
     "_dimensies": [
       "Soort gegevens",
@@ -6259,7 +6259,7 @@
     "_cbs_id": "70072ned",
     "_thema": "Regionaal",
     "_archief": false,
-    "_laatste_update": "2026-06-30",
+    "_laatste_update": "2026-07-31",
     "samenvatting": "Brede set van kerncijfers per gemeente, wijk en buurt: bevolking, woningen, arbeid, inkomen en meer. Geschikt voor vergelijkende regionale analyses en monitor brede welvaart op lokaal niveau.",
     "_dimensies": [
       "Regio's",
