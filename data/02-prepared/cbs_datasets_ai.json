@@ -4018,7 +4018,7 @@
     "_cbs_id": "85453NED",
     "_thema": "Onderwijsniveau bevolking",
     "_archief": false,
-    "_laatste_update": "2026-05-21",
+    "_laatste_update": "2026-08-13",
     "samenvatting": "Hoogst behaald onderwijsniveau van de bevolking uitgesplitst naar herkomst en geslacht. Inzicht in opleidingskloof tussen herkomstgroepen in Nederland.",
     "_dimensies": [
       "Geslacht",
@@ -4068,7 +4068,7 @@
     "_cbs_id": "85313NED",
     "_thema": "Onderwijsniveau bevolking",
     "_archief": false,
-    "_laatste_update": "2026-05-21",
+    "_laatste_update": "2026-08-13",
     "samenvatting": "Hoogst behaald onderwijsniveau én -richting van de bevolking. Inzicht in welke studierichtingen het meest voorkomen in de beroepsbevolking.",
     "_dimensies": [
       "Geslacht",
@@ -4656,7 +4656,7 @@
     "_cbs_id": "85650NED",
     "_thema": "Onderwijs",
     "_archief": false,
-    "_laatste_update": "2026-05-21",
+    "_laatste_update": "2026-08-13",
     "samenvatting": "Binding van de bevolking met de arbeidsmarkt, uitgesplitst naar onderwijsniveau, onderwijsrichting, geslacht en leeftijd.",
     "_dimensies": [
       "Arbeidspositie",
@@ -5027,7 +5027,7 @@
       "Wat is de trend in arbeidsdeelname van jongeren de afgelopen 5 jaar?"
     ],
     "_archief": false,
-    "_laatste_update": "2026-05-21",
+    "_laatste_update": "2026-08-13",
     "samenvatting": "Beroepsbevolking, werkloosheidspercentage en arbeidsparticipatie van jongeren (15 tot 25 jaar), uitgesplitst naar geslacht en onderwijsdeelname. Kwartaalcijfers.",
     "_dimensies": [
       "Geslacht",
@@ -5166,7 +5166,7 @@
     "_cbs_id": "85312NED",
     "_thema": "Arbeidsmarkt",
     "_archief": false,
-    "_laatste_update": "2026-05-21",
+    "_laatste_update": "2026-08-13",
     "samenvatting": "Duur van werkloosheid uitgesplitst naar geslacht, leeftijd en herkomst. Inzicht in hardnekkige versus conjuncturele werkloosheid — relevant voor activeringsprogramma's en sociale zekerheid.",
     "_dimensies": [
       "Werkloosheidsduur",
