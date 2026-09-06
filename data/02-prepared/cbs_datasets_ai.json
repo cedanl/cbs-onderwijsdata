@@ -2291,7 +2291,7 @@
     "_cbs_id": "83286NED",
     "_thema": "Ho studievoortgang",
     "_archief": false,
-    "_laatste_update": "2026-06-18",
+    "_laatste_update": "2026-09-04",
     "samenvatting": "Cohortdata van HBO-starters die bijhoudt hoeveel studenten op verschillende peilmomenten hun eerste HBO-diploma hebben behaald. Standaardset voor diplomarendementsanalyse.",
     "_dimensies": [
       "Geslacht",
@@ -2352,7 +2352,7 @@
     "_cbs_id": "83282NED",
     "_thema": "Ho studievoortgang",
     "_archief": false,
-    "_laatste_update": "2026-06-18",
+    "_laatste_update": "2026-09-04",
     "samenvatting": "Cohortdata van HO-starters die bijhoudt hoeveel studenten een HO-diploma behalen op verschillende peilmomenten. Vergelijkt HBO en WO rendement.",
     "_dimensies": [
       "Geslacht",
@@ -2421,7 +2421,7 @@
     "_cbs_id": "83285NED",
     "_thema": "Ho studievoortgang",
     "_archief": false,
-    "_laatste_update": "2026-06-18",
+    "_laatste_update": "2026-09-04",
     "samenvatting": "Cohortdata van WO-starters die bijhoudt hoeveel studenten hun eerste WO-diploma behalen per studierichting. Geschikt voor rendements- en doorstroomanalyses per vakgebied.",
     "_dimensies": [
       "Geslacht",
@@ -2481,7 +2481,7 @@
     "_cbs_id": "83305NED",
     "_thema": "Ho studievoortgang",
     "_archief": false,
-    "_laatste_update": "2026-06-18",
+    "_laatste_update": "2026-09-04",
     "samenvatting": "Welk WO-diploma studenten uiteindelijk behalen, uitgesplitst naar vooropleiding en studiefase bij instroom. Inzicht in doorstroom van bachelor naar master.",
     "_dimensies": [
       "Geslacht",
@@ -5328,7 +5328,7 @@
     "_cbs_id": "83474NED",
     "_thema": "Demografie",
     "_archief": false,
-    "_laatste_update": "2026-07-30",
+    "_laatste_update": "2026-08-31",
     "samenvatting": "Maandelijkse ontwikkeling van de Nederlandse bevolking: geboorten, sterfgevallen, immigratie en emigratie. Biedt actuele en historische demografische kerncijfers voor heel Nederland.",
     "_dimensies": [
       "Perioden"
@@ -5381,7 +5381,7 @@
     "_cbs_id": "37230ned",
     "_thema": "Demografie",
     "_archief": false,
-    "_laatste_update": "2026-07-30",
+    "_laatste_update": "2026-08-31",
     "samenvatting": "Maandelijkse bevolkingsontwikkeling per regio (gemeente, provincie, COROP). Inzicht in regionale demografische trends: krimp, groei, migratiebewegingen.",
     "_dimensies": [
       "Regio's",
