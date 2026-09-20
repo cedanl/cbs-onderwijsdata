@@ -1133,7 +1133,7 @@
     "_cbs_id": "85534NED",
     "_thema": "Vo studievoortgang",
     "_archief": false,
-    "_laatste_update": "2025-09-18",
+    "_laatste_update": "2026-09-17",
     "samenvatting": "Cohortdata van VO-leerlingen die aangeeft welk diploma ze uiteindelijk behaalden, uitgesplitst naar geslacht, herkomst, schooladvies en inkomen ouders. Diepgaand instrument voor rendements- en kansengelijkheidsanalyses.",
     "_dimensies": [
       "Diploma op peilmoment",
@@ -3090,7 +3090,7 @@
     "_cbs_id": "85624NED",
     "_thema": "Levenlang leren",
     "_archief": false,
-    "_laatste_update": "2025-08-21",
+    "_laatste_update": "2026-09-14",
     "samenvatting": "LLO-deelname uitgesplitst naar onderwijsniveau en of mensen al onderwijsvolgend zijn. Inzicht in wie leven-lang-leren combineert met werk of al buiten het formele onderwijs staat.",
     "_dimensies": [
       "Geslacht",
@@ -3417,7 +3417,7 @@
     "_cbs_id": "85698NED",
     "_thema": "Van mbo naar arbeidsmarkt",
     "_archief": false,
-    "_laatste_update": "2025-09-16",
+    "_laatste_update": "2026-09-15",
     "samenvatting": "Arbeidskenmerken van MBO-uitstromers (met en zonder diploma) na verlaten van de opleiding. Kernset voor arbeidsmarktaansluiting en VSV-beleidsevaluatie.",
     "_dimensies": [
       "Geslacht",
@@ -3469,7 +3469,7 @@
     "_cbs_id": "85696NED",
     "_thema": "Van mbo naar arbeidsmarkt",
     "_archief": false,
-    "_laatste_update": "2025-09-16",
+    "_laatste_update": "2026-09-15",
     "samenvatting": "Arbeidsmarktpositie (werkend/werkzoekend/inactief) van MBO-uitstromers na verlaten onderwijs. Inzicht in succesvolle overgang naar de arbeidsmarkt.",
     "_dimensies": [
       "Geslacht",
@@ -3521,7 +3521,7 @@
     "_cbs_id": "85700NED",
     "_thema": "Van mbo naar arbeidsmarkt",
     "_archief": false,
-    "_laatste_update": "2025-09-16",
+    "_laatste_update": "2026-09-15",
     "samenvatting": "Uitkeringsontvangers onder MBO-uitstromers na verlaten onderwijs, uitgesplitst naar leeftijd en diplomastatus. Relevant voor beleid rond voortijdig schoolverlaten en sociale zekerheid.",
     "_dimensies": [
       "Geslacht",
@@ -3573,7 +3573,7 @@
     "_cbs_id": "85699NED",
     "_thema": "Van mbo naar arbeidsmarkt",
     "_archief": false,
-    "_laatste_update": "2025-09-16",
+    "_laatste_update": "2026-09-15",
     "samenvatting": "In welke bedrijfstakken MBO-uitstromers terechtkomen na verlaten van de opleiding. Inzicht in de match tussen MBO-opleidingen en arbeidsmarkt per sector.",
     "_dimensies": [
       "Geslacht",
@@ -3625,7 +3625,7 @@
     "_cbs_id": "83832NED",
     "_thema": "Van mbo naar arbeidsmarkt",
     "_archief": false,
-    "_laatste_update": "2025-09-16",
+    "_laatste_update": "2026-09-15",
     "samenvatting": "Uurloon van werkzame MBO-uitstromers na verlaten onderwijs, uitgesplitst naar studierichting en bedrijfstak. Inzicht in de financiële arbeidsmarktwaarde van MBO-diploma's.",
     "_dimensies": [
       "Geslacht",
@@ -3678,7 +3678,7 @@
     "_cbs_id": "85777NED",
     "_thema": "Van ho naar arbeidsmarkt",
     "_archief": false,
-    "_laatste_update": "2025-09-16",
+    "_laatste_update": "2026-09-15",
     "samenvatting": "Arbeidskenmerken van HO-uitstromers na verlaten onderwijs, uitgesplitst naar geslacht en diplomastatus. Brede set voor arbeidsmarktaansluitingsanalyses in het hoger onderwijs.",
     "_dimensies": [
       "Geslacht",
@@ -3732,7 +3732,7 @@
     "_cbs_id": "85776NED",
     "_thema": "Van ho naar arbeidsmarkt",
     "_archief": false,
-    "_laatste_update": "2025-09-16",
+    "_laatste_update": "2026-09-15",
     "samenvatting": "Arbeidsmarktpositie van HO-uitstromers uitgesplitst naar geslacht, herkomst en diplomastatus. Inzicht in kansen op werk na HO per doelgroep.",
     "_dimensies": [
       "Geslacht",
@@ -3786,7 +3786,7 @@
     "_cbs_id": "85778NED",
     "_thema": "Van ho naar arbeidsmarkt",
     "_archief": false,
-    "_laatste_update": "2025-09-16",
+    "_laatste_update": "2026-09-15",
     "samenvatting": "In welke bedrijfstakken werkzame HO-uitstromers terechtkomen, uitgesplitst naar studierichting. Inzicht in aansluiting tussen HO-opleidingen en arbeidsmarkt per sector.",
     "_dimensies": [
       "Geslacht",
@@ -3839,7 +3839,7 @@
     "_cbs_id": "85779NED",
     "_thema": "Van ho naar arbeidsmarkt",
     "_archief": false,
-    "_laatste_update": "2025-09-16",
+    "_laatste_update": "2026-09-15",
     "samenvatting": "Uitkeringsontvangers onder HO-uitstromers na verlaten onderwijs. Inzicht in kwetsbaarheid op de arbeidsmarkt, ook voor internationale studenten.",
     "_dimensies": [
       "Geslacht",
@@ -3894,7 +3894,7 @@
     "_cbs_id": "83815NED",
     "_thema": "Van ho naar arbeidsmarkt",
     "_archief": false,
-    "_laatste_update": "2025-09-16",
+    "_laatste_update": "2026-09-15",
     "samenvatting": "Uurloon van werkzame HO-uitstromers uitgesplitst naar studierichting en bedrijfstak. Inzicht in de financiële arbeidsmarktwaarde van HO-diploma's per richting.",
     "_dimensies": [
       "Geslacht",
@@ -4751,7 +4751,7 @@
     "_cbs_id": "84842NED",
     "_thema": "Onderwijs",
     "_archief": false,
-    "_laatste_update": "2025-09-12",
+    "_laatste_update": "2026-09-16",
     "samenvatting": "Gezonde levensverwachting, ervaren gezondheid en beperkingen, uitgesplitst naar geslacht, leeftijd en onderwijsniveau.",
     "_dimensies": [
       "Geslacht",
