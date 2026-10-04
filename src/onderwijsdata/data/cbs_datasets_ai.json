@@ -913,7 +913,7 @@
     "_cbs_id": "85381NED",
     "_thema": "Vo gediplomeerden",
     "_archief": false,
-    "_laatste_update": "2026-03-27",
+    "_laatste_update": "2026-10-01",
     "samenvatting": "Examenkandidaten en geslaagden in het VO uitgesplitst naar gedetailleerd onderwijssoort en herkomst. Relevant voor het analyseren van kansenongelijkheid bij examinering.",
     "_dimensies": [
       "Geslacht",
@@ -1024,7 +1024,7 @@
     "_cbs_id": "85379NED",
     "_thema": "Vo leerlingen",
     "_archief": false,
-    "_laatste_update": "2026-04-02",
+    "_laatste_update": "2026-10-01",
     "samenvatting": "VO-leerlingen uitgesplitst naar gedetailleerd onderwijssoort, leerjaar en herkomstland. Biedt inzicht in diversiteit en doorstroom per schooltype.",
     "_dimensies": [
       "Geslacht",
@@ -1781,7 +1781,7 @@
     "_cbs_id": "85907NED",
     "_thema": "Hoger onderwijs",
     "_archief": false,
-    "_laatste_update": "2025-11-27",
+    "_laatste_update": "2026-09-21",
     "samenvatting": "Aandeel HBO- en WO-studenten dat studiepunten in het buitenland haalt. Relevant voor internationaliseringsbeleid en het monitoren van mobiliteitsambities.",
     "_dimensies": [
       "Onderwijs",
@@ -4269,7 +4269,7 @@
     "_cbs_id": "85948NED",
     "_thema": "Onderwijs",
     "_archief": false,
-    "_laatste_update": "2025-09-18",
+    "_laatste_update": "2026-09-24",
     "samenvatting": "Terugkeer van voortijdig schoolverlaters in het onderwijs na schoolverlaten. Uitgesplitst naar persoonskenmerken, onderwijspositie en startkwalificatie.",
     "_dimensies": [
       "Geslacht",
@@ -4324,7 +4324,7 @@
     "_cbs_id": "85859NED",
     "_thema": "Onderwijs",
     "_archief": false,
-    "_laatste_update": "2025-09-30",
+    "_laatste_update": "2026-09-30",
     "samenvatting": "Arbeidsmarktpositie van voortijdig schoolverlaters na het verlaten van het onderwijs. Uitgesplitst naar persoonskenmerken.",
     "_dimensies": [
       "Geslacht",
@@ -4376,7 +4376,7 @@
     "_cbs_id": "85860NED",
     "_thema": "Onderwijs",
     "_archief": false,
-    "_laatste_update": "2025-09-30",
+    "_laatste_update": "2026-09-30",
     "samenvatting": "Arbeidskenmerken van voortijdig schoolverlaters na het verlaten van het onderwijs. Uitgesplitst naar leeftijd en arbeidskenmerken.",
     "_dimensies": [
       "Geslacht",
@@ -4428,7 +4428,7 @@
     "_cbs_id": "85861NED",
     "_thema": "Onderwijs",
     "_archief": false,
-    "_laatste_update": "2025-09-30",
+    "_laatste_update": "2026-09-30",
     "samenvatting": "Uitkeringen ontvangen door voortijdig schoolverlaters na het verlaten van het onderwijs. Uitgesplitst naar persoonskenmerken.",
     "_dimensies": [
       "Geslacht",
@@ -4480,7 +4480,7 @@
     "_cbs_id": "85862NED",
     "_thema": "Onderwijs",
     "_archief": false,
-    "_laatste_update": "2025-09-30",
+    "_laatste_update": "2026-09-30",
     "samenvatting": "Bedrijfstak van voortijdig schoolverlaters met werk na het verlaten van het onderwijs. Uitgesplitst naar persoonskenmerken.",
     "_dimensies": [
       "Geslacht",
@@ -4533,7 +4533,7 @@
     "_cbs_id": "84534NED",
     "_thema": "Onderwijs",
     "_archief": false,
-    "_laatste_update": "2025-09-30",
+    "_laatste_update": "2026-09-30",
     "samenvatting": "Uurloon van voortijdig schoolverlaters die als werknemer werkzaam zijn na het verlaten van het onderwijs. Uitgesplitst naar geslacht.",
     "_dimensies": [
       "Geslacht",
@@ -5328,7 +5328,7 @@
     "_cbs_id": "83474NED",
     "_thema": "Demografie",
     "_archief": false,
-    "_laatste_update": "2026-08-31",
+    "_laatste_update": "2026-09-30",
     "samenvatting": "Maandelijkse ontwikkeling van de Nederlandse bevolking: geboorten, sterfgevallen, immigratie en emigratie. Biedt actuele en historische demografische kerncijfers voor heel Nederland.",
     "_dimensies": [
       "Perioden"
@@ -5381,7 +5381,7 @@
     "_cbs_id": "37230ned",
     "_thema": "Demografie",
     "_archief": false,
-    "_laatste_update": "2026-08-31",
+    "_laatste_update": "2026-09-30",
     "samenvatting": "Maandelijkse bevolkingsontwikkeling per regio (gemeente, provincie, COROP). Inzicht in regionale demografische trends: krimp, groei, migratiebewegingen.",
     "_dimensies": [
       "Regio's",
@@ -5752,7 +5752,7 @@
     "_cbs_id": "85968NED",
     "_thema": "Overheidsfinanciën",
     "_archief": false,
-    "_laatste_update": "2026-07-02",
+    "_laatste_update": "2026-09-23",
     "samenvatting": "Kerncijfers over de overheidsfinanciën: inkomsten, uitgaven, overheidstekort en staatsschuld als percentage van het BBP. Essentieel voor analyses van begrotingsbeleid en financiële sturing.",
     "_dimensies": [
       "Perioden"
@@ -5820,7 +5820,7 @@
     "_cbs_id": "85879NED",
     "_thema": "Macro-economie",
     "_archief": false,
-    "_laatste_update": "2026-07-30",
+    "_laatste_update": "2026-09-23",
     "samenvatting": "Bruto binnenlands product (BBP) per kwartaal in lopende en constante prijzen. Toont de economische groei van Nederland — onmisbaar als context voor beleidseffectiviteit en financiële sturing.",
     "_dimensies": [
       "Soort gegevens",
