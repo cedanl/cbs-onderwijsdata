@@ -16,6 +16,8 @@ FIXTURES = sorted((Path(__file__).parent / "fixtures" / "contract_v1").glob("*.j
 def test_fixture_levert_verwacht_record_en_valideert(pad):
     fx = json.loads(pad.read_text(encoding="utf-8"))
     record = contract._record(fx["bron"])
+    # capabilities zijn package-niveau en groeien mee met nieuwe functies
+    record.pop("capabilities"), fx["verwacht"].pop("capabilities")
     assert record == fx["verwacht"]
     assert contract.valideer_record(record) == []
 

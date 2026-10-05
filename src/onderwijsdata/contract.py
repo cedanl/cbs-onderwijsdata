@@ -21,7 +21,7 @@ CAPABILITIES = {
     "dimension": True,
     "definitions": True,
     "data": True,
-    "validate_selection": False,
+    "validate_selection": True,
 }
 
 
@@ -185,6 +185,10 @@ def _alle_records() -> tuple[dict, ...]:
 def catalog_records(schema_version: int = SCHEMA_VERSION, sector: str | None = None) -> list[dict]:
     """Records in het contract; met ``sector`` alleen die waar de sector `supported` is.
 
+    Dit is een kandidaatselectie op tabelniveau: een HO-tabel voor hbo+wo staat
+    erin, ook als de hbo-cijfers alleen via een dimensiefilter te scheiden zijn.
+    Of een concrete selectie leverbaar is, bepalen ``validate_selection``/``prepare_query``.
+
     Records met onbekende dekking staan niet in een sectorselectie maar in
     :func:`scope_review`.
     """
@@ -264,6 +268,20 @@ def valideer_record(record: dict) -> list[str]:
     return fouten
 
 
+def dimensie_sleutel(dataset_id: str, dimensie: str) -> str | None:
+    """Officiële key van een dimensie (opgegeven als key of titel); live, via gecachete definities."""
+    rec = get_dataset(dataset_id)
+    return _dimensie_sleutel(rec["aliases"][0], dimensie)
+
+
+def _dimensie_sleutel(cbs_id: str, dimensie: str) -> str | None:
+    from . import client
+    for key, d in client.definitions(cbs_id).items():
+        if d.get("type", "").endswith("Dimension") and dimensie in (key, d.get("title")):
+            return key
+    return None
+
+
 def dimensie_waarden(dataset_id: str, dimensie: str) -> dict[str, str]:
     """Waarden van één dimensie (key → titel); live opgehaald en gecachet.
 
@@ -276,9 +294,4 @@ def dimensie_waarden(dataset_id: str, dimensie: str) -> dict[str, str]:
 @lru_cache(maxsize=256)
 def _dimensie_cache(cbs_id: str, dimensie: str) -> dict[str, str]:
     from . import client
-    sleutel = dimensie
-    for key, d in client.definitions(cbs_id).items():
-        if d.get("type", "").endswith("Dimension") and dimensie in (key, d.get("title")):
-            sleutel = key
-            break
-    return client.dimension(cbs_id, sleutel)
+    return client.dimension(cbs_id, _dimensie_sleutel(cbs_id, dimensie) or dimensie)
