@@ -65,6 +65,34 @@ class TestValidatie:
         _wijzig(prep / "cbs_datasets_enriched.json", stale)
         assert any("_laatste_update volgt de bron niet" in f for f in ba.valideer(prep)[0])
 
+    def test_nieuwe_periode_in_bron_zonder_verrijking_blokkeert(self, prep, tmp_path):
+        # Herverificatie H2: alleen periode wijzigen in de AI-catalogus mocht ongemerkt 'vers' publiceren.
+        _wijzig(prep / "cbs_datasets_ai.json",
+                lambda d: next(r for r in d if r["_cbs_id"] == "85423NED").update({"periode": "2011/'12 - 2026/'27"}))
+        assert any("85423NED: periode volgt de bron niet" in f for f in ba.valideer(prep)[0])
+        with pytest.raises(ValueError):
+            ba.publiceer(prep, tmp_path / "pkg", tmp_path / "docs")
+        assert not (tmp_path / "pkg").exists()
+
+    def test_gesynchroniseerde_bronlaag_met_oude_stempel_blokkeert(self, prep):
+        def nieuwe_periode(d):
+            next(r for r in d if r["_cbs_id"] == "85423NED").update({"periode": "2011/'12 - 2026/'27"})
+        _wijzig(prep / "cbs_datasets_ai.json", nieuwe_periode)
+        _wijzig(prep / "cbs_datasets_enriched.json", nieuwe_periode)
+        assert any("85423NED: afleiding hoort niet bij de bron" in f for f in ba.valideer(prep)[0])
+
+    def test_expliciet_verouderde_afleiding_is_waarschuwing(self, prep):
+        def nieuwe_periode(d):
+            next(r for r in d if r["_cbs_id"] == "85423NED").update({"periode": "2011/'12 - 2026/'27"})
+
+        def markeer(d):
+            nieuwe_periode(d)
+            next(r for r in d if r["_cbs_id"] == "85423NED")["_verrijking"]["status"] = "verouderd"
+        _wijzig(prep / "cbs_datasets_ai.json", nieuwe_periode)
+        _wijzig(prep / "cbs_datasets_enriched.json", markeer)
+        fouten, waarschuwingen = ba.valideer(prep)
+        assert fouten == [] and any("1 enriched-records met verouderde afleiding" in w for w in waarschuwingen)
+
     def test_meetwaarde_zonder_details(self, prep):
         def kapot(d):
             rec = next(r for r in d if r.get("_meetwaarden"))

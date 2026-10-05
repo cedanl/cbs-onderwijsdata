@@ -20,8 +20,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT / "src"))
+sys.path.insert(0, str(Path(__file__).parent))
 
 from onderwijsdata import __version__, contract
+from verrijk_catalogus import VEROUDERD, verrijking_stempel
 
 SCHEMA_VERSIE = 1
 MANIFEST = "cbs_manifest.json"
@@ -77,10 +79,19 @@ def valideer(prepared: Path) -> tuple[list[str], list[str]]:
     ai = {r["_cbs_id"]: r for r in data["cbs_datasets_ai.json"]}
     info = {r["_cbs_id"]: r for r in data["cbs_tableinfo.json"]}
     for r in data["cbs_datasets_enriched.json"]:
+        # Bronlaag: ieder veld uit de AI-catalogus (o.a. periode) moet ongewijzigd in enriched staan.
         bron = ai.get(r["_cbs_id"], {})
-        for veld in ("_laatste_update", "_archief", "_meetwaarden", "_dimensies"):
-            if r.get(veld) != bron.get(veld):
+        for veld in sorted(bron):
+            if r.get(veld) != bron[veld]:
                 fouten.append(f"enriched {r['_cbs_id']}: {veld} volgt de bron niet")
+        # Afgeleide laag: dezelfde stempelcontrole als de verrijker. Een niet-passende stempel
+        # mag alleen als expliciet verouderd gemarkeerd (mislukte refresh); anders eerst verrijken.
+        stempel = r.get("_verrijking")
+        if stempel and stempel.get("status") != VEROUDERD:
+            actueel = {k: stempel.get(k) for k in ("versie", "inputhash", "bronrevisie")}
+            if actueel != verrijking_stempel(r):
+                fouten.append(f"enriched {r['_cbs_id']}: afleiding hoort niet bij de bron; "
+                              "draai eerst catalogus/verrijk_catalogus.py")
     for r in data["cbs_datasets_enriched.json"]:
         for key in r.get("_meetwaarden", []):
             if key not in r.get("_meetwaarden_details", {}):
