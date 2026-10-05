@@ -71,7 +71,7 @@
       "definitions": true,
       "dimension": true,
       "properties": true,
-      "validate_selection": false
+      "validate_selection": true
     },
     "dataset_id": "cbs:85489NED",
     "dimensie_sleutels": {
@@ -104,8 +104,10 @@
       },
       "broncheck": null,
       "catalogusbouw": null,
+      "gecontroleerd_op": null,
       "inputhash": null,
       "laatste_update": "2026-03-02",
+      "metadata_modified": null,
       "verrijkingsversie": null
     },
     "instellingseenheden": {
@@ -121,6 +123,10 @@
         "unit": "aantal"
       }
     ],
+    "methodiek": {
+      "reden": "TableInfos niet vastgelegd",
+      "status": "unknown"
+    },
     "onderwijssectoren": [
       "PO"
     ],

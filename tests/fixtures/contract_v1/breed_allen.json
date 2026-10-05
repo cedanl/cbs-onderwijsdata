@@ -74,7 +74,7 @@
       "definitions": true,
       "dimension": true,
       "properties": true,
-      "validate_selection": false
+      "validate_selection": true
     },
     "dataset_id": "cbs:85702NED",
     "dimensie_sleutels": {
@@ -106,8 +106,10 @@
       },
       "broncheck": null,
       "catalogusbouw": null,
+      "gecontroleerd_op": null,
       "inputhash": "704eecf8ef398521",
       "laatste_update": "2026-04-14",
+      "metadata_modified": null,
       "verrijkingsversie": 1
     },
     "instellingseenheden": {
@@ -123,6 +125,10 @@
         "unit": "aantal"
       }
     ],
+    "methodiek": {
+      "reden": "TableInfos niet vastgelegd",
+      "status": "unknown"
+    },
     "onderwijssectoren": [
       "Allen"
     ],
