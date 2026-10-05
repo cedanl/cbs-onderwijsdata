@@ -27,6 +27,20 @@ rows = data("85380NED", **{
 props = properties("85353NED")
 ```
 
+### Catalogus (versieerbaar contract, offline)
+
+```python
+from onderwijsdata import catalog_records, get_dataset, catalog_manifest, scope_review
+
+catalog_records(sector="mbo")      # alleen records waar mbo `supported` is
+scope_review()                     # onbekende sectordekking: eerst verifiëren
+get_dataset("cbs:85423NED")        # exacte ID-resolutie (ook zonder prefix)
+catalog_manifest()                 # schemaversie, aantallen, inhoudshash
+```
+
+Onbekende informatie staat als `{"status": "unknown", ...}`, nooit als lege lijst.
+`catalog()` blijft ongewijzigd werken.
+
 ## Structuur
 
 ```

@@ -1,6 +1,7 @@
 __version__ = "0.1.1"
 
 from .client import data, dimension, properties, definitions
+from .contract import catalog_records, get_dataset, catalog_manifest, scope_review
 
 def catalog(ai=True):
     import json
@@ -14,4 +15,5 @@ def catalog(ai=True):
     filename = "cbs_datasets_ai.json" if ai else "cbs_datasets.json"
     return json.loads(data_dir.joinpath(filename).read_text(encoding="utf-8"))
 
-__all__ = ["data", "dimension", "properties", "definitions", "catalog", "__version__"]
+__all__ = ["data", "dimension", "properties", "definitions", "catalog", "catalog_records", "get_dataset",
+           "catalog_manifest", "scope_review", "__version__"]
