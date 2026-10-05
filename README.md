@@ -8,11 +8,11 @@ Python client voor publieke Nederlandse onderwijsdata via de [CBS OData API](htt
 (een release-tag of commit-hash; gebruik niet `main` voor reproduceerbare omgevingen):
 
 ```bash
-pip install "onderwijsdata @ git+https://github.com/cedanl/cbs-onderwijsdata@<ref>"
-pip install "onderwijsdata[analyse] @ git+https://github.com/cedanl/cbs-onderwijsdata@<ref>"  # + pandas, matplotlib
+pip install "onderwijsdata @ git+https://github.com/cedanl/cbs-onderwijsdata@v0.2.0"
+pip install "onderwijsdata[analyse] @ git+https://github.com/cedanl/cbs-onderwijsdata@v0.2.0"  # + pandas, matplotlib
 ```
 
-Met uv: `uv add "onderwijsdata @ git+https://github.com/cedanl/cbs-onderwijsdata@<ref>"`.
+Met uv: `uv add "onderwijsdata @ git+https://github.com/cedanl/cbs-onderwijsdata@v0.2.0"`.
 
 De installatie bevat de catalogus en `cbs_manifest.json`. Controle na installatie:
 

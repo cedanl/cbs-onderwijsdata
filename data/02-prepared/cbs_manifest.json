@@ -2,7 +2,7 @@
   "schema_version": 1,
   "generator": {
     "naam": "catalogus/bouw_artefact.py",
-    "package_versie": "0.1.1"
+    "package_versie": "0.2.0"
   },
   "catalogusrevisie": "ca1b72082e9267ff",
   "bestanden": {
