@@ -132,7 +132,10 @@
       "2011/'12",
       "2024/'25"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "704eecf8ef398521"
+    }
   },
   {
     "leverancier": "CBS",
@@ -271,7 +274,10 @@
       "2011/'12",
       "2025/'26"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "257f8fd569950744"
+    }
   },
   {
     "leverancier": "CBS",
@@ -2075,7 +2081,10 @@
       "1900/'01",
       "2024/'25"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "dd8863a128df4475"
+    }
   },
   {
     "leverancier": "CBS",
@@ -3749,7 +3758,10 @@
       "1900/'01",
       "2025/'26"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "cf6ba006e6b3de68"
+    }
   },
   {
     "leverancier": "CBS",
@@ -3856,8 +3868,7 @@
     "_periode_waarden": [
       "1990/'91",
       "2025/'26"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -3989,8 +4000,7 @@
     "_periode_waarden": [
       "2011/'12",
       "2025/'26"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -4130,8 +4140,7 @@
     "_periode_waarden": [
       "2011/'12",
       "2025/'26"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -4243,8 +4252,7 @@
     "_periode_waarden": [
       "2000/'01",
       "2025/'26"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -4390,8 +4398,7 @@
     "_periode_waarden": [
       "2014/'15",
       "2024/'25"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -4534,7 +4541,10 @@
       "2011/'12",
       "2024/'25"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "1df704837fc25507"
+    }
   },
   {
     "leverancier": "CBS",
@@ -4645,8 +4655,7 @@
     "_periode_waarden": [
       "2011/'12",
       "2024/'25"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -4786,7 +4795,10 @@
       "2011/'12",
       "2025/'26"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "5a37d0708731504b"
+    }
   },
   {
     "leverancier": "CBS",
@@ -4888,8 +4900,7 @@
     "_periode_waarden": [
       "2011/'12",
       "2025/'26"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -4995,8 +5006,7 @@
     "_periode_waarden": [
       "2010/'11 naar 2011/'12",
       "2024/'25 naar 2025/'26"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5107,8 +5117,7 @@
       "Startjaar": "dimensie",
       "Peilmoment": "dimensie",
       "LeerlingenAantal_1": "meetwaarde (aantal)"
-    },
-    "niet_geschikt_voor": null
+    }
   },
   {
     "leverancier": "CBS",
@@ -5268,7 +5277,10 @@
       "2015/'16",
       "2025/'26"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "fe2f28c7a643eb87"
+    }
   },
   {
     "leverancier": "CBS",
@@ -5375,8 +5387,7 @@
     "_periode_waarden": [
       "2011/'12",
       "2025/'26"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5513,8 +5524,7 @@
     "_periode_waarden": [
       "2015/'16",
       "2025/'26"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5672,7 +5682,10 @@
       "2015/'16",
       "2024/'25"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "2a6641d607eee6ea"
+    }
   },
   {
     "leverancier": "CBS",
@@ -5808,8 +5821,7 @@
     "_periode_waarden": [
       "2015/'16",
       "2024/'25"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -5917,8 +5929,7 @@
     "_periode_waarden": [
       "2011/'12",
       "2024/'25"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -6040,8 +6051,7 @@
     "_periode_waarden": [
       "2018/'19",
       "2025/'26"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -6179,8 +6189,7 @@
     "_periode_waarden": [
       "2018/'19",
       "2025/'26"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -6284,8 +6293,7 @@
     "_periode_waarden": [
       "2011/'12 naar 2012/'13",
       "2024/'25 naar 2025/'26"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -6440,7 +6448,10 @@
       "2019",
       "2025"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "2487e684c22a624d"
+    }
   },
   {
     "leverancier": "CBS",
@@ -6609,7 +6620,10 @@
       "2019",
       "2025"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "ab80f2415d1d0c0f"
+    }
   },
   {
     "leverancier": "CBS",
@@ -7140,7 +7154,10 @@
       "2022",
       "2026"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "1cf226cf84e36c55"
+    }
   },
   {
     "leverancier": "CBS",
@@ -7230,7 +7247,10 @@
       "2016/'17",
       "2023/'24"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "312f31675d262b01"
+    }
   },
   {
     "leverancier": "CBS",
@@ -7328,7 +7348,10 @@
       "2011/'12",
       "2024/'25"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "6c3eefc48a24eb57"
+    }
   },
   {
     "leverancier": "CBS",
@@ -7456,8 +7479,7 @@
     "_periode_waarden": [
       "2015/'16",
       "2024/'25"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -7604,8 +7626,7 @@
     "_periode_waarden": [
       "2011/'12",
       "2025/'26"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -7704,7 +7725,10 @@
       "2011/'12",
       "2025/'26"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "e4f349c12c19ceea"
+    }
   },
   {
     "leverancier": "CBS",
@@ -7823,7 +7847,10 @@
       "2011/'12",
       "2025/'26"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "7872efe88134d01c"
+    }
   },
   {
     "leverancier": "CBS",
@@ -7928,7 +7955,10 @@
       "2005/'06",
       "2025/'26"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "de98ccabdb867334"
+    }
   },
   {
     "leverancier": "CBS",
@@ -8061,7 +8091,10 @@
       "2005/'06",
       "2025/'26"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "06013a599b019289"
+    }
   },
   {
     "leverancier": "CBS",
@@ -8244,8 +8277,7 @@
       "Bachelor_7": "meetwaarde (%)",
       "NietGediplomeerden_8": "meetwaarde (aantal)",
       "NietGediplomeerdenRelatief_9": "meetwaarde (%)"
-    },
-    "niet_geschikt_voor": null
+    }
   },
   {
     "leverancier": "CBS",
@@ -8521,8 +8553,7 @@
       "BachelorWoMasterWo_17": "meetwaarde (%)",
       "NietGediplomeerden_18": "meetwaarde (aantal)",
       "NietGediplomeerdenRelatief_19": "meetwaarde (%)"
-    },
-    "niet_geschikt_voor": null
+    }
   },
   {
     "leverancier": "CBS",
@@ -8699,8 +8730,7 @@
       "Master_7": "meetwaarde (%)",
       "NietGediplomeerden_8": "meetwaarde (aantal)",
       "NietGediplomeerdenRelatief_9": "meetwaarde (%)"
-    },
-    "niet_geschikt_voor": null
+    }
   },
   {
     "leverancier": "CBS",
@@ -8943,8 +8973,7 @@
       "k_4JarigeMaster_13": "meetwaarde (%)",
       "NietGediplomeerden_14": "meetwaarde (aantal)",
       "NietGediplomeerdenRelatief_15": "meetwaarde (%)"
-    },
-    "niet_geschikt_voor": null
+    }
   },
   {
     "leverancier": "CBS",
@@ -9033,7 +9062,10 @@
       "2006/'07",
       "2024/'25"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "793182c1c0d23751"
+    }
   },
   {
     "leverancier": "CBS",
@@ -9122,7 +9154,10 @@
       "2006/'07",
       "2025/'26"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "452a55d6e706af97"
+    }
   },
   {
     "leverancier": "CBS",
@@ -9348,7 +9383,10 @@
       "1986",
       "2020"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "5cd021bc9ca4c596"
+    }
   },
   {
     "leverancier": "CBS",
@@ -10304,7 +10342,10 @@
       "2010",
       "2020"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "cc819d3af63d4ce9"
+    }
   },
   {
     "leverancier": "CBS",
@@ -10442,7 +10483,10 @@
       "TenMinsteEenCursus_5": "meetwaarde (x 1 000)",
       "TenMinsteEenCursusRelatief_6": "meetwaarde (%)"
     },
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "f4e0f7efa1a692e6"
+    }
   },
   {
     "leverancier": "CBS",
@@ -10580,7 +10624,10 @@
       "TenminsteEenCursus_5": "meetwaarde (x 1 000)",
       "TenminsteEenCursusRelatief_6": "meetwaarde (%)"
     },
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "07110ca96901cdf6"
+    }
   },
   {
     "leverancier": "CBS",
@@ -10718,7 +10765,10 @@
       "TenMinsteEenCursus_5": "meetwaarde (x 1 000)",
       "TenMinsteEenCursusRelatief_6": "meetwaarde (%)"
     },
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "d07987c91c7c5e54"
+    }
   },
   {
     "leverancier": "CBS",
@@ -10856,7 +10906,10 @@
       "TenminsteEenCursus_5": "meetwaarde (x 1 000)",
       "TenminsteEenCursusRelatief_6": "meetwaarde (%)"
     },
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "5f3b938d7de2dc39"
+    }
   },
   {
     "leverancier": "CBS",
@@ -10966,8 +11019,7 @@
     "_periode_waarden": [
       "2013",
       "2025"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11097,7 +11149,10 @@
       "2021",
       "2025"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "04bdb89e3575d409"
+    }
   },
   {
     "leverancier": "CBS",
@@ -11204,8 +11259,7 @@
     "_periode_waarden": [
       "2013",
       "2025"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -11323,8 +11377,7 @@
     "_periode_waarden": [
       "2013",
       "2025"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12055,7 +12108,10 @@
       "1995",
       "2024"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "f7682cc2ad5be988"
+    }
   },
   {
     "leverancier": "CBS",
@@ -12302,7 +12358,10 @@
       "1900",
       "2024"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "4551a78e5bb0296d"
+    }
   },
   {
     "leverancier": "CBS",
@@ -12431,8 +12490,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2023/'24"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12566,8 +12624,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2023/'24"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12693,8 +12750,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2023/'24"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12807,8 +12863,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2023/'24"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -12912,8 +12967,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2023/'24"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13036,8 +13090,7 @@
     "_periode_waarden": [
       "2006/'07",
       "2023/'24"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13170,8 +13223,7 @@
     "_periode_waarden": [
       "2006/'07",
       "2023/'24"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13276,8 +13328,7 @@
     "_periode_waarden": [
       "2006/'07",
       "2023/'24"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13397,8 +13448,7 @@
     "_periode_waarden": [
       "2006/'07",
       "2023/'24"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13504,8 +13554,7 @@
     "_periode_waarden": [
       "2006/'07",
       "2023/'24"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13760,8 +13809,7 @@
     "_periode_waarden": [
       "2013",
       "2024"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -13888,8 +13936,7 @@
     "_periode_waarden": [
       "2013 1e kwartaal",
       "2026 2e kwartaal"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -14016,7 +14063,10 @@
       "2013 1e kwartaal",
       "2026 2e kwartaal"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "40c2cf3aea3f0fe3"
+    }
   },
   {
     "leverancier": "CBS",
@@ -14114,8 +14164,7 @@
     "_periode_waarden": [
       "2011",
       "2019"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2019."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -14217,7 +14266,10 @@
       "2013",
       "2025"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "9c17528a83ed5b9d"
+    }
   },
   {
     "leverancier": "CBS",
@@ -14359,7 +14411,10 @@
       "2012/'13",
       "2024/'25"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "6bf071c851ed13a4"
+    }
   },
   {
     "leverancier": "CBS",
@@ -14510,8 +14565,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2022/'23"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -14655,8 +14709,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2023/'24"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -14795,8 +14848,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2023/'24"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -14932,8 +14984,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2023/'24"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -15056,8 +15107,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2023/'24"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -15174,8 +15224,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2023/'24"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -15493,8 +15542,7 @@
     "_periode_waarden": [
       "2013 1e kwartaal",
       "2026 2e kwartaal"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -15618,7 +15666,10 @@
       "2013 1e kwartaal",
       "2026 2e kwartaal"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "321e42f8d3cb8412"
+    }
   },
   {
     "leverancier": "CBS",
@@ -15717,7 +15768,10 @@
       "1997 1e kwartaal",
       "2026 2e kwartaal"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "19eb3e3d89bcc42d"
+    }
   },
   {
     "leverancier": "CBS",
@@ -15841,8 +15895,7 @@
     "_periode_waarden": [
       "2007/2010",
       "2021/2024"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -16565,8 +16618,7 @@
     "_periode_waarden": [
       "2014",
       "2025"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -16670,8 +16722,7 @@
     "_periode_waarden": [
       "2005",
       "2024"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -16795,8 +16846,7 @@
     "_periode_waarden": [
       "2005",
       "2024"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -17124,7 +17174,10 @@
       "2013 1e kwartaal",
       "2026 2e kwartaal"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "38f476cdf43e54c6"
+    }
   },
   {
     "leverancier": "CBS",
@@ -17456,8 +17509,7 @@
     "_periode_waarden": [
       "2013 1e kwartaal",
       "2026 2e kwartaal"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -17556,7 +17608,10 @@
       "2013 1e kwartaal",
       "2026 2e kwartaal"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "c78f2139bfa12190"
+    }
   },
   {
     "leverancier": "CBS",
@@ -17709,7 +17764,10 @@
       "1969",
       "2021"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "f6a5b8613df733f0"
+    }
   },
   {
     "leverancier": "CBS",
@@ -17899,8 +17957,7 @@
     "_periode_waarden": [
       "2014",
       "2023"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -18035,7 +18092,10 @@
       "1995 januari",
       "2026 augustus"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "4fd96aa8f8dcb80a"
+    }
   },
   {
     "leverancier": "CBS",
@@ -18249,8 +18309,7 @@
     "_periode_waarden": [
       "2002 januari",
       "2026 augustus"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -18427,8 +18486,7 @@
     "_periode_waarden": [
       "2010",
       "2025"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -18530,8 +18588,7 @@
     "_periode_waarden": [
       "1950",
       "2026"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -18807,8 +18864,7 @@
     "_periode_waarden": [
       "2025",
       "2070"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -18910,7 +18966,10 @@
       "2025",
       "2070"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "0b5d5031c7db784c"
+    }
   },
   {
     "leverancier": "CBS",
@@ -19365,7 +19424,10 @@
       "2025",
       "2070"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "85fabe0ed26e3bc5"
+    }
   },
   {
     "leverancier": "CBS",
@@ -19681,7 +19743,10 @@
       "1995",
       "2026 2e kwartaal"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "585b3a4a3354480d"
+    }
   },
   {
     "leverancier": "CBS",
@@ -21806,8 +21871,7 @@
     "_periode_waarden": [
       "1995 1e kwartaal",
       "2026 2e kwartaal"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -21953,8 +22017,7 @@
     "_periode_waarden": [
       "2011",
       "2024"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -22448,8 +22511,7 @@
     "_periode_waarden": [
       "2018",
       "2024"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -22549,8 +22611,7 @@
     "_periode_waarden": [
       "1861 tot 1866",
       "2021 tot 2026"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -25545,8 +25606,7 @@
     "_periode_waarden": [
       "1995",
       "2026"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -25632,8 +25692,7 @@
     "_periode_waarden": [
       "2013",
       "2025"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -25749,8 +25808,7 @@
     "_periode_waarden": [
       "2005",
       "2018"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2018."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -25852,8 +25910,7 @@
     "_periode_waarden": [
       "2005",
       "2021"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -25955,8 +26012,7 @@
     "_periode_waarden": [
       "2005",
       "2022"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -26058,8 +26114,7 @@
     "_periode_waarden": [
       "2005",
       "2020"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -26161,8 +26216,7 @@
     "_periode_waarden": [
       "2005",
       "2019"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2019."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -26256,8 +26310,7 @@
     "_periode_waarden": [
       "2005",
       "2018"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2018."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -26351,8 +26404,7 @@
     "_periode_waarden": [
       "2005",
       "2017"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2017."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -26446,8 +26498,7 @@
     "_periode_waarden": [
       "2005",
       "2016"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2016."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -26568,8 +26619,7 @@
     "_periode_waarden": [
       "2005",
       "2015"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2015."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -26704,8 +26754,7 @@
     "_periode_waarden": [
       "2005",
       "2013"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2013."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -26840,8 +26889,7 @@
     "_periode_waarden": [
       "2005",
       "2011"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2011."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -27041,7 +27089,10 @@
       "2001",
       "2012"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2012."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "0fd8fa646793212f"
+    }
   },
   {
     "leverancier": "CBS",
@@ -27553,8 +27604,7 @@
     "_periode_waarden": [
       "Cohort 1999/'00",
       "Cohort 2004/'05"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -27644,8 +27694,7 @@
     "_periode_waarden": [
       "2001",
       "2006"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2006."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -27758,8 +27807,7 @@
     "_periode_waarden": [
       "2001",
       "2013"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2013."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -27854,7 +27902,10 @@
       "2001",
       "2006"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2006."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "a01770a9f4af4ecf"
+    }
   },
   {
     "leverancier": "CBS",
@@ -28098,8 +28149,7 @@
     "_periode_waarden": [
       "2004/'05",
       "2007/'08"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2007."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -28361,8 +28411,7 @@
     "_periode_waarden": [
       "2004/'05",
       "2007/'08"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2007."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -28591,8 +28640,7 @@
     "_periode_waarden": [
       "2004/'05",
       "2007/'08"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2007."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -28824,8 +28872,7 @@
     "_periode_waarden": [
       "2004/'05",
       "2007/'08"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2007."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -29113,8 +29160,7 @@
     "_periode_waarden": [
       "2004/'05",
       "2007/'08"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2007."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -29432,8 +29478,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2013/'14"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2013."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -29773,7 +29818,10 @@
       "2007/'08",
       "2013/'14"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2013."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "b10a1dc83734170b"
+    }
   },
   {
     "leverancier": "CBS",
@@ -29938,7 +29986,10 @@
       "2005, vrijdag 30 september",
       "2008, vrijdag 26 september"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2008."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "d2c99ede40ed49aa"
+    }
   },
   {
     "leverancier": "CBS",
@@ -30065,8 +30116,7 @@
     "_periode_waarden": [
       "2005, vrijdag 30 september",
       "2008, vrijdag 26 september"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2008."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -30196,8 +30246,7 @@
     "_periode_waarden": [
       "2005, vrijdag 30 september",
       "2008, vrijdag 26 september"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2008."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -30336,8 +30385,7 @@
     "_periode_waarden": [
       "2005, vrijdag 30 september",
       "2008, vrijdag 26 september"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2008."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -30486,7 +30534,10 @@
       "2007/'08",
       "2020/'21"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "b58d8f8fa4b3bc73"
+    }
   },
   {
     "leverancier": "CBS",
@@ -30628,7 +30679,10 @@
       "2007/'08",
       "2020/'21"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "5f63826e773fb80d"
+    }
   },
   {
     "leverancier": "CBS",
@@ -30903,8 +30957,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2015/'16"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2015."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -31030,8 +31083,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2020/'21"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -31307,8 +31359,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2015/'16"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2015."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -31580,8 +31631,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2015/'16"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2015."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -31720,8 +31770,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2020/'21"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -31859,7 +31908,10 @@
       "2012/'13",
       "2024/'25"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "940dd29a5c0a6500"
+    }
   },
   {
     "leverancier": "CBS",
@@ -31940,7 +31992,10 @@
       "RegiocodeGemeenteWijkBuurt_1": "meetwaarde (code)",
       "Bevolking15Tot75Jaar_2": "meetwaarde (aantal)"
     },
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "95e0108143d6064c"
+    }
   },
   {
     "leverancier": "CBS",
@@ -32022,7 +32077,10 @@
       "RegiocodeGemeenteWijkBuurt_1": "meetwaarde (code)",
       "Bevolking15Tot75Jaar_2": "meetwaarde (aantal)"
     },
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "95e0108143d6064c"
+    }
   },
   {
     "leverancier": "CBS",
@@ -32104,7 +32162,10 @@
       "RegiocodeGemeenteWijkBuurt_1": "meetwaarde (code)",
       "Bevolking15Tot75Jaar_2": "meetwaarde (aantal)"
     },
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "233b714c1cdcacb3"
+    }
   },
   {
     "leverancier": "CBS",
@@ -32186,7 +32247,10 @@
       "RegiocodeGemeenteWijkBuurt_1": "meetwaarde (code)",
       "Bevolking15Tot75Jaar_2": "meetwaarde (aantal)"
     },
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "3df79849ad6e6a71"
+    }
   },
   {
     "leverancier": "CBS",
@@ -32268,7 +32332,10 @@
       "RegiocodeGemeenteWijkBuurt_1": "meetwaarde (code)",
       "Bevolking15Tot75Jaar_2": "meetwaarde (aantal)"
     },
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "31b6b1eeb0f66052"
+    }
   },
   {
     "leverancier": "CBS",
@@ -32350,7 +32417,10 @@
       "RegiocodeGemeenteWijkBuurt_1": "meetwaarde (code)",
       "Bevolking15Tot75Jaar_2": "meetwaarde (aantal)"
     },
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "c47a1f6d85b3b198"
+    }
   },
   {
     "leverancier": "CBS",
@@ -32432,7 +32502,10 @@
       "RegiocodeGemeenteWijkBuurt_1": "meetwaarde (code)",
       "Bevolking15Tot75Jaar_2": "meetwaarde (aantal)"
     },
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "c065c2be862cd311"
+    }
   },
   {
     "leverancier": "CBS",
@@ -32586,8 +32659,7 @@
     "_periode_waarden": [
       "2000/'01",
       "2021/'22"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -32737,8 +32809,7 @@
     "_periode_waarden": [
       "2000/'01",
       "2022/'23"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -38539,7 +38610,10 @@
       "1991/'92",
       "1999/'00"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 1999."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "81b164a3dcb1e5b3"
+    }
   },
   {
     "leverancier": "CBS",
@@ -38616,8 +38690,7 @@
     "_periode_waarden": [
       "1995/'96",
       "2008/'09"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2008."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -38859,7 +38932,10 @@
       "1990/'91",
       "1994/'95"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 1994."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "d7aa19a397943e2c"
+    }
   },
   {
     "leverancier": "CBS",
@@ -38997,8 +39073,7 @@
     "_periode_waarden": [
       "2005",
       "2012"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2012."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -39439,7 +39514,10 @@
       "1997",
       "2003"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2003."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "0f7c935751eb1b9f"
+    }
   },
   {
     "leverancier": "CBS",
@@ -39763,7 +39841,10 @@
       "Cohort 1989",
       "Cohort 1999"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "6aa4c64f6a1699d3"
+    }
   },
   {
     "leverancier": "CBS",
@@ -39933,7 +40014,10 @@
       "2011/'12",
       "2021/'22"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "d30a97476f678069"
+    }
   },
   {
     "leverancier": "CBS",
@@ -40072,7 +40156,10 @@
       "2011/'12",
       "2021/'22"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "713ad627e3e82fe0"
+    }
   },
   {
     "leverancier": "CBS",
@@ -40187,8 +40274,7 @@
     "_periode_waarden": [
       "2005/'06",
       "2016/'17"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2016."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -40304,8 +40390,7 @@
     "_periode_waarden": [
       "2005/'06",
       "2010/'11"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2010."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -40595,7 +40680,10 @@
       "1991/'92",
       "2014/'15"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2014."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "b3e22f0f1f393c17"
+    }
   },
   {
     "leverancier": "CBS",
@@ -40840,8 +40928,7 @@
     "_periode_waarden": [
       "1991/'92",
       "2013/'14"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2013."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -41181,8 +41268,7 @@
     "_periode_waarden": [
       "2003/'04",
       "2021/'22"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -41525,8 +41611,7 @@
     "_periode_waarden": [
       "2003/'04",
       "2021/'22"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -43128,8 +43213,7 @@
     "_periode_waarden": [
       "2003/'04",
       "2021/'22"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -43295,8 +43379,7 @@
     "_periode_waarden": [
       "2003/'04",
       "2007/'08*"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2007."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -43450,7 +43533,10 @@
       "2003/'04",
       "2004/'05"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2004."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "bde03749999688f7"
+    }
   },
   {
     "leverancier": "CBS",
@@ -43778,7 +43864,10 @@
       "2003/'04",
       "2021/'22"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "be72dde03ef22610"
+    }
   },
   {
     "leverancier": "CBS",
@@ -44972,7 +45061,10 @@
       "1990/'91",
       "2002/'03"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2002."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "849c23b4ad4c5d87"
+    }
   },
   {
     "leverancier": "CBS",
@@ -45155,8 +45247,7 @@
     "_periode_waarden": [
       "2003/'04",
       "2011/'12"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2011."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -45384,8 +45475,7 @@
     "_periode_waarden": [
       "1990/'91",
       "2016/'17"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2016."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -45607,8 +45697,7 @@
     "_periode_waarden": [
       "1990/'91",
       "2016/'17"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2016."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -45828,8 +45917,7 @@
     "_periode_waarden": [
       "1990/'91",
       "2016/'17"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2016."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -46042,8 +46130,7 @@
     "_periode_waarden": [
       "1990/'91",
       "2016/'17"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2016."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -46199,7 +46286,10 @@
       "2015/'16",
       "2021/'22"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "8201f98a494be329"
+    }
   },
   {
     "leverancier": "CBS",
@@ -46335,7 +46425,10 @@
       "2015/'16",
       "2021/'22"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "79523bc30e3d5c59"
+    }
   },
   {
     "leverancier": "CBS",
@@ -46444,7 +46537,10 @@
       "2005/'06",
       "2021/'22"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "d9fd310d831b8cf1"
+    }
   },
   {
     "leverancier": "CBS",
@@ -46600,7 +46696,10 @@
       "2015/'16",
       "2020/'21"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "ee2bd45634d264b9"
+    }
   },
   {
     "leverancier": "CBS",
@@ -46821,8 +46920,7 @@
     "_periode_waarden": [
       "1990/'91",
       "2015/'16"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2015."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -47034,8 +47132,7 @@
     "_periode_waarden": [
       "1990/'91",
       "2015/'16"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2015."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -47261,8 +47358,7 @@
     "_periode_waarden": [
       "1990/'91",
       "2015/'16"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2015."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -47480,8 +47576,7 @@
     "_periode_waarden": [
       "1990/'91",
       "2015/'16"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2015."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -47590,7 +47685,10 @@
       "2005/'06",
       "2020/'21"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "df4419c9c3a582a6"
+    }
   },
   {
     "leverancier": "CBS",
@@ -47726,7 +47824,10 @@
       "2015/'16",
       "2020/'21"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "413b41be34c47923"
+    }
   },
   {
     "leverancier": "CBS",
@@ -48045,8 +48146,7 @@
     "_periode_waarden": [
       "2006/'07",
       "2009/'10"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2009."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -48178,8 +48278,7 @@
     "_periode_waarden": [
       "2004/'05 naar 2005/'06",
       "2016/'17 naar 2017/'18"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2016."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -48832,8 +48931,7 @@
     "_periode_waarden": [
       "2004/'05 naar 2005/'06",
       "2009/'10 naar 2010/'11"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2009."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -49598,8 +49696,7 @@
     "_periode_waarden": [
       "2004/'05 naar 2005/'06",
       "2009/'10 naar 2010/'11"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2009."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -49826,8 +49923,7 @@
     "_periode_waarden": [
       "2009/'10",
       "2020/'21"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -50125,8 +50221,7 @@
     "_periode_waarden": [
       "2006/'07",
       "2009/'10"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2009."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -50369,8 +50464,7 @@
     "_periode_waarden": [
       "2009/'10",
       "2020/'21"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -50650,8 +50744,7 @@
     "_periode_waarden": [
       "2006/'07",
       "2009/'10"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2009."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -50741,8 +50834,7 @@
     "_periode_waarden": [
       "2008/'09 naar 2009/'10",
       "2020/'21 naar 2021/'22"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -51036,8 +51128,7 @@
       "InstroomOpNiveau2_18": "meetwaarde (aantal)",
       "InstroomOpNiveau3_19": "meetwaarde (aantal)",
       "InstroomOpNiveau4_20": "meetwaarde (aantal)"
-    },
-    "niet_geschikt_voor": null
+    }
   },
   {
     "leverancier": "CBS",
@@ -51699,8 +51790,7 @@
     "_periode_waarden": [
       "2004/'05 naar 2005/'06",
       "2008/'09 naar 2009/'10"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2008."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -52364,8 +52454,7 @@
     "_periode_waarden": [
       "2004/'05 naar 2005/'06",
       "2009/'10 naar 2010/'11"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2009."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -53139,8 +53228,7 @@
     "_periode_waarden": [
       "2004/'05 naar 2005/'06",
       "2008/'09 naar 2009/'10"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2008."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -53916,8 +54004,7 @@
     "_periode_waarden": [
       "2004/'05 naar 2005/'06",
       "2009/'10 naar 2010/'11"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2009."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -54226,8 +54313,7 @@
       "InstroomOpNiveau2_18": "meetwaarde (aantal)",
       "InstroomOpNiveau3_19": "meetwaarde (aantal)",
       "InstroomOpNiveau4_20": "meetwaarde (aantal)"
-    },
-    "niet_geschikt_voor": null
+    }
   },
   {
     "leverancier": "CBS",
@@ -54435,8 +54521,7 @@
       "Niveau3_11": "meetwaarde (%)",
       "Niveau4_12": "meetwaarde (%)",
       "NietGediplomeerden_13": "meetwaarde (%)"
-    },
-    "niet_geschikt_voor": null
+    }
   },
   {
     "leverancier": "CBS",
@@ -54642,8 +54727,7 @@
       "Niveau3_11": "meetwaarde (%)",
       "Niveau4_12": "meetwaarde (%)",
       "NietGediplomeerden_13": "meetwaarde (%)"
-    },
-    "niet_geschikt_voor": null
+    }
   },
   {
     "leverancier": "CBS",
@@ -54865,8 +54949,7 @@
       "Niveau3_11": "meetwaarde (%)",
       "Niveau4_12": "meetwaarde (%)",
       "NietGediplomeerden_13": "meetwaarde (%)"
-    },
-    "niet_geschikt_voor": null
+    }
   },
   {
     "leverancier": "CBS",
@@ -55086,8 +55169,7 @@
       "Niveau3_11": "meetwaarde (%)",
       "Niveau4_12": "meetwaarde (%)",
       "NietGediplomeerden_13": "meetwaarde (%)"
-    },
-    "niet_geschikt_voor": null
+    }
   },
   {
     "leverancier": "CBS",
@@ -55310,8 +55392,7 @@
       "Niveau3_11": "meetwaarde (%)",
       "Niveau4_12": "meetwaarde (%)",
       "NietGediplomeerden_13": "meetwaarde (%)"
-    },
-    "niet_geschikt_voor": null
+    }
   },
   {
     "leverancier": "CBS",
@@ -55532,8 +55613,7 @@
       "Niveau3_11": "meetwaarde (%)",
       "Niveau4_12": "meetwaarde (%)",
       "NietGediplomeerden_13": "meetwaarde (%)"
-    },
-    "niet_geschikt_voor": null
+    }
   },
   {
     "leverancier": "CBS",
@@ -55823,8 +55903,7 @@
       "InstroomOpNiveau2_18": "meetwaarde (aantal)",
       "InstroomOpNiveau3_19": "meetwaarde (aantal)",
       "InstroomOpNiveau4_20": "meetwaarde (aantal)"
-    },
-    "niet_geschikt_voor": null
+    }
   },
   {
     "leverancier": "CBS",
@@ -56126,8 +56205,7 @@
       "InstroomOpNiveau2_18": "meetwaarde (aantal)",
       "InstroomOpNiveau3_19": "meetwaarde (aantal)",
       "InstroomOpNiveau4_20": "meetwaarde (aantal)"
-    },
-    "niet_geschikt_voor": null
+    }
   },
   {
     "leverancier": "CBS",
@@ -56278,7 +56356,10 @@
       "1995/'96",
       "2012/'13"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2012."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "0378138fb0e18e00"
+    }
   },
   {
     "leverancier": "CBS",
@@ -56390,7 +56471,10 @@
       "Cohort 1995",
       "Cohort 2004"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "4cae57b4571d1de9"
+    }
   },
   {
     "leverancier": "CBS",
@@ -57054,7 +57138,10 @@
       "Startjaar 1995",
       "Startjaar 2012"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "91bb8fc259a5ad90"
+    }
   },
   {
     "leverancier": "CBS",
@@ -57240,7 +57327,10 @@
       "1995/'96",
       "2015/'16"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2015."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "9883918fb7842321"
+    }
   },
   {
     "leverancier": "CBS",
@@ -57422,7 +57512,10 @@
       "1995/'96",
       "2015/'16"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2015."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "e76696cd4ed43320"
+    }
   },
   {
     "leverancier": "CBS",
@@ -57553,7 +57646,10 @@
       "1995/'96",
       "2015/'16"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2015."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "e14d239c1f1fce01"
+    }
   },
   {
     "leverancier": "CBS",
@@ -57687,7 +57783,10 @@
       "1995/'96",
       "2015/'16"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2015."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "9bfefe6f28eaf5ad"
+    }
   },
   {
     "leverancier": "CBS",
@@ -57792,8 +57891,7 @@
     "_periode_waarden": [
       "2002/'03",
       "2020/'21"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -57920,8 +58018,7 @@
     "_periode_waarden": [
       "2015/'16",
       "2020/'21"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -58177,7 +58274,10 @@
       "1991",
       "2012"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2012."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "f1faa745aa763188"
+    }
   },
   {
     "leverancier": "CBS",
@@ -58368,7 +58468,10 @@
       "1990/'91",
       "2013/'14"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2013."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "e1c333d491e65961"
+    }
   },
   {
     "leverancier": "CBS",
@@ -58481,7 +58584,10 @@
       "Cohort 1995",
       "Cohort 2004"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "08144d566c446bc1"
+    }
   },
   {
     "leverancier": "CBS",
@@ -58564,7 +58670,10 @@
       "1990/'91",
       "2015/'16"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2015."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "235fd6217d53d4dc"
+    }
   },
   {
     "leverancier": "CBS",
@@ -59226,7 +59335,10 @@
       "Startjaar 1995",
       "Startjaar 2012"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "cb242716be5f8368"
+    }
   },
   {
     "leverancier": "CBS",
@@ -59374,7 +59486,10 @@
       "1995/'96",
       "2012/'13"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2012."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "3f654c4ab9dff03f"
+    }
   },
   {
     "leverancier": "CBS",
@@ -60100,7 +60215,10 @@
       "Cohort 1991",
       "Cohort 1994"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "5919ff8c0d6daf11"
+    }
   },
   {
     "leverancier": "CBS",
@@ -61042,7 +61160,10 @@
       "Cohort 1995",
       "Cohort 2005"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "ca332499d9fed2ec"
+    }
   },
   {
     "leverancier": "CBS",
@@ -61757,8 +61878,7 @@
     "_periode_waarden": [
       "Cohort 1990",
       "Cohort 1994"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -62676,7 +62796,10 @@
       "Cohort 1995",
       "Cohort 2005"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "ed2bc199b83b5a56"
+    }
   },
   {
     "leverancier": "CBS",
@@ -63402,7 +63525,10 @@
       "Cohort 1991",
       "Cohort 1994"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "ba0db97c991c86d7"
+    }
   },
   {
     "leverancier": "CBS",
@@ -64344,7 +64470,10 @@
       "Cohort 1995",
       "Cohort 2005"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "e31f4cc3d1348910"
+    }
   },
   {
     "leverancier": "CBS",
@@ -65067,8 +65196,7 @@
     "_periode_waarden": [
       "Cohort 1990",
       "Cohort 1994"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -66009,7 +66137,10 @@
       "Cohort 1995",
       "Cohort 2005"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "e116bc7610852bb5"
+    }
   },
   {
     "leverancier": "CBS",
@@ -66172,7 +66303,10 @@
       "2006/'07",
       "2021/'22"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "d13f18426c008f68"
+    }
   },
   {
     "leverancier": "CBS",
@@ -66336,7 +66470,10 @@
       "2006/'07",
       "2020/'21"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "06242afc28128b51"
+    }
   },
   {
     "leverancier": "CBS",
@@ -66423,7 +66560,10 @@
       "1993",
       "2006"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2006."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "f3b72f2e92b0dab5"
+    }
   },
   {
     "leverancier": "CBS",
@@ -66509,8 +66649,7 @@
       "WilGeenCursussenOfOpleidingenVolgen_2": "meetwaarde (%)",
       "WilMeerCursussenOfOpleidingenVolgen_3": "meetwaarde (%)",
       "GenoegCursussenOfOpleidingenGevolgd_4": "meetwaarde (%)"
-    },
-    "niet_geschikt_voor": null
+    }
   },
   {
     "leverancier": "CBS",
@@ -66604,8 +66743,7 @@
     },
     "_periode_waarden": [
       "2007"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2007."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -67188,7 +67326,10 @@
       "1990/'91",
       "2000/'01"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2000."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "f8944b577b911f27"
+    }
   },
   {
     "leverancier": "CBS",
@@ -67423,7 +67564,10 @@
       "2006/'07",
       "2014/'15"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2014."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "8409ea8554a828db"
+    }
   },
   {
     "leverancier": "CBS",
@@ -67558,7 +67702,10 @@
       "2006/'07",
       "2021/'22"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "61b2b140fb460fa2"
+    }
   },
   {
     "leverancier": "CBS",
@@ -67694,7 +67841,10 @@
       "2006/'07",
       "2020/'21"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "076739eed20d2c63"
+    }
   },
   {
     "leverancier": "CBS",
@@ -67838,7 +67988,10 @@
       "1990",
       "2004"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2004."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "524c23cd17cb5d79"
+    }
   },
   {
     "leverancier": "CBS",
@@ -68025,7 +68178,10 @@
       "1993",
       "1997"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 1997."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "5f065fb6f8849fa6"
+    }
   },
   {
     "leverancier": "CBS",
@@ -68488,7 +68644,10 @@
       "1995",
       "2008*"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2008."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "e1b6d5623047bcc8"
+    }
   },
   {
     "leverancier": "CBS",
@@ -68801,7 +68960,10 @@
       "1900",
       "2008*"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2008."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "a476e565f903e968"
+    }
   },
   {
     "leverancier": "CBS",
@@ -69307,7 +69469,10 @@
       "1998",
       "2018"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2018."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "48985e957a847cca"
+    }
   },
   {
     "leverancier": "CBS",
@@ -70982,7 +71147,10 @@
       "1998",
       "2009*"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2009."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "6e2ca19d9c00edbd"
+    }
   },
   {
     "leverancier": "CBS",
@@ -71153,7 +71321,10 @@
       "1995",
       "2008*"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2008."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "b3225a3351ca984a"
+    }
   },
   {
     "leverancier": "CBS",
@@ -71483,7 +71654,10 @@
       "1998",
       "2015"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2015."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "ff1ae5e74ffa6c3f"
+    }
   },
   {
     "leverancier": "CBS",
@@ -71647,7 +71821,10 @@
       "1998",
       "2015"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2015."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "d2735e8cbbd769ae"
+    }
   },
   {
     "leverancier": "CBS",
@@ -71857,7 +72034,10 @@
       "1998",
       "2015"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2015."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "5b29832aa2dc55c5"
+    }
   },
   {
     "leverancier": "CBS",
@@ -72056,7 +72236,10 @@
       "2000",
       "2006"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2006."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "44ec9108295491d3"
+    }
   },
   {
     "leverancier": "CBS",
@@ -72222,8 +72405,7 @@
     "_periode_waarden": [
       "1996",
       "2006"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2006."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -72510,8 +72692,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2008/'09"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2008."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -72739,8 +72920,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2008/'09"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2008."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -72970,8 +73150,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2008/'09"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2008."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -73232,8 +73411,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2008/'09"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2008."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -73476,8 +73654,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2008/'09"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2008."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -73608,8 +73785,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2020/'21"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -73733,8 +73909,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2020/'21"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -73849,8 +74024,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2020/'21"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -73979,8 +74153,7 @@
     "_periode_waarden": [
       "2007/'08",
       "2020/'21"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -74105,7 +74278,10 @@
       "2003 1e kwartaal",
       "2022 1e kwartaal"
     ],
-    "niet_geschikt_voor": null
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "40c2cf3aea3f0fe3"
+    }
   },
   {
     "leverancier": "CBS",
@@ -74220,8 +74396,7 @@
     "_periode_waarden": [
       "2003 1e kwartaal",
       "2021 3e kwartaal"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -74322,8 +74497,7 @@
     "_periode_waarden": [
       "2003 1e kwartaal",
       "2021 3e kwartaal"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -74420,8 +74594,7 @@
     "_periode_waarden": [
       "2005",
       "2014"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2014."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -74994,7 +75167,10 @@
       "1992",
       "2012"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2012."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "f202d280c1e19f53"
+    }
   },
   {
     "leverancier": "CBS",
@@ -75065,8 +75241,7 @@
     "_periode_waarden": [
       "2003",
       "2020"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -75153,8 +75328,7 @@
     "_periode_waarden": [
       "2003",
       "2020"
-    ],
-    "niet_geschikt_voor": null
+    ]
   },
   {
     "leverancier": "CBS",
@@ -75323,8 +75497,7 @@
     "_periode_waarden": [
       "2000/'01",
       "2005/'06"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2005."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -75459,8 +75632,7 @@
     "_periode_waarden": [
       "2003/'04 - 2004/'05",
       "2006/'07 - 2007/'08"
-    ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2006."
+    ]
   },
   {
     "leverancier": "CBS",
@@ -75593,7 +75765,10 @@
       "1998/'99",
       "2006/'07*"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2006."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "3c8513190e28f1c6"
+    }
   },
   {
     "leverancier": "CBS",
@@ -75729,6 +75904,9 @@
       "2004/'05",
       "2006/'07*"
     ],
-    "niet_geschikt_voor": "Mogelijk verouderd — recentste data is uit 2006."
+    "_verrijking": {
+      "versie": 1,
+      "inputhash": "87d4e6931e891aa5"
+    }
   }
 ]
