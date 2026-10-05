@@ -27,10 +27,16 @@ TOP_N_VALUES = 25
 # Lagen in een enriched-record:
 #   1. bronmetadata + AI-annotaties: komen bij elke run ongewijzigd uit de input
 #   2. deterministisch afgeleid (hieronder): alleen herbouwd als _verrijking verouderd is
-AFGELEIDE_VELDEN = ("_kolommen", "_kolomtypes", "_periode_waarden", "niet_geschikt_voor", "_verrijking")
-VERRIJKING_VERSIE = 1
-# Velden waaruit de afgeleide laag wordt opgebouwd; een wijziging hierin invalideert die laag.
+AFGELEIDE_VELDEN = (
+    "_kolommen", "_kolomtypes", "_periode_waarden", "_dimensie_sleutels", "niet_geschikt_voor", "_verrijking",
+)
+VERRIJKING_VERSIE = 2
+# Structureel schema waaruit de afgeleide laag wordt opgebouwd; een wijziging invalideert die laag.
 INPUT_VELDEN = ("_dimensies", "_meetwaarden", "_meetwaarden_details", "_geo_niveau")
+# Bronrevisie: dimensiewaarden (bv. een nieuw studiejaar) kunnen veranderen bij gelijk schema.
+# Een nieuwe periode of bronwijzigingsdatum invalideert daarom ook de afgeleide waarden.
+BRONREVISIE_VELDEN = ("periode", "_laatste_update")
+VEROUDERD = "verouderd"
 
 
 def parse_args():
@@ -42,11 +48,27 @@ def parse_args():
     return p.parse_args()
 
 
-def fetch_dimensions(dataset_id: str, dim_names: list[str], fouten: list[str] | None = None) -> dict[str, dict]:
+def dimensie_sleutels(dim_names: list[str], definitions: dict) -> dict[str, str]:
+    """Titel → officiële key van iedere dimensie; alleen wat DataProperties bevestigt.
+
+    ``_dimensies`` bevat titels (bv. ``Geboorteland (ouders)``); het CBS-endpoint
+    en ``$filter`` vereisen de key (``GeboortelandOuders``).
+    """
+    sleutels = {}
+    for dim in dim_names:
+        for key, d in definitions.items():
+            if d.get("type", "").endswith("Dimension") and dim in (key, d.get("title")):
+                sleutels[dim] = key
+                break
+    return sleutels
+
+
+def fetch_dimensions(dataset_id: str, dim_names: list[str], fouten: list[str] | None = None,
+                     sleutels: dict[str, str] | None = None) -> dict[str, dict]:
     result = {}
     for dim in dim_names:
         try:
-            result[dim] = client.dimension(dataset_id, dim)
+            result[dim] = client.dimension(dataset_id, (sleutels or {}).get(dim, dim))
             time.sleep(0.05)
         except Exception as e:
             print(f" WARN {dim}: {type(e).__name__}", end="")
@@ -66,17 +88,25 @@ def fetch_definitions(dataset_id: str, fouten: list[str] | None = None) -> dict[
         return {}
 
 
+def _hash(entry: dict, velden: tuple[str, ...]) -> str:
+    payload = json.dumps({v: entry.get(v) for v in velden}, sort_keys=True, ensure_ascii=False)
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
+
+
 def verrijking_stempel(entry: dict) -> dict:
-    """Versie + inputhash van de afgeleide laag, zonder tijdstempel (idempotent)."""
-    payload = json.dumps({v: entry.get(v) for v in INPUT_VELDEN}, sort_keys=True, ensure_ascii=False)
+    """Versie, schema-inputhash en bronrevisie van de afgeleide laag, zonder tijdstempel (idempotent)."""
     return {
         "versie": VERRIJKING_VERSIE,
-        "inputhash": hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16],
+        "inputhash": _hash(entry, INPUT_VELDEN),
+        "bronrevisie": _hash(entry, BRONREVISIE_VELDEN),
     }
 
 
 def is_actueel(bestaand: dict | None, entry: dict) -> bool:
-    """De afgeleide laag is actueel als versie en inputhash overeenkomen met de bron."""
+    """Actueel als versie, schema-inputhash én bronrevisie overeenkomen met de bron.
+
+    Een als verouderd gemarkeerde stempel (mislukte refresh) is nooit actueel.
+    """
     return bool(
         bestaand
         and bestaand.get("_kolommen")
@@ -96,6 +126,13 @@ def ververs_bronvelden(bestaand: dict, entry: dict) -> dict:
             record[veld] = bestaand[veld]
     if "samenvatting" not in record and "samenvatting" in bestaand:
         record["samenvatting"] = bestaand["samenvatting"]
+    return record
+
+
+def behoud_verouderd(bestaand: dict, entry: dict) -> dict:
+    """Mislukte refresh: laatst-goede afleiding met verse bronlaag en expliciete stale-status."""
+    record = ververs_bronvelden(bestaand, entry)
+    record["_verrijking"] = {**bestaand["_verrijking"], "status": VEROUDERD}
     return record
 
 
@@ -122,8 +159,9 @@ def build_kolommen(dimensions: dict, definitions: dict, dim_names: list, meetwaa
 
 def build_kolomtypes(definitions: dict, dim_names: list, meetwaarden: list) -> dict:
     types = {}
+    sleutels = dimensie_sleutels(dim_names, definitions)
     for dim in dim_names:
-        defn = definitions.get(dim, {})
+        defn = definitions.get(sleutels.get(dim, dim), {})
         odata_type = defn.get("type", "")
         if "Geo" in odata_type:
             types[dim] = "geo-dimensie"
@@ -181,8 +219,15 @@ def enrich_entry(entry: dict) -> dict:
         return entry
 
     fouten: list[str] = []
-    dimensions = fetch_dimensions(cbs_id, dim_names, fouten)
     definitions = fetch_definitions(cbs_id, fouten)
+    sleutels = dimensie_sleutels(dim_names, definitions)
+    if definitions:
+        ontbrekend = [d for d in dim_names if d not in sleutels]
+        if ontbrekend:
+            # Schemafout, geen netwerkfout: de bron-_dimensies lopen achter op DataProperties.
+            print(f" WARN schema: {ontbrekend} niet in DataProperties", end="")
+            fouten += ontbrekend
+    dimensions = fetch_dimensions(cbs_id, dim_names, fouten, sleutels)
     time.sleep(0.05)
 
     kolommen = build_kolommen(dimensions, definitions, dim_names, meetwaarden)
@@ -192,6 +237,8 @@ def enrich_entry(entry: dict) -> dict:
     kolomtypes = build_kolomtypes(definitions, dim_names, meetwaarden)
     if kolomtypes:
         entry["_kolomtypes"] = kolomtypes
+    if sleutels:
+        entry["_dimensie_sleutels"] = sleutels
 
     if "Perioden" in dimensions and dimensions["Perioden"]:
         labels = list(dimensions["Perioden"].values())
@@ -261,11 +308,15 @@ def main():
             enriched = enrich_entry(dict(entry))
             bestaand = existing.get(cbs_id)
             if "_verrijking" not in enriched and bestaand and "_verrijking" in bestaand:
-                # Gedeeltelijk mislukte refresh: behoud de laatst-goede afleiding.
-                enriched = ververs_bronvelden(bestaand, entry)
+                # Gedeeltelijk mislukte refresh: behoud de laatst-goede afleiding, gemarkeerd als verouderd.
+                enriched = behoud_verouderd(bestaand, entry)
             existing[cbs_id] = enriched
             n_cols = len(enriched.get("_kolommen", {}))
-            print(f" OK ({n_cols} kolommen)")
+            if "_verrijking" not in enriched or enriched["_verrijking"].get("status") == VEROUDERD:
+                print(f" ONVOLLEDIG ({n_cols} kolommen, wordt opnieuw geprobeerd)")
+                failed += 1
+            else:
+                print(f" OK ({n_cols} kolommen)")
         except Exception as e:
             print(f" FOUT: {e}")
             failed += 1

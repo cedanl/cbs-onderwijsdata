@@ -59,9 +59,10 @@ class TestBronvelden:
         bestaand = vc.enrich_entry(_bron())
         assert bestaand["_kolommen"]
 
-        nieuw = _bron(_laatste_update="2026-05-05", _archief=True, samenvatting="Nieuwe AI-tekst")
+        nieuw = _bron(_archief=True, samenvatting="Nieuwe AI-tekst")
         assert vc.is_actueel(bestaand, nieuw)  # afleiding blijft geldig...
-        record = vc.ververs_bronvelden(bestaand, nieuw)
+        record = vc.ververs_bronvelden(bestaand, _bron(_laatste_update="2026-05-05", _archief=True,
+                                                       samenvatting="Nieuwe AI-tekst"))
         assert record["_laatste_update"] == "2026-05-05"  # ...maar de bron wordt ververst
         assert record["_archief"] is True
         assert record["samenvatting"] == "Nieuwe AI-tekst"
@@ -81,9 +82,28 @@ class TestBronvelden:
 
 
 class TestInvalidatie:
-    def test_alleen_bronvelden_wijzigen_invalideert_niet(self, nep_cbs):
+    def test_alleen_annotaties_wijzigen_invalideert_niet(self, nep_cbs):
         bestaand = vc.enrich_entry(_bron())
-        assert vc.is_actueel(bestaand, _bron(_laatste_update="2030-01-01", tags=["x"]))
+        assert vc.is_actueel(bestaand, _bron(tags=["x"], samenvatting="andere AI-tekst", _archief=True))
+
+    def test_nieuwe_bronperiode_bij_gelijk_schema_invalideert(self, nep_cbs):
+        # CBS voegt een studiejaar toe zonder kolommen te wijzigen (review F3).
+        bestaand = vc.enrich_entry(_bron(periode="2011/'12 - 2025/'26"))
+        assert not vc.is_actueel(bestaand, _bron(periode="2011/'12 - 2026/'27"))
+
+    def test_nieuwe_bronwijzigingsdatum_invalideert(self, nep_cbs):
+        bestaand = vc.enrich_entry(_bron())
+        assert not vc.is_actueel(bestaand, _bron(_laatste_update="2027-01-01"))
+
+    def test_nieuwe_afleiding_volgt_nieuwe_periode(self, nep_cbs, monkeypatch):
+        bestaand = vc.enrich_entry(_bron())
+        assert bestaand["_periode_waarden"] == ["2020", "2024"]
+        echte = vc.client.dimension
+        monkeypatch.setattr(vc.client, "dimension",
+                            lambda i, d: {"2020": "2020", "2025": "2025"} if d == "Perioden" else echte(i, d))
+        nieuw = _bron(_laatste_update="2027-01-01")
+        assert not vc.is_actueel(bestaand, nieuw)
+        assert vc.enrich_entry(nieuw)["_periode_waarden"] == ["2020", "2025"]
 
     def test_gewijzigde_meetwaarden_invalideren(self, nep_cbs):
         bestaand = vc.enrich_entry(_bron())
@@ -119,7 +139,35 @@ class TestNietGeschiktVoor:
         assert "niet_geschikt_voor" not in rec
 
 
+class TestDimensieSleutels:
+    def test_titel_wordt_via_dataproperties_naar_key_vertaald(self, monkeypatch):
+        # 85354NED: titel "Geboorteland (ouders)", officiële key GeboortelandOuders (review F6).
+        aangeroepen = []
+        monkeypatch.setattr(vc.client, "definitions", lambda i: {
+            "GeboortelandOuders": {"title": "Geboorteland (ouders)", "type": "Dimension"},
+            "Perioden": {"title": "Perioden", "type": "TimeDimension"},
+        })
+        monkeypatch.setattr(vc.client, "dimension", lambda i, d: aangeroepen.append(d) or {"X": "x"})
+        monkeypatch.setattr(vc.time, "sleep", lambda s: None)
+        rec = vc.enrich_entry(_bron(_dimensies=["Geboorteland (ouders)", "Perioden"]))
+        assert aangeroepen == ["GeboortelandOuders", "Perioden"]
+        assert rec["_dimensie_sleutels"] == {"Geboorteland (ouders)": "GeboortelandOuders", "Perioden": "Perioden"}
+        assert "_verrijking" in rec
+
+    def test_dimensie_onbekend_in_dataproperties_is_schemafout(self, nep_cbs):
+        rec = vc.enrich_entry(_bron(_dimensies=["Bestaat niet", "Perioden"]))
+        assert "_verrijking" not in rec
+
+
 class TestFouten:
+    def test_mislukte_refresh_behoudt_laatst_goede_afleiding_als_verouderd(self, nep_cbs):
+        bestaand = vc.enrich_entry(_bron())
+        rec = vc.behoud_verouderd(bestaand, _bron(_laatste_update="2027-01-01"))
+        assert rec["_laatste_update"] == "2027-01-01"
+        assert rec["_kolommen"] == bestaand["_kolommen"]
+        assert rec["_verrijking"]["status"] == vc.VEROUDERD
+        assert not vc.is_actueel(rec, _bron(_laatste_update="2027-01-01"))
+
     def test_gedeeltelijke_refresh_krijgt_geen_stempel(self, nep_cbs):
         nep_cbs["fail"].add("Geslacht")
         assert "_verrijking" not in vc.enrich_entry(_bron())
