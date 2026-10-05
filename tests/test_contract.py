@@ -43,9 +43,16 @@ class TestScopeprofiel:
 
 
 class TestGeografie:
-    def test_geen_regiodimensie_is_unsupported(self):
+    def test_geen_regiodimensie_is_landelijk_zonder_uitsplitsing(self):
+        # Review F5: geen regionale uitsplitsing is iets anders dan geen landelijke cijfers.
         geo = contract._geografie({"_dimensies": ["Geslacht", "Perioden"], "_geo_niveau": []})
-        assert geo == {"status": "unsupported", "niveaus": []}
+        assert geo["status"] == "supported" and geo["niveaus"] == ["landelijk"]
+        assert geo["regionale_uitsplitsing"] is False
+
+    def test_caribisch_nederland_is_niet_landelijk(self):
+        geo = contract._geografie({"bron": "Caribisch NL; studenten mbo, niveau, sector, domein",
+                                   "_dimensies": ["Niveau", "Perioden"], "_geo_niveau": []})
+        assert geo["status"] == "unsupported" and geo["dekking"] == "Caribisch Nederland"
 
     def test_regiodimensie_zonder_niveaus_is_unknown_niet_leeg(self):
         geo = contract._geografie({"_dimensies": ["RegioS"], "_geo_niveau": []})
@@ -53,7 +60,7 @@ class TestGeografie:
 
     def test_niveaus_supported(self):
         geo = contract._geografie({"_dimensies": ["RegioS"], "_geo_niveau": ["landelijk", "gemeente"]})
-        assert geo == {"status": "supported", "niveaus": ["landelijk", "gemeente"]}
+        assert geo["status"] == "supported" and geo["niveaus"] == ["landelijk", "gemeente"]
 
     def test_onbekende_dimensies_is_unknown(self):
         assert contract._geografie({})["status"] == "unknown"

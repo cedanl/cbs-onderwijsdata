@@ -60,17 +60,42 @@ def _scopeprofiel(onderwijstype: list[str]) -> dict[str, str]:
     return {s: UNKNOWN if s in types else UNSUPPORTED for s in SECTOREN}
 
 
+# Tabellen zonder regiodimensie die toch niet over (Europees) Nederland gaan.
+_ANDER_GEBIED = {"caribisch": "Caribisch Nederland"}
+
+
 def _geografie(rec: dict) -> dict:
+    """Territoriale dekking (welk gebied) gescheiden van regionale uitsplitsing (welke niveaus).
+
+    Een CBS-tabel zonder regiodimensie geeft cijfers voor heel Nederland: landelijk
+    is dan ondersteund, alleen regionale uitsplitsing niet. Tabellen over een ander
+    gebied (Caribisch Nederland) zijn niet landelijk. Onbekende dimensies blijven onbekend.
+    """
     dims = rec.get("_dimensies") or []
     niveaus = rec.get("_geo_niveau") or []
     heeft_regio = any("regio" in d.lower() or "gemeente" in d.lower() for d in dims)
     if niveaus:
-        return {"status": SUPPORTED, "niveaus": list(niveaus)}
+        return {"status": SUPPORTED, "niveaus": list(niveaus), "regionale_uitsplitsing": True}
     if heeft_regio:
-        return {"status": UNKNOWN, "niveaus": None, "reden": "regiodimensie aanwezig, niveaus niet vastgesteld"}
-    if dims:
-        return {"status": UNSUPPORTED, "niveaus": []}
-    return {"status": UNKNOWN, "niveaus": None, "reden": "dimensies niet vastgesteld"}
+        return {"status": UNKNOWN, "niveaus": None, "regionale_uitsplitsing": True,
+                "reden": "regiodimensie aanwezig, niveaus niet vastgesteld"}
+    if not dims:
+        return {"status": UNKNOWN, "niveaus": None, "regionale_uitsplitsing": None,
+                "reden": "dimensies niet vastgesteld"}
+    titel = (rec.get("bron") or "").lower()
+    for term, gebied in _ANDER_GEBIED.items():
+        if term in titel:
+            return {"status": UNSUPPORTED, "niveaus": [], "regionale_uitsplitsing": False,
+                    "dekking": gebied, "reden": f"tabel beschrijft {gebied}, niet landelijk Nederland"}
+    return {"status": SUPPORTED, "niveaus": ["landelijk"], "regionale_uitsplitsing": False,
+            "dekking": "Nederland"}
+
+
+def _dimensie_sleutels(rec: dict) -> dict:
+    sleutels = rec.get("_dimensie_sleutels")
+    if not sleutels:
+        return _onbekend("dimensiesleutels niet vastgelegd; alleen live te bepalen")
+    return {"status": SUPPORTED, "sleutels": dict(sleutels), "bron": "DataProperties"}
 
 
 def _perioden(rec: dict) -> dict:
@@ -116,6 +141,7 @@ def _record(rec: dict) -> dict:
         "meetwaarden": _meetwaarden(rec),
         "teldefinitie": _onbekend("teldefinitie niet vastgelegd"),
         "dimensies": list(rec.get("_dimensies") or []),
+        "dimensie_sleutels": _dimensie_sleutels(rec),
         "geografie": _geografie(rec),
         "instellingseenheden": _onbekend("instellingseenheden niet vastgelegd"),
         "perioden": _perioden(rec),
@@ -131,7 +157,7 @@ def _record(rec: dict) -> dict:
             "inputhash": verrijking.get("inputhash"),
             "afgeleide_velden": {
                 "scopeprofiel": "afgeleid uit gecureerde onderwijstype",
-                "geografie": "afgeleid uit CBS-regiodimensie",
+                "geografie": "afgeleid uit CBS-regiodimensie; zonder regiodimensie = Nederland-totaal",
                 "meetwaarden": "bron (DataProperties)",
             },
         },

@@ -74,6 +74,10 @@
       "validate_selection": false
     },
     "dataset_id": "cbs:85489NED",
+    "dimensie_sleutels": {
+      "reden": "dimensiesleutels niet vastgelegd; alleen live te bepalen",
+      "status": "unknown"
+    },
     "dimensies": [
       "Geslacht",
       "Onderwijssoort",
@@ -89,11 +93,12 @@
         "gemeente",
         "landsdeel"
       ],
+      "regionale_uitsplitsing": true,
       "status": "supported"
     },
     "herkomst": {
       "afgeleide_velden": {
-        "geografie": "afgeleid uit CBS-regiodimensie",
+        "geografie": "afgeleid uit CBS-regiodimensie; zonder regiodimensie = Nederland-totaal",
         "meetwaarden": "bron (DataProperties)",
         "scopeprofiel": "afgeleid uit gecureerde onderwijstype"
       },
