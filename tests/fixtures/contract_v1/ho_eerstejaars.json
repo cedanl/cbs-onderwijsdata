@@ -1,0 +1,155 @@
+{
+  "bron": {
+    "_archief": false,
+    "_cbs_id": "85422NED",
+    "_dimensies": [
+      "Geslacht",
+      "Onderwijssoort",
+      "Vooropleiding",
+      "Opleidingsfase",
+      "Perioden"
+    ],
+    "_geo_niveau": [],
+    "_laatste_update": "2026-04-10",
+    "_meetwaarden": [
+      "Eerstejaarsstudenten_1"
+    ],
+    "_meetwaarden_details": {
+      "Eerstejaarsstudenten_1": {
+        "datatype": "Long",
+        "decimals": 0,
+        "description": "",
+        "title": "Eerstejaarsstudenten",
+        "unit": "aantal"
+      }
+    },
+    "_periode_waarden": [
+      "2011/'12",
+      "2025/'26"
+    ],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "_thema": "Ho ingeschrevenen",
+    "_verrijking": {
+      "inputhash": "7872efe88134d01c",
+      "versie": 1
+    },
+    "bron": "Hoger onderwijs; eerstejaarsstudenten, vooropleiding en opleidingsfase",
+    "categorie": "Instroom",
+    "documentatie": {
+      "tekst": "CBS Open Data 85422NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85422NED"
+    },
+    "frequentie": "Jaarlijks",
+    "leverancier": "CBS",
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
+    "periode": "2011/'12 - 2025/'26",
+    "publieke_producten": [],
+    "repositories": [],
+    "samenvatting": "Eerstejaars in het HO uitgesplitst naar vooropleiding (MBO, HAVO, VWO) en opleidingsfase. Inzicht in doorstroom vanuit het voorgaande onderwijs naar HO.",
+    "sectie": "Studentgegevens & Onderwijs"
+  },
+  "verwacht": {
+    "aliases": [
+      "85422NED"
+    ],
+    "archief": {
+      "gearchiveerd": false,
+      "opvolger": {
+        "reden": "opvolger niet vastgelegd",
+        "status": "unknown"
+      }
+    },
+    "bron_url": "https://opendata.cbs.nl/ODataApi/OData/85422NED",
+    "capabilities": {
+      "data": true,
+      "definitions": true,
+      "dimension": true,
+      "properties": true,
+      "validate_selection": false
+    },
+    "dataset_id": "cbs:85422NED",
+    "dimensie_sleutels": {
+      "reden": "dimensiesleutels niet vastgelegd; alleen live te bepalen",
+      "status": "unknown"
+    },
+    "dimensies": [
+      "Geslacht",
+      "Onderwijssoort",
+      "Vooropleiding",
+      "Opleidingsfase",
+      "Perioden"
+    ],
+    "geografie": {
+      "dekking": "Nederland",
+      "niveaus": [
+        "landelijk"
+      ],
+      "regionale_uitsplitsing": false,
+      "status": "supported"
+    },
+    "herkomst": {
+      "afgeleide_velden": {
+        "geografie": "afgeleid uit CBS-regiodimensie; zonder regiodimensie = Nederland-totaal",
+        "meetwaarden": "bron (DataProperties)",
+        "scopeprofiel": "afgeleid uit gecureerde onderwijstype"
+      },
+      "broncheck": null,
+      "catalogusbouw": null,
+      "inputhash": "7872efe88134d01c",
+      "laatste_update": "2026-04-10",
+      "verrijkingsversie": 1
+    },
+    "instellingseenheden": {
+      "reden": "instellingseenheden niet vastgelegd",
+      "status": "unknown"
+    },
+    "meetwaarden": [
+      {
+        "datatype": "Long",
+        "decimals": 0,
+        "key": "Eerstejaarsstudenten_1",
+        "title": "Eerstejaarsstudenten",
+        "unit": "aantal"
+      }
+    ],
+    "onderwijssectoren": [
+      "HBO",
+      "WO"
+    ],
+    "perioden": {
+      "codes": {
+        "reden": "periodecodes en hiaten niet vastgelegd",
+        "status": "unknown"
+      },
+      "eerste": "2011/'12",
+      "formaat": [
+        "SJ"
+      ],
+      "frequentie": "Jaarlijks",
+      "laatste": "2025/'26",
+      "status": "supported",
+      "tekst": "2011/'12 - 2025/'26"
+    },
+    "populatie": {
+      "reden": "populatie niet vastgelegd",
+      "status": "unknown"
+    },
+    "provider": "CBS",
+    "schema_version": 1,
+    "scopeprofiel": {
+      "hbo": "supported",
+      "mbo": "unsupported",
+      "wo": "supported"
+    },
+    "teldefinitie": {
+      "reden": "teldefinitie niet vastgelegd",
+      "status": "unknown"
+    },
+    "titel": "Hoger onderwijs; eerstejaarsstudenten, vooropleiding en opleidingsfase"
+  }
+}

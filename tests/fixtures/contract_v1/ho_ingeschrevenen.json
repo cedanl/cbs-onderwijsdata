@@ -1,0 +1,155 @@
+{
+  "bron": {
+    "_archief": false,
+    "_cbs_id": "85423NED",
+    "_dimensies": [
+      "Geslacht",
+      "Onderwijssoort",
+      "Opleidingsfase",
+      "Opleidingsvorm",
+      "Perioden"
+    ],
+    "_geo_niveau": [],
+    "_laatste_update": "2026-04-10",
+    "_meetwaarden": [
+      "TotaalIngeschrevenen_1"
+    ],
+    "_meetwaarden_details": {
+      "TotaalIngeschrevenen_1": {
+        "datatype": "Long",
+        "decimals": 0,
+        "description": "Ingeschrevenen in het hoger onderwijs, bestaande uit hoger beroepsonderwijs (hbo) en wetenschappelijk onderwijs (wo) op 1 oktober.\r\n\r\nIngeschrevenen die in één opleidingsjaar zowel een hbo- als wo-studie volgen, worden bij beide vormen van hoger onderwijs meegeteld. Binnen het hoger onderwijs als geheel worden zij echter slechts één maal meegeteld. Het aantal ingeschrevenen in het hoger onderwijs is daardoor iets lager dan de som van het aantal ingeschrevenen in het hbo en wo afzonderlijk.",
+        "title": "Totaal ingeschrevenen",
+        "unit": "aantal"
+      }
+    },
+    "_periode_waarden": [
+      "2011/'12",
+      "2025/'26"
+    ],
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "_thema": "Ho ingeschrevenen",
+    "_verrijking": {
+      "inputhash": "e4f349c12c19ceea",
+      "versie": 1
+    },
+    "bron": "Hoger onderwijs; ingeschrevenen, onderwijssoort, opleidingsfase en -vorm",
+    "categorie": "Inschrijvingen en Studievoortgang",
+    "documentatie": {
+      "tekst": "CBS Open Data 85423NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85423NED"
+    },
+    "frequentie": "Jaarlijks",
+    "leverancier": "CBS",
+    "onderwijstype": [
+      "HBO",
+      "WO"
+    ],
+    "periode": "2011/'12 - 2025/'26",
+    "publieke_producten": [],
+    "repositories": [],
+    "samenvatting": "Totaal ingeschrevenen in HBO en WO per onderwijssoort, opleidingsfase (bachelor/master) en opleidingsvorm (voltijd/deeltijd/duaal). Standaard benchmarkset voor HO-instellingen.",
+    "sectie": "Studentgegevens & Onderwijs"
+  },
+  "verwacht": {
+    "aliases": [
+      "85423NED"
+    ],
+    "archief": {
+      "gearchiveerd": false,
+      "opvolger": {
+        "reden": "opvolger niet vastgelegd",
+        "status": "unknown"
+      }
+    },
+    "bron_url": "https://opendata.cbs.nl/ODataApi/OData/85423NED",
+    "capabilities": {
+      "data": true,
+      "definitions": true,
+      "dimension": true,
+      "properties": true,
+      "validate_selection": false
+    },
+    "dataset_id": "cbs:85423NED",
+    "dimensie_sleutels": {
+      "reden": "dimensiesleutels niet vastgelegd; alleen live te bepalen",
+      "status": "unknown"
+    },
+    "dimensies": [
+      "Geslacht",
+      "Onderwijssoort",
+      "Opleidingsfase",
+      "Opleidingsvorm",
+      "Perioden"
+    ],
+    "geografie": {
+      "dekking": "Nederland",
+      "niveaus": [
+        "landelijk"
+      ],
+      "regionale_uitsplitsing": false,
+      "status": "supported"
+    },
+    "herkomst": {
+      "afgeleide_velden": {
+        "geografie": "afgeleid uit CBS-regiodimensie; zonder regiodimensie = Nederland-totaal",
+        "meetwaarden": "bron (DataProperties)",
+        "scopeprofiel": "afgeleid uit gecureerde onderwijstype"
+      },
+      "broncheck": null,
+      "catalogusbouw": null,
+      "inputhash": "e4f349c12c19ceea",
+      "laatste_update": "2026-04-10",
+      "verrijkingsversie": 1
+    },
+    "instellingseenheden": {
+      "reden": "instellingseenheden niet vastgelegd",
+      "status": "unknown"
+    },
+    "meetwaarden": [
+      {
+        "datatype": "Long",
+        "decimals": 0,
+        "key": "TotaalIngeschrevenen_1",
+        "title": "Totaal ingeschrevenen",
+        "unit": "aantal"
+      }
+    ],
+    "onderwijssectoren": [
+      "HBO",
+      "WO"
+    ],
+    "perioden": {
+      "codes": {
+        "reden": "periodecodes en hiaten niet vastgelegd",
+        "status": "unknown"
+      },
+      "eerste": "2011/'12",
+      "formaat": [
+        "SJ"
+      ],
+      "frequentie": "Jaarlijks",
+      "laatste": "2025/'26",
+      "status": "supported",
+      "tekst": "2011/'12 - 2025/'26"
+    },
+    "populatie": {
+      "reden": "populatie niet vastgelegd",
+      "status": "unknown"
+    },
+    "provider": "CBS",
+    "schema_version": 1,
+    "scopeprofiel": {
+      "hbo": "supported",
+      "mbo": "unsupported",
+      "wo": "supported"
+    },
+    "teldefinitie": {
+      "reden": "teldefinitie niet vastgelegd",
+      "status": "unknown"
+    },
+    "titel": "Hoger onderwijs; ingeschrevenen, onderwijssoort, opleidingsfase en -vorm"
+  }
+}
