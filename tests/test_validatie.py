@@ -225,6 +225,19 @@ class TestPrepareQuery:
         res = od.prepare_query("85423NED", {"periode": {"type": "schooljaar", "jaar": 2024}})
         assert res["query"] == {"$filter": "trim(Perioden) eq '2024SJ00'"}
 
+    def test_periodejaar_dat_periodecode_tegenspreekt_is_unsupported(self, nep_cbs):
+        # Herverificatie H1: jaar 2023 + bestaande code 2024SJ00 mag niet stil 2024 opleveren.
+        res = od.prepare_query("85423NED", {"periode": {"type": "schooljaar", "jaar": 2023},
+                                            "dimensies": {"Perioden": "2024SJ00"}})
+        assert res["status"] == "unsupported" and res["query"] is None
+        c = next(c for c in res["checks"] if c.get("fout") == "tegenstrijdige_selectie")
+        assert c["dimensie"] == "Perioden" and c["herstel"] == ["2023SJ00", "2024SJ00"]
+
+    def test_periodejaar_gelijk_aan_periodecode_geeft_een_filter(self, nep_cbs):
+        res = od.prepare_query("85423NED", {"periode": {"type": "schooljaar", "jaar": 2023},
+                                            "dimensies": {"Perioden": "2023SJ00"}})
+        assert res["query"] == {"$filter": "trim(Perioden) eq '2023SJ00'"}
+
     def test_onbestaand_periodejaar_is_unsupported(self, nep_cbs):
         res = od.prepare_query("85423NED", {"periode": {"type": "schooljaar", "jaar": 2099}})
         assert res["status"] == "unsupported" and res["query"] is None

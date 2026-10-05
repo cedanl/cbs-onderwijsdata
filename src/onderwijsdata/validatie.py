@@ -244,18 +244,34 @@ def _check_dimensies(rec: dict, dims: dict[str, str], live: bool) -> list[dict]:
     return checks
 
 
+def _vereiste_code(c: dict) -> tuple[str, str, str] | None:
+    """(dimensie, code, omschrijving) als deze check één concrete dimensiecode vastlegt."""
+    if not (c.get("dimensie") and c.get("code")):
+        return None
+    if c["veld"] == "dimensiecode":
+        return c["dimensie"], c["code"], f"{c['dimensie']}={c['code']!r}"
+    if c["veld"] == "sector":
+        return c["dimensie"], c["code"], f"sector {c['sector']} ({c['dimensie']}={c['code']})"
+    if c["veld"] == "periode":
+        return c["dimensie"], c["code"], f"periode {c['type']} ({c['dimensie']}={c['code']})"
+    return None
+
+
 def _check_samenhang(checks: list[dict]) -> list[dict]:
-    """Constraints mogen elkaar niet tegenspreken (bv. sector hbo + WO-code, gemeente + provinciecode)."""
-    codes = {c["dimensie"]: c["code"] for c in checks if c["veld"] == "dimensiecode" and c.get("code")}
-    extra = []
+    """Constraints mogen elkaar niet tegenspreken (bv. sector hbo + WO-code, jaar 2023 + code
+    2022SJ00, gemeente + provinciecode). Bij conflict wordt nooit stil één waarde gekozen."""
+    per_dim: dict[str, dict[str, str]] = {}
     for c in checks:
-        if c["veld"] == "sector" and c.get("code") and c.get("dimensie") in codes:
-            gegeven = codes[c["dimensie"]]
-            if gegeven != c["code"]:
-                extra.append(_check("samenhang", UNSUPPORTED,
-                                    f"sector {c['sector']} vereist {c['dimensie']}={c['code']} ({c['titel']}), "
-                                    f"maar {gegeven!r} is opgegeven",
-                                    fout="tegenstrijdige_selectie", herstel=[c["code"]]))
+        if v := _vereiste_code(c):
+            per_dim.setdefault(v[0], {}).setdefault(v[1], v[2])
+    codes = {dim: next(iter(vs)) for dim, vs in per_dim.items()}
+    extra = []
+    for dim, vs in per_dim.items():
+        if len(vs) > 1:
+            extra.append(_check("samenhang", UNSUPPORTED,
+                                f"tegenstrijdige waarden voor {dim}: " + " vs ".join(vs.values()),
+                                fout="tegenstrijdige_selectie", dimensie=dim, herstel=sorted(vs)))
+    for c in checks:
         if c["veld"] == "geografie" and c["status"] == SUPPORTED and c.get("dimensie") in codes:
             gegeven = codes[c["dimensie"]]
             past = (gegeven == LANDELIJK_CODE if c["niveau"] == "landelijk"
