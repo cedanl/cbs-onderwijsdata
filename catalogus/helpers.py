@@ -36,3 +36,29 @@ def _infer_perioden_formaat(freq: str, theme_name: str) -> list[str]:
     if theme_name.lower() in _KALENDERJAAR_THEMAS:
         return ["JJ"]
     return ["SJ"]
+
+
+def meetwaarden_uit_properties(props: list[dict]) -> tuple[list[str], dict[str, dict]]:
+    """Splits DataProperties in officiële meetwaardesleutels en presentatiedetails.
+
+    Retourneert (keys, details): keys is de technische identiteit (bruikbaar in
+    $select), details is key → {title, unit, description, datatype, decimals}.
+    Topics zonder Key worden overgeslagen; een titel is geen geldige sleutel.
+    """
+    keys: list[str] = []
+    details: dict[str, dict] = {}
+    for p in props:
+        if p.get("Type") != "Topic":
+            continue
+        key = (p.get("Key") or "").strip()
+        if not key:
+            continue
+        keys.append(key)
+        details[key] = {
+            "title": (p.get("Title") or "").strip(),
+            "unit": (p.get("Unit") or "").strip(),
+            "description": (p.get("Description") or "").strip(),
+            "datatype": (p.get("Datatype") or "").strip(),
+            "decimals": p.get("Decimals"),
+        }
+    return keys, details

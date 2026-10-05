@@ -10,7 +10,7 @@ Gebruik:
 """
 import json
 import httpx
-from helpers import _infer_geo_niveau, _infer_perioden_formaat, _KALENDERJAAR_THEMAS
+from helpers import _infer_geo_niveau, _infer_perioden_formaat, _KALENDERJAAR_THEMAS, meetwaarden_uit_properties
 
 CATALOG     = "https://opendata.cbs.nl/ODataCatalog"
 API         = "https://opendata.cbs.nl/ODataApi/OData"
@@ -98,17 +98,19 @@ def is_archief(modified: str, freq: str) -> bool:
     return bool(modified) and modified < "2021-01-01"
 
 
-def build_entry(dataset_id, info, dims, topics, theme_name):
+def build_entry(dataset_id, info, dims, topics, theme_name, details=None):
     title      = info.get("Title", "").strip()
     period_str = info.get("Period", "").strip()
     freq       = info.get("Frequency", "").strip() or "Jaarlijks"
     modified   = str(info.get("Modified", ""))[:10]
 
+    details = details or {}
     doel_parts = [title]
     if dims:
         doel_parts.append(f"Uitgesplitst naar: {', '.join(dims[:4])}.")
     if topics:
-        doel_parts.append(f"Meetwaarden: {', '.join(topics[:3])}.")
+        titels = [details.get(k, {}).get("title", k) for k in topics[:3]]
+        doel_parts.append(f"Meetwaarden: {', '.join(titels)}.")
 
     categorie, sectie = SECTIE_MAP.get(theme_name, ("Algemene data overzichten", "Algemene Data Overzichten"))
     onderwijstype     = ONDERWIJSTYPE_MAP.get(theme_name, ["Allen"])
@@ -134,6 +136,7 @@ def build_entry(dataset_id, info, dims, topics, theme_name):
         "_laatste_update":    modified or None,
         "_dimensies":         dims,
         "_meetwaarden":       topics,
+        "_meetwaarden_details": details,
         "_perioden_formaat":  _infer_perioden_formaat(freq, theme_name),
         "_geo_niveau":        _infer_geo_niveau(title, dims),
     }
@@ -200,8 +203,8 @@ def main():
             info      = info_rows[0] if info_rows else {}
             props     = get(f"{API}/{dataset_id}/DataProperties")
             dims      = [r["Title"] for r in props if r.get("Type") == "Dimension"]
-            topics    = [r["Title"] for r in props if r.get("Type") == "Topic"]
-            new_entries.append(build_entry(dataset_id, info, dims, topics, theme_name))
+            topics, details = meetwaarden_uit_properties(props)
+            new_entries.append(build_entry(dataset_id, info, dims, topics, theme_name, details))
         except Exception as e:
             print(f"    FOUT: {e}")
 
@@ -248,6 +251,7 @@ def main():
             entry["_laatste_update"] = src.get("_laatste_update")
             entry["_dimensies"]        = src.get("_dimensies", [])
             entry["_meetwaarden"]      = src.get("_meetwaarden", [])
+            entry["_meetwaarden_details"] = src.get("_meetwaarden_details", {})
             entry["_perioden_formaat"] = src.get("_perioden_formaat", [])
             entry["_geo_niveau"]       = src.get("_geo_niveau", [])
             geo = src.get("_geo_niveau", [])

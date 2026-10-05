@@ -57,7 +57,7 @@ def dimension(dataset_id: str, dim: str):
 def definitions(dataset_id: str) -> dict[str, dict]:
     """Geeft kolomdefinities terug voor een CBS dataset.
 
-    Returns dict van kolomsleutel → {title, description, unit, type}.
+    Returns dict van kolomsleutel → {title, description, unit, type, datatype, decimals}.
     Kolommen zonder Key (TopicGroups zonder sleutel) worden overgeslagen.
     """
     props = properties(dataset_id)
@@ -71,5 +71,7 @@ def definitions(dataset_id: str) -> dict[str, dict]:
             "description": (p.get("Description") or "").strip(),
             "unit": (p.get("Unit") or "").strip(),
             "type": (p.get("Type") or "").strip(),
+            "datatype": (p.get("Datatype") or "").strip(),
+            "decimals": p.get("Decimals"),
         }
     return result

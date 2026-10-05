@@ -4,7 +4,7 @@ compatibel met cedanl/overzicht-landelijke-databronnen.
 """
 import json
 import httpx
-from helpers import _infer_geo_niveau, _infer_perioden_formaat, _KALENDERJAAR_THEMAS
+from helpers import _infer_geo_niveau, _infer_perioden_formaat, _KALENDERJAAR_THEMAS, meetwaarden_uit_properties
 
 CATALOG = "https://opendata.cbs.nl/ODataCatalog"
 API     = "https://opendata.cbs.nl/ODataApi/OData"
@@ -110,25 +110,27 @@ def fetch_table_info(dataset_id):
 
 
 def fetch_properties(dataset_id):
-    """Haal dimensies en meetwaarden op."""
+    """Haal dimensies en meetwaarden (officiële keys + details) op."""
     rows = get(f"{API}/{dataset_id}/DataProperties")
-    dims    = [r["Title"] for r in rows if r.get("Type") == "Dimension"]
-    topics  = [r["Title"] for r in rows if r.get("Type") == "Topic"]
-    return dims, topics
+    dims = [r["Title"] for r in rows if r.get("Type") == "Dimension"]
+    topics, details = meetwaarden_uit_properties(rows)
+    return dims, topics, details
 
 
-def to_data_json_entry(dataset_id, info, dims, topics, theme_name):
+def to_data_json_entry(dataset_id, info, dims, topics, theme_name, details=None):
     """Converteer CBS metadata naar data.json formaat."""
     title      = info.get("Title", "").strip()
     freq       = info.get("Frequency", "").strip() or "Jaarlijks"
     period_str = info.get("Period", "").strip()
     modified   = str(info.get("Modified", ""))[:10]
 
+    details = details or {}
     doel_parts = [title]
     if dims:
         doel_parts.append(f"Uitgesplitst naar: {', '.join(dims[:4])}.")
     if topics:
-        doel_parts.append(f"Meetwaarden: {', '.join(topics[:3])}.")
+        titels = [details.get(k, {}).get("title", k) for k in topics[:3]]
+        doel_parts.append(f"Meetwaarden: {', '.join(titels)}.")
 
     categorie, sectie = SECTIE_MAP.get(theme_name, ("Algemene data overzichten", "Algemene Data Overzichten"))
     onderwijstype     = ONDERWIJSTYPE_MAP.get(theme_name, ["Allen"])
@@ -156,6 +158,7 @@ def to_data_json_entry(dataset_id, info, dims, topics, theme_name):
         "_laatste_update":    modified or None,
         "_dimensies":         dims,
         "_meetwaarden":       topics,
+        "_meetwaarden_details": details,
         "_perioden_formaat":  _infer_perioden_formaat(freq, theme_name),
         "_geo_niveau":        _infer_geo_niveau(title, dims),
     }
@@ -177,8 +180,8 @@ def main():
         print(f"  [{i}/{total}] {dataset_id} ({theme_name})")
         try:
             info        = fetch_table_info(dataset_id)
-            dims, topics = fetch_properties(dataset_id)
-            entry       = to_data_json_entry(dataset_id, info, dims, topics, theme_name)
+            dims, topics, details = fetch_properties(dataset_id)
+            entry       = to_data_json_entry(dataset_id, info, dims, topics, theme_name, details)
             entries.append(entry)
         except Exception as e:
             print(f"    FOUT: {e}")
