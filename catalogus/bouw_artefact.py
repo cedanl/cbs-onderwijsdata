@@ -88,10 +88,33 @@ def valideer(prepared: Path) -> tuple[list[str], list[str]]:
         contract_fouten = contract.valideer_record(contract._record(r, info.get(r["_cbs_id"])))
         fouten += [f"contract {r['_cbs_id']}: {f}" for f in contract_fouten]
 
-    zonder_stempel = sum(1 for r in data["cbs_datasets_enriched.json"] if "_verrijking" not in r)
-    if zonder_stempel:
-        waarschuwingen.append(f"{zonder_stempel} enriched-records met onvolledige afleiding (geen _verrijking)")
+    v = versheid(data["cbs_datasets_enriched.json"], data["cbs_tableinfo.json"])
+    if v["afleiding_onvolledig"]:
+        waarschuwingen.append(f"{v['afleiding_onvolledig']} enriched-records met onvolledige afleiding (geen _verrijking)")
+    if v["afleiding_verouderd"]:
+        waarschuwingen.append(f"{v['afleiding_verouderd']} enriched-records met verouderde afleiding (refresh mislukt)")
+    if v["perioden_verouderd"] or v["perioden_onbekend"]:
+        waarschuwingen.append(f"perioden: {v['perioden_verouderd']} verouderd, {v['perioden_onbekend']} onbekend "
+                              "(laatste Perioden-controle mislukt)")
     return fouten, waarschuwingen
+
+
+def versheid(enriched: list[dict], tableinfo: list[dict]) -> dict:
+    """Freshness-policy: hoeveel is verouderd of onvolledig, en wat is de oudste controle.
+
+    ``laatste_succesvolle_controle`` is de nieuwste deelcontrole; ``oudste_controle``
+    laat zien of er records zijn die al lang niet gecontroleerd zijn.
+    """
+    controles = [i["bronmeta"].get("gecontroleerd_op") for i in tableinfo if i["bronmeta"].get("gecontroleerd_op")]
+    perioden = [i["perioden"].get("status") for i in tableinfo]
+    return {
+        "oudste_controle": min(controles, default=None),
+        "zonder_controle": len(tableinfo) - len(controles),
+        "perioden_verouderd": perioden.count("verouderd"),
+        "perioden_onbekend": perioden.count("onbekend"),
+        "afleiding_onvolledig": sum(1 for r in enriched if "_verrijking" not in r),
+        "afleiding_verouderd": sum(1 for r in enriched if (r.get("_verrijking") or {}).get("status") == "verouderd"),
+    }
 
 
 def bouw_manifest(prepared: Path, waarschuwingen: list[str] | None = None) -> dict:
@@ -133,6 +156,7 @@ def bouw_manifest(prepared: Path, waarschuwingen: list[str] | None = None) -> di
         },
         "laatste_succesvolle_controle": max((i["bronmeta"].get("gecontroleerd_op") or "" for i in info.values()),
                                             default="") or None,
+        "versheid": versheid(data["cbs_datasets_enriched.json"], data["cbs_tableinfo.json"]),
         "metadataherkomst": {
             "bronmetadata": "CBS TableInfos/DataProperties/Perioden",
             "afgeleid": "scopeprofiel, geografie (deterministisch)",
@@ -153,6 +177,8 @@ def publiceer(prepared: Path, package_dir: Path, docs_dir: Path | None = None) -
     """Valideer, schrijf het manifest en kopieer alles naar package (en site).
 
     Gooit ``ValueError`` bij validatiefouten; er wordt dan niets overschreven.
+    Schrijven is atomair per bestand, niet als transactie over alle bestanden:
+    bij een I/O-fout halverwege meldt ``catalog_manifest()['consistent']`` dat.
     """
     fouten, waarschuwingen = valideer(prepared)
     if fouten:

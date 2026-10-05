@@ -162,3 +162,68 @@ class TestGeleverdPackage:
 
     def test_broncheck_in_record_uit_tableinfo(self):
         assert od.get_dataset("85423NED")["herkomst"]["broncheck"]
+
+
+class TestRefreshketen:
+    """Review F2: de wekelijkse wijzigingsroute moet de artefacten consistent houden."""
+
+    @staticmethod
+    def _wekelijkse_bronupdate(prep: Path) -> None:
+        # Wat scripts/update_laatste_update.py doet: alleen de AI-catalogus wijzigt.
+        _wijzig(prep / "cbs_datasets_ai.json",
+                lambda d: next(r for r in d if r["_cbs_id"] == "85423NED").update({"_laatste_update": "2027-01-01"}))
+
+    def test_alleen_bronupdate_zonder_keten_is_inconsistent(self, prep):
+        self._wekelijkse_bronupdate(prep)
+        assert any("_laatste_update volgt de bron niet" in f for f in ba.valideer(prep)[0])
+
+    def test_complete_keten_met_bronuitval_blijft_publiceerbaar(self, prep, tmp_path, monkeypatch):
+        import verrijk_catalogus as vc
+
+        def onbereikbaar(*_a, **_k):
+            raise RuntimeError("CBS onbereikbaar")
+
+        monkeypatch.setattr(vc.client, "definitions", onbereikbaar)
+        monkeypatch.setattr(vc.client, "dimension", onbereikbaar)
+        monkeypatch.setattr(vc.time, "sleep", lambda s: None)
+        self._wekelijkse_bronupdate(prep)
+        monkeypatch.setattr(sys, "argv", ["verrijk_catalogus.py", "--input", str(prep / "cbs_datasets_ai.json"),
+                                          "--output", str(prep / "cbs_datasets_enriched.json")])
+        vc.main()
+
+        rec = next(r for r in json.loads((prep / "cbs_datasets_enriched.json").read_text())
+                   if r["_cbs_id"] == "85423NED")
+        assert rec["_laatste_update"] == "2027-01-01"
+        assert rec["_verrijking"]["status"] == "verouderd" and rec["_kolommen"]
+
+        fouten, waarschuwingen = ba.valideer(prep)
+        assert fouten == [] and any("verouderde afleiding" in w for w in waarschuwingen)
+        m = ba.publiceer(prep, tmp_path / "pkg", tmp_path / "docs")
+        assert m["versheid"]["afleiding_verouderd"] == 1
+        for naam, b in m["bestanden"].items():
+            assert ba._sha(tmp_path / "pkg" / naam) == b["sha256"]
+
+    def test_wekelijkse_workflow_doorloopt_de_hele_keten(self):
+        wf = (ROOT / ".github/workflows/update-laatste-update.yml").read_text()
+        stappen = ["scripts/update_laatste_update.py", "catalogus/verrijk_catalogus.py",
+                   "catalogus/verrijk_tableinfo.py", "catalogus/bouw_artefact.py", "pytest", "git commit"]
+        posities = [wf.index(s) for s in stappen]
+        assert posities == sorted(posities)
+        assert "src/onderwijsdata/data/" in wf and "docs/catalogus_manifest.json" in wf
+
+    def test_siteworkflow_publiceert_via_bouwartefact(self):
+        wf = (ROOT / ".github/workflows/update-catalogus.yml").read_text()
+        assert "catalogus/bouw_artefact.py" in wf and "data/02-prepared/**" in wf
+        assert "cp data/02-prepared" not in wf
+
+
+class TestVersheid:
+    def test_manifest_meldt_oudste_controle_en_verouderd(self):
+        v = json.loads((PREPARED / ba.MANIFEST).read_text(encoding="utf-8"))["versheid"]
+        assert {"oudste_controle", "perioden_verouderd", "perioden_onbekend",
+                "afleiding_onvolledig", "afleiding_verouderd"} <= set(v)
+
+    def test_verouderde_perioden_geven_waarschuwing(self, prep):
+        _wijzig(prep / "cbs_tableinfo.json", lambda d: d[0]["perioden"].update({"status": "verouderd"}))
+        fouten, waarschuwingen = ba.valideer(prep)
+        assert fouten == [] and any("perioden: 1 verouderd" in w for w in waarschuwingen)
