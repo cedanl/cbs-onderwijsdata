@@ -387,9 +387,11 @@ def prepare_query(dataset_id: str, requirements: dict) -> dict:
     if keys:
         query["$select"] = ",".join(keys)
     sleutels = {c["dimensie"]: c.get("sleutel") for c in result["checks"] if c["veld"] == "dimensiecode"}
+    vastgelegd = (rec.get("dimensie_sleutels") or {}).get("sleutels") or {}
     delen = []
     for dim, code in filters.items():
-        sleutel = sleutels.get(dim) or contract.dimensie_sleutel(rec["dataset_id"], dim) or dim
+        sleutel = (sleutels.get(dim) or vastgelegd.get(dim)
+                   or contract.dimensie_sleutel(rec["dataset_id"], dim) or dim)
         delen.append(f"trim({sleutel}) eq '{code}'")
     if delen:
         query["$filter"] = " and ".join(delen)

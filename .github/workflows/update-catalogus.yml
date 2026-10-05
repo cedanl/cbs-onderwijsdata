@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - data/02-prepared/cbs_datasets_ai.json
+      - data/02-prepared/**
       - voorbeelden/manifest.json
       - voorbeelden/output/**
 
@@ -16,11 +16,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Kopieer datasets naar docs/ en src/
-        run: |
-          cp data/02-prepared/cbs_datasets_ai.json docs/data.json
-          cp data/02-prepared/cbs_datasets_ai.json src/onderwijsdata/data/cbs_datasets_ai.json
-          cp data/02-prepared/cbs_datasets.json src/onderwijsdata/data/cbs_datasets.json
+      - uses: astral-sh/setup-uv@v5
+
+      # Zelfde gevalideerde publicatie als de wekelijkse refresh: package, site en
+      # manifest blijven consistent; bij een validatiefout wordt niets gepubliceerd.
+      - name: Valideer en publiceer catalogusartefact
+        run: uv run python catalogus/bouw_artefact.py
 
       - name: Kopieer en flatten voorbeelden naar docs/voorbeelden/
         run: |
@@ -47,5 +48,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/ src/onderwijsdata/data/
+          git add docs/ src/onderwijsdata/data/ data/02-prepared/cbs_manifest.json
           git diff --staged --quiet || (git commit -m "chore: update catalogus site" && git push)

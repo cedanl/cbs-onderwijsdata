@@ -125,8 +125,11 @@ class TestDimensies:
         assert c["status"] == "unsupported"
         assert c["fout"] == "ongeldige_dimensie" and "Geslacht" in c["herstel"]
 
-    def test_onbekende_naam_offline_zonder_sleutels_is_unknown(self):
+    def test_onbekende_naam_offline_zonder_sleutels_is_unknown(self, monkeypatch):
         # Kan nog een officiële key zijn; offline niet te weerleggen (review F6).
+        rec = od.get_dataset("85423NED")
+        rec["dimensie_sleutels"] = {"status": "unknown", "reden": "niet vastgelegd"}
+        monkeypatch.setattr(contract, "get_dataset", lambda *_a, **_k: rec)
         c = od.validate_selection("85423NED", {"dimensies": {"Geslachtt": "x"}})["checks"][0]
         assert c["status"] == "unknown" and c["fout"] == "dimensie_onbevestigd"
 
@@ -149,6 +152,10 @@ class TestDimensies:
         c = od.validate_selection("85354NED", {"dimensies": {"GeboortelandOuders": "1"}})["checks"][0]
         assert c["veld"] == "dimensiecode" and c["dimensie"] == "Geboorteland (ouders)"
         assert c["sleutel"] == "GeboortelandOuders"
+
+    def test_geleverde_catalogus_kent_officiele_keys_offline(self):
+        c = od.validate_selection("85354NED", {"dimensies": {"GeboortelandOuders": "x"}})["checks"][0]
+        assert c["veld"] == "dimensiecode" and c["sleutel"] == "GeboortelandOuders"
 
     def test_query_gebruikt_officiele_key(self, nep_cbs):
         res = od.prepare_query("85354NED", {"dimensies": {"Geboorteland (ouders)": "2"}})
