@@ -112,3 +112,38 @@ class TestDiff:
         r = dd.bouw_rapport([rec], {}, {}, {})
         assert r["bestaand"][0]["afwijkend_van_curatie"] is True
         assert r["samenvatting"]["bestaand_afwijkend_van_curatie"] == 1
+
+
+@pytest.fixture(scope="module")
+def regressie():
+    import json
+    from pathlib import Path
+    pad = Path(__file__).parent / "fixtures" / "discovery" / "regressie_kandidaten.json"
+    return json.loads(pad.read_text(encoding="utf-8"))
+
+
+class TestThemaselectie:
+    """Review F7: de sweep volgt de themahiërarchie, geen vaste ID-lijst."""
+
+    def test_caribisch_onderwijsthema_wordt_gesweept(self, regressie):
+        gekozen = dd.selecteer_themas(regressie["themas"])
+        assert 118 in gekozen and 362 in gekozen and 482 in gekozen
+
+    def test_niet_onderwijsthema_en_miscategorisatie_niet(self, regressie):
+        gekozen = dd.selecteer_themas(regressie["themas"])
+        assert not {109, 351, 352, 353, 455} & set(gekozen)
+
+    def test_bekende_kandidaten_komen_ter_review(self, regressie):
+        sweep = {k["dataset_id"]: k["thema_id"] for k in regressie["kandidaten"]}
+        details = {k["dataset_id"]: k["details"] for k in regressie["kandidaten"]}
+        namen = {t["ID"]: t["Title"] for t in regressie["themas"]}
+        r = dd.bouw_rapport([], sweep, namen, details, sorted(dd.selecteer_themas(regressie["themas"])))
+        per_id = {n["dataset_id"]: n for n in r["nieuw_voor_review"]}
+        for k in regressie["kandidaten"]:
+            item = per_id[f"cbs:{k['dataset_id']}"]
+            assert item["classificatie"] == k["verwachte_classificatie"] and item["advies"] == "review"
+
+    def test_rapport_meldt_aangevraagde_themas_en_mislukte_details(self):
+        r = dd.bouw_rapport([], {"11111NED": 912, "99999NED": 912}, THEMA, {"11111NED": DETAILS["11111NED"]}, [912, 480])
+        assert r["thema_ids_aangevraagd"] == [480, 912]
+        assert r["mislukte_details"] == ["cbs:99999NED"]

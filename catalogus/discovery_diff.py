@@ -16,6 +16,7 @@ Gebruik:
 """
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -31,15 +32,42 @@ CATALOGUS = ROOT / "data/02-prepared/cbs_datasets_ai.json"
 DEFAULT_OUTPUT = ROOT / "data/03-output/cbs_discovery.json"
 SCHEMA_VERSIE = 1
 
-# Themasweep: zelfde onderwijsthema's als uitbreiden.py, plus extra thema's kunnen hier bij
-THEMA_IDS = [
-    352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365,
-    366, 367, 368, 369, 370, 371, 372, 373,
-    376, 480, 481, 482, 319, 320, 321, 322, 324, 905, 906, 907, 909,
-    912, 913, 914, 915, 916, 917, 918, 919, 920, 922, 924, 925, 926, 928, 929, 934,
-]
+# Themasweep: onderwijsthema's worden uit de live themahiërarchie afgeleid (eigen titel
+# of die van een bovenliggend thema), niet uit een vaste ID-lijst. Zo vallen hernummerde
+# of nieuwe thema's niet buiten de sweep, zoals 118 'Onderwijs' onder 'Caribisch Nederland'
+# (84312NED, Caribisch NL; studenten mbo). De classificatie beslist daarna over scope.
+_ONDERWIJS_THEMA = re.compile(
+    r"onderwijs|\bmbo\b|\bhbo\b|\bwo\b|\bho\b|student|gediplomeerd|schoolverlat|\bvsv\b|leven ?lang", re.I)
+# Gemotiveerde uitzonderingen die de titelregel mist: {id: reden}.
+EXTRA_THEMA_IDS: dict[int, str] = {}
+EXTRA_TABEL_IDS: dict[str, str] = {}
 # CBS-miscategorisaties onder onderwijsthema's
 UITGESLOTEN_THEMA_NAMEN = {"Toerisme", "Bouwen en wonen", "Hypotheken", "Prijzen"}
+
+
+def selecteer_themas(themas: list[dict]) -> dict[int, str]:
+    """Thema-ID → motivatie, voor elk thema dat zelf of via een voorouder over onderwijs gaat."""
+    per_id = {t["ID"]: t for t in themas}
+
+    def onderwijs_voorouder(t: dict) -> str | None:
+        gezien = set()
+        while t and t["ID"] not in gezien:
+            gezien.add(t["ID"])
+            if _ONDERWIJS_THEMA.search(t.get("Title") or ""):
+                return t["Title"]
+            t = per_id.get(t.get("ParentID"))
+        return None
+
+    gekozen = {}
+    for t in themas:
+        if t.get("Title") in UITGESLOTEN_THEMA_NAMEN:
+            continue
+        bron = onderwijs_voorouder(t)
+        if bron:
+            gekozen[t["ID"]] = f"onderwijsthema ({bron})"
+    for tid, reden in EXTRA_THEMA_IDS.items():
+        gekozen.setdefault(tid, f"uitzondering: {reden}")
+    return gekozen
 
 
 def _get(url: str, **params) -> list[dict]:
@@ -49,16 +77,24 @@ def _get(url: str, **params) -> list[dict]:
     return r.json()["value"]
 
 
-def fetch_sweep(thema_ids: list[int] = THEMA_IDS) -> tuple[dict[str, int], dict[int, str]]:
-    """Tables_Themes (JSON) per thema → {tabel-ID: thema-ID}, plus themanamen."""
-    namen = {r["ID"]: r["Title"] for r in _get(f"{CATALOG}/Themes")}
+def fetch_sweep(thema_ids: list[int] | None = None) -> tuple[dict[str, int], dict[int, str], list[int]]:
+    """Tables_Themes per thema → ({tabel-ID: thema-ID}, themanamen, aangevraagde thema-ID's).
+
+    Zonder ``thema_ids`` worden de onderwijsthema's uit de live hiërarchie gekozen.
+    """
+    themas = _get(f"{CATALOG}/Themes")
+    namen = {r["ID"]: r["Title"] for r in themas}
+    if thema_ids is None:
+        thema_ids = sorted(selecteer_themas(themas))
     ids: dict[str, int] = {}
     for tid in thema_ids:
         rows = _get(f"{CATALOG}/Tables_Themes", **{"$filter": f"ThemeID eq {tid}", "$select": "TableIdentifier,ThemeID"})
         for r in rows:
             ids.setdefault(r["TableIdentifier"], tid)
-    ids = {i: t for i, t in ids.items() if namen.get(t, "") not in UITGESLOTEN_THEMA_NAMEN}
-    return ids, namen
+    for tabel in EXTRA_TABEL_IDS:
+        ids.setdefault(tabel, -1)
+    namen[-1] = "uitzondering (EXTRA_TABEL_IDS)"
+    return ids, namen, list(thema_ids)
 
 
 def fetch_details(dataset_id: str) -> dict:
@@ -78,7 +114,8 @@ def _archief(details: dict) -> bool:
     return "stopgezet" in details["frequentie"].lower() or bool(details["modified"] and details["modified"] < "2021-01-01")
 
 
-def bouw_rapport(catalogus: list[dict], sweep: dict[str, int], themanamen: dict[int, str], details: dict[str, dict]) -> dict:
+def bouw_rapport(catalogus: list[dict], sweep: dict[str, int], themanamen: dict[int, str], details: dict[str, dict],
+                 aangevraagde_themas: list[int] | None = None) -> dict:
     """Pure functie: combineert catalogus, themasweep en tabeldetails tot het rapport."""
     in_catalogus = {r["_cbs_id"].upper(): r for r in catalogus}
     nieuw, uitgesloten = [], []
@@ -117,6 +154,8 @@ def bouw_rapport(catalogus: list[dict], sweep: dict[str, int], themanamen: dict[
     return {
         "schema_version": SCHEMA_VERSIE,
         "thema_ids": sorted(set(sweep.values())),
+        "thema_ids_aangevraagd": sorted(aangevraagde_themas) if aangevraagde_themas is not None else None,
+        "mislukte_details": sorted(f"cbs:{i}" for i in sweep if i.upper() not in in_catalogus and i not in details),
         "samenvatting": {
             "gevonden_in_sweep": len(sweep),
             "al_in_catalogus": len(sweep) - len(nieuw) - len(uitgesloten),
@@ -144,7 +183,8 @@ def main():
     catalogus = json.loads(CATALOGUS.read_text(encoding="utf-8"))
     bekend = {r["_cbs_id"].upper() for r in catalogus}
     print("Themasweep via Tables_Themes...")
-    sweep, namen = fetch_sweep()
+    sweep, namen, themas = fetch_sweep()
+    print(f"{len(themas)} onderwijsthema's uit de themahiërarchie")
     nieuw_ids = [i for i in sweep if i.upper() not in bekend]
     print(f"{len(sweep)} tabellen in sweep, {len(nieuw_ids)} niet in catalogus; details ophalen...")
     details = {}
@@ -153,7 +193,7 @@ def main():
             details[tid] = fetch_details(tid)
         except Exception as e:
             print(f"  [{n}/{len(nieuw_ids)}] {tid} FOUT: {type(e).__name__}")
-    rapport = bouw_rapport(catalogus, sweep, namen, details)
+    rapport = bouw_rapport(catalogus, sweep, namen, details, themas)
     out = Path(args.output)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(rapport, ensure_ascii=False, indent=2), encoding="utf-8")
