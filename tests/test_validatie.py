@@ -16,11 +16,15 @@ def _status(res, veld):
 @pytest.fixture
 def nep_cbs(monkeypatch):
     waarden = {"Geslacht": {"T001038": "Totaal mannen en vrouwen", "3000": "Mannen", "4000": "Vrouwen"},
-               "Onderwijssoort": {"A": "Hbo", "B": "Hbo bachelor", "C": "Wo"}}
+               "Onderwijssoort": {"A": "Hbo", "B": "Hbo bachelor", "C": "Wo"},
+               "Perioden": {"2023SJ00": "2023/'24", "2024SJ00": "2024/'25"},
+               "Regiokenmerken": {"NL01": "Nederland", "GM0363": "Amsterdam", "PV27": "Noord-Holland"},
+               "GeboortelandOuders": {"1": "Nederland", "2": "Buitenland"}}
+    titels = {"GeboortelandOuders": "Geboorteland (ouders)"}
     state = {"down": False}
 
     def definitions(cbs_id):
-        return {k: {"title": k, "type": "Dimension"} for k in waarden}
+        return {k: {"title": titels.get(k, k), "type": "Dimension"} for k in waarden}
 
     def dimension(cbs_id, key):
         if state["down"]:
@@ -58,6 +62,13 @@ class TestSector:
 
 
 class TestGeografieEnPeriode:
+    def test_landelijk_op_nationale_ho_tabel(self):
+        assert od.validate_selection("85423NED", {"geografie": "landelijk"})["status"] == "supported"
+
+    def test_periodejaar_offline_is_unknown(self):
+        res = od.validate_selection("85423NED", {"periode": {"type": "schooljaar", "jaar": 2024}})
+        assert res["status"] == "unknown" and res["checks"][0]["code"] == "2024SJ00"
+
     def test_gemeente_niet_ondersteund_zonder_regiodimensie(self):
         res = od.validate_selection("85423NED", {"geografie": "gemeente"})
         assert res["status"] == "unsupported"
@@ -109,9 +120,39 @@ class TestMeetwaarden:
 
 
 class TestDimensies:
-    def test_ongeldige_dimensie_getypeerd_met_herstel(self):
-        c = od.validate_selection("85423NED", {"dimensies": {"Geslachtt": "x"}})["checks"][0]
+    def test_ongeldige_dimensie_live_getypeerd_met_herstel(self, nep_cbs):
+        c = od.validate_selection("85423NED", {"dimensies": {"Geslachtt": "x"}}, live=True)["checks"][0]
+        assert c["status"] == "unsupported"
         assert c["fout"] == "ongeldige_dimensie" and "Geslacht" in c["herstel"]
+
+    def test_onbekende_naam_offline_zonder_sleutels_is_unknown(self):
+        # Kan nog een officiële key zijn; offline niet te weerleggen (review F6).
+        c = od.validate_selection("85423NED", {"dimensies": {"Geslachtt": "x"}})["checks"][0]
+        assert c["status"] == "unknown" and c["fout"] == "dimensie_onbevestigd"
+
+    def test_onbekende_naam_offline_met_sleutels_is_unsupported(self, monkeypatch):
+        rec = od.get_dataset("85423NED")
+        rec["dimensie_sleutels"] = {"status": "supported", "sleutels": {d: d for d in rec["dimensies"]}}
+        monkeypatch.setattr(contract, "get_dataset", lambda *_a, **_k: rec)
+        c = od.validate_selection("85423NED", {"dimensies": {"Geslachtt": "x"}})["checks"][0]
+        assert c["status"] == "unsupported" and c["fout"] == "ongeldige_dimensie"
+
+    def test_officiele_key_wordt_geaccepteerd_live(self, nep_cbs):
+        # 85354NED: titel 'Geboorteland (ouders)', key GeboortelandOuders (review F6).
+        res = od.validate_selection("85354NED", {"dimensies": {"GeboortelandOuders": "1"}}, live=True)
+        assert res["status"] == "supported"
+
+    def test_officiele_key_offline_via_vastgelegde_sleutels(self, monkeypatch):
+        rec = od.get_dataset("85354NED")
+        rec["dimensie_sleutels"] = {"status": "supported", "sleutels": {"Geboorteland (ouders)": "GeboortelandOuders"}}
+        monkeypatch.setattr(contract, "get_dataset", lambda *_a, **_k: rec)
+        c = od.validate_selection("85354NED", {"dimensies": {"GeboortelandOuders": "1"}})["checks"][0]
+        assert c["veld"] == "dimensiecode" and c["dimensie"] == "Geboorteland (ouders)"
+        assert c["sleutel"] == "GeboortelandOuders"
+
+    def test_query_gebruikt_officiele_key(self, nep_cbs):
+        res = od.prepare_query("85354NED", {"dimensies": {"Geboorteland (ouders)": "2"}})
+        assert res["query"] == {"$filter": "trim(GeboortelandOuders) eq '2'"}
 
     def test_code_offline_is_unknown(self):
         res = od.validate_selection("85423NED", {"dimensies": {"Geslacht": "T001038"}})
@@ -155,7 +196,72 @@ class TestPrepareQuery:
             "sector": "hbo", "periode": {"type": "schooljaar"},
             "meetwaarden": ["TotaalIngeschrevenen_1"], "dimensies": {"Geslacht": "3000"},
         })
-        assert res["query"] == {"$select": "TotaalIngeschrevenen_1", "$filter": "trim(Geslacht) eq '3000'"}
+        assert res["query"] == {"$select": "TotaalIngeschrevenen_1",
+                                "$filter": "trim(Geslacht) eq '3000' and trim(Onderwijssoort) eq 'A'"}
+
+    def test_sector_die_dimensiecode_tegenspreekt_is_unsupported(self, nep_cbs):
+        # Review F1: hbo + WO-code mag nooit 'supported' zijn.
+        res = od.prepare_query("85423NED", {"sector": "hbo", "meetwaarden": ["TotaalIngeschrevenen_1"],
+                                            "dimensies": {"Onderwijssoort": "C"}})
+        assert res["status"] == "unsupported" and res["query"] is None
+        assert any(c.get("fout") == "tegenstrijdige_selectie" for c in res["checks"])
+
+    def test_sector_zonder_dimensie_wordt_concreet_filter(self, nep_cbs):
+        res = od.prepare_query("85423NED", {"sector": "wo", "meetwaarden": ["TotaalIngeschrevenen_1"]})
+        assert res["query"]["$filter"] == "trim(Onderwijssoort) eq 'C'"
+
+    def test_sector_gelijk_aan_opgegeven_code_geeft_een_filter(self, nep_cbs):
+        res = od.prepare_query("85423NED", {"sector": "hbo", "dimensies": {"Onderwijssoort": "A"}})
+        assert res["query"] == {"$filter": "trim(Onderwijssoort) eq 'A'"}
+
+    def test_geen_eenduidige_sectorcode_is_unknown(self, nep_cbs, monkeypatch):
+        echte = client.dimension
+        monkeypatch.setattr(client, "dimension",
+                            lambda i, k: {"A": "Hoger onderwijs"} if k == "Onderwijssoort" else echte(i, k))
+        res = od.prepare_query("85423NED", {"sector": "hbo"})
+        assert res["status"] == "unknown" and res["query"] is None
+
+    def test_periodejaar_wordt_geverifieerde_code(self, nep_cbs):
+        res = od.prepare_query("85423NED", {"periode": {"type": "schooljaar", "jaar": 2024}})
+        assert res["query"] == {"$filter": "trim(Perioden) eq '2024SJ00'"}
+
+    def test_onbestaand_periodejaar_is_unsupported(self, nep_cbs):
+        res = od.prepare_query("85423NED", {"periode": {"type": "schooljaar", "jaar": 2099}})
+        assert res["status"] == "unsupported" and res["query"] is None
+
+    def test_onbekende_requirement_verdwijnt_niet(self, nep_cbs):
+        res = od.prepare_query("85423NED", {"meetwaarden": ["TotaalIngeschrevenen_1"], "instelling": "UvA"})
+        assert res["status"] == "unknown" and res["query"] is None
+        assert res["checks"][0]["fout"] == "onbekende_requirement"
+
+    def test_onbekend_periodeveld_verdwijnt_niet(self, nep_cbs):
+        res = od.prepare_query("85423NED", {"periode": {"type": "schooljaar", "maand": 9}})
+        assert res["status"] == "unknown"
+
+    def test_ongeldige_vorm(self, nep_cbs):
+        res = od.prepare_query("85423NED", {"meetwaarden": "TotaalIngeschrevenen_1"})
+        assert res["status"] == "unsupported" and res["checks"][0]["fout"] == "ongeldige_vorm"
+
+    def test_landelijke_ho_tabel_zonder_regiofilter(self, nep_cbs):
+        # Review F5: nationale HO-tabel is landelijk, geen regiodimensie nodig.
+        res = od.prepare_query("85423NED", {"geografie": "landelijk", "meetwaarden": ["TotaalIngeschrevenen_1"]})
+        assert res["status"] == "supported" and "$filter" not in res["query"]
+
+    def test_landelijk_op_regiotabel_filtert_nl01(self, nep_cbs):
+        res = od.prepare_query("85702NED", {"geografie": "landelijk"})
+        assert res["query"] == {"$filter": "trim(Regiokenmerken) eq 'NL01'"}
+
+    def test_gemeente_zonder_regiocode_is_onvolledig(self, nep_cbs):
+        res = od.prepare_query("85702NED", {"geografie": "gemeente"})
+        assert res["status"] == "unknown" and res["checks"][-1]["fout"] == "ontbrekende_selectie"
+
+    def test_gemeente_met_provinciecode_is_tegenstrijdig(self, nep_cbs):
+        res = od.prepare_query("85702NED", {"geografie": "gemeente", "dimensies": {"Regiokenmerken": "PV27"}})
+        assert res["status"] == "unsupported"
+
+    def test_gemeente_met_gemeentecode(self, nep_cbs):
+        res = od.prepare_query("85702NED", {"geografie": "gemeente", "dimensies": {"Regiokenmerken": "GM0363"}})
+        assert res["query"] == {"$filter": "trim(Regiokenmerken) eq 'GM0363'"}
 
     def test_geen_query_bij_niet_supported(self, nep_cbs):
         res = od.prepare_query("85423NED", {"meetwaarden": ["Totaal ingeschrevenen"]})

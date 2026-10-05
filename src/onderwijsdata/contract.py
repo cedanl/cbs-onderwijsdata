@@ -185,6 +185,10 @@ def _alle_records() -> tuple[dict, ...]:
 def catalog_records(schema_version: int = SCHEMA_VERSION, sector: str | None = None) -> list[dict]:
     """Records in het contract; met ``sector`` alleen die waar de sector `supported` is.
 
+    Dit is een kandidaatselectie op tabelniveau: een HO-tabel voor hbo+wo staat
+    erin, ook als de hbo-cijfers alleen via een dimensiefilter te scheiden zijn.
+    Of een concrete selectie leverbaar is, bepalen ``validate_selection``/``prepare_query``.
+
     Records met onbekende dekking staan niet in een sectorselectie maar in
     :func:`scope_review`.
     """
