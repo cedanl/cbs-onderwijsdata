@@ -98,8 +98,52 @@ def _dimensie_sleutels(rec: dict) -> dict:
     return {"status": SUPPORTED, "sleutels": dict(sleutels), "bron": "DataProperties"}
 
 
-def _perioden(rec: dict) -> dict:
+def _populatie(info: dict | None) -> dict:
+    p = (info or {}).get("populatie")
+    if not p:
+        return _onbekend("populatie niet vastgelegd")
+    if p["status"] != "gevonden":
+        return _onbekend("populatie niet vermeld in TableInfos")
+    return {"status": SUPPORTED, "passages": p["passages"], "bron": "TableInfos"}
+
+
+def _teldefinitie(rec: dict, info: dict | None) -> dict:
+    """Bronpassages van de definities die bij een meetwaarde horen (term in de titel)."""
+    if not info:
+        return _onbekend("teldefinitie niet vastgelegd")
+    titels = " ".join((m.get("title") or "") for m in _meetwaarden(rec)).lower()
+    passend = [d for d in info.get("definities", []) if d["term"].lower() in titels]
+    if not passend:
+        return _onbekend("geen definitie van de meetwaarde in TableInfos gevonden")
+    return {"status": SUPPORTED, "definities": passend, "bron": "TableInfos"}
+
+
+def _methodiek(info: dict | None) -> dict:
+    """Afronding, additiviteit, definitiebreuken en publicatie: bronpassages, nooit AI."""
+    if not info:
+        return _onbekend("TableInfos niet vastgelegd")
+    return {
+        "status": SUPPORTED,
+        "afronding": info["afronding"],
+        "additiviteit": info["additiviteit"],
+        "definitiebreuken": info["definitiebreuken"],
+        "publicatie": info["publicatie"],
+        "methoden": info["methoden"],
+        "relaties": info["relaties"],
+        "verklaring_symbolen": info["bronbewijs"].get("verklaring_symbolen"),
+        "verificatie": info.get("verificatie", "bron"),
+    }
+
+
+def _perioden(rec: dict, info: dict | None = None) -> dict:
     waarden = rec.get("_periode_waarden") or []
+    codes = _onbekend("periodecodes en hiaten niet vastgelegd")
+    if info and info.get("perioden", {}).get("aantal"):
+        p = info["perioden"]
+        codes = {"status": SUPPORTED, "aantal": p["aantal"], "codes": p["codes"],
+                 "hiaten": p["hiaten"] if p["hiaten"] is not None else "niet bepaald",
+                 # 'verouderd': laatste Perioden-controle mislukte; codes zijn de laatst-goede.
+                 "controle": p.get("status"), "gecontroleerd_op": p.get("gecontroleerd_op")}
     return {
         "status": SUPPORTED if rec.get("_perioden_formaat") else UNKNOWN,
         "formaat": list(rec.get("_perioden_formaat") or []),
@@ -107,7 +151,7 @@ def _perioden(rec: dict) -> dict:
         "tekst": rec.get("periode"),
         "eerste": waarden[0] if waarden else None,
         "laatste": waarden[-1] if waarden else None,
-        "codes": _onbekend("periodecodes en hiaten niet vastgelegd"),
+        "codes": codes,
     }
 
 
@@ -125,7 +169,7 @@ def _meetwaarden(rec: dict) -> list[dict]:
     ]
 
 
-def _record(rec: dict) -> dict:
+def _record(rec: dict, info: dict | None = None) -> dict:
     cbs_id = rec["_cbs_id"]
     verrijking = rec.get("_verrijking") or {}
     return {
@@ -137,20 +181,23 @@ def _record(rec: dict) -> dict:
         "aliases": [cbs_id],
         "onderwijssectoren": list(rec.get("onderwijstype") or []),
         "scopeprofiel": _scopeprofiel(rec.get("onderwijstype") or []),
-        "populatie": _onbekend("populatie niet vastgelegd"),
+        "populatie": _populatie(info),
         "meetwaarden": _meetwaarden(rec),
-        "teldefinitie": _onbekend("teldefinitie niet vastgelegd"),
+        "teldefinitie": _teldefinitie(rec, info),
+        "methodiek": _methodiek(info),
         "dimensies": list(rec.get("_dimensies") or []),
         "dimensie_sleutels": _dimensie_sleutels(rec),
         "geografie": _geografie(rec),
         "instellingseenheden": _onbekend("instellingseenheden niet vastgelegd"),
-        "perioden": _perioden(rec),
+        "perioden": _perioden(rec, info),
         "archief": {
             "gearchiveerd": bool(rec.get("_archief")),
             "opvolger": _onbekend("opvolger niet vastgelegd"),
         },
         "herkomst": {
             "laatste_update": rec.get("_laatste_update"),
+            "metadata_modified": (info or {}).get("bronmeta", {}).get("metadata_modified"),
+            "gecontroleerd_op": (info or {}).get("bronmeta", {}).get("gecontroleerd_op"),
             "broncheck": None,
             "catalogusbouw": None,
             "verrijkingsversie": verrijking.get("versie"),
@@ -177,9 +224,20 @@ def _check_sector(sector: str | None) -> None:
         raise ValueError(f"onbekende sector {sector!r}; kies uit {SECTOREN}")
 
 
+def _tableinfo() -> dict[str, dict]:
+    """Methodiek/periodecontext uit officiële TableInfos (cbs_tableinfo.json); leeg als afwezig."""
+    from importlib.resources import files
+    pad = files("onderwijsdata.data").joinpath("cbs_tableinfo.json")
+    try:
+        return {r["_cbs_id"]: r for r in json.loads(pad.read_text(encoding="utf-8"))}
+    except FileNotFoundError:
+        return {}
+
+
 @lru_cache(maxsize=1)
 def _alle_records() -> tuple[dict, ...]:
-    return tuple(_record(r) for r in _bron_records())
+    info = _tableinfo()
+    return tuple(_record(r, info.get(r["_cbs_id"])) for r in _bron_records())
 
 
 def catalog_records(schema_version: int = SCHEMA_VERSION, sector: str | None = None) -> list[dict]:

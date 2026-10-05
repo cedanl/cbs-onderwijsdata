@@ -93,7 +93,7 @@
       "definitions": true,
       "dimension": true,
       "properties": true,
-      "validate_selection": false
+      "validate_selection": true
     },
     "dataset_id": "cbs:85368NED",
     "dimensie_sleutels": {
@@ -122,8 +122,10 @@
       },
       "broncheck": null,
       "catalogusbouw": null,
+      "gecontroleerd_op": null,
       "inputhash": "6bf071c851ed13a4",
       "laatste_update": "2026-05-29",
+      "metadata_modified": null,
       "verrijkingsversie": 1
     },
     "instellingseenheden": {
@@ -160,6 +162,10 @@
         "unit": "%"
       }
     ],
+    "methodiek": {
+      "reden": "TableInfos niet vastgelegd",
+      "status": "unknown"
+    },
     "onderwijssectoren": [
       "VO",
       "MBO"
