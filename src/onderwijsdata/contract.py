@@ -21,7 +21,7 @@ CAPABILITIES = {
     "dimension": True,
     "definitions": True,
     "data": True,
-    "validate_selection": False,
+    "validate_selection": True,
 }
 
 
@@ -264,6 +264,20 @@ def valideer_record(record: dict) -> list[str]:
     return fouten
 
 
+def dimensie_sleutel(dataset_id: str, dimensie: str) -> str | None:
+    """Officiële key van een dimensie (opgegeven als key of titel); live, via gecachete definities."""
+    rec = get_dataset(dataset_id)
+    return _dimensie_sleutel(rec["aliases"][0], dimensie)
+
+
+def _dimensie_sleutel(cbs_id: str, dimensie: str) -> str | None:
+    from . import client
+    for key, d in client.definitions(cbs_id).items():
+        if d.get("type", "").endswith("Dimension") and dimensie in (key, d.get("title")):
+            return key
+    return None
+
+
 def dimensie_waarden(dataset_id: str, dimensie: str) -> dict[str, str]:
     """Waarden van één dimensie (key → titel); live opgehaald en gecachet.
 
@@ -276,9 +290,4 @@ def dimensie_waarden(dataset_id: str, dimensie: str) -> dict[str, str]:
 @lru_cache(maxsize=256)
 def _dimensie_cache(cbs_id: str, dimensie: str) -> dict[str, str]:
     from . import client
-    sleutel = dimensie
-    for key, d in client.definitions(cbs_id).items():
-        if d.get("type", "").endswith("Dimension") and dimensie in (key, d.get("title")):
-            sleutel = key
-            break
-    return client.dimension(cbs_id, sleutel)
+    return client.dimension(cbs_id, _dimensie_sleutel(cbs_id, dimensie) or dimensie)

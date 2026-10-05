@@ -2,6 +2,7 @@ __version__ = "0.1.1"
 
 from .client import data, dimension, properties, definitions
 from .contract import catalog_records, get_dataset, catalog_manifest, scope_review
+from .validatie import validate_selection, resolve_dimensiewaarde, prepare_query
 
 def catalog(ai=True):
     import json
@@ -16,4 +17,5 @@ def catalog(ai=True):
     return json.loads(data_dir.joinpath(filename).read_text(encoding="utf-8"))
 
 __all__ = ["data", "dimension", "properties", "definitions", "catalog", "catalog_records", "get_dataset",
-           "catalog_manifest", "scope_review", "__version__"]
+           "catalog_manifest", "scope_review", "validate_selection", "resolve_dimensiewaarde",
+           "prepare_query", "__version__"]
