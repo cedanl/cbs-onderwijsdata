@@ -27,6 +27,10 @@ OUTPUT = ROOT / "data/02-prepared/cbs_tableinfo.json"
 
 SCHEMA_VERSIE = 1
 GEVONDEN, NIET_VERMELD = "gevonden", "niet_vermeld"
+# Status van de Perioden-controle, los van de TableInfos-controle.
+PERIODEN_OK, GEEN_TIJDDIMENSIE, PERIODEN_VEROUDERD, PERIODEN_ONBEKEND = "ok", "geen_tijddimensie", "verouderd", "onbekend"
+# Regelgebaseerde extractie: de passage komt uit de bron, de interpretatie is niet geverifieerd.
+EXTRACTIE = {"methode": "regex", "geverifieerd": False}
 
 _SECTIE = re.compile(r"^\s*(\d)\.\s+([A-ZÉËÏ][A-ZÉËÏ ,&/'-]+)\s*$", re.M)
 _LINK = re.compile(r"<a href='([^']+)'>(.*?)</a>")
@@ -42,13 +46,45 @@ _AFROND_GROOTTE = [
 _PATRONEN = {
     "afronding": re.compile(
         r"afgerond (op|naar|tot|in)\b|\bafronding\b|veelvouden van \d+|(cijfers|aantallen|getallen|bedragen) (zijn|worden) afgerond", re.I),
+    # Alleen kandidaatzinnen; de soort (en dus de conclusie) volgt uit _ADDITIVITEIT_SOORTEN.
     "additiviteit": re.compile(
-        r"som van|afwijkt van (het )?totaal|niet overeen(stemmen|komen)|"
+        r"som van|afwijk\w* van (het )?totaal|niet overeen(stemmen|komen)|"
         r"(bij beide|dubbel|twee ma+len|slechts één ma+l).{0,60}(geteld|meegeteld)|"
         r"(geteld|meegeteld).{0,60}(slechts één ma+l|bij beide)", re.I),
     "definitiebreuken": re.compile(
         r"\bvanaf (studiejaar |schooljaar |het jaar )?\d{4}.{0,120}\b(ook|meegenomen|gewijzigd|aangepast|anders|definitie)", re.I),
 }
+
+
+# Per kandidaatzin: wat zegt de bron? Alleen expliciete dubbeltelling bewijst niet-additiviteit;
+# een somdefinitie ("het totaal is de som van ...") wijst juist op additiviteit en een
+# afrondingseffect zegt niets over de tabelstructuur.
+_ADDITIVITEIT_SOORTEN = (
+    ("dubbeltelling", re.compile(
+        r"(bij beide|dubbel|twee ma+len|slechts één ma+l).{0,60}(geteld|meegeteld)|"
+        r"(geteld|meegeteld).{0,60}(slechts één ma+l|bij beide)|(lager|hoger|kleiner|groter) dan de som van", re.I)),
+    ("afrondingseffect", re.compile(r"afgerond|afronding|^hierdoor\b", re.I)),
+    ("somdefinitie", re.compile(r"\b(is|zijn|vormt|vormen) (gelijk aan )?de som van", re.I)),
+)
+
+
+def _additiviteit(passages: list[str]) -> dict:
+    aanwijzingen = []
+    for z in passages:
+        soort = next((naam for naam, patroon in _ADDITIVITEIT_SOORTEN if patroon.search(z)), "onduidelijk")
+        aanwijzingen.append({"soort": soort, "passage": z})
+    if not passages:
+        return {"status": NIET_VERMELD, "passages": [], "additief": None}
+    soorten = {a["soort"] for a in aanwijzingen}
+    return {
+        "status": GEVONDEN,
+        "passages": passages,
+        "aanwijzingen": aanwijzingen,
+        # False alleen met expliciete negatieve onderbouwing; een somdefinitie of afronding is geen bewijs.
+        "additief": False if "dubbeltelling" in soorten else None,
+        "afrondingseffect": "afrondingseffect" in soorten,
+        "extractie": dict(EXTRACTIE),
+    }
 
 
 def _schoon(tekst: str | None) -> str:
@@ -115,6 +151,10 @@ def parse_perioden(rows: list[dict]) -> dict:
     return {"aantal": len(codes), "codes": codes, "hiaten": hiaten}
 
 
+def _perioden_veld(rows: list[dict], gecontroleerd_op: str) -> dict:
+    return {**parse_perioden(rows), "status": PERIODEN_OK, "gecontroleerd_op": gecontroleerd_op}
+
+
 def parse_tableinfo(cbs_id: str, info: dict, perioden_rows: list[dict], gecontroleerd_op: str) -> dict:
     description = (info.get("Description") or "").replace("\r", "")
     secties = _secties(description)
@@ -137,10 +177,11 @@ def parse_tableinfo(cbs_id: str, info: dict, perioden_rows: list[dict], gecontro
                 break
         if grondslag:
             break
-    afronding = veld(afrond_passages, grondslag=grondslag, exact=False if afrond_passages else None)
+    afronding = veld(afrond_passages, grondslag=grondslag, exact=False if afrond_passages else None,
+                     # Eén gevonden grondslag is geen geverifieerde regel voor iedere meetwaarde.
+                     reikwijdte="niet_per_meetwaarde_vastgesteld", extractie=dict(EXTRACTIE))
 
-    additief_passages = _passages(zinnen, _PATRONEN["additiviteit"])
-    additiviteit = veld(additief_passages, additief=False if additief_passages else None)
+    additiviteit = _additiviteit(_passages(zinnen, _PATRONEN["additiviteit"]))
 
     publicatie_status = _blok(toelichting, "Status van de cijfers")
     volgende = _blok(toelichting, "Wanneer komen de nieuwe cijfers")
@@ -179,9 +220,37 @@ def parse_tableinfo(cbs_id: str, info: dict, perioden_rows: list[dict], gecontro
         },
         "methoden": methoden,
         "relaties": relaties,
-        "perioden": parse_perioden(perioden_rows),
+        "perioden": _perioden_veld(perioden_rows, gecontroleerd_op),
         "verificatie": "bron",
     }
+
+
+def haal_record(cbs_id: str, heeft_tijddimensie: bool, vorig: dict | None, vandaag: str) -> tuple[dict, str | None]:
+    """Haal TableInfos en Perioden op; retourneert (record, periodefout).
+
+    Een fout in TableInfos wordt doorgegeven (aanroeper behoudt het hele vorige record).
+    Een fout in Perioden wist de laatst-goede codes niet: die blijven staan als
+    ``verouderd`` met hun oude controledatum. Een tabel zonder tijddimensie is een
+    geverifieerde afwezigheid, geen fout.
+    """
+    info = (client.get(cbs_id, "TableInfos") or [{}])[0]
+    fout = None
+    rows: list[dict] | None = []
+    if heeft_tijddimensie:
+        try:
+            rows = client.get(cbs_id, "Perioden")
+        except Exception as e:
+            rows, fout = None, type(e).__name__
+    record = parse_tableinfo(cbs_id, info, rows or [], vandaag)
+    if rows is None:
+        oud = (vorig or {}).get("perioden") or {}
+        if oud.get("aantal"):
+            record["perioden"] = {**oud, "status": PERIODEN_VEROUDERD, "fout": fout}
+        else:
+            record["perioden"].update(status=PERIODEN_ONBEKEND, gecontroleerd_op=None, fout=fout)
+    elif not heeft_tijddimensie:
+        record["perioden"]["status"] = GEEN_TIJDDIMENSIE
+    return record, fout
 
 
 def main():
@@ -200,14 +269,14 @@ def main():
         cbs_id = rec["_cbs_id"]
         print(f"[{i}/{len(catalogus)}] {cbs_id}", end="", flush=True)
         try:
-            info = (client.get(cbs_id, "TableInfos") or [{}])[0]
-            try:
-                perioden = client.get(cbs_id, "Perioden")
-            except Exception:
-                perioden = []
-            bestaand[cbs_id] = parse_tableinfo(cbs_id, info, perioden, vandaag)
+            heeft_tijd = "Perioden" in (rec.get("_dimensies") or ["Perioden"])
+            bestaand[cbs_id], periodefout = haal_record(cbs_id, heeft_tijd, bestaand.get(cbs_id), vandaag)
             time.sleep(0.05)
-            print(" OK")
+            if periodefout:
+                print(f" PERIODEN MISLUKT ({periodefout}); laatst-goede codes behouden")
+                fouten += 1
+            else:
+                print(" OK")
         except Exception as e:
             # Mislukte refresh behoudt het laatst-goede record.
             print(f" FOUT: {type(e).__name__}")

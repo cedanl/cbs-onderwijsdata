@@ -141,7 +141,9 @@ def _perioden(rec: dict, info: dict | None = None) -> dict:
     if info and info.get("perioden", {}).get("aantal"):
         p = info["perioden"]
         codes = {"status": SUPPORTED, "aantal": p["aantal"], "codes": p["codes"],
-                 "hiaten": p["hiaten"] if p["hiaten"] is not None else "niet bepaald"}
+                 "hiaten": p["hiaten"] if p["hiaten"] is not None else "niet bepaald",
+                 # 'verouderd': laatste Perioden-controle mislukte; codes zijn de laatst-goede.
+                 "controle": p.get("status"), "gecontroleerd_op": p.get("gecontroleerd_op")}
     return {
         "status": SUPPORTED if rec.get("_perioden_formaat") else UNKNOWN,
         "formaat": list(rec.get("_perioden_formaat") or []),

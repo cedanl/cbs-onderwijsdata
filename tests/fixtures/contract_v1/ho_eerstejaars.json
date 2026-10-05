@@ -56,7 +56,18 @@
   "tableinfo": {
     "_cbs_id": "85422NED",
     "additiviteit": {
-      "additief": false,
+      "aanwijzingen": [
+        {
+          "passage": "Hierdoor kan het voorkomen dat de som van de detailgegevens afwijkt van het totaal",
+          "soort": "afrondingseffect"
+        }
+      ],
+      "additief": null,
+      "afrondingseffect": true,
+      "extractie": {
+        "geverifieerd": false,
+        "methode": "regex"
+      },
       "passages": [
         "Hierdoor kan het voorkomen dat de som van de detailgegevens afwijkt van het totaal"
       ],
@@ -64,10 +75,15 @@
     },
     "afronding": {
       "exact": false,
+      "extractie": {
+        "geverifieerd": false,
+        "methode": "regex"
+      },
       "grondslag": 10,
       "passages": [
         "De aantallen in de tabel zijn afgerond op 10-tallen."
       ],
+      "reikwijdte": "niet_per_meetwaarde_vastgesteld",
       "status": "gevonden"
     },
     "bronbewijs": {
@@ -121,7 +137,7 @@
       }
     ],
     "perioden": {
-      "aantal": 4,
+      "aantal": 15,
       "codes": [
         {
           "code": "2011SJ00",
@@ -133,6 +149,72 @@
           "code": "2012SJ00",
           "status": "Definitief",
           "titel": "2012/'13",
+          "toelichting": null
+        },
+        {
+          "code": "2013SJ00",
+          "status": "Definitief",
+          "titel": "2013/'14",
+          "toelichting": null
+        },
+        {
+          "code": "2014SJ00",
+          "status": "Definitief",
+          "titel": "2014/'15",
+          "toelichting": null
+        },
+        {
+          "code": "2015SJ00",
+          "status": "Definitief",
+          "titel": "2015/'16",
+          "toelichting": null
+        },
+        {
+          "code": "2016SJ00",
+          "status": "Definitief",
+          "titel": "2016/'17",
+          "toelichting": null
+        },
+        {
+          "code": "2017SJ00",
+          "status": "Definitief",
+          "titel": "2017/'18",
+          "toelichting": null
+        },
+        {
+          "code": "2018SJ00",
+          "status": "Definitief",
+          "titel": "2018/'19",
+          "toelichting": null
+        },
+        {
+          "code": "2019SJ00",
+          "status": "Definitief",
+          "titel": "2019/'20",
+          "toelichting": null
+        },
+        {
+          "code": "2020SJ00",
+          "status": "Definitief",
+          "titel": "2020/'21",
+          "toelichting": null
+        },
+        {
+          "code": "2021SJ00",
+          "status": "Definitief",
+          "titel": "2021/'22",
+          "toelichting": null
+        },
+        {
+          "code": "2022SJ00",
+          "status": "Definitief",
+          "titel": "2022/'23",
+          "toelichting": null
+        },
+        {
+          "code": "2023SJ00",
+          "status": "Definitief",
+          "titel": "2023/'24",
           "toelichting": null
         },
         {
@@ -148,7 +230,9 @@
           "toelichting": "Voorlopige cijfers"
         }
       ],
-      "hiaten": []
+      "gecontroleerd_op": "2026-10-05",
+      "hiaten": [],
+      "status": "ok"
     },
     "populatie": {
       "passages": [
@@ -246,7 +330,18 @@
     ],
     "methodiek": {
       "additiviteit": {
-        "additief": false,
+        "aanwijzingen": [
+          {
+            "passage": "Hierdoor kan het voorkomen dat de som van de detailgegevens afwijkt van het totaal",
+            "soort": "afrondingseffect"
+          }
+        ],
+        "additief": null,
+        "afrondingseffect": true,
+        "extractie": {
+          "geverifieerd": false,
+          "methode": "regex"
+        },
         "passages": [
           "Hierdoor kan het voorkomen dat de som van de detailgegevens afwijkt van het totaal"
         ],
@@ -254,10 +349,15 @@
       },
       "afronding": {
         "exact": false,
+        "extractie": {
+          "geverifieerd": false,
+          "methode": "regex"
+        },
         "grondslag": 10,
         "passages": [
           "De aantallen in de tabel zijn afgerond op 10-tallen."
         ],
+        "reikwijdte": "niet_per_meetwaarde_vastgesteld",
         "status": "gevonden"
       },
       "definitiebreuken": {
@@ -306,7 +406,7 @@
     ],
     "perioden": {
       "codes": {
-        "aantal": 4,
+        "aantal": 15,
         "codes": [
           {
             "code": "2011SJ00",
@@ -318,6 +418,72 @@
             "code": "2012SJ00",
             "status": "Definitief",
             "titel": "2012/'13",
+            "toelichting": null
+          },
+          {
+            "code": "2013SJ00",
+            "status": "Definitief",
+            "titel": "2013/'14",
+            "toelichting": null
+          },
+          {
+            "code": "2014SJ00",
+            "status": "Definitief",
+            "titel": "2014/'15",
+            "toelichting": null
+          },
+          {
+            "code": "2015SJ00",
+            "status": "Definitief",
+            "titel": "2015/'16",
+            "toelichting": null
+          },
+          {
+            "code": "2016SJ00",
+            "status": "Definitief",
+            "titel": "2016/'17",
+            "toelichting": null
+          },
+          {
+            "code": "2017SJ00",
+            "status": "Definitief",
+            "titel": "2017/'18",
+            "toelichting": null
+          },
+          {
+            "code": "2018SJ00",
+            "status": "Definitief",
+            "titel": "2018/'19",
+            "toelichting": null
+          },
+          {
+            "code": "2019SJ00",
+            "status": "Definitief",
+            "titel": "2019/'20",
+            "toelichting": null
+          },
+          {
+            "code": "2020SJ00",
+            "status": "Definitief",
+            "titel": "2020/'21",
+            "toelichting": null
+          },
+          {
+            "code": "2021SJ00",
+            "status": "Definitief",
+            "titel": "2021/'22",
+            "toelichting": null
+          },
+          {
+            "code": "2022SJ00",
+            "status": "Definitief",
+            "titel": "2022/'23",
+            "toelichting": null
+          },
+          {
+            "code": "2023SJ00",
+            "status": "Definitief",
+            "titel": "2023/'24",
             "toelichting": null
           },
           {
@@ -333,6 +499,8 @@
             "toelichting": "Voorlopige cijfers"
           }
         ],
+        "controle": "ok",
+        "gecontroleerd_op": "2026-10-05",
         "hiaten": [],
         "status": "supported"
       },

@@ -78,6 +78,27 @@ class TestParser:
         assert a["status"] == "gevonden" and a["additief"] is False
         assert any("som van hbo en wo" in p for p in a["passages"])
 
+    def test_niet_additief_alleen_met_expliciete_dubbeltelling(self, parsed):
+        soorten = {a["soort"] for a in parsed["additiviteit"]["aanwijzingen"]}
+        assert "dubbeltelling" in soorten
+        assert parsed["additiviteit"]["extractie"] == {"methode": "regex", "geverifieerd": False}
+
+    @pytest.mark.parametrize("zin, soort", [
+        ("Het totaal is de som van het aantal mannen en vrouwen.", "somdefinitie"),
+        ("Hierdoor kan het voorkomen dat de som van de detailgegevens afwijkt van het totaal.", "afrondingseffect"),
+        ("Door afronding kan de som van de details afwijken van het totaal.", "afrondingseffect"),
+    ])
+    def test_som_van_is_geen_bewijs_van_niet_additief(self, zin, soort):
+        # Review F8: 'som van' mag niet zonder negatieve onderbouwing additief=false opleveren.
+        r = vt.parse_tableinfo("X", {"Description": f"1. TOELICHTING\n\n{zin}\n\n2. DEFINITIES\n"}, [], "d")
+        a = r["additiviteit"]
+        assert a["status"] == "gevonden" and a["additief"] is None
+        assert [x["soort"] for x in a["aanwijzingen"]] == [soort]
+
+    def test_afrondingsgrondslag_niet_per_meetwaarde_geverifieerd(self, parsed):
+        assert parsed["afronding"]["reikwijdte"] == "niet_per_meetwaarde_vastgesteld"
+        assert parsed["afronding"]["extractie"]["geverifieerd"] is False
+
     def test_definities_per_term(self, parsed):
         termen = {d["term"] for d in parsed["definities"]}
         assert termen == {"Ingeschrevenen", "Studiejaar"}
@@ -145,6 +166,55 @@ class TestPerioden:
         assert p["hiaten"] is None
 
 
+class TestPeriodeStoring:
+    """Review F4: een tijdelijke Perioden-fout mag goede codes niet wissen."""
+
+    VORIG = {"perioden": {"aantal": 1, "codes": [{"code": "2024SJ00"}], "hiaten": [], "status": "ok",
+                          "gecontroleerd_op": "2026-09-01"}}
+
+    @pytest.fixture
+    def cbs(self, monkeypatch):
+        state = {"perioden_fout": False}
+
+        def get(cbs_id, endpoint):
+            if endpoint == "Perioden" and state["perioden_fout"]:
+                raise RuntimeError("503")
+            return [INFO] if endpoint == "TableInfos" else PERIODEN
+
+        monkeypatch.setattr(vt.client, "get", get)
+        return state
+
+    def test_mislukte_perioden_behouden_laatst_goede_codes(self, cbs):
+        cbs["perioden_fout"] = True
+        rec, fout = vt.haal_record("TEST01NED", True, self.VORIG, "2026-10-05")
+        assert fout == "RuntimeError"
+        assert rec["perioden"]["codes"] == self.VORIG["perioden"]["codes"]
+        assert rec["perioden"]["status"] == "verouderd"
+        assert rec["perioden"]["gecontroleerd_op"] == "2026-09-01"
+        assert rec["bronmeta"]["gecontroleerd_op"] == "2026-10-05"
+
+    def test_mislukte_perioden_zonder_vorig_is_onbekend(self, cbs):
+        cbs["perioden_fout"] = True
+        rec, _ = vt.haal_record("TEST01NED", True, None, "2026-10-05")
+        assert rec["perioden"]["status"] == "onbekend" and rec["perioden"]["gecontroleerd_op"] is None
+
+    def test_geen_tijddimensie_is_geverifieerde_afwezigheid(self, cbs):
+        rec, fout = vt.haal_record("TEST01NED", False, None, "2026-10-05")
+        assert fout is None and rec["perioden"]["status"] == "geen_tijddimensie" and rec["perioden"]["aantal"] == 0
+
+    def test_geslaagde_controle(self, cbs):
+        rec, fout = vt.haal_record("TEST01NED", True, self.VORIG, "2026-10-05")
+        assert fout is None and rec["perioden"]["aantal"] == 2
+        assert (rec["perioden"]["status"], rec["perioden"]["gecontroleerd_op"]) == ("ok", "2026-10-05")
+
+    def test_contract_toont_verouderde_codes(self):
+        from onderwijsdata import contract
+        info = vt.parse_tableinfo("X", INFO, PERIODEN, "d")
+        info["perioden"].update(status="verouderd")
+        codes = contract._record({"_cbs_id": "X", "bron": "x"}, info)["perioden"]["codes"]
+        assert codes["status"] == "supported" and codes["controle"] == "verouderd"
+
+
 class TestGeleverdeData:
     def test_alle_datasets_aanwezig_en_wheel_gelijk(self):
         pad = "data/02-prepared/cbs_tableinfo.json"
@@ -153,12 +223,14 @@ class TestGeleverdeData:
         assert bouw == wheel
         assert {r["_cbs_id"] for r in bouw} == {r["_cbs_id"] for r in od.catalog()}
 
-    @pytest.mark.parametrize("cbs_id", ["85423NED", "85422NED"])
-    def test_voorbeeldtabellen_dragen_afrondingsregel_met_bronpassage(self, cbs_id):
+    @pytest.mark.parametrize("cbs_id, additief", [("85423NED", False), ("85422NED", None)])
+    def test_voorbeeldtabellen_dragen_afrondingsregel_met_bronpassage(self, cbs_id, additief):
         m = od.get_dataset(cbs_id)["methodiek"]
         assert m["afronding"]["grondslag"] == 10 and m["afronding"]["exact"] is False
         assert "afgerond op 10-tallen" in m["afronding"]["passages"][0]
-        assert m["additiviteit"]["additief"] is False
+        # 85423: expliciete dubbeltelling hbo/wo; 85422: alleen afrondingseffect (review F8).
+        assert m["additiviteit"]["additief"] is additief
+        assert m["additiviteit"]["afrondingseffect"] is True
 
     def test_ho_totaal_is_niet_additief_met_passage(self):
         passages = od.get_dataset("85423NED")["methodiek"]["additiviteit"]["passages"]
