@@ -9,6 +9,7 @@ Gebruik:
   uv run python catalogus/verrijk_catalogus.py --limit 5
 """
 import argparse
+import hashlib
 import json
 import sys
 import time
@@ -23,6 +24,14 @@ DEFAULT_OUTPUT = "data/02-prepared/cbs_datasets_enriched.json"
 
 TOP_N_VALUES = 25
 
+# Lagen in een enriched-record:
+#   1. bronmetadata + AI-annotaties: komen bij elke run ongewijzigd uit de input
+#   2. deterministisch afgeleid (hieronder): alleen herbouwd als _verrijking verouderd is
+AFGELEIDE_VELDEN = ("_kolommen", "_kolomtypes", "_periode_waarden", "niet_geschikt_voor", "_verrijking")
+VERRIJKING_VERSIE = 1
+# Velden waaruit de afgeleide laag wordt opgebouwd; een wijziging hierin invalideert die laag.
+INPUT_VELDEN = ("_dimensies", "_meetwaarden", "_meetwaarden_details", "_geo_niveau")
+
 
 def parse_args():
     p = argparse.ArgumentParser(description="Verrijkt CBS catalogus met data-metadata.")
@@ -33,7 +42,7 @@ def parse_args():
     return p.parse_args()
 
 
-def fetch_dimensions(dataset_id: str, dim_names: list[str]) -> dict[str, dict]:
+def fetch_dimensions(dataset_id: str, dim_names: list[str], fouten: list[str] | None = None) -> dict[str, dict]:
     result = {}
     for dim in dim_names:
         try:
@@ -42,25 +51,52 @@ def fetch_dimensions(dataset_id: str, dim_names: list[str]) -> dict[str, dict]:
         except Exception as e:
             print(f" WARN {dim}: {type(e).__name__}", end="")
             result[dim] = {}
+            if fouten is not None:
+                fouten.append(dim)
     return result
 
 
-def fetch_definitions(dataset_id: str) -> dict[str, dict]:
+def fetch_definitions(dataset_id: str, fouten: list[str] | None = None) -> dict[str, dict]:
     try:
         return client.definitions(dataset_id)
     except Exception as e:
         print(f" WARN defs: {type(e).__name__}", end="")
+        if fouten is not None:
+            fouten.append("definitions")
         return {}
 
 
+def verrijking_stempel(entry: dict) -> dict:
+    """Versie + inputhash van de afgeleide laag, zonder tijdstempel (idempotent)."""
+    payload = json.dumps({v: entry.get(v) for v in INPUT_VELDEN}, sort_keys=True, ensure_ascii=False)
+    return {
+        "versie": VERRIJKING_VERSIE,
+        "inputhash": hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16],
+    }
+
+
 def is_actueel(bestaand: dict | None, entry: dict) -> bool:
-    """Een enriched-record is actueel als het dezelfde meetwaardesleutels volgt als de bron."""
+    """De afgeleide laag is actueel als versie en inputhash overeenkomen met de bron."""
     return bool(
         bestaand
         and bestaand.get("_kolommen")
-        and "_meetwaarden_details" in bestaand
-        and bestaand.get("_meetwaarden") == entry.get("_meetwaarden")
+        and bestaand.get("_verrijking") == verrijking_stempel(entry)
     )
+
+
+def ververs_bronvelden(bestaand: dict, entry: dict) -> dict:
+    """Bronlaag uit de input, afgeleide laag uit het bestaande record.
+
+    Zo volgt enriched altijd de gekozen bronmetadata (_laatste_update, _archief,
+    AI-annotaties), ook als de dure afleiding wordt overgeslagen.
+    """
+    record = dict(entry)
+    for veld in AFGELEIDE_VELDEN:
+        if veld in bestaand:
+            record[veld] = bestaand[veld]
+    if "samenvatting" not in record and "samenvatting" in bestaand:
+        record["samenvatting"] = bestaand["samenvatting"]
+    return record
 
 
 def build_kolommen(dimensions: dict, definitions: dict, dim_names: list, meetwaarden: list) -> dict:
@@ -103,29 +139,17 @@ def build_kolomtypes(definitions: dict, dim_names: list, meetwaarden: list) -> d
 
 
 def build_niet_geschikt_voor(entry: dict) -> str | None:
-    """Genereert een waarschuwingstekst op basis van geo-niveau en periode."""
-    redenen = []
+    """Beperking op basis van een gecontroleerde regel: alleen landelijke dekking.
 
-    geo_niveaus = entry.get("_geo_niveau", [])
-    if geo_niveaus == ["landelijk"]:
-        redenen.append(
+    Leeftijd/archief hoort niet hier: dat staat gestructureerd in `_archief` en
+    `_periode_waarden`. Onbekende dekking (`_geo_niveau` leeg) geeft géén beperking.
+    """
+    if entry.get("_geo_niveau") == ["landelijk"]:
+        return (
             "Niet geschikt voor analyses op gemeente-, wijk- of schoolniveau"
             " — alleen landelijke totalen beschikbaar."
         )
-
-    periode_waarden = entry.get("_periode_waarden", [])
-    if periode_waarden:
-        last_label = periode_waarden[-1]
-        try:
-            last_year = int(last_label[:4])
-            if last_year < 2020:
-                redenen.append(
-                    f"Mogelijk verouderd — recentste data is uit {last_year}."
-                )
-        except ValueError:
-            pass
-
-    return " ".join(redenen) if redenen else None
+    return None
 
 
 def build_samenvatting(entry: dict) -> str:
@@ -156,8 +180,9 @@ def enrich_entry(entry: dict) -> dict:
     if not dim_names:
         return entry
 
-    dimensions = fetch_dimensions(cbs_id, dim_names)
-    definitions = fetch_definitions(cbs_id)
+    fouten: list[str] = []
+    dimensions = fetch_dimensions(cbs_id, dim_names, fouten)
+    definitions = fetch_definitions(cbs_id, fouten)
     time.sleep(0.05)
 
     kolommen = build_kolommen(dimensions, definitions, dim_names, meetwaarden)
@@ -172,8 +197,17 @@ def enrich_entry(entry: dict) -> dict:
         labels = list(dimensions["Perioden"].values())
         entry["_periode_waarden"] = [labels[0], labels[-1]] if len(labels) > 1 else labels
 
-    entry.setdefault("niet_geschikt_voor", build_niet_geschikt_voor(entry))
+    # Altijd herberekenen: een oude waarde mag een gewijzigde regelinput niet blokkeren.
+    ngv = build_niet_geschikt_voor(entry)
+    if ngv:
+        entry["niet_geschikt_voor"] = ngv
+    else:
+        entry.pop("niet_geschikt_voor", None)
     entry.setdefault("samenvatting", build_samenvatting(entry))
+    # Alleen een volledig geslaagde afleiding krijgt een stempel; een gedeeltelijke
+    # blijft "verouderd" en wordt bij de volgende run opnieuw geprobeerd.
+    if not fouten:
+        entry["_verrijking"] = verrijking_stempel(entry)
 
     return entry
 
@@ -201,13 +235,16 @@ def main():
 
     processed = 0
     skipped = 0
+    refreshed = 0
     failed = 0
 
     for idx, entry in enumerate(datasets, 1):
         cbs_id = entry["_cbs_id"]
 
         if not args.no_skip_existing and is_actueel(existing.get(cbs_id), entry):
-            skipped += 1
+            # Afleiding is actueel, maar de bronlaag wordt altijd ververst.
+            existing[cbs_id] = ververs_bronvelden(existing[cbs_id], entry)
+            refreshed += 1
             continue
 
         if args.limit is not None and processed >= args.limit:
@@ -222,6 +259,10 @@ def main():
 
         try:
             enriched = enrich_entry(dict(entry))
+            bestaand = existing.get(cbs_id)
+            if "_verrijking" not in enriched and bestaand and "_verrijking" in bestaand:
+                # Gedeeltelijk mislukte refresh: behoud de laatst-goede afleiding.
+                enriched = ververs_bronvelden(bestaand, entry)
             existing[cbs_id] = enriched
             n_cols = len(enriched.get("_kolommen", {}))
             print(f" OK ({n_cols} kolommen)")
@@ -234,7 +275,7 @@ def main():
             _save(datasets, existing, output_path)
 
     _save(datasets, existing, output_path)
-    print(f"\nKlaar: {processed} verrijkt, {skipped} overgeslagen, {failed} mislukt → {args.output}")
+    print(f"\nKlaar: {processed} verrijkt, {refreshed} bronvelden ververst, {skipped} overgeslagen, {failed} mislukt → {args.output}")
 
 
 if __name__ == "__main__":
