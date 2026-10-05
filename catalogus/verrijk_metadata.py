@@ -1,6 +1,7 @@
 """
 Verrijkt alle CBS-entries in cbs_datasets.json met:
-  _dimensies, _meetwaarden, _geo_niveau, _perioden_formaat
+  _dimensies, _meetwaarden (officiële keys), _meetwaarden_details,
+  _geo_niveau, _perioden_formaat
 
 via echte CBS API-calls. Idempotent: entries die al _dimensies hebben
 worden overgeslagen.
@@ -16,6 +17,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from onderwijsdata import client
+from helpers import meetwaarden_uit_properties
 
 DATASETS    = Path(__file__).parent.parent / "data/02-prepared/cbs_datasets.json"
 AI_DATASETS = Path(__file__).parent.parent / "data/02-prepared/cbs_datasets_ai.json"
@@ -113,7 +115,7 @@ def verrijk_entry(entry: dict, i: int, total: int) -> bool:
     """
     dataset_id = entry["_cbs_id"]
 
-    if "_dimensies" in entry:
+    if "_dimensies" in entry and "_meetwaarden_details" in entry:
         print(f"[{i}/{total}] {dataset_id} (overgeslagen, al verrijkt)")
         return False
 
@@ -129,13 +131,14 @@ def verrijk_entry(entry: dict, i: int, total: int) -> bool:
         return False
 
     dims   = [p["Title"].strip() for p in props if p.get("Type") in DIM_TYPES]
-    topics = [p["Title"].strip() for p in props if p.get("Type") == "Topic"]
+    topics, details = meetwaarden_uit_properties(props)
 
     geo_niveau       = bepaal_geo_niveau(dataset_id, props)
     perioden_formaat = bepaal_perioden_formaat(dataset_id, dims)
 
     entry["_dimensies"]        = dims
     entry["_meetwaarden"]      = topics
+    entry["_meetwaarden_details"] = details
     entry["_geo_niveau"]       = geo_niveau
     entry["_perioden_formaat"] = perioden_formaat
 
@@ -171,7 +174,7 @@ def main():
         ai_datasets = json.load(f)
 
     base_by_id = {e["_cbs_id"]: e for e in datasets}
-    PROPAGEER  = ("_dimensies", "_meetwaarden", "_geo_niveau", "_perioden_formaat")
+    PROPAGEER  = ("_dimensies", "_meetwaarden", "_meetwaarden_details", "_geo_niveau", "_perioden_formaat")
 
     ai_changed = 0
     for entry in ai_datasets:

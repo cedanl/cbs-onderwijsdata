@@ -53,6 +53,16 @@ def fetch_definitions(dataset_id: str) -> dict[str, dict]:
         return {}
 
 
+def is_actueel(bestaand: dict | None, entry: dict) -> bool:
+    """Een enriched-record is actueel als het dezelfde meetwaardesleutels volgt als de bron."""
+    return bool(
+        bestaand
+        and bestaand.get("_kolommen")
+        and "_meetwaarden_details" in bestaand
+        and bestaand.get("_meetwaarden") == entry.get("_meetwaarden")
+    )
+
+
 def build_kolommen(dimensions: dict, definitions: dict, dim_names: list, meetwaarden: list) -> dict:
     kolommen = {}
     for dim in dim_names:
@@ -196,14 +206,14 @@ def main():
     for idx, entry in enumerate(datasets, 1):
         cbs_id = entry["_cbs_id"]
 
-        if not args.no_skip_existing and cbs_id in existing and existing[cbs_id].get("_kolommen"):
+        if not args.no_skip_existing and is_actueel(existing.get(cbs_id), entry):
             skipped += 1
             continue
 
         if args.limit is not None and processed >= args.limit:
             break
 
-        if entry.get("_archief"):
+        if entry.get("_archief") and cbs_id not in existing:
             skipped += 1
             continue
 
