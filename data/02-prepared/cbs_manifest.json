@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "generator": {
+    "naam": "catalogus/bouw_artefact.py",
+    "package_versie": "0.1.1"
+  },
+  "catalogusrevisie": "0589e198f50f2424",
+  "bestanden": {
+    "cbs_datasets.json": {
+      "sha256": "033f536bfe5e02a5b17e6bcf67050abcc00bd625ad2d30a4e81c35b63ee5afab",
+      "records": 266
+    },
+    "cbs_datasets_ai.json": {
+      "sha256": "ecbb861c32bb7c5dccf647742384abfbe7cf81d6ecb0d34369d6a998ebadd420",
+      "records": 266
+    },
+    "cbs_datasets_enriched.json": {
+      "sha256": "ce66185bb5f2014d8ef0fe98d754f4309b9b8d8b47d072fe7ba87faa24114de2",
+      "records": 266
+    },
+    "cbs_tableinfo.json": {
+      "sha256": "c42ed01c960b636e662e815004b0f8bc65ccb70e00bffb7a3f5f919d32a4632a",
+      "records": 266
+    }
+  },
+  "aantallen": {
+    "breed": 266,
+    "per_scopeprofiel": {
+      "mbo": 67,
+      "hbo": 36,
+      "wo": 42,
+      "review": 130
+    }
+  },
+  "datadekking": {
+    "gearchiveerd": 161,
+    "actueel": 105,
+    "met_tableinfo": 266,
+    "met_periodecodes": 239
+  },
+  "bronwijziging": {
+    "laatste_update_max": "2026-10-01",
+    "metadata_modified_max": "2026-10-01T02:00:00"
+  },
+  "laatste_succesvolle_controle": "2026-10-05",
+  "metadataherkomst": {
+    "bronmetadata": "CBS TableInfos/DataProperties/Perioden",
+    "afgeleid": "scopeprofiel, geografie (deterministisch)",
+    "ai_annotaties": "doel, samenvatting, voorbeeldvragen, tags (cbs_datasets_ai.json)"
+  },
+  "waarschuwingen": [
+    "155 enriched-records met onvolledige afleiding (geen _verrijking)"
+  ]
+}

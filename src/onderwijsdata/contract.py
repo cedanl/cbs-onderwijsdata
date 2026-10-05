@@ -198,7 +198,7 @@ def _record(rec: dict, info: dict | None = None) -> dict:
             "laatste_update": rec.get("_laatste_update"),
             "metadata_modified": (info or {}).get("bronmeta", {}).get("metadata_modified"),
             "gecontroleerd_op": (info or {}).get("bronmeta", {}).get("gecontroleerd_op"),
-            "broncheck": None,
+            "broncheck": (info or {}).get("bronmeta", {}).get("gecontroleerd_op"),
             "catalogusbouw": None,
             "verrijkingsversie": verrijking.get("versie"),
             "inputhash": verrijking.get("inputhash"),
@@ -281,19 +281,52 @@ def get_dataset(dataset_id: str, schema_version: int = SCHEMA_VERSION) -> dict:
     raise DatasetNietGevonden(dataset_id)
 
 
+@lru_cache(maxsize=1)
+def _bouwmanifest() -> dict | None:
+    """Manifest van het gepubliceerde artefact (cbs_manifest.json), of None als het ontbreekt."""
+    from importlib.resources import files
+    pad = files("onderwijsdata.data").joinpath("cbs_manifest.json")
+    try:
+        return json.loads(pad.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return None
+
+
+@lru_cache(maxsize=1)
+def _geleverde_hashes() -> dict[str, str]:
+    from importlib.resources import files
+    data_dir = files("onderwijsdata.data")
+    hashes = {}
+    for naam in (_bouwmanifest() or {}).get("bestanden", {}):
+        hashes[naam] = hashlib.sha256(data_dir.joinpath(naam).read_bytes()).hexdigest()
+    return hashes
+
+
 def catalog_manifest() -> dict:
-    """Compact overzicht van de actieve catalogus (offline)."""
+    """Welke catalogus gebruik ik werkelijk? Volledig offline, uit de geleverde bestanden.
+
+    ``bouw`` is het manifest van het gepubliceerde artefact (revisie, aantallen,
+    datadekking, bronwijziging, laatste succesvolle controle als aparte velden).
+    ``consistent`` is waar als de geleverde bestanden exact bij dat manifest horen.
+    """
     records = _alle_records()
     payload = json.dumps(records, sort_keys=True, ensure_ascii=False).encode("utf-8")
+    bouw = _bouwmanifest()
+    consistent = bool(bouw) and all(
+        _geleverde_hashes().get(naam) == b["sha256"] for naam, b in bouw["bestanden"].items()
+    )
     return {
         "schema_version": SCHEMA_VERSION,
         "inhoudshash": hashlib.sha256(payload).hexdigest()[:16],
+        "catalogusrevisie": bouw["catalogusrevisie"] if bouw else None,
         "aantal": len(records),
         "aantal_per_sector": {
             s: sum(1 for r in records if r["scopeprofiel"][s] == SUPPORTED) for s in SECTOREN
         },
         "aantal_review": len(scope_review()),
         "capabilities": dict(CAPABILITIES),
+        "bouw": bouw,
+        "consistent": consistent,
     }
 
 
