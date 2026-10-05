@@ -4,11 +4,31 @@ Python client voor publieke Nederlandse onderwijsdata via de [CBS OData API](htt
 
 ## Installatie
 
+`onderwijsdata` staat **nog niet op PyPI**. Installeer vanuit Git met een vaste ref
+(een release-tag of commit-hash; gebruik niet `main` voor reproduceerbare omgevingen):
+
 ```bash
-pip install onderwijsdata                  # alleen client
-pip install onderwijsdata[analyse]         # + pandas en matplotlib
-pip install onderwijsdata[catalogus]       # + anthropic (voor catalogus_ai.py)
+pip install "onderwijsdata @ git+https://github.com/cedanl/cbs-onderwijsdata@<ref>"
+pip install "onderwijsdata[analyse] @ git+https://github.com/cedanl/cbs-onderwijsdata@<ref>"  # + pandas, matplotlib
 ```
+
+Met uv: `uv add "onderwijsdata @ git+https://github.com/cedanl/cbs-onderwijsdata@<ref>"`.
+
+De installatie bevat de catalogus en `cbs_manifest.json`. Controle na installatie:
+
+```python
+import onderwijsdata
+onderwijsdata.catalog_manifest()["consistent"]   # True: geleverde bestanden horen bij het manifest
+```
+
+De test `tests/test_release.py` bouwt wheel en sdist, controleert catalogus en manifest daarin
+en installeert de wheel in een schone omgeving. Een PyPI-release volgt pas als die test slaagt.
+
+### Brede catalogus en chatprofiel
+
+De package levert de **brede** publieke CBS-catalogus (alle onderwijsthema's, inclusief po/vo en
+historische tabellen). Het mbo/hbo/wo-profiel voor de chat is een selectie daarvan:
+`catalog_records(sector="mbo")`. Historische tabellen zijn gemarkeerd (`archief.gearchiveerd`).
 
 ## Gebruik
 

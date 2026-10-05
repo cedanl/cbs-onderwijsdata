@@ -82,6 +82,7 @@
 
     .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem; }
     .card-title { font-weight: 600; font-size: 0.92rem; line-height: 1.45; }
+    .badge-historisch { background: #eee; color: #555; border: 1px solid #bbb; }
     .card-periode { font-size: 0.72rem; color: var(--muted); white-space: nowrap; flex-shrink: 0; }
 
     .badges { display: flex; gap: 0.3rem; flex-wrap: wrap; }
@@ -295,7 +296,7 @@
 
 <header>
   <h1>CBS Onderwijsdata Catalogus</h1>
-  <p>68 publieke CBS-datasets over het Nederlandse onderwijs — doorzoekbaar op trefwoord, niveau en tag.</p>
+  <p>Brede catalogus van publieke CBS-datasets over het Nederlandse onderwijs — doorzoekbaar op trefwoord, niveau, status en tag. Historische (gearchiveerde) tabellen blijven zichtbaar en zijn gemarkeerd. Deze catalogus is breder dan het mbo/hbo/wo-profiel van de chat; gebruik het filter <em>Alleen mbo/hbo/wo</em> voor de scope.</p>
 </header>
 
 <div class="controls">
@@ -303,6 +304,10 @@
   <div class="filter-row">
     <span class="filter-label">Niveau</span>
     <div id="type-filters" style="display:flex;flex-wrap:wrap;gap:0.4rem;"></div>
+  </div>
+  <div class="filter-row">
+    <span class="filter-label">Status</span>
+    <div id="status-filters" style="display:flex;flex-wrap:wrap;gap:0.4rem;"></div>
   </div>
   <div class="filter-row">
     <span class="filter-label">Tag</span>
@@ -341,6 +346,7 @@ let voorbeelden = [];
 let voorbeeldenByDataset = {};   // cbs_id → [voorbeeld, ...]
 let activeTypes = new Set();
 let activeTags = new Set();
+let activeStatus = new Set();
 let query = '';
 
 async function init() {
@@ -376,6 +382,12 @@ function buildFilters() {
     typeRow.appendChild(btn);
   });
 
+  const statusRow = document.getElementById('status-filters');
+  [['actueel', 'Actueel'], ['historisch', 'Historisch (archief)'], ['scope', 'Alleen mbo/hbo/wo']].forEach(([v, label]) => {
+    const btn = chip(label, () => toggle(activeStatus, v, btn));
+    statusRow.appendChild(btn);
+  });
+
   const tagCount = {};
   data.forEach(d => (d.tags || []).forEach(t => tagCount[t] = (tagCount[t] || 0) + 1));
   const topTags = Object.entries(tagCount).sort((a, b) => b[1] - a[1]).slice(0, 20).map(e => e[0]);
@@ -409,12 +421,19 @@ window.addTagFilter = function(tag) {
   render();
 };
 
+const SCOPE_TYPES = ['MBO', 'HBO', 'WO'];
+const isHistorisch = d => !!d._archief;
+const isScope = d => d.onderwijstype.length > 0 && d.onderwijstype.every(t => SCOPE_TYPES.includes(t));
+
 function matches(d) {
+  if (activeStatus.has('actueel') && !activeStatus.has('historisch') && isHistorisch(d)) return false;
+  if (activeStatus.has('historisch') && !activeStatus.has('actueel') && !isHistorisch(d)) return false;
+  if (activeStatus.has('scope') && !isScope(d)) return false;
   if (activeTypes.size && !d.onderwijstype.some(t => activeTypes.has(t))) return false;
   if (activeTags.size && ![...activeTags].every(t => (d.tags || []).includes(t))) return false;
   if (query) {
     const q = query.toLowerCase();
-    const hay = [d.bron, d.doel, ...(d.tags||[]), ...(d.voorbeeldvragen||[]), d._thema, d._cbs_id].join(' ').toLowerCase();
+    const hay = [isHistorisch(d) ? 'historisch archief gearchiveerd' : 'actueel', d.bron, d.doel, ...(d.tags||[]), ...(d.voorbeeldvragen||[]), d._thema, d._cbs_id].join(' ').toLowerCase();
     if (!hay.includes(q)) return false;
   }
   return true;
@@ -431,7 +450,7 @@ function render() {
   grid.innerHTML = filtered.map(d => {
     const badges = d.onderwijstype.map(t =>
       `<span class="badge ${TYPE_CLASS[t]||'badge-allen'}">${TYPE_LABEL[t]||t}</span>`
-    ).join('');
+    ).join('') + (isHistorisch(d) ? '<span class="badge badge-historisch" title="Tabel wordt niet meer bijgewerkt; gebruik niet voor actuele cijfers">Historisch</span>' : '');
     const tags = (d.tags||[]).map(t =>
       `<span class="tag" onclick="addTagFilter('${t}')">${t}</span>`
     ).join('');
@@ -458,7 +477,7 @@ function render() {
         ${vbBtns ? `<div style="display:flex;gap:0.4rem;flex-wrap:wrap;">${vbBtns}</div>` : ''}
         <div class="card-tags">${tags}</div>
         <div class="card-footer">
-          <span class="card-meta">${d.frequentie} · ${d._cbs_id}</span>
+          <span class="card-meta">${d.frequentie} · ${d._cbs_id}${d._laatste_update ? ' · bron bijgewerkt ' + d._laatste_update : ''}</span>
           <a class="card-link" href="${d.documentatie.url}" target="_blank" rel="noopener">CBS Open Data →</a>
         </div>
       </div>`;
