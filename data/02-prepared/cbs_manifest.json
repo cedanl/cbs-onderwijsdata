@@ -4,7 +4,7 @@
     "naam": "catalogus/bouw_artefact.py",
     "package_versie": "0.2.0"
   },
-  "catalogusrevisie": "ca1b72082e9267ff",
+  "catalogusrevisie": "0d5617f91d2a27f2",
   "bestanden": {
     "cbs_datasets.json": {
       "sha256": "033f536bfe5e02a5b17e6bcf67050abcc00bd625ad2d30a4e81c35b63ee5afab",
@@ -15,11 +15,11 @@
       "records": 266
     },
     "cbs_datasets_enriched.json": {
-      "sha256": "b353fc95a592c0c25dbedd6a5ebba71af3a64190400a88f763d0fd854ace8b18",
+      "sha256": "e0de1a807f9154aad4866410107150a2914633c7a1da4b2c24f5e6ed2ccbb6cf",
       "records": 266
     },
     "cbs_tableinfo.json": {
-      "sha256": "07a706b1d83a8eaa52647e441768c76245fc9d6984aeda0ef7b81ac8efe80c61",
+      "sha256": "24922af02d1181e529900f0109c33550c4aa7c370be22ca3160db5716be8a274",
       "records": 266
     }
   },
@@ -42,9 +42,9 @@
     "laatste_update_max": "2026-10-01",
     "metadata_modified_max": "2026-10-01T02:00:00"
   },
-  "laatste_succesvolle_controle": "2026-10-05",
+  "laatste_succesvolle_controle": "2026-10-11",
   "versheid": {
-    "oudste_controle": "2026-10-05",
+    "oudste_controle": "2026-10-11",
     "zonder_controle": 0,
     "perioden_verouderd": 0,
     "perioden_onbekend": 0,

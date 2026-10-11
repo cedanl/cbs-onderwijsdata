@@ -128,16 +128,16 @@
       "Perioden": "tijd-dimensie",
       "Gediplomeerden_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2011/'12",
+      "2024/'25"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoort": "Onderwijssoort",
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2011/'12",
-      "2024/'25"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "704eecf8ef398521",
@@ -277,16 +277,16 @@
       "Perioden": "tijd-dimensie",
       "LeerlingenStudenten_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2011/'12",
+      "2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoort": "Onderwijssoort",
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2011/'12",
-      "2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "257f8fd569950744",
@@ -2091,14 +2091,14 @@
       "Handelsavondschool3JarigeCursus_173": "meetwaarde (aantal)",
       "Handelsavondschool5JarigeCursus_174": "meetwaarde (aantal)"
     },
-    "_dimensie_sleutels": {
-      "Geslacht": "Geslacht",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1900/'01",
       "2024/'25"
     ],
+    "_dimensie_sleutels": {
+      "Geslacht": "Geslacht",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "dd8863a128df4475",
@@ -3773,14 +3773,14 @@
       "Basiseducatie_160": "meetwaarde (x 1 000)",
       "Educatie_161": "meetwaarde (x 1 000)"
     },
-    "_dimensie_sleutels": {
-      "Geslacht": "Geslacht",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1900/'01",
       "2025/'26"
     ],
+    "_dimensie_sleutels": {
+      "Geslacht": "Geslacht",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "cf6ba006e6b3de68",
@@ -3897,16 +3897,16 @@
       "Onderwijsinstellingen_1": "meetwaarde (aantal)",
       "LeerlingenStudenten_2": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1990/'91",
+      "2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Onderwijssoort": "Onderwijssoort",
       "Levensbeschouwelijke grondslag": "LevensbeschouwelijkeGrondslag",
       "Schoolgrootte": "Schoolgrootte",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1990/'91",
-      "2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "009a779127f960b9",
@@ -4047,6 +4047,10 @@
       "Perioden": "tijd-dimensie",
       "LeerlingenInSpeciaalBasisonderwijs_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2011/'12",
+      "2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoort": "Onderwijssoort",
@@ -4055,10 +4059,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2011/'12",
-      "2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "889b4b9e6b576a55",
@@ -4207,6 +4207,10 @@
       "Perioden": "tijd-dimensie",
       "LeerlingenOpSpecialeScholen_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2011/'12",
+      "2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoort": "Onderwijssoort",
@@ -4216,10 +4220,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2011/'12",
-      "2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "66d079c7d3453084",
@@ -4360,6 +4360,10 @@
       "Perioden": "tijd-dimensie",
       "AantalLeerlingen_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2000/'01",
+      "2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -4367,10 +4371,6 @@
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2000/'01",
-      "2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "9b879d2d54eb9db2",
@@ -4526,6 +4526,10 @@
       "AdviesNietHerzienObvToets_5": "meetwaarde (aantal)",
       "DefinitiefSchooladvies_6": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2014/'15",
+      "2024/'25"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Schooladvies": "Schooladvies",
@@ -4533,10 +4537,6 @@
       "Gestandaardiseerd inkomen": "GestandaardiseerdInkomen",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2014/'15",
-      "2024/'25"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "0a61a8d0ce0cd86f",
@@ -4680,16 +4680,16 @@
       "Gediplomeerden_2": "meetwaarde (aantal)",
       "GediplomeerdenRelatief_3": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2011/'12",
+      "2024/'25"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoort": "Onderwijssoort",
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2011/'12",
-      "2024/'25"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "1df704837fc25507",
@@ -4836,6 +4836,10 @@
       "Gediplomeerden_2": "meetwaarde (aantal)",
       "GediplomeerdenRelatief_3": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2011/'12",
+      "2024/'25"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoort in detail": "OnderwijssoortInDetail",
@@ -4843,10 +4847,6 @@
       "Geboorteland (ouders)": "GeboortelandOuders",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2011/'12",
-      "2024/'25"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "98200e15938dd63f",
@@ -4987,6 +4987,10 @@
       "Perioden": "tijd-dimensie",
       "AantalLeerlingen_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2011/'12",
+      "2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoort": "Onderwijssoort",
@@ -4994,10 +4998,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2011/'12",
-      "2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "5a37d0708731504b",
@@ -5135,6 +5135,10 @@
       "Perioden": "tijd-dimensie",
       "AantalLeerlingen_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2011/'12",
+      "2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoort in detail": "OnderwijssoortInDetail",
@@ -5143,10 +5147,6 @@
       "Geboorteland (ouders)": "GeboortelandOuders",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2011/'12",
-      "2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "4f256b66d4c614d7",
@@ -5315,6 +5315,10 @@
       "Perioden": "tijd-dimensie",
       "Leerlingen_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2010/'11 naar 2011/'12",
+      "2024/'25 naar 2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijs positie basisjaar": "OnderwijsPositieBasisjaar",
@@ -5324,10 +5328,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2010/'11 naar 2011/'12",
-      "2024/'25 naar 2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "dbe2def92bc5efee",
@@ -5642,6 +5642,10 @@
       "Perioden": "tijd-dimensie",
       "MboStudenten_1": "meetwaarde (Aantal)"
     },
+    "_periode_waarden": [
+      "2015/'16",
+      "2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Niveau": "Niveau",
@@ -5650,10 +5654,6 @@
       "Regio": "Regio",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2015/'16",
-      "2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "fe2f28c7a643eb87",
@@ -5769,6 +5769,10 @@
       "Perioden": "tijd-dimensie",
       "MboStudenten_1": "meetwaarde (Aantal)"
     },
+    "_periode_waarden": [
+      "2011/'12",
+      "2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Niveau": "Niveau",
@@ -5777,10 +5781,6 @@
       "Geboorteland (ouders)": "GeboortelandOuders",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2011/'12",
-      "2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "c86b8bea456ef6f5",
@@ -5926,6 +5926,10 @@
       "Perioden": "tijd-dimensie",
       "MboStudenten_1": "meetwaarde (Aantal)"
     },
+    "_periode_waarden": [
+      "2015/'16",
+      "2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Niveau": "Niveau",
@@ -5935,10 +5939,6 @@
       "Geboorteland (ouders)": "GeboortelandOuders",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2015/'16",
-      "2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "8e49370e7507b0f9",
@@ -6097,6 +6097,10 @@
       "Perioden": "tijd-dimensie",
       "GediplomeerdenMbo_1": "meetwaarde (Aantal)"
     },
+    "_periode_waarden": [
+      "2015/'16",
+      "2024/'25"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Niveau": "Niveau",
@@ -6105,10 +6109,6 @@
       "Regio": "Regio",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2015/'16",
-      "2024/'25"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "2a6641d607eee6ea",
@@ -6253,6 +6253,10 @@
       "Perioden": "tijd-dimensie",
       "GediplomeerdenMbo_1": "meetwaarde (Aantal)"
     },
+    "_periode_waarden": [
+      "2015/'16",
+      "2024/'25"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Niveau": "Niveau",
@@ -6262,10 +6266,6 @@
       "Geboorteland (ouders)": "GeboortelandOuders",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2015/'16",
-      "2024/'25"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "c7bac6f81394223f",
@@ -6382,6 +6382,10 @@
       "Perioden": "tijd-dimensie",
       "GediplomeerdenMbo_1": "meetwaarde (Aantal)"
     },
+    "_periode_waarden": [
+      "2011/'12",
+      "2024/'25"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Niveau": "Niveau",
@@ -6390,10 +6394,6 @@
       "Geboorteland (ouders)": "GeboortelandOuders",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2011/'12",
-      "2024/'25"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "d36f254ffb798c51",
@@ -6531,6 +6531,10 @@
       "Perioden": "tijd-dimensie",
       "InstromersMbo_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2018/'19",
+      "2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Niveau": "Niveau",
@@ -6540,10 +6544,6 @@
       "Bedrijfstakken/branches SBI (2008)": "BedrijfstakkenBranchesSBI2008",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2018/'19",
-      "2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "bd3608b45d97bf1d",
@@ -6700,6 +6700,10 @@
       "Perioden": "tijd-dimensie",
       "InstromersTotaal_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2018/'19",
+      "2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Niveau": "Niveau",
@@ -6709,10 +6713,6 @@
       "Maatschappelijke positie 1 jaar eerder": "MaatschappelijkePositie1JaarEerder",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2018/'19",
-      "2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "4c1927a9d96f0479",
@@ -6877,6 +6877,10 @@
       "Perioden": "tijd-dimensie",
       "StudentenMbo_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2011/'12 naar 2012/'13",
+      "2024/'25 naar 2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Geboorteland (ouders)": "GeboortelandOuders",
@@ -6886,10 +6890,6 @@
       "Positie in volgend studiejaar": "PositieInVolgendStudiejaar",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2011/'12 naar 2012/'13",
-      "2024/'25 naar 2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "0aeff32d1d6befb7",
@@ -7045,16 +7045,16 @@
       "BuitenDeAcademischeWereld_5": "meetwaarde (%)",
       "GemiddeldeTijdVoorBehalenDoctoraat_6": "meetwaarde (Maanden)"
     },
+    "_periode_waarden": [
+      "2019",
+      "2025"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Marges": "Marges",
       "Promotiekenmerken": "Promotiekenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2019",
-      "2025"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "2487e684c22a624d",
@@ -7224,16 +7224,16 @@
       "WerkzaamBinnenDeAcademischeWereld_7": "meetwaarde (%)",
       "WerkGerelateerdAanPromotieonderzoek_8": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2019",
+      "2025"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Marges": "Marges",
       "Promotiekenmerken": "Promotiekenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2019",
-      "2025"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "ab80f2415d1d0c0f",
@@ -7765,14 +7765,14 @@
       "EenAndereReden_44": "meetwaarde (% buitenland overwogen maar niet gegaan)",
       "Onbekend_45": "meetwaarde (% buitenland overwogen maar niet gegaan)"
     },
-    "_dimensie_sleutels": {
-      "Onderwijs": "Onderwijs",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "2022",
       "2026"
     ],
+    "_dimensie_sleutels": {
+      "Onderwijs": "Onderwijs",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "1cf226cf84e36c55",
@@ -7863,15 +7863,15 @@
       "Perioden": "tijd-dimensie",
       "Promoties_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2016/'17",
+      "2023/'24"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Studierichting": "Studierichting",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2016/'17",
-      "2023/'24"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "312f31675d262b01",
@@ -7970,6 +7970,10 @@
       "Perioden": "tijd-dimensie",
       "Gediplomeerden_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2011/'12",
+      "2024/'25"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoort": "Onderwijssoort",
@@ -7977,10 +7981,6 @@
       "Opleidingsvorm": "Opleidingsvorm",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2011/'12",
-      "2024/'25"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "6c3eefc48a24eb57",
@@ -8122,6 +8122,10 @@
       "Perioden": "tijd-dimensie",
       "Gediplomeerden_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2015/'16",
+      "2024/'25"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoort": "Onderwijssoort",
@@ -8131,10 +8135,6 @@
       "Geboorteland (ouders)": "GeboortelandOuders",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2015/'16",
-      "2024/'25"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "b7eddb363440a8b5",
@@ -8290,6 +8290,10 @@
       "Eerstejaarsstudenten_2": "meetwaarde (aantal)",
       "Ouderejaarsstudenten_3": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2011/'12",
+      "2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoort": "Onderwijssoort",
@@ -8298,10 +8302,6 @@
       "Geboorteland (ouders)": "GeboortelandOuders",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2011/'12",
-      "2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "e6d2b8c284cca38d",
@@ -8401,6 +8401,10 @@
       "Perioden": "tijd-dimensie",
       "TotaalIngeschrevenen_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2011/'12",
+      "2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoort": "Onderwijssoort",
@@ -8408,10 +8412,6 @@
       "Opleidingsvorm": "Opleidingsvorm",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2011/'12",
-      "2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "e4f349c12c19ceea",
@@ -8531,6 +8531,10 @@
       "Perioden": "tijd-dimensie",
       "Eerstejaarsstudenten_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2011/'12",
+      "2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoort": "Onderwijssoort",
@@ -8538,10 +8542,6 @@
       "Opleidingsfase": "Opleidingsfase",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2011/'12",
-      "2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "7872efe88134d01c",
@@ -8647,15 +8647,15 @@
       "Perioden": "tijd-dimensie",
       "InternationaleStudenten_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2005/'06",
+      "2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Nationaliteit": "Nationaliteit",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005/'06",
-      "2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "de98ccabdb867334",
@@ -8789,6 +8789,10 @@
       "TotaalNietInternationaleStudenten_2": "meetwaarde (aantal)",
       "TotaalInternationaleStudenten_3": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2005/'06",
+      "2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Verblijfsjaar": "Verblijfsjaar",
@@ -8797,10 +8801,6 @@
       "Opleidingsfase": "Opleidingsfase",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005/'06",
-      "2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "06013a599b019289",
@@ -9913,16 +9913,16 @@
       "Perioden": "tijd-dimensie",
       "GediplomeerdenVavo_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2006/'07",
+      "2024/'25"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
       "Onderwijssoort": "Onderwijssoort",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2006/'07",
-      "2024/'25"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "793182c1c0d23751",
@@ -10012,16 +10012,16 @@
       "Perioden": "tijd-dimensie",
       "VavoStudenten_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2006/'07",
+      "2025/'26"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
       "Onderwijssoort": "Onderwijssoort",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2006/'07",
-      "2025/'26"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "452a55d6e706af97",
@@ -10248,13 +10248,13 @@
       "BesteedPerCursusuur_16": "meetwaarde (euro)",
       "AandeelInArbeidskosten_17": "meetwaarde (%)"
     },
-    "_dimensie_sleutels": {
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1986",
       "2020"
     ],
+    "_dimensie_sleutels": {
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "5cd021bc9ca4c596",
@@ -11211,14 +11211,14 @@
       "WerkEnTijdsdrukBeletDeelname_86": "meetwaarde (%)",
       "AndereRedenen_87": "meetwaarde (%)"
     },
-    "_dimensie_sleutels": {
-      "Bedrijfskenmerken": "Bedrijfskenmerken",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "2010",
       "2020"
     ],
+    "_dimensie_sleutels": {
+      "Bedrijfskenmerken": "Bedrijfskenmerken",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "cc819d3af63d4ce9",
@@ -11918,6 +11918,10 @@
       "Perioden": "tijd-dimensie",
       "WerkzameBeroepsbevolking15Tot75Jaar_1": "meetwaarde (x 1 000)"
     },
+    "_periode_waarden": [
+      "2013",
+      "2025"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -11925,10 +11929,6 @@
       "Leven lang ontwikkelen": "LevenLangOntwikkelen",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2013",
-      "2025"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "3487ee6aba145d72",
@@ -12059,6 +12059,10 @@
       "Perioden": "tijd-dimensie",
       "DeelnemersLevenLangOntwikkelen_1": "meetwaarde (x 1 000)"
     },
+    "_periode_waarden": [
+      "2021",
+      "2025"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -12067,10 +12071,6 @@
       "Onderwijskenmerken": "Onderwijskenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2021",
-      "2025"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "04bdb89e3575d409",
@@ -12187,6 +12187,10 @@
       "Perioden": "tijd-dimensie",
       "Bevolking15Tot75Jaar_1": "meetwaarde (x 1 000)"
     },
+    "_periode_waarden": [
+      "2013",
+      "2025"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
@@ -12194,10 +12198,6 @@
       "Leven lang ontwikkelen": "LevenLangOntwikkelen",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2013",
-      "2025"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "8aa46197cbc3f9cf",
@@ -12325,6 +12325,10 @@
       "Perioden": "tijd-dimensie",
       "WerkzameBeroepsbevolking15Tot75Jaar_1": "meetwaarde (x 1 000)"
     },
+    "_periode_waarden": [
+      "2013",
+      "2025"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -12332,10 +12336,6 @@
       "Bedrijfskenmerken": "Bedrijfskenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2013",
-      "2025"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "0c0550a2e3f5678b",
@@ -13067,14 +13067,14 @@
       "PerDeelnemerInclusiefRD_65": "meetwaarde (euro)",
       "PerDeelnemerExclusiefRD_66": "meetwaarde (euro)"
     },
-    "_dimensie_sleutels": {
-      "Onderwijssectoren": "Onderwijssectoren",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1995",
       "2024"
     ],
+    "_dimensie_sleutels": {
+      "Onderwijssectoren": "Onderwijssectoren",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "f7682cc2ad5be988",
@@ -13322,13 +13322,13 @@
       "WetenschappelijkOnderwijs_18": "meetwaarde (mln euro)",
       "TotaalOverheidsuitgavenAlsVanBbp_19": "meetwaarde (%)"
     },
-    "_dimensie_sleutels": {
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1900",
       "2024"
     ],
+    "_dimensie_sleutels": {
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "4551a78e5bb0296d",
@@ -13482,6 +13482,10 @@
       "Perioden": "tijd-dimensie",
       "UitstromersMbo_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2023/'24"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -13491,10 +13495,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2023/'24"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "dcb3e807f33c6202",
@@ -13653,6 +13653,10 @@
       "Perioden": "tijd-dimensie",
       "UitstromersMbo_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2023/'24"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
@@ -13662,10 +13666,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2023/'24"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "b4b21f955e0736f0",
@@ -13816,6 +13816,10 @@
       "Perioden": "tijd-dimensie",
       "UitstromersMbo_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2023/'24"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -13825,10 +13829,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2023/'24"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "ff3e795bff72e1d6",
@@ -13993,6 +13993,10 @@
       "Perioden": "tijd-dimensie",
       "TotaalUitstromersMetWerk_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2023/'24"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -14002,10 +14006,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2023/'24"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "11eb2ab152b070e6",
@@ -14161,6 +14161,10 @@
       "Perioden": "tijd-dimensie",
       "UurloonWerknemersNaVerlatenMbo_1": "meetwaarde (euro)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2023/'24"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Uitstromers mbo met en zonder diploma": "UitstromersMboMetEnZonderDiploma",
@@ -14169,10 +14173,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2023/'24"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "955efd0e7f8a3426",
@@ -14317,6 +14317,10 @@
       "Perioden": "tijd-dimensie",
       "UitstromersHo_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2006/'07",
+      "2023/'24"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Wel/geen internationale student": "WelGeenInternationaleStudent",
@@ -14326,10 +14330,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2006/'07",
-      "2023/'24"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "5a26516d4ccc7093",
@@ -14479,6 +14479,10 @@
       "Perioden": "tijd-dimensie",
       "UitstromersHo_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2006/'07",
+      "2023/'24"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
@@ -14488,10 +14492,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2006/'07",
-      "2023/'24"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "7ba8892d4f8efda4",
@@ -14640,6 +14640,10 @@
       "Perioden": "tijd-dimensie",
       "UitstromersHoMetWerk_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2006/'07",
+      "2023/'24"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Uitstromers ho met en zonder diploma": "UitstromersHoMetEnZonderDiploma",
@@ -14648,10 +14652,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2006/'07",
-      "2023/'24"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "2bab7d08f47db884",
@@ -14793,6 +14793,10 @@
       "Perioden": "tijd-dimensie",
       "UitstromersHo_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2006/'07",
+      "2023/'24"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Wel/geen internationale student": "WelGeenInternationaleStudent",
@@ -14802,10 +14806,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2006/'07",
-      "2023/'24"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "fa7bf4e223fad108",
@@ -14955,6 +14955,10 @@
       "Perioden": "tijd-dimensie",
       "UurloonWerknemersNaVerlatenHo_1": "meetwaarde (euro)"
     },
+    "_periode_waarden": [
+      "2006/'07",
+      "2023/'24"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Uitstromers ho met en zonder diploma": "UitstromersHoMetEnZonderDiploma",
@@ -14963,10 +14967,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2006/'07",
-      "2023/'24"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "2ddbdc326d5bf028",
@@ -15250,16 +15250,16 @@
       "k_311HboWoBachelor_16": "meetwaarde (%)",
       "k_321HboWoMasterDoctor_17": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2013",
+      "2024"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2013",
-      "2024"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "47bdc34f76911248",
@@ -15396,6 +15396,10 @@
       "Perioden": "tijd-dimensie",
       "Bevolking_1": "meetwaarde (x 1000)"
     },
+    "_periode_waarden": [
+      "2013 1e kwartaal",
+      "2026 2e kwartaal"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -15404,10 +15408,6 @@
       "Onderwijsniveau": "Onderwijsniveau",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2013 1e kwartaal",
-      "2026 2e kwartaal"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "96160f0ad34d0f83",
@@ -15535,6 +15535,10 @@
       "Perioden": "tijd-dimensie",
       "Bevolking_1": "meetwaarde (x 1000)"
     },
+    "_periode_waarden": [
+      "2013 1e kwartaal",
+      "2026 2e kwartaal"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -15542,10 +15546,6 @@
       "Onderwijsrichting": "Onderwijsrichting",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2013 1e kwartaal",
-      "2026 2e kwartaal"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "40c2cf3aea3f0fe3",
@@ -15672,6 +15672,10 @@
       "Perioden": "tijd-dimensie",
       "Jongeren15Tot25Jaar_1": "meetwaarde (x 1 000)"
     },
+    "_periode_waarden": [
+      "2011",
+      "2019"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -15680,10 +15684,6 @@
       "Sociaaleconomische kenmerken": "SociaaleconomischeKenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2011",
-      "2019"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "0db684736bd0c6a4",
@@ -15786,15 +15786,15 @@
       "Perioden": "tijd-dimensie",
       "Personen25JaarEnOuderMetPartner_1": "meetwaarde (x 1 000)"
     },
+    "_periode_waarden": [
+      "2013",
+      "2025"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijsniveau": "Onderwijsniveau",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2013",
-      "2025"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "9c17528a83ed5b9d",
@@ -15937,16 +15937,16 @@
       "NietVoortijdigSchoolverlaters_3": "meetwaarde (aantal)",
       "VoortijdigSchoolverlatersPercentage_4": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2012/'13",
+      "2024/'25"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoort": "Onderwijssoort",
       "Herkomstland": "Herkomstland",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2012/'13",
-      "2024/'25"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "6bf071c851ed13a4",
@@ -16139,6 +16139,10 @@
       "BeroepbegeleidendeLeerwegBbl_5": "meetwaarde (aantal)",
       "Extranei_6": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2022/'23"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Herkomstland": "Herkomstland",
@@ -16148,10 +16152,6 @@
       "Startkwalificatie op peilmoment": "StartkwalificatieOpPeilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2022/'23"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "5df9fbde5c2f87a5",
@@ -16303,6 +16303,10 @@
       "VoortijdigSchoolverlaters_2": "meetwaarde (aantal)",
       "SchoolverlatersMetStartkwalificatie_3": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2023/'24"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
@@ -16312,10 +16316,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2023/'24"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "b34bb61dd6fb9611",
@@ -16462,6 +16462,10 @@
       "VoortijdigSchoolverlaters_2": "meetwaarde (aantal)",
       "SchoolverlatersMetStartkwalificatie_3": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2023/'24"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -16471,10 +16475,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2023/'24"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "f0c797fbaaee23fb",
@@ -16618,6 +16618,10 @@
       "VoortijdigSchoolverlaters_2": "meetwaarde (aantal)",
       "SchoolverlatersMetStartkwalificatie_3": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2023/'24"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -16627,10 +16631,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2023/'24"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "46f10aebf9582a56",
@@ -16787,6 +16787,10 @@
       "VoortijdigSchoolverlaters_2": "meetwaarde (aantal)",
       "SchoolverlatersMetStartkwalificatie_3": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2023/'24"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -16796,10 +16800,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2023/'24"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "351b64edc91e0bf2",
@@ -16950,6 +16950,10 @@
       "ZonderStartkwalificatieUurloon_2": "meetwaarde (euro)",
       "MetStartkwalificatieUurloon_3": "meetwaarde (euro)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2023/'24"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoort": "Onderwijssoort",
@@ -16958,10 +16962,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2023/'24"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "445bae6c7091de2e",
@@ -17301,16 +17301,16 @@
       "BrutoArbeidsparticipatie_23": "meetwaarde (%)",
       "NettoArbeidsparticipatie_24": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2013 1e kwartaal",
+      "2026 2e kwartaal"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
       "Hoogst behaald onderwijsniveau": "HoogstBehaaldOnderwijsniveau",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2013 1e kwartaal",
-      "2026 2e kwartaal"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "abdd6b30cb350860",
@@ -17435,6 +17435,10 @@
       "Perioden": "tijd-dimensie",
       "BeroepsEnNietBeroepsbevolking_1": "meetwaarde (x 1 000)"
     },
+    "_periode_waarden": [
+      "2013 1e kwartaal",
+      "2026 2e kwartaal"
+    ],
     "_dimensie_sleutels": {
       "Arbeidspositie": "Arbeidspositie",
       "Onderwijs": "Onderwijs",
@@ -17442,10 +17446,6 @@
       "Leeftijd": "Leeftijd",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2013 1e kwartaal",
-      "2026 2e kwartaal"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "321e42f8d3cb8412",
@@ -17545,14 +17545,14 @@
       "OntstaneVacatures_2": "meetwaarde (x 1 000)",
       "VervuldeVacatures_3": "meetwaarde (x 1 000)"
     },
-    "_dimensie_sleutels": {
-      "Overheidssectoren": "Overheidssectoren",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1997 1e kwartaal",
       "2026 2e kwartaal"
     ],
+    "_dimensie_sleutels": {
+      "Overheidssectoren": "Overheidssectoren",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "19eb3e3d89bcc42d",
@@ -17698,6 +17698,10 @@
       "LVZonderPsychischeKlachtenMHI5_4": "meetwaarde (jaren)",
       "LVZonderGALIBeperkingen_5": "meetwaarde (jaren)"
     },
+    "_periode_waarden": [
+      "2007/2010",
+      "2021/2024"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd (op 31 december)": "LeeftijdOp31December",
@@ -17705,10 +17709,6 @@
       "Marges": "Marges",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/2010",
-      "2021/2024"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "1346b5bfc97e3799",
@@ -18452,15 +18452,15 @@
       "BesmettingOpHetWerk_65": "meetwaarde (%)",
       "AndereReden_66": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2014",
+      "2025"
+    ],
     "_dimensie_sleutels": {
       "Kenmerken werknemers": "KenmerkenWerknemers",
       "Marges": "Marges",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2014",
-      "2025"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "316cfee0ca84de8f",
@@ -18598,6 +18598,10 @@
       "Perioden": "tijd-dimensie",
       "Jongeren15Tot27Jaar_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2005",
+      "2024"
+    ],
     "_dimensie_sleutels": {
       "Onderwijsvolgend": "Onderwijsvolgend",
       "Arbeidskenmerken": "Arbeidskenmerken",
@@ -18606,10 +18610,6 @@
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005",
-      "2024"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "b1474838ea41118f",
@@ -18740,6 +18740,10 @@
       "Perioden": "tijd-dimensie",
       "Jongeren15Tot27Jaar_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2005",
+      "2024"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Arbeidskenmerken": "Arbeidskenmerken",
@@ -18749,10 +18753,6 @@
       "Uitkering": "Uitkering",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005",
-      "2024"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "9642dac06a2e727f",
@@ -19081,16 +19081,16 @@
       "BrutoArbeidsparticipatie_23": "meetwaarde (%)",
       "NettoArbeidsparticipatie_24": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2013 1e kwartaal",
+      "2026 2e kwartaal"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
       "Onderwijsvolgend": "Onderwijsvolgend",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2013 1e kwartaal",
-      "2026 2e kwartaal"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "38f476cdf43e54c6",
@@ -19431,16 +19431,16 @@
       "BrutoArbeidsparticipatie_23": "meetwaarde (%)",
       "NettoArbeidsparticipatie_24": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2013 1e kwartaal",
+      "2026 2e kwartaal"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
       "Hoogst behaald onderwijsniveau": "HoogstBehaaldOnderwijsniveau",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2013 1e kwartaal",
-      "2026 2e kwartaal"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "abdd6b30cb350860",
@@ -19540,15 +19540,15 @@
       "Perioden": "tijd-dimensie",
       "WerklozeBeroepsbevolking_1": "meetwaarde (x 1 000)"
     },
+    "_periode_waarden": [
+      "2013 1e kwartaal",
+      "2026 2e kwartaal"
+    ],
     "_dimensie_sleutels": {
       "Werkloosheidsduur": "Werkloosheidsduur",
       "Persoonskenmerken": "Persoonskenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2013 1e kwartaal",
-      "2026 2e kwartaal"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "c78f2139bfa12190",
@@ -19702,15 +19702,15 @@
       "BrutoArbeidsparticipatie_7": "meetwaarde (%)",
       "NettoArbeidsparticipatie_8": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "1969",
+      "2021"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1969",
-      "2021"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "f6a5b8613df733f0",
@@ -19938,6 +19938,10 @@
       "ZelfstandigeZonderPersoneelZzp_8": "meetwaarde (% van de werkzame bevolking)",
       "ZelfstMetPersoneelEnMeewGezinslid_9": "meetwaarde (% van de werkzame bevolking)"
     },
+    "_periode_waarden": [
+      "2014",
+      "2023"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
@@ -19946,10 +19950,6 @@
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2014",
-      "2023"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "d73d2ef3688b1e8d",
@@ -20085,13 +20085,13 @@
       "TotaleBevolkingsgroei_7": "meetwaarde (aantal)",
       "BevolkingAanHetEindVanDePeriode_8": "meetwaarde (aantal)"
     },
-    "_dimensie_sleutels": {
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1995 januari",
       "2026 augustus"
     ],
+    "_dimensie_sleutels": {
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "4fd96aa8f8dcb80a",
@@ -20334,14 +20334,14 @@
       "BevolkingsgroeiSinds1JanuariRela_14": "meetwaarde (%)",
       "BevolkingAanHetEindeVanDePeriode_15": "meetwaarde (aantal)"
     },
-    "_dimensie_sleutels": {
-      "Regio's": "RegioS",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "2002 januari",
       "2026 augustus"
     ],
+    "_dimensie_sleutels": {
+      "Regio's": "RegioS",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "8a7fece02c2dde9c",
@@ -20547,6 +20547,10 @@
       "AdministratieveAfvoeringen_5": "meetwaarde (aantal)",
       "SaldoAdministratieveCorrecties_6": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2010",
+      "2025"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -20554,10 +20558,6 @@
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2010",
-      "2025"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "9b1ec3f173a4e60d",
@@ -20668,16 +20668,16 @@
       "Perioden": "tijd-dimensie",
       "Bevolking_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1950",
+      "2026"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
       "Burgerlijke staat": "BurgerlijkeStaat",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1950",
-      "2026"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "3dee10d0140303db",
@@ -20962,14 +20962,14 @@
       "EmigratieInclusiefCorrecties_21": "meetwaarde (aantal)",
       "MigratiesaldoInclusiefCorrecties_22": "meetwaarde (aantal)"
     },
-    "_dimensie_sleutels": {
-      "Prognose(-interval)": "PrognoseInterval",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "2025",
       "2070"
     ],
+    "_dimensie_sleutels": {
+      "Prognose(-interval)": "PrognoseInterval",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "45184152fe9d87aa",
@@ -21072,15 +21072,15 @@
       "Perioden": "tijd-dimensie",
       "BevolkingOp1Januari_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2025",
+      "2070"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2025",
-      "2070"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "0b5d5031c7db784c",
@@ -21536,13 +21536,13 @@
       "JongsteKind12Tot18Jaar_39": "meetwaarde (aantal)",
       "JongsteKind18JaarOfOuder_40": "meetwaarde (aantal)"
     },
-    "_dimensie_sleutels": {
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "2025",
       "2070"
     ],
+    "_dimensie_sleutels": {
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "85fabe0ed26e3bc5",
@@ -21859,13 +21859,13 @@
       "GewerkteUren_25": "meetwaarde (mln uren)",
       "MaterieleOverheidsconsumptieIMOC_26": "meetwaarde (%)"
     },
-    "_dimensie_sleutels": {
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1995",
       "2026 2e kwartaal"
     ],
+    "_dimensie_sleutels": {
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "585b3a4a3354480d",
@@ -23998,14 +23998,14 @@
       "ProductgebondenSubsidies_206": "meetwaarde (mln euro)",
       "NietProductgebondenSubsidies_207": "meetwaarde (mln euro)"
     },
-    "_dimensie_sleutels": {
-      "Soort gegevens": "SoortGegevens",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1995 1e kwartaal",
       "2026 2e kwartaal"
     ],
+    "_dimensie_sleutels": {
+      "Soort gegevens": "SoortGegevens",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "0c8cefa9532eea02",
@@ -24180,14 +24180,14 @@
       "OngelijkheidVermogen_8": "meetwaarde (Ginicoëfficiënt)",
       "FinancieleWelvaart_9": "meetwaarde (Gemiddeld percentiel)"
     },
-    "_dimensie_sleutels": {
-      "Kenmerken van huishoudens": "KenmerkenVanHuishoudens",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "2011",
       "2024"
     ],
+    "_dimensie_sleutels": {
+      "Kenmerken van huishoudens": "KenmerkenVanHuishoudens",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "776f6523a0256c22",
@@ -24710,16 +24710,16 @@
       "PersonenTot145ArmoedegrensRelatief_40": "meetwaarde (%)",
       "PersonenTot150ArmoedegrensRelatief_41": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2018",
+      "2024"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
       "Persoons- en huishoudenskenmerken": "PersoonsEnHuishoudenskenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2018",
-      "2024"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "4b90644f82e94742",
@@ -24848,15 +24848,15 @@
       "OverledenenTafelbevolking_3": "meetwaarde (aantal)",
       "Levensverwachting_4": "meetwaarde (jaar)"
     },
+    "_periode_waarden": [
+      "1861 tot 1866",
+      "2021 tot 2026"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd (op 31 december)": "LeeftijdOp31December",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1861 tot 1866",
-      "2021 tot 2026"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "eeca93ebe6f79af1",
@@ -27880,14 +27880,14 @@
       "Buurten_292": "meetwaarde (aantal)",
       "KoppelvariabeleRegioCode_293": "meetwaarde (code)"
     },
-    "_dimensie_sleutels": {
-      "Regio's": "RegioS",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1995",
       "2026"
     ],
+    "_dimensie_sleutels": {
+      "Regio's": "RegioS",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "e855eb0f9f9d70b8",
@@ -27989,6 +27989,10 @@
       "Perioden": "tijd-dimensie",
       "Jongeren18Tot25Jaar_1": "meetwaarde (x 1 000)"
     },
+    "_periode_waarden": [
+      "2013",
+      "2025"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Geboorteland (ouders)": "GeboortelandOuders",
@@ -27996,10 +28000,6 @@
       "Voortijdig schoolverlater": "VoortijdigSchoolverlater",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2013",
-      "2025"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "8677c99b51ec3308",
@@ -28130,6 +28130,10 @@
       "Perioden": "tijd-dimensie",
       "Jongeren15Tot27Jaar_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2005",
+      "2018"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
@@ -28139,10 +28143,6 @@
       "Ingeschreven UWV werkbedrijf": "IngeschrevenUWVWerkbedrijf",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005",
-      "2018"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "8aa87764b3df2712",
@@ -28278,6 +28278,10 @@
       "Perioden": "tijd-dimensie",
       "Jongeren15Tot27Jaar_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2005",
+      "2021"
+    ],
     "_dimensie_sleutels": {
       "Onderwijsvolgend": "Onderwijsvolgend",
       "Arbeidskenmerken": "Arbeidskenmerken",
@@ -28286,10 +28290,6 @@
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005",
-      "2021"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "b1474838ea41118f",
@@ -28425,6 +28425,10 @@
       "Perioden": "tijd-dimensie",
       "Jongeren15Tot27Jaar_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2005",
+      "2022"
+    ],
     "_dimensie_sleutels": {
       "Onderwijsvolgend": "Onderwijsvolgend",
       "Arbeidskenmerken": "Arbeidskenmerken",
@@ -28433,10 +28437,6 @@
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005",
-      "2022"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "b1474838ea41118f",
@@ -28572,6 +28572,10 @@
       "Perioden": "tijd-dimensie",
       "Jongeren15Tot27Jaar_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2005",
+      "2020"
+    ],
     "_dimensie_sleutels": {
       "Onderwijsvolgend": "Onderwijsvolgend",
       "Arbeidskenmerken": "Arbeidskenmerken",
@@ -28580,10 +28584,6 @@
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005",
-      "2020"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "b1474838ea41118f",
@@ -28719,6 +28719,10 @@
       "Perioden": "tijd-dimensie",
       "Jongeren15Tot27Jaar_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2005",
+      "2019"
+    ],
     "_dimensie_sleutels": {
       "Onderwijsvolgend": "Onderwijsvolgend",
       "Arbeidskenmerken": "Arbeidskenmerken",
@@ -28727,10 +28731,6 @@
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005",
-      "2019"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "b1474838ea41118f",
@@ -28866,6 +28866,10 @@
       "Perioden": "tijd-dimensie",
       "Jongeren15Tot27Jaar_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2005",
+      "2018"
+    ],
     "_dimensie_sleutels": {
       "Onderwijsvolgend": "Onderwijsvolgend",
       "Kenmerken arbeid": "KenmerkenArbeid",
@@ -28874,10 +28878,6 @@
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005",
-      "2018"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "02ea38330628e1c9",
@@ -29013,6 +29013,10 @@
       "Perioden": "tijd-dimensie",
       "Jongeren15Tot27Jaar_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2005",
+      "2017"
+    ],
     "_dimensie_sleutels": {
       "Onderwijsdeelname": "Onderwijsdeelname",
       "Kenmerken arbeid": "KenmerkenArbeid",
@@ -29021,10 +29025,6 @@
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005",
-      "2017"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "7d08794aa344986f",
@@ -29160,6 +29160,10 @@
       "Perioden": "tijd-dimensie",
       "Jongeren15Tot27Jaar_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2005",
+      "2016"
+    ],
     "_dimensie_sleutels": {
       "Onderwijsdeelname": "Onderwijsdeelname",
       "Kenmerken arbeid": "KenmerkenArbeid",
@@ -29168,10 +29172,6 @@
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005",
-      "2016"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "7d08794aa344986f",
@@ -29307,6 +29307,10 @@
       "Perioden": "tijd-dimensie",
       "Jongeren15Tot27Jaar_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2005",
+      "2015"
+    ],
     "_dimensie_sleutels": {
       "Onderwijsdeelname": "Onderwijsdeelname",
       "Kenmerken arbeid": "KenmerkenArbeid",
@@ -29315,10 +29319,6 @@
       "Regio": "Regio",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005",
-      "2015"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "ac635b266a188b86",
@@ -29487,16 +29487,16 @@
       "WerknemerEnZelfstandige_5": "meetwaarde (aantal)",
       "NietWerkzameJongeren_6": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2005",
+      "2013"
+    ],
     "_dimensie_sleutels": {
       "Onderwijsvolgend": "Onderwijsvolgend",
       "Uitkering sociale zekerheid": "UitkeringSocialeZekerheid",
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005",
-      "2013"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "a9f87a338a362d1f",
@@ -29665,16 +29665,16 @@
       "WerknemerEnZelfstandige_5": "meetwaarde (aantal)",
       "NietWerkzameJongeren_6": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2005",
+      "2011"
+    ],
     "_dimensie_sleutels": {
       "Onderwijsvolgend": "Onderwijsvolgend",
       "Uitkering sociale zekerheid": "UitkeringSocialeZekerheid",
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005",
-      "2011"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "a9f87a338a362d1f",
@@ -29875,6 +29875,10 @@
       "NettoArbeidsparticipatie_7": "meetwaarde (%)",
       "Werkloosheidspercentage_8": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2001",
+      "2012"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -29883,10 +29887,6 @@
       "Onderwijsrichting": "Onderwijsrichting",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2001",
-      "2012"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "0fd8fa646793212f",
@@ -30416,6 +30416,10 @@
       "LoonVanWerknemersHogerBeroepsond_38": "meetwaarde (1 000 euro)",
       "LoonVanWerknemersWetenschOnderw_39": "meetwaarde (1 000 euro)"
     },
+    "_periode_waarden": [
+      "Cohort 1999/'00",
+      "Cohort 2004/'05"
+    ],
     "_dimensie_sleutels": {
       "Afstudeerrichting": "Afstudeerrichting",
       "Geslacht": "Geslacht",
@@ -30425,10 +30429,6 @@
       "SBI'93": "SBI93",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "Cohort 1999/'00",
-      "Cohort 2004/'05"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "a1a34f6eda439653",
@@ -30547,6 +30547,10 @@
       "Perioden": "tijd-dimensie",
       "TotaalPersonen15Tot65Jaar_1": "meetwaarde (x 1000)"
     },
+    "_periode_waarden": [
+      "2001",
+      "2006"
+    ],
     "_dimensie_sleutels": {
       "Scholier": "Scholier",
       "Startkwalificatie": "Startkwalificatie",
@@ -30554,10 +30558,6 @@
       "Persoons- en arbeidskenmerken": "PersoonsEnArbeidskenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2001",
-      "2006"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "64d374860b051d29",
@@ -30699,16 +30699,16 @@
       "PersonenZonderStartkwalificatie_3": "meetwaarde (x 1000)",
       "PersonenMetStartkwalificatieOnbekend_4": "meetwaarde (x 1000)"
     },
+    "_periode_waarden": [
+      "2001",
+      "2013"
+    ],
     "_dimensie_sleutels": {
       "Onderwijsvolgend": "Onderwijsvolgend",
       "Leeftijd": "Leeftijd",
       "Persoons- en arbeidskenmerken": "PersoonsEnArbeidskenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2001",
-      "2013"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "209aac88afc79aac",
@@ -30804,15 +30804,15 @@
       "PersonenMetStartkwalificatieAantal_1": "meetwaarde (x 1000)",
       "PersonenMetStartkwalificatie_2": "meetwaarde (% personen met startkwalificatie)"
     },
+    "_periode_waarden": [
+      "2001",
+      "2006"
+    ],
     "_dimensie_sleutels": {
       "Leeftijd": "Leeftijd",
       "Kenmerken": "Kenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2001",
-      "2006"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "a01770a9f4af4ecf",
@@ -31102,6 +31102,10 @@
       "BblNiveau3_14": "meetwaarde (aantal)",
       "BblNiveau4_15": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2004/'05",
+      "2007/'08"
+    ],
     "_dimensie_sleutels": {
       "Opleidingsrichting en sector": "OpleidingsrichtingEnSector",
       "Kenmerken van het werk": "KenmerkenVanHetWerk",
@@ -31110,10 +31114,6 @@
       "Herkomstgroepering": "Herkomstgroepering",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2004/'05",
-      "2007/'08"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "8677106562a87f89",
@@ -31394,6 +31394,10 @@
       "BblNiveau3_14": "meetwaarde (aantal)",
       "BblNiveau4_15": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2004/'05",
+      "2007/'08"
+    ],
     "_dimensie_sleutels": {
       "Opleidingsrichting en sector": "OpleidingsrichtingEnSector",
       "Arbeidsmarktpositie": "Arbeidsmarktpositie",
@@ -31402,10 +31406,6 @@
       "Herkomstgroepering": "Herkomstgroepering",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2004/'05",
-      "2007/'08"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "7f8cb5dd459d3632",
@@ -31690,6 +31690,10 @@
       "BblNiveau3_14": "meetwaarde (aantal)",
       "BblNiveau4_15": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2004/'05",
+      "2007/'08"
+    ],
     "_dimensie_sleutels": {
       "Opleidingsrichting en sector": "OpleidingsrichtingEnSector",
       "Geslacht": "Geslacht",
@@ -31697,10 +31701,6 @@
       "Bedrijfstakken / branches (SBI'93)": "BedrijfstakkenBranchesSBI93",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2004/'05",
-      "2007/'08"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "802e851f8f116847",
@@ -31982,6 +31982,10 @@
       "BblNiveau3_14": "meetwaarde (aantal)",
       "BblNiveau4_15": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2004/'05",
+      "2007/'08"
+    ],
     "_dimensie_sleutels": {
       "Opleidingsrichting en sector": "OpleidingsrichtingEnSector",
       "Kenmerken van het werk": "KenmerkenVanHetWerk",
@@ -31990,10 +31994,6 @@
       "Leeftijd": "Leeftijd",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2004/'05",
-      "2007/'08"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "db147be02cb0a6e4",
@@ -32300,6 +32300,10 @@
       "BblNiveau3_14": "meetwaarde (aantal)",
       "BblNiveau4_15": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2004/'05",
+      "2007/'08"
+    ],
     "_dimensie_sleutels": {
       "Opleidingsrichting en sector": "OpleidingsrichtingEnSector",
       "Arbeidsmarktpositie": "Arbeidsmarktpositie",
@@ -32308,10 +32312,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2004/'05",
-      "2007/'08"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "ea195c6e382fe518",
@@ -32658,6 +32658,10 @@
       "BblNiveau3_20": "meetwaarde (aantal)",
       "BblNiveau4_21": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2013/'14"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
@@ -32666,10 +32670,6 @@
       "Bedrijfstakken/branches (SBI 2008)": "BedrijfstakkenBranchesSBI2008",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2013/'14"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "a38d805170c42967",
@@ -33010,6 +33010,10 @@
       "BblNiveau3_20": "meetwaarde (aantal)",
       "BblNiveau4_21": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2013/'14"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
@@ -33018,10 +33022,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2013/'14"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "b10a1dc83734170b",
@@ -33187,6 +33187,10 @@
       "SchoolverlatersMetStartkwalificatie_3": "meetwaarde (aantal)",
       "PercentageVoortijdigSchoolverlaters_4": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2005, vrijdag 30 september",
+      "2008, vrijdag 26 september"
+    ],
     "_dimensie_sleutels": {
       "Baankenmerken": "Baankenmerken",
       "Onderwijssoorten": "Onderwijssoorten",
@@ -33195,10 +33199,6 @@
       "Leeftijd": "Leeftijd",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005, vrijdag 30 september",
-      "2008, vrijdag 26 september"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "d2c99ede40ed49aa",
@@ -33373,6 +33373,10 @@
       "SchoolverlatersMetStartkwalificatie_3": "meetwaarde (aantal)",
       "PercentageVoortijdigSchoolverlaters_4": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2005, vrijdag 30 september",
+      "2008, vrijdag 26 september"
+    ],
     "_dimensie_sleutels": {
       "Arbeidsmarktpositie schoolverlaters": "ArbeidsmarktpositieSchoolverlaters",
       "Inkomsten schoolverlaters": "InkomstenSchoolverlaters",
@@ -33381,10 +33385,6 @@
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005, vrijdag 30 september",
-      "2008, vrijdag 26 september"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "5d5f93e846d26dc2",
@@ -33526,6 +33526,10 @@
       "SchoolverlatersMetStartkwalificatie_3": "meetwaarde (aantal)",
       "PercentageVoortijdigSchoolverlaters_4": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2005, vrijdag 30 september",
+      "2008, vrijdag 26 september"
+    ],
     "_dimensie_sleutels": {
       "Inkomsten uit baan": "InkomstenUitBaan",
       "Baankenmerken": "Baankenmerken",
@@ -33533,10 +33537,6 @@
       "Leeftijd": "Leeftijd",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005, vrijdag 30 september",
-      "2008, vrijdag 26 september"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "a6c08a028462f4dd",
@@ -33691,6 +33691,10 @@
       "SchoolverlatersMetStartkwalificatie_3": "meetwaarde (aantal)",
       "PercentageVoortijdigSchoolverlaters_4": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2005, vrijdag 30 september",
+      "2008, vrijdag 26 september"
+    ],
     "_dimensie_sleutels": {
       "Arbeidsmarktpositie schoolverlaters": "ArbeidsmarktpositieSchoolverlaters",
       "Onderwijssoorten": "Onderwijssoorten",
@@ -33699,10 +33703,6 @@
       "Leeftijd": "Leeftijd",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005, vrijdag 30 september",
-      "2008, vrijdag 26 september"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "f98d7f85b48af7a0",
@@ -33852,6 +33852,10 @@
       "VoortijdigSchoolverlaters_2": "meetwaarde (aantal)",
       "SchoolverlatersMetStartkwalificatie_3": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2020/'21"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
@@ -33861,10 +33865,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2020/'21"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "b58d8f8fa4b3bc73",
@@ -34007,6 +34007,10 @@
       "VoortijdigSchoolverlaters_2": "meetwaarde (aantal)",
       "SchoolverlatersMetStartkwalificatie_3": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2020/'21"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
@@ -34016,10 +34020,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2020/'21"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "5f63826e773fb80d",
@@ -34302,6 +34302,10 @@
       "BeroepbegeleidendeLeerwegBbl_17": "meetwaarde (aantal)",
       "Extranei_18": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2015/'16"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
@@ -34310,10 +34314,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2015/'16"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "9a8f78c1012119d1",
@@ -34474,6 +34474,10 @@
       "VoortijdigSchoolverlaters_2": "meetwaarde (aantal)",
       "SchoolverlatersMetStartkwalificatie_3": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2020/'21"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
@@ -34483,10 +34487,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2020/'21"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "e614ead55a4b6534",
@@ -34770,6 +34770,10 @@
       "BeroepbegeleidendeLeerwegBbl_17": "meetwaarde (aantal)",
       "Extranei_18": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2015/'16"
+    ],
     "_dimensie_sleutels": {
       "Persoonskenmerken": "Persoonskenmerken",
       "Arbeidskenmerken": "Arbeidskenmerken",
@@ -34777,10 +34781,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2015/'16"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "6e3705f3066aa634",
@@ -35060,6 +35060,10 @@
       "BeroepbegeleidendeLeerwegBbl_17": "meetwaarde (aantal)",
       "Extranei_18": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2015/'16"
+    ],
     "_dimensie_sleutels": {
       "Persoonskenmerken": "Persoonskenmerken",
       "Uitkeringen": "Uitkeringen",
@@ -35067,10 +35071,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2015/'16"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "7861b88ff72f4314",
@@ -35217,6 +35217,10 @@
       "VoortijdigSchoolverlaters_2": "meetwaarde (aantal)",
       "SchoolverlatersMetStartkwalificatie_3": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2020/'21"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
@@ -35226,10 +35230,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2020/'21"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "ae00f0ffd11af675",
@@ -35368,15 +35368,15 @@
       "NietVoortijdigSchoolverlaters_3": "meetwaarde (aantal)",
       "VoortijdigSchoolverlatersPercentage_4": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2012/'13",
+      "2024/'25"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2012/'13",
-      "2024/'25"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "940dd29a5c0a6500",
@@ -36188,6 +36188,10 @@
       "Perioden": "tijd-dimensie",
       "Gediplomeerden_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2000/'01",
+      "2021/'22"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -36196,10 +36200,6 @@
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2000/'01",
-      "2021/'22"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "7d66ca46106a91cc",
@@ -36378,6 +36378,10 @@
       "Perioden": "tijd-dimensie",
       "LeerlingenStudenten_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2000/'01",
+      "2022/'23"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -36386,10 +36390,6 @@
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2000/'01",
-      "2022/'23"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "9b4e89b40a59aeaa",
@@ -42191,14 +42191,14 @@
       "Mannen_570": "meetwaarde (absoluut)",
       "Vrouwen_571": "meetwaarde (absoluut)"
     },
-    "_dimensie_sleutels": {
-      "Regio": "Regio",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1991/'92",
       "1999/'00"
     ],
+    "_dimensie_sleutels": {
+      "Regio": "Regio",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "81b164a3dcb1e5b3",
@@ -42328,16 +42328,16 @@
       "Perioden": "tijd-dimensie",
       "LeerlingenStudenten_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1995/'96",
+      "2008/'09"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Herkomst van:": "HerkomstVan",
       "Doorstroom naar:": "DoorstroomNaar",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1995/'96",
-      "2008/'09"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "035ee5be01491e3a",
@@ -42580,15 +42580,15 @@
       "WoVoltijd_14": "meetwaarde (absoluut)",
       "WoDeeltijd_15": "meetwaarde (absoluut)"
     },
+    "_periode_waarden": [
+      "1990/'91",
+      "1994/'95"
+    ],
     "_dimensie_sleutels": {
       "Herkomst": "Herkomst",
       "Geslacht": "Geslacht",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1990/'91",
-      "1994/'95"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "d7aa19a397943e2c",
@@ -42755,6 +42755,10 @@
       "OnderwijsniveauHogerOnderwijs_5": "meetwaarde (x 1 000)",
       "StartkwalificatieOnbekend_6": "meetwaarde (x 1 000)"
     },
+    "_periode_waarden": [
+      "2005",
+      "2012"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -42762,10 +42766,6 @@
       "Kenmerken (niet) thuiswonende kinderen": "KenmerkenNietThuiswonendeKinderen",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005",
-      "2012"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "b7edf2c62e93f811",
@@ -43207,14 +43207,14 @@
       "VerzuimdWegensZiekteOngevalED_35": "meetwaarde (%)",
       "AantalDagenZiekteverzuim_36": "meetwaarde (dagen)"
     },
-    "_dimensie_sleutels": {
-      "Persoonskenmerken": "Persoonskenmerken",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1997",
       "2003"
     ],
+    "_dimensie_sleutels": {
+      "Persoonskenmerken": "Persoonskenmerken",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "0f7c935751eb1b9f",
@@ -43539,15 +43539,15 @@
       "DeeltoetsRekenen_24": "meetwaarde (gemiddelde)",
       "DeeltoetsInformatieverwerking_25": "meetwaarde (gemiddelde)"
     },
+    "_periode_waarden": [
+      "Cohort 1989",
+      "Cohort 1999"
+    ],
     "_dimensie_sleutels": {
       "Herkomst": "Herkomst",
       "Geslacht": "Geslacht",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "Cohort 1989",
-      "Cohort 1999"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "6aa4c64f6a1699d3",
@@ -43718,16 +43718,16 @@
       "LeerlingenGeenAchterstandscategorie_6": "meetwaarde (aantal)",
       "LeerlingenSpeciaalBasisonderwijs_7": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2011/'12",
+      "2021/'22"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Migratieachtergrond": "Migratieachtergrond",
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2011/'12",
-      "2021/'22"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "d30a97476f678069",
@@ -43867,6 +43867,10 @@
       "LeerlingenOpSpecialeScholenBasis_2": "meetwaarde (aantal)",
       "LeerlingenOpSpecialeScholenVO_3": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2011/'12",
+      "2021/'22"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Migratieachtergrond": "Migratieachtergrond",
@@ -43874,10 +43878,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2011/'12",
-      "2021/'22"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "713ad627e3e82fe0",
@@ -44012,6 +44012,10 @@
       "RekenenWiskunde_3": "meetwaarde (z-score)",
       "Studievaardigheden_4": "meetwaarde (z-score)"
     },
+    "_periode_waarden": [
+      "2005/'06",
+      "2016/'17"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Migratieachtergrond": "Migratieachtergrond",
@@ -44019,10 +44023,6 @@
       "Woonsituatie kind": "WoonsituatieKind",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005/'06",
-      "2016/'17"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "0be2b0f9c985d715",
@@ -44158,6 +44158,10 @@
       "RekenenWiskunde_3": "meetwaarde (z-score)",
       "Studievaardigheden_4": "meetwaarde (z-score)"
     },
+    "_periode_waarden": [
+      "2005/'06",
+      "2010/'11"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Gestandaardiseerd inkomen": "GestandaardiseerdInkomen",
@@ -44165,10 +44169,6 @@
       "Aanwezigheid ouders": "AanwezigheidOuders",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005/'06",
-      "2010/'11"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "cbb551f99461880b",
@@ -44459,15 +44459,15 @@
       "k_13Jaar_21": "meetwaarde (aantal)",
       "k_14JaarOfOuder_22": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1991/'92",
+      "2014/'15"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoorten": "Onderwijssoorten",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1991/'92",
-      "2014/'15"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "b3e22f0f1f393c17",
@@ -44741,15 +44741,15 @@
       "k_17Jaar_17": "meetwaarde (aantal)",
       "k_18JaarOfOuder_18": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1991/'92",
+      "2013/'14"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoorten/clusters": "OnderwijssoortenClusters",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1991/'92",
-      "2013/'14"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "7d4193920f6c3c23",
@@ -45095,6 +45095,10 @@
       "LwooBKLeerjaar34_21": "meetwaarde (aantal)",
       "Praktijkonderwijs_22": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2003/'04",
+      "2021/'22"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leerjaren": "Leerjaren",
@@ -45104,10 +45108,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2003/'04",
-      "2021/'22"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "e866ae8ff6b98076",
@@ -45456,6 +45456,10 @@
       "LwooBKLeerjaar34_21": "meetwaarde (aantal)",
       "Praktijkonderwijs_22": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2003/'04",
+      "2021/'22"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leerjaren": "Leerjaren",
@@ -45464,10 +45468,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2003/'04",
-      "2021/'22"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "3aa801751b08efcd",
@@ -47075,6 +47075,10 @@
       "VmboBLeerwerktrajectIntersectProgr_148": "meetwaarde (aantal)",
       "VmboBAssistentoplIntersectProgr_149": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2003/'04",
+      "2021/'22"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leerjaren": "Leerjaren",
@@ -47083,10 +47087,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2003/'04",
-      "2021/'22"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "5a8e93fd9df61ae6",
@@ -47269,6 +47269,10 @@
       "TotaalAantalLeerlingenInclusiefAOCS_3": "meetwaarde (aantal)",
       "PercentageLwooInclusiefAOCS_4": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2003/'04",
+      "2007/'08*"
+    ],
     "_dimensie_sleutels": {
       "Populatie": "Populatie",
       "Regio's": "RegioS",
@@ -47278,10 +47282,6 @@
       "Geslacht": "Geslacht",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2003/'04",
-      "2007/'08*"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "04e8a0197ccbaf0b",
@@ -47436,6 +47436,10 @@
       "LeerlingenInLeerjaar3_1": "meetwaarde (aantal)",
       "LeerlingenIn_2": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2003/'04",
+      "2004/'05"
+    ],
     "_dimensie_sleutels": {
       "Populatie": "Populatie",
       "Gemeenten": "Gemeenten",
@@ -47443,10 +47447,6 @@
       "Herkomst": "Herkomst",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2003/'04",
-      "2004/'05"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "bde03749999688f7",
@@ -47775,6 +47775,10 @@
       "LwooBKLeerjaar34_21": "meetwaarde (aantal)",
       "Praktijkonderwijs_22": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2003/'04",
+      "2021/'22"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -47782,10 +47786,6 @@
       "Migratieachtergrond": "Migratieachtergrond",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2003/'04",
-      "2021/'22"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "be72dde03ef22610",
@@ -48980,16 +48980,16 @@
       "VmboBAlgemeenTechniek_109": "meetwaarde (aantal)",
       "VmboBLeerwerktrajectTechniek_110": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1990/'91",
+      "2002/'03"
+    ],
     "_dimensie_sleutels": {
       "Leerjaar": "Leerjaar",
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1990/'91",
-      "2002/'03"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "849c23b4ad4c5d87",
@@ -49201,14 +49201,14 @@
       "VanEenAutochtoneLeerling_11": "meetwaarde (%)",
       "VanEenNietWestersAllochtoneLeerling_12": "meetwaarde (%)"
     },
-    "_dimensie_sleutels": {
-      "Regio's": "RegioS",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "2003/'04",
       "2011/'12"
     ],
+    "_dimensie_sleutels": {
+      "Regio's": "RegioS",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "bc159df656d64e91",
@@ -49458,6 +49458,10 @@
       "PrimaireOpleiding_9": "meetwaarde (aantal)",
       "VoortgezetteOpleiding_10": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1990/'91",
+      "2016/'17"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leerweg": "Leerweg",
@@ -49466,10 +49470,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1990/'91",
-      "2016/'17"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "a16861794040d8fe",
@@ -49713,6 +49713,10 @@
       "PrimaireOpleiding_9": "meetwaarde (aantal)",
       "VoortgezetteOpleiding_10": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1990/'91",
+      "2016/'17"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leerweg": "Leerweg",
@@ -49722,10 +49726,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1990/'91",
-      "2016/'17"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "2aae1cc0c794e820",
@@ -49967,6 +49967,10 @@
       "PrimaireOpleiding_9": "meetwaarde (aantal)",
       "VoortgezetteOpleiding_10": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1990/'91",
+      "2016/'17"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -49975,10 +49979,6 @@
       "Herkomstgroepering": "Herkomstgroepering",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1990/'91",
-      "2016/'17"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "f8a4a686302ce79c",
@@ -50220,6 +50220,10 @@
       "PrimaireOpleiding_9": "meetwaarde (aantal)",
       "VoortgezetteOpleiding_10": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1990/'91",
+      "2016/'17"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leerweg": "Leerweg",
@@ -50228,10 +50232,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1990/'91",
-      "2016/'17"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "13e6782c9cc1e120",
@@ -50388,6 +50388,10 @@
       "Perioden": "tijd-dimensie",
       "MboStudenten_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2015/'16",
+      "2021/'22"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Niveau": "Niveau",
@@ -50396,10 +50400,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2015/'16",
-      "2021/'22"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "8201f98a494be329",
@@ -50536,6 +50536,10 @@
       "Perioden": "tijd-dimensie",
       "MboStudenten_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2015/'16",
+      "2021/'22"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Niveau": "Niveau",
@@ -50544,10 +50548,6 @@
       "Migratieachtergrond": "Migratieachtergrond",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2015/'16",
-      "2021/'22"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "79523bc30e3d5c59",
@@ -50657,6 +50657,10 @@
       "Perioden": "tijd-dimensie",
       "MboStudenten_1": "meetwaarde (Aantal)"
     },
+    "_periode_waarden": [
+      "2005/'06",
+      "2021/'22"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Niveau": "Niveau",
@@ -50664,10 +50668,6 @@
       "Migratieachtergrond": "Migratieachtergrond",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005/'06",
-      "2021/'22"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "d9fd310d831b8cf1",
@@ -50824,6 +50824,10 @@
       "Perioden": "tijd-dimensie",
       "GediplomeerdenMbo_1": "meetwaarde (Aantal)"
     },
+    "_periode_waarden": [
+      "2015/'16",
+      "2020/'21"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Niveau": "Niveau",
@@ -50832,10 +50836,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2015/'16",
-      "2020/'21"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "ee2bd45634d264b9",
@@ -51077,6 +51077,10 @@
       "PrimaireOpleiding_9": "meetwaarde (aantal)",
       "VoortgezetteOpleiding_10": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1990/'91",
+      "2015/'16"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leerweg": "Leerweg",
@@ -51086,10 +51090,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1990/'91",
-      "2015/'16"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "d3dab92ef3b2f4ca",
@@ -51330,6 +51330,10 @@
       "PrimaireOpleiding_9": "meetwaarde (aantal)",
       "VoortgezetteOpleiding_10": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1990/'91",
+      "2015/'16"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leerweg": "Leerweg",
@@ -51338,10 +51342,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1990/'91",
-      "2015/'16"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "8f62d0f63693c65c",
@@ -51588,6 +51588,10 @@
       "PrimaireOpleiding_9": "meetwaarde (aantal)",
       "VoortgezetteOpleiding_10": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1990/'91",
+      "2015/'16"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leerweg": "Leerweg",
@@ -51596,10 +51600,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1990/'91",
-      "2015/'16"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "3cfa11109190740e",
@@ -51838,6 +51838,10 @@
       "PrimaireOpleiding_9": "meetwaarde (aantal)",
       "VoortgezetteOpleiding_10": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1990/'91",
+      "2015/'16"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -51846,10 +51850,6 @@
       "Herkomstgroepering": "Herkomstgroepering",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1990/'91",
-      "2015/'16"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "76c156481f9eb21d",
@@ -51959,6 +51959,10 @@
       "Perioden": "tijd-dimensie",
       "GediplomeerdenMbo_1": "meetwaarde (Aantal)"
     },
+    "_periode_waarden": [
+      "2005/'06",
+      "2020/'21"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Niveau": "Niveau",
@@ -51966,10 +51970,6 @@
       "Migratieachtergrond": "Migratieachtergrond",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005/'06",
-      "2020/'21"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "df4419c9c3a582a6",
@@ -52106,6 +52106,10 @@
       "Perioden": "tijd-dimensie",
       "GediplomeerdenMbo_1": "meetwaarde (Aantal)"
     },
+    "_periode_waarden": [
+      "2015/'16",
+      "2020/'21"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Niveau": "Niveau",
@@ -52114,10 +52118,6 @@
       "Migratieachtergrond": "Migratieachtergrond",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2015/'16",
-      "2020/'21"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "413b41be34c47923",
@@ -52489,6 +52489,10 @@
       "BblNiveau3_19": "meetwaarde (aantal)",
       "BblNiveau4_20": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2006/'07",
+      "2009/'10"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Mbo sector/opleidingsricht. bij instroom": "MboSectorOpleidingsrichtBijInstroom",
@@ -52498,10 +52502,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2006/'07",
-      "2009/'10"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "960f85fa9ecc74e3",
@@ -52677,6 +52677,10 @@
       "AantalDeelnemers_1": "meetwaarde (aantal)",
       "PercentageDeelnemers_2": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2004/'05 naar 2005/'06",
+      "2016/'17 naar 2017/'18"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijspositie basisjaar": "OnderwijspositieBasisjaar",
@@ -52686,10 +52690,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2004/'05 naar 2005/'06",
-      "2016/'17 naar 2017/'18"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "fdaa9bf1c3863518",
@@ -53398,16 +53398,16 @@
       "MetDiploma_57": "meetwaarde (aantal)",
       "ZonderDiploma_58": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2004/'05 naar 2005/'06",
+      "2009/'10 naar 2010/'11"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Mbo leerweg en niveau bestemmingsjaar": "MboLeerwegEnNiveauBestemmingsjaar",
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2004/'05 naar 2005/'06",
-      "2009/'10 naar 2010/'11"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "7f0118744474c1a3",
@@ -54225,6 +54225,10 @@
       "k_8PersoonlijkeDienstverleningVervo_68": "meetwaarde (aantal)",
       "k_9Algemeen_69": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2004/'05 naar 2005/'06",
+      "2009/'10 naar 2010/'11"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Mbo niveau bestemmingsjaar": "MboNiveauBestemmingsjaar",
@@ -54232,10 +54236,6 @@
       "Regio's": "RegioS",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2004/'05 naar 2005/'06",
-      "2009/'10 naar 2010/'11"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "9eab0fe2719e0de6",
@@ -54486,6 +54486,10 @@
       "BblNiveau3_14": "meetwaarde (aantal)",
       "BblNiveau4_15": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2009/'10",
+      "2020/'21"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -54493,10 +54497,6 @@
       "Bedrijfstakken (SBI 2008) 1 jaar eerder": "BedrijfstakkenSBI20081JaarEerder",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2009/'10",
-      "2020/'21"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "27c9db64ed41d389",
@@ -54847,6 +54847,10 @@
       "BblNiveau3_19": "meetwaarde (aantal)",
       "BblNiveau4_20": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2006/'07",
+      "2009/'10"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Mbo sector/opleidingsricht. bij instroom": "MboSectorOpleidingsrichtBijInstroom",
@@ -54855,10 +54859,6 @@
       "Persoonskenmerken": "Persoonskenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2006/'07",
-      "2009/'10"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "5bc86915c8b76d8b",
@@ -55133,6 +55133,10 @@
       "BblNiveau3_14": "meetwaarde (aantal)",
       "BblNiveau4_15": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2009/'10",
+      "2020/'21"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
@@ -55140,10 +55144,6 @@
       "Maatschappelijke positie 1 jaar eerder": "MaatschappelijkePositie1JaarEerder",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2009/'10",
-      "2020/'21"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "b40e917e1a0d7a2c",
@@ -55468,6 +55468,10 @@
       "BblNiveau3_19": "meetwaarde (aantal)",
       "BblNiveau4_20": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2006/'07",
+      "2009/'10"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Mbo sector/opleidingsricht. bij instroom": "MboSectorOpleidingsrichtBijInstroom",
@@ -55475,10 +55479,6 @@
       "Leeftijd": "Leeftijd",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2006/'07",
-      "2009/'10"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "2d304aa4a9b51d63",
@@ -55639,6 +55639,10 @@
       "Perioden": "tijd-dimensie",
       "StudentenMbo_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2008/'09 naar 2009/'10",
+      "2020/'21 naar 2021/'22"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Migratieachtergrond": "Migratieachtergrond",
@@ -55648,10 +55652,6 @@
       "Sector in volgend studiejaar": "SectorInVolgendStudiejaar",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2008/'09 naar 2009/'10",
-      "2020/'21 naar 2021/'22"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "2bec6500d96fecb8",
@@ -56712,16 +56712,16 @@
       "MetDiploma_57": "meetwaarde (aantal)",
       "ZonderDiploma_58": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2004/'05 naar 2005/'06",
+      "2008/'09 naar 2009/'10"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Mbo leerweg en niveau bestemmingsjaar": "MboLeerwegEnNiveauBestemmingsjaar",
       "Huishoudkenmerken": "Huishoudkenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2004/'05 naar 2005/'06",
-      "2008/'09 naar 2009/'10"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "ca5f5c4cd3015cfc",
@@ -57414,16 +57414,16 @@
       "MetDiploma_57": "meetwaarde (aantal)",
       "ZonderDiploma_58": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2004/'05 naar 2005/'06",
+      "2009/'10 naar 2010/'11"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Mbo leerweg en niveau bestemmingsjaar": "MboLeerwegEnNiveauBestemmingsjaar",
       "Persoonskenmerken": "Persoonskenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2004/'05 naar 2005/'06",
-      "2009/'10 naar 2010/'11"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "9329713057d7c364",
@@ -58223,6 +58223,10 @@
       "k_8PersoonlijkeDienstverleningVervo_68": "meetwaarde (aantal)",
       "k_9Algemeen_69": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2004/'05 naar 2005/'06",
+      "2008/'09 naar 2009/'10"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Mbo niveau bestemmingsjaar": "MboNiveauBestemmingsjaar",
@@ -58230,10 +58234,6 @@
       "Huishoudkenmerken": "Huishoudkenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2004/'05 naar 2005/'06",
-      "2008/'09 naar 2009/'10"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "f8d730c876b6147f",
@@ -59035,6 +59035,10 @@
       "k_8PersoonlijkeDienstverleningVervo_68": "meetwaarde (aantal)",
       "k_9Algemeen_69": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2004/'05 naar 2005/'06",
+      "2009/'10 naar 2010/'11"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Mbo niveau bestemmingsjaar": "MboNiveauBestemmingsjaar",
@@ -59042,10 +59046,6 @@
       "Persoonskenmerken": "Persoonskenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2004/'05 naar 2005/'06",
-      "2009/'10 naar 2010/'11"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "03c4839f308461d7",
@@ -61878,6 +61878,10 @@
       "TotaalGediplomeerden_1": "meetwaarde (aantal)",
       "StudieduurInMaanden_2": "meetwaarde (maanden)"
     },
+    "_periode_waarden": [
+      "1995/'96",
+      "2012/'13"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Diplomasoort": "Diplomasoort",
@@ -61887,10 +61891,6 @@
       "Opleidingsvorm": "Opleidingsvorm",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1995/'96",
-      "2012/'13"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "0378138fb0e18e00",
@@ -62003,6 +62003,10 @@
       "TotaalGeslaagden_1": "meetwaarde (absoluut)",
       "StudieduurInMaanden_2": "meetwaarde (maanden)"
     },
+    "_periode_waarden": [
+      "Cohort 1995",
+      "Cohort 2004"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Herkomstgroepering": "Herkomstgroepering",
@@ -62010,10 +62014,6 @@
       "Opleidingsvorm": "Opleidingsvorm",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "Cohort 1995",
-      "Cohort 2004"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "4cae57b4571d1de9",
@@ -62678,6 +62678,10 @@
       "InJaar8_53": "meetwaarde (in % van totaal)",
       "InJaar9_54": "meetwaarde (in % van totaal)"
     },
+    "_periode_waarden": [
+      "Startjaar 1995",
+      "Startjaar 2012"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Studierichting": "Studierichting",
@@ -62686,10 +62690,6 @@
       "Opleidingsvorm": "Opleidingsvorm",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "Startjaar 1995",
-      "Startjaar 2012"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "91bb8fc259a5ad90",
@@ -62876,6 +62876,10 @@
       "WoMaster_4": "meetwaarde (aantal)",
       "Vervolgopleidingen_5": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1995/'96",
+      "2015/'16"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoort": "Onderwijssoort",
@@ -62884,10 +62888,6 @@
       "Herkomstgroepering": "Herkomstgroepering",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1995/'96",
-      "2015/'16"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "9883918fb7842321",
@@ -63070,6 +63070,10 @@
       "WoMaster_4": "meetwaarde (aantal)",
       "Vervolgopleidingen_5": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1995/'96",
+      "2015/'16"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -63078,10 +63082,6 @@
       "Opleidingsvorm": "Opleidingsvorm",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1995/'96",
-      "2015/'16"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "e76696cd4ed43320",
@@ -63213,16 +63213,16 @@
       "Perioden": "tijd-dimensie",
       "Gediplomeerden_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1995/'96",
+      "2015/'16"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Studierichting": "Studierichting",
       "Herkomstgroepering": "Herkomstgroepering",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1995/'96",
-      "2015/'16"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "e14d239c1f1fce01",
@@ -63357,6 +63357,10 @@
       "Perioden": "tijd-dimensie",
       "Gediplomeerden_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1995/'96",
+      "2015/'16"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -63364,10 +63368,6 @@
       "Opleidingsvorm": "Opleidingsvorm",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1995/'96",
-      "2015/'16"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "9bfefe6f28eaf5ad",
@@ -63481,6 +63481,10 @@
       "Perioden": "tijd-dimensie",
       "Gediplomeerden_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2002/'03",
+      "2020/'21"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoort": "Onderwijssoort",
@@ -63489,10 +63493,6 @@
       "Migratieachtergrond": "Migratieachtergrond",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2002/'03",
-      "2020/'21"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "f39ce8709d1395cb",
@@ -63626,6 +63626,10 @@
       "Perioden": "tijd-dimensie",
       "Gediplomeerden_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2015/'16",
+      "2020/'21"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijssoort": "Onderwijssoort",
@@ -63634,10 +63638,6 @@
       "Migratieachtergrond": "Migratieachtergrond",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2015/'16",
-      "2020/'21"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "af43fe9a2184cdbf",
@@ -63894,13 +63894,13 @@
       "ZonderBetaaldWerk_19": "meetwaarde (in % van totaal)",
       "Onbekend_20": "meetwaarde (in % van totaal)"
     },
-    "_dimensie_sleutels": {
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1991",
       "2012"
     ],
+    "_dimensie_sleutels": {
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "f1faa745aa763188",
@@ -64092,6 +64092,10 @@
       "Bachelor_8": "meetwaarde (aantal)",
       "Gepromoveerden_9": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1990/'91",
+      "2013/'14"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -64099,10 +64103,6 @@
       "Opleidingsvorm": "Opleidingsvorm",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1990/'91",
-      "2013/'14"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "e1c333d491e65961",
@@ -64216,6 +64216,10 @@
       "TotaalGeslaagden_1": "meetwaarde (absoluut)",
       "StudieduurInMaanden_2": "meetwaarde (maanden)"
     },
+    "_periode_waarden": [
+      "Cohort 1995",
+      "Cohort 2004"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Herkomstgroepering": "Herkomstgroepering",
@@ -64223,10 +64227,6 @@
       "Opleidingsvorm": "Opleidingsvorm",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "Cohort 1995",
-      "Cohort 2004"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "08144d566c446bc1",
@@ -64310,15 +64310,15 @@
       "Perioden": "tijd-dimensie",
       "Gepromoveerden_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1990/'91",
+      "2015/'16"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Studierichting": "Studierichting",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1990/'91",
-      "2015/'16"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "235fd6217d53d4dc",
@@ -64981,6 +64981,10 @@
       "InJaar8_53": "meetwaarde (in % van totaal)",
       "InJaar9_54": "meetwaarde (in % van totaal)"
     },
+    "_periode_waarden": [
+      "Startjaar 1995",
+      "Startjaar 2012"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Vooropleiding": "Vooropleiding",
@@ -64989,10 +64993,6 @@
       "Herkomstgroepering": "Herkomstgroepering",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "Startjaar 1995",
-      "Startjaar 2012"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "cb242716be5f8368",
@@ -65141,6 +65141,10 @@
       "TotaalGediplomeerden_1": "meetwaarde (aantal)",
       "StudieduurInMaanden_2": "meetwaarde (maanden)"
     },
+    "_periode_waarden": [
+      "1995/'96",
+      "2012/'13"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Diplomasoort": "Diplomasoort",
@@ -65150,10 +65154,6 @@
       "Opleidingsvorm": "Opleidingsvorm",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1995/'96",
-      "2012/'13"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "3f654c4ab9dff03f",
@@ -65880,16 +65880,16 @@
       "InJaar9_63": "meetwaarde (in % van totaal)",
       "InJaar10OfMeer_64": "meetwaarde (in % van totaal)"
     },
+    "_periode_waarden": [
+      "Cohort 1991",
+      "Cohort 1994"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Sector": "Sector",
       "Vooropleiding": "Vooropleiding",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "Cohort 1991",
-      "Cohort 1994"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "5919ff8c0d6daf11",
@@ -66832,16 +66832,16 @@
       "InJaar8_83": "meetwaarde (in % van totaal)",
       "InJaar9_84": "meetwaarde (in % van totaal)"
     },
+    "_periode_waarden": [
+      "Cohort 1995",
+      "Cohort 2005"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Opleidingsclusters": "Opleidingsclusters",
       "Vooropleiding": "Vooropleiding",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "Cohort 1995",
-      "Cohort 2005"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "ca332499d9fed2ec",
@@ -67568,15 +67568,15 @@
       "InJaar9_64": "meetwaarde (in % van totaal)",
       "InJaar10_65": "meetwaarde (in % van totaal)"
     },
+    "_periode_waarden": [
+      "Cohort 1990",
+      "Cohort 1994"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "HOOP-gebieden": "HOOPGebieden",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "Cohort 1990",
-      "Cohort 1994"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "43447b04a0327eae",
@@ -68495,15 +68495,15 @@
       "InJaar8_83": "meetwaarde (in % van totaal)",
       "InJaar9_84": "meetwaarde (in % van totaal)"
     },
+    "_periode_waarden": [
+      "Cohort 1995",
+      "Cohort 2005"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Opleidingsclusters": "Opleidingsclusters",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "Cohort 1995",
-      "Cohort 2005"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "ed2bc199b83b5a56",
@@ -69230,16 +69230,16 @@
       "InJaar9_63": "meetwaarde (in % van totaal)",
       "InJaar10OfMeer_64": "meetwaarde (in % van totaal)"
     },
+    "_periode_waarden": [
+      "Cohort 1991",
+      "Cohort 1994"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Sector": "Sector",
       "Vooropleiding": "Vooropleiding",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "Cohort 1991",
-      "Cohort 1994"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "ba0db97c991c86d7",
@@ -70182,16 +70182,16 @@
       "InJaar8_83": "meetwaarde (in % van totaal)",
       "InJaar9_84": "meetwaarde (in % van totaal)"
     },
+    "_periode_waarden": [
+      "Cohort 1995",
+      "Cohort 2005"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Opleidingsclusters": "Opleidingsclusters",
       "Vooropleiding": "Vooropleiding",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "Cohort 1995",
-      "Cohort 2005"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "e31f4cc3d1348910",
@@ -70927,16 +70927,16 @@
       "InJaar9_64": "meetwaarde (in % van totaal)",
       "InJaar10_65": "meetwaarde (in % van totaal)"
     },
+    "_periode_waarden": [
+      "Cohort 1990",
+      "Cohort 1994"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "HOOP-gebieden": "HOOPGebieden",
       "Vooropleiding": "Vooropleiding",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "Cohort 1990",
-      "Cohort 1994"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "49de45bd0448bf85",
@@ -71878,16 +71878,16 @@
       "InJaar8_83": "meetwaarde (in % van totaal)",
       "InJaar9_84": "meetwaarde (in % van totaal)"
     },
+    "_periode_waarden": [
+      "Cohort 1995",
+      "Cohort 2005"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Opleidingsclusters": "Opleidingsclusters",
       "Vooropleiding": "Vooropleiding",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "Cohort 1995",
-      "Cohort 2005"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "e116bc7610852bb5",
@@ -72051,6 +72051,10 @@
       "VavoDeelnemersHavo_3": "meetwaarde (aantal)",
       "VavoDeelnemersVwo_4": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2006/'07",
+      "2021/'22"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Migratieachtergrond": "Migratieachtergrond",
@@ -72058,10 +72062,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2006/'07",
-      "2021/'22"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "d13f18426c008f68",
@@ -72226,6 +72226,10 @@
       "VavoGediplomeerdenHavo_3": "meetwaarde (aantal)",
       "VavoGediplomeerdenVwo_4": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2006/'07",
+      "2020/'21"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Migratieachtergrond": "Migratieachtergrond",
@@ -72233,10 +72237,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2006/'07",
-      "2020/'21"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "06242afc28128b51",
@@ -72324,15 +72324,15 @@
       "Perioden": "tijd-dimensie",
       "Deelnemers_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "1993",
+      "2006"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1993",
-      "2006"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "f3b72f2e92b0dab5",
@@ -72557,13 +72557,13 @@
       "NietCursusdeelnemers_3": "meetwaarde (x 1 000)",
       "CursusdeelnemersRelatief_4": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2007"
+    ],
     "_dimensie_sleutels": {
       "Bedrijfstakken/branches (SBI'93)": "BedrijfstakkenBranchesSBI93",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "e7307bf6a5f6d4af",
@@ -73147,13 +73147,13 @@
       "k_712MaandenIn_52": "meetwaarde (in % van het totaal)",
       "MeerDan12MaandenIn_53": "meetwaarde (in % van het totaal)"
     },
-    "_dimensie_sleutels": {
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1990/'91",
       "2000/'01"
     ],
+    "_dimensie_sleutels": {
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "f8944b577b911f27",
@@ -73389,6 +73389,10 @@
       "EducatieveRedzaamheidAlleenNiveau4_11": "meetwaarde (aantal)",
       "AlfabetiseringInclusiefOverig_12": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2006/'07",
+      "2014/'15"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -73397,10 +73401,6 @@
       "Generatie": "Generatie",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2006/'07",
-      "2014/'15"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "8409ea8554a828db",
@@ -73536,16 +73536,16 @@
       "VavoDeelnemersHavo_3": "meetwaarde (aantal)",
       "VavoDeelnemersVwo_4": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2006/'07",
+      "2021/'22"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
       "Migratieachtergrond": "Migratieachtergrond",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2006/'07",
-      "2021/'22"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "61b2b140fb460fa2",
@@ -73682,16 +73682,16 @@
       "VavoGediplomeerdenHavo_3": "meetwaarde (aantal)",
       "VavoGediplomeerdenVwo_4": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2006/'07",
+      "2020/'21"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
       "Migratieachtergrond": "Migratieachtergrond",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2006/'07",
-      "2020/'21"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "076739eed20d2c63",
@@ -73836,13 +73836,13 @@
       "Cursussen_8": "meetwaarde (mln euro)",
       "OverigeBaten_9": "meetwaarde (mln euro)"
     },
-    "_dimensie_sleutels": {
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1990",
       "2004"
     ],
+    "_dimensie_sleutels": {
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "524c23cd17cb5d79",
@@ -74030,14 +74030,14 @@
       "AantalOnderwijsinstellingen_11": "meetwaarde (aantal)",
       "AantalLeerlingenStudenten_12": "meetwaarde (x 1 000)"
     },
-    "_dimensie_sleutels": {
-      "Onderwijssoort": "Onderwijssoort",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1993",
       "1997"
     ],
+    "_dimensie_sleutels": {
+      "Onderwijssoort": "Onderwijssoort",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "5f065fb6f8849fa6",
@@ -74501,13 +74501,13 @@
       "TertiairOnderwijsExclRD_40": "meetwaarde (1000 euro)",
       "AanNietOnderwijsinstellingen_41": "meetwaarde (mld euro)"
     },
-    "_dimensie_sleutels": {
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1995",
       "2008*"
     ],
+    "_dimensie_sleutels": {
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "e1b6d5623047bcc8",
@@ -74821,13 +74821,13 @@
       "PercentageVanDeRijksuitgaven_25": "meetwaarde (%)",
       "PercentageVanBrutoBinnenlandsProduct_26": "meetwaarde (%)"
     },
-    "_dimensie_sleutels": {
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1900",
       "2008*"
     ],
+    "_dimensie_sleutels": {
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "a476e565f903e968",
@@ -75334,14 +75334,14 @@
       "Weerstandsvermogen_43": "meetwaarde (%)",
       "Kapitalisatiefactor_44": "meetwaarde (%)"
     },
-    "_dimensie_sleutels": {
-      "Onderwijssectoren": "Onderwijssectoren",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1998",
       "2018"
     ],
+    "_dimensie_sleutels": {
+      "Onderwijssectoren": "Onderwijssectoren",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "48985e957a847cca",
@@ -77017,14 +77017,14 @@
       "SaldoInvGebouwenEnTerreinen_160": "meetwaarde (mln euro)",
       "SaldoInvInventarisEnApparatuur_161": "meetwaarde (mln euro)"
     },
-    "_dimensie_sleutels": {
-      "Onderwijssectoren": "Onderwijssectoren",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1998",
       "2009*"
     ],
+    "_dimensie_sleutels": {
+      "Onderwijssectoren": "Onderwijssectoren",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "6e2ca19d9c00edbd",
@@ -77196,14 +77196,14 @@
       "UitgavenVanGemeenten_10": "meetwaarde (mln euro)",
       "UitgavenVanProvincies_11": "meetwaarde (mln euro)"
     },
-    "_dimensie_sleutels": {
-      "Onderwijssectoren": "Onderwijssectoren",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1995",
       "2008*"
     ],
+    "_dimensie_sleutels": {
+      "Onderwijssectoren": "Onderwijssectoren",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "b3225a3351ca984a",
@@ -77534,14 +77534,14 @@
       "WoVoltijd_25": "meetwaarde (1 000 euro)",
       "WoDeeltijd_26": "meetwaarde (1 000 euro)"
     },
-    "_dimensie_sleutels": {
-      "Einddiploma": "Einddiploma",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1998",
       "2015"
     ],
+    "_dimensie_sleutels": {
+      "Einddiploma": "Einddiploma",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "ff1ae5e74ffa6c3f",
@@ -77706,14 +77706,14 @@
       "HboVoltijd_9": "meetwaarde (1 000 euro)",
       "WoVoltijd_10": "meetwaarde (1 000 euro)"
     },
-    "_dimensie_sleutels": {
-      "Einddiploma": "Einddiploma",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1998",
       "2015"
     ],
+    "_dimensie_sleutels": {
+      "Einddiploma": "Einddiploma",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "d2735e8cbbd769ae",
@@ -77924,14 +77924,14 @@
       "HboVoltijd_13": "meetwaarde (1 000 euro)",
       "WoVoltijd_14": "meetwaarde (1 000 euro)"
     },
-    "_dimensie_sleutels": {
-      "Einddiploma": "Einddiploma",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1998",
       "2015"
     ],
+    "_dimensie_sleutels": {
+      "Einddiploma": "Einddiploma",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "5b29832aa2dc55c5",
@@ -78131,6 +78131,10 @@
       "NettoArbeidsparticipatie_7": "meetwaarde (%)",
       "Werkloosheidspercentage_8": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2000",
+      "2006"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -78139,10 +78143,6 @@
       "Onderwijsrichting": "Onderwijsrichting",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2000",
-      "2006"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "44ec9108295491d3",
@@ -78337,6 +78337,10 @@
       "NettoArbeidsparticipatie_7": "meetwaarde (%)",
       "Werkloosheidspercentage_8": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "1996",
+      "2006"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijsniveau/ -richting": "OnderwijsniveauRichting",
@@ -78344,10 +78348,6 @@
       "Herkomst": "Herkomst",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1996",
-      "2006"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "15e7fafe2c0d4b0e",
@@ -78653,6 +78653,10 @@
       "BblNiveau3_14": "meetwaarde (aantal)",
       "BblNiveau4_15": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2008/'09"
+    ],
     "_dimensie_sleutels": {
       "Leeftijd": "Leeftijd",
       "Opleidingsrichting en sector": "OpleidingsrichtingEnSector",
@@ -78661,10 +78665,6 @@
       "Regiokenmerken": "Regiokenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2008/'09"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "ed542d874755b96b",
@@ -78948,6 +78948,10 @@
       "BblNiveau3_14": "meetwaarde (aantal)",
       "BblNiveau4_15": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2008/'09"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -78955,10 +78959,6 @@
       "Bedrijfstakken en branches (SBI2008)": "BedrijfstakkenEnBranchesSBI2008",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2008/'09"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "bc6c447b88949270",
@@ -79238,6 +79238,10 @@
       "BblNiveau3_14": "meetwaarde (aantal)",
       "BblNiveau4_15": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2008/'09"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -79246,10 +79250,6 @@
       "Kenmerken van het werk": "KenmerkenVanHetWerk",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2008/'09"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "551bf8dc634b3381",
@@ -79529,6 +79529,10 @@
       "BblNiveau3_14": "meetwaarde (aantal)",
       "BblNiveau4_15": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2008/'09"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -79537,10 +79541,6 @@
       "Arbeidsmarktpositie": "Arbeidsmarktpositie",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2008/'09"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "fa884a4472a6dbb6",
@@ -79829,6 +79829,10 @@
       "BblNiveau3_14": "meetwaarde (aantal)",
       "BblNiveau4_15": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2008/'09"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -79837,10 +79841,6 @@
       "Kenmerken van het werk": "KenmerkenVanHetWerk",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2008/'09"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "986163ed24044557",
@@ -79996,6 +79996,10 @@
       "Perioden": "tijd-dimensie",
       "UitstromersMbo_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2020/'21"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
@@ -80005,10 +80009,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2020/'21"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "bb21157b7d05de11",
@@ -80157,6 +80157,10 @@
       "Perioden": "tijd-dimensie",
       "UitstromersMbo_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2020/'21"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
@@ -80166,10 +80170,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2020/'21"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "b4b21f955e0736f0",
@@ -80336,6 +80336,10 @@
       "Perioden": "tijd-dimensie",
       "TotaalUitstromersMetWerk_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2020/'21"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
@@ -80345,10 +80349,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2020/'21"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "a7db127edd1ccf8a",
@@ -80502,6 +80502,10 @@
       "Perioden": "tijd-dimensie",
       "UitstromersMbo_1": "meetwaarde (aantal)"
     },
+    "_periode_waarden": [
+      "2007/'08",
+      "2020/'21"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Persoonskenmerken": "Persoonskenmerken",
@@ -80511,10 +80515,6 @@
       "Peilmoment": "Peilmoment",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2007/'08",
-      "2020/'21"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "11e7674dda323aba",
@@ -80640,6 +80640,10 @@
       "Perioden": "tijd-dimensie",
       "Bevolking_1": "meetwaarde (x 1000)"
     },
+    "_periode_waarden": [
+      "2003 1e kwartaal",
+      "2022 1e kwartaal"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -80647,10 +80651,6 @@
       "Onderwijsrichting": "Onderwijsrichting",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2003 1e kwartaal",
-      "2022 1e kwartaal"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "40c2cf3aea3f0fe3",
@@ -80787,6 +80787,10 @@
       "Perioden": "tijd-dimensie",
       "Bevolking_1": "meetwaarde (x 1000)"
     },
+    "_periode_waarden": [
+      "2003 1e kwartaal",
+      "2021 3e kwartaal"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -80795,10 +80799,6 @@
       "Onderwijsrichting": "Onderwijsrichting",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2003 1e kwartaal",
-      "2021 3e kwartaal"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "590d36384f4c6c61",
@@ -80921,6 +80921,10 @@
       "Perioden": "tijd-dimensie",
       "Bevolking_1": "meetwaarde (x 1000)"
     },
+    "_periode_waarden": [
+      "2003 1e kwartaal",
+      "2021 3e kwartaal"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -80928,10 +80932,6 @@
       "Hoogst behaald onderwijsniveau": "HoogstBehaaldOnderwijsniveau",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2003 1e kwartaal",
-      "2021 3e kwartaal"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "833cb9506fa6ee2b",
@@ -81057,6 +81057,10 @@
       "Perioden": "tijd-dimensie",
       "Jongeren15Tot25Jaar_1": "meetwaarde (x 1 000)"
     },
+    "_periode_waarden": [
+      "2005",
+      "2014"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Leeftijd": "Leeftijd",
@@ -81065,10 +81069,6 @@
       "Sociaaleconomische kenmerken": "SociaaleconomischeKenmerken",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2005",
-      "2014"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "0db684736bd0c6a4",
@@ -81642,13 +81642,13 @@
       "ManWoVrouwWo_51": "meetwaarde (x 1 000)",
       "Onbekend_52": "meetwaarde (x 1 000)"
     },
-    "_dimensie_sleutels": {
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1992",
       "2012"
     ],
+    "_dimensie_sleutels": {
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "f202d280c1e19f53",
@@ -81748,15 +81748,15 @@
       "Perioden": "tijd-dimensie",
       "Personen25JaarEnOuderMetPartner_1": "meetwaarde (x 1 000)"
     },
+    "_periode_waarden": [
+      "2003",
+      "2020"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Onderwijsniveau paar": "OnderwijsniveauPaar",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2003",
-      "2020"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "5042183ec3e1ed60",
@@ -81851,16 +81851,16 @@
       "Perioden": "tijd-dimensie",
       "Jongeren18Tot25Jaar_1": "meetwaarde (x 1 000)"
     },
+    "_periode_waarden": [
+      "2003",
+      "2020"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Migratieachtergrond": "Migratieachtergrond",
       "Voortijdig schoolverlater": "VoortijdigSchoolverlater",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2003",
-      "2020"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "352f624270f20356",
@@ -82058,16 +82058,16 @@
       "GrootstedelijkeAgglomeratie_7": "meetwaarde (codes)",
       "Stadsgewest_8": "meetwaarde (codes)"
     },
+    "_periode_waarden": [
+      "2000/'01",
+      "2005/'06"
+    ],
     "_dimensie_sleutels": {
       "Onderwijssoorten": "Onderwijssoorten",
       "Regio's": "RegioS",
       "Geslacht": "Geslacht",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2000/'01",
-      "2005/'06"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "13e55cccacb37ce4",
@@ -82212,6 +82212,10 @@
       "AantalGeslaagdeLeerlingen_1": "meetwaarde (x 1 000)",
       "PercentageGeslaagdenPerBestemming_2": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2003/'04 - 2004/'05",
+      "2006/'07 - 2007/'08"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Herkomstgroepering": "Herkomstgroepering",
@@ -82220,10 +82224,6 @@
       "Woongemeente": "Woongemeente",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2003/'04 - 2004/'05",
-      "2006/'07 - 2007/'08"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "cff2f842b9980fd4",
@@ -82357,6 +82357,10 @@
       "Perioden": "tijd-dimensie",
       "PercentageGeslaagdeExamenkandidaten_1": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "1998/'99",
+      "2006/'07*"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Herkomstgroepering": "Herkomstgroepering",
@@ -82365,10 +82369,6 @@
       "Woongemeente": "Woongemeente",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "1998/'99",
-      "2006/'07*"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "3c8513190e28f1c6",
@@ -82505,6 +82505,10 @@
       "AantalLeerlingenOnderzoekspopulatie_1": "meetwaarde (x 1 000)",
       "PercentageVSVErsOnderzoekspopulatie_2": "meetwaarde (%)"
     },
+    "_periode_waarden": [
+      "2004/'05",
+      "2006/'07*"
+    ],
     "_dimensie_sleutels": {
       "Geslacht": "Geslacht",
       "Herkomstgroepering": "Herkomstgroepering",
@@ -82512,10 +82516,6 @@
       "Woongemeente": "Woongemeente",
       "Perioden": "Perioden"
     },
-    "_periode_waarden": [
-      "2004/'05",
-      "2006/'07*"
-    ],
     "_verrijking": {
       "versie": 2,
       "inputhash": "87d4e6931e891aa5",
