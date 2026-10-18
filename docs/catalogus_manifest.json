@@ -4,22 +4,22 @@
     "naam": "catalogus/bouw_artefact.py",
     "package_versie": "0.2.0"
   },
-  "catalogusrevisie": "0d5617f91d2a27f2",
+  "catalogusrevisie": "4031b13f77c451b3",
   "bestanden": {
     "cbs_datasets.json": {
       "sha256": "033f536bfe5e02a5b17e6bcf67050abcc00bd625ad2d30a4e81c35b63ee5afab",
       "records": 266
     },
     "cbs_datasets_ai.json": {
-      "sha256": "ecbb861c32bb7c5dccf647742384abfbe7cf81d6ecb0d34369d6a998ebadd420",
+      "sha256": "e3422ee6c4d760228f877c24784e8267927c7f9234272f2a713f250793a4678d",
       "records": 266
     },
     "cbs_datasets_enriched.json": {
-      "sha256": "e0de1a807f9154aad4866410107150a2914633c7a1da4b2c24f5e6ed2ccbb6cf",
+      "sha256": "595e5f1c859fa5055db2c2bcb1bac2b18c93ca10d1df74f70703da1a6f5cb5e1",
       "records": 266
     },
     "cbs_tableinfo.json": {
-      "sha256": "24922af02d1181e529900f0109c33550c4aa7c370be22ca3160db5716be8a274",
+      "sha256": "0a5fc540663115d2b166025cc3dcca7f2c04afe44b6d064dd6e1fc767798d9a7",
       "records": 266
     }
   },
@@ -39,12 +39,12 @@
     "met_periodecodes": 239
   },
   "bronwijziging": {
-    "laatste_update_max": "2026-10-01",
-    "metadata_modified_max": "2026-10-01T02:00:00"
+    "laatste_update_max": "2026-10-16",
+    "metadata_modified_max": "2026-10-16T02:00:00"
   },
-  "laatste_succesvolle_controle": "2026-10-11",
+  "laatste_succesvolle_controle": "2026-10-18",
   "versheid": {
-    "oudste_controle": "2026-10-11",
+    "oudste_controle": "2026-10-18",
     "zonder_controle": 0,
     "perioden_verouderd": 0,
     "perioden_onbekend": 0,
