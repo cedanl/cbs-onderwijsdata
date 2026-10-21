@@ -54038,7 +54038,7 @@
     "onderwijstype": [
       "MBO"
     ],
-    "doel": "Mbo-studenten in Caribisch Nederland (Bonaire, Sint Eustatius en Saba) naar niveau, sector en domein. Meetwaarde: aantal mbo-studenten per studiejaar.",
+    "doel": "Mbo in Caribisch Nederland (Bonaire, Sint Eustatius en Saba), niet het Europese deel van Nederland: aantal deelnemers per niveau, sector en domein, per studiejaar.",
     "frequentie": "Perjaar",
     "categorie": "Inschrijvingen en Studievoortgang",
     "sectie": "Studentgegevens & Onderwijs",
@@ -54075,21 +54075,17 @@
     ],
     "_geo_niveau": [],
     "voorbeeldvragen": [
-      "Hoeveel mbo-studenten zijn er op Bonaire?",
-      "Welke mbo-sectoren zijn het grootst in Caribisch Nederland?",
-      "Hoe is het aantal mbo-studenten in Caribisch Nederland gegroeid sinds 2009?"
+      "Hoeveel deelnemers heeft het mbo op Bonaire?",
+      "Welke sectoren zijn het grootst in het mbo van Caribisch Nederland?",
+      "Hoe is het mbo in Caribisch Nederland gegroeid sinds 2009?"
     ],
     "tags": [
-      "mbo",
       "caribisch nederland",
       "bonaire",
       "sint eustatius",
       "saba",
-      "studenten",
-      "niveau",
-      "sector",
-      "domein"
+      "bes-eilanden"
     ],
-    "samenvatting": "Mbo-studenten in Caribisch Nederland (Bonaire, Sint Eustatius en Saba) naar niveau, sector en domein. Meetwaarde: aantal mbo-studenten per studiejaar."
+    "samenvatting": "Mbo in Caribisch Nederland (Bonaire, Sint Eustatius en Saba), niet het Europese deel van Nederland: aantal deelnemers per niveau, sector en domein, per studiejaar."
   }
 ]
