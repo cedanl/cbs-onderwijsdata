@@ -1,4 +1,4 @@
-__version__ = "0.2.0"
+__version__ = "0.2.1"
 
 from .client import data, dimension, properties, definitions
 from .contract import catalog_records, get_dataset, catalog_manifest, scope_review

@@ -2,49 +2,49 @@
   "schema_version": 1,
   "generator": {
     "naam": "catalogus/bouw_artefact.py",
-    "package_versie": "0.2.0"
+    "package_versie": "0.2.1"
   },
-  "catalogusrevisie": "4031b13f77c451b3",
+  "catalogusrevisie": "0f3b0b9aa9528a48",
   "bestanden": {
     "cbs_datasets.json": {
-      "sha256": "033f536bfe5e02a5b17e6bcf67050abcc00bd625ad2d30a4e81c35b63ee5afab",
-      "records": 266
+      "sha256": "6d5dc3e72999a2fd2217ecb64981d44e75bf6fce1ccd4880107511a2deef2c5e",
+      "records": 268
     },
     "cbs_datasets_ai.json": {
-      "sha256": "e3422ee6c4d760228f877c24784e8267927c7f9234272f2a713f250793a4678d",
-      "records": 266
+      "sha256": "96b7ad2dbe0ce42cd5608c381fe4b8ef6cf64abc1bdbadb82904c2a9a2bfee09",
+      "records": 268
     },
     "cbs_datasets_enriched.json": {
-      "sha256": "595e5f1c859fa5055db2c2bcb1bac2b18c93ca10d1df74f70703da1a6f5cb5e1",
-      "records": 266
+      "sha256": "ed98c038ba633793ea8824dbba69d4485e5c393862964973f5ab9511ef1cc323",
+      "records": 268
     },
     "cbs_tableinfo.json": {
-      "sha256": "0a5fc540663115d2b166025cc3dcca7f2c04afe44b6d064dd6e1fc767798d9a7",
-      "records": 266
+      "sha256": "23c04ddd367ede7b1cdbef5709121c2cc879aa0ec9957a67cdde0d2dddb9e266",
+      "records": 268
     }
   },
   "aantallen": {
-    "breed": 266,
+    "breed": 268,
     "per_scopeprofiel": {
-      "mbo": 67,
+      "mbo": 68,
       "hbo": 36,
       "wo": 42,
-      "review": 130
+      "review": 131
     }
   },
   "datadekking": {
     "gearchiveerd": 161,
-    "actueel": 105,
-    "met_tableinfo": 266,
-    "met_periodecodes": 239
+    "actueel": 107,
+    "met_tableinfo": 268,
+    "met_periodecodes": 241
   },
   "bronwijziging": {
     "laatste_update_max": "2026-10-16",
-    "metadata_modified_max": "2026-10-16T02:00:00"
+    "metadata_modified_max": "2026-10-21T02:00:00"
   },
-  "laatste_succesvolle_controle": "2026-10-18",
+  "laatste_succesvolle_controle": "2026-10-21",
   "versheid": {
-    "oudste_controle": "2026-10-18",
+    "oudste_controle": "2026-10-21",
     "zonder_controle": 0,
     "perioden_verouderd": 0,
     "perioden_onbekend": 0,

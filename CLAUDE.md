@@ -11,7 +11,7 @@ een nieuwe analyse maakt van A tot Z.
 ```
 src/onderwijsdata/client.py     CBS OData client (data, dimension, properties)
 data/02-prepared/
-  cbs_datasets_ai.json          Catalogus: 68 datasets met AI-samenvatting, tags, voorbeeldvragen
+  cbs_datasets_ai.json          Catalogus: 268 datasets met AI-samenvatting, tags, voorbeeldvragen
   cbs_datasets.json             Catalogus: zelfde datasets, zonder AI-verrijking
 voorbeelden/
   manifest.json                 Bron voor alle voorbeelden op de site

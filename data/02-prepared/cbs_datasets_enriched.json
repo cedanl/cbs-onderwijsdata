@@ -27880,14 +27880,14 @@
       "Buurten_292": "meetwaarde",
       "KoppelvariabeleRegioCode_293": "meetwaarde"
     },
-    "_dimensie_sleutels": {
-      "Regio's": "RegioS",
-      "Perioden": "Perioden"
-    },
     "_periode_waarden": [
       "1995",
       "2026"
     ],
+    "_dimensie_sleutels": {
+      "Regio's": "RegioS",
+      "Perioden": "Perioden"
+    },
     "_verrijking": {
       "versie": 2,
       "inputhash": "e855eb0f9f9d70b8",
@@ -82520,6 +82520,282 @@
       "versie": 2,
       "inputhash": "87d4e6931e891aa5",
       "bronrevisie": "0c1a08bcd18b6d79"
+    }
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Voortijdig schoolverlaters; geslacht, leeftijd en herkomst",
+    "periode": "2012/'13 - 2024/'25",
+    "onderwijstype": [
+      "VO",
+      "MBO"
+    ],
+    "doel": "Voortijdig schoolverlaters (VSV) naar geslacht, leeftijd, onderwijssoort en herkomstland. Meetwaarden: leerlingen, aantal en percentage VSV. Onderwijssoort onderscheidt vo, mbo en vavo.",
+    "frequentie": "Perjaar",
+    "categorie": "Voortijdig schoolverlaten",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85367NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85367NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85367NED",
+    "_thema": "Onderwijs",
+    "_archief": false,
+    "_laatste_update": "2026-05-29",
+    "_dimensies": [
+      "Geslacht",
+      "Leeftijd",
+      "Onderwijssoort",
+      "Herkomstland",
+      "Geboorteland (ouders)",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Leerlingen_1",
+      "VoortijdigSchoolverlaters_2",
+      "NietVoortijdigSchoolverlaters_3",
+      "VoortijdigSchoolverlatersPercentage_4"
+    ],
+    "_meetwaarden_details": {
+      "Leerlingen_1": {
+        "title": "Leerlingen",
+        "unit": "aantal",
+        "description": "Leerlingen die op 1 oktober van een schooljaar staan ingeschreven in het voortgezet onderwijs, het middelbaar beroepsonderwijs en het voortgezet algemeen volwassenenonderwijs én die op dat moment en op 1 oktober van het volgend schooljaar staan ingeschreven in de Gemeentelijke Basis Administratie (GBA).\r\n\r\nLet op, door te kiezen voor leerlingen die op beide momenten staan ingeschreven in de GBA, wijkt het aantal leerlingen in de onderzoekspopulatie af van het totaal aantal leerlingen in het voortgezet onderwijs, het middelbaar beroepsonderwijs en het voortgezet algemeen volwassenenonderwijs.",
+        "datatype": "Long",
+        "decimals": 0
+      },
+      "VoortijdigSchoolverlaters_2": {
+        "title": "Voortijdig schoolverlaters",
+        "unit": "aantal",
+        "description": "Leerlingen die in een gegeven jaar het onderwijs verlaten zonder startkwalificatie. Het gaat hierbij dus om de jaarlijkse aanwas. De periode 2016/’17, bijvoorbeeld, beschrijft leerlingen die op 1 oktober 2016 staan ingeschreven in het voortgezet onderwijs, middelbaar beroepsonderwijs of voortgezet algemeen volwassenenonderwijs en op 1 oktober 2017 het onderwijs zonder startkwalificatie hebben verlaten. Een leerling beschikt over een startkwalificatie met een havo- of vwo-diploma of met een mbo-2 diploma. Een vmbo-diploma of een mbo-1 diploma volstaat niet als startkwalificatie. Een in Nederland gangbare leeftijdsgrens is 23 jaar bij schoolverlaten. Dat wil zeggen dat personen die bij schoolverlaten 23 jaar of ouder zijn en niet beschikken over een startkwalificatie niet tot de voortijdig schoolverlaters worden gerekend. In deze StatLinetabel is de leeftijdsgrens van 23 jaar gehanteerd bij de definitie van voortijdig schoolverlaters. \r\nDe Europese definitie van voortijdig schoolverlaters gaat uit van het totale volume in plaats van de jaarlijkse aanwas. Bij de Europese doelstelling om het aantal schoolverlaters terug te dringen wordt gekeken naar het totaal aantal niet-onderwijsvolgende personen van 18 tot 25 jaar zonder startkwalificatie.",
+        "datatype": "Long",
+        "decimals": 0
+      },
+      "NietVoortijdigSchoolverlaters_3": {
+        "title": "Niet-voortijdig schoolverlaters",
+        "unit": "aantal",
+        "description": "Aantal leerlingen dat op 1 oktober van het volgend schooljaar onderwijs volgt of dat geen onderwijs meer volgt, maar in het bezit is van een startkwalificatie (een havo- of vwo-diploma, of een diploma op mbo niveau 2 of hoger).",
+        "datatype": "Long",
+        "decimals": 0
+      },
+      "VoortijdigSchoolverlatersPercentage_4": {
+        "title": "Voortijdig schoolverlaters (percentage)",
+        "unit": "%",
+        "description": "Percentage leerlingen dat op 1 oktober van het volgend schooljaar het onderwijs heeft verlaten zonder startkwalificatie (een havo- of vwo-diploma, of een diploma op mbo niveau 2 of hoger). \r\nEr is gepercenteerd op het totaal aantal leerlingen in de betreffende (sub)groep van het totaal aantal leerlingen.",
+        "datatype": "Long",
+        "decimals": 0
+      }
+    },
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "_geo_niveau": [],
+    "voorbeeldvragen": [
+      "Hoeveel voortijdig schoolverlaters zijn er in het mbo, naar leeftijd?",
+      "Wat is het VSV-percentage in het mbo naar herkomst?",
+      "Hoe ontwikkelt het aantal VSV'ers in het mbo zich sinds 2012?"
+    ],
+    "tags": [
+      "vsv",
+      "voortijdig schoolverlaten",
+      "leeftijd",
+      "herkomst",
+      "geslacht",
+      "mbo",
+      "vo"
+    ],
+    "samenvatting": "Voortijdig schoolverlaters (VSV) naar geslacht, leeftijd, onderwijssoort en herkomstland. Meetwaarden: leerlingen, aantal en percentage VSV. Onderwijssoort onderscheidt vo, mbo en vavo.",
+    "_kolommen": {
+      "Geslacht": [
+        "Totaal mannen en vrouwen",
+        "Mannen",
+        "Vrouwen"
+      ],
+      "Leeftijd": [
+        "Totaal leeftijd",
+        "Jonger dan 18 jaar",
+        "18 tot 20 jaar",
+        "20 tot 23 jaar"
+      ],
+      "Onderwijssoort": [
+        "Totaal onderwijs",
+        "Vo (excl. praktijkonderwijs)",
+        "Mbo (incl. extranei)",
+        "Vavo"
+      ],
+      "Herkomstland": [
+        "Totaal",
+        "Nederland",
+        "Europa (exclusief Nederland)",
+        "Turkije",
+        "Marokko",
+        "Suriname",
+        "Nederlandse Cariben",
+        "Indonesië",
+        "Buiten Europa (excl. 5 grote herkomst..."
+      ],
+      "Geboorteland (ouders)": [
+        "Totaal",
+        "Geboren in Nederland",
+        "Geboren in NL, ouders in NL",
+        "Geboren in NL, ouder(s) buiten NL",
+        "Geboren buiten Nederland"
+      ],
+      "Leerlingen_1": "Leerlingen (aantal)",
+      "VoortijdigSchoolverlaters_2": "Voortijdig schoolverlaters (aantal)",
+      "NietVoortijdigSchoolverlaters_3": "Niet-voortijdig schoolverlaters (aantal)",
+      "VoortijdigSchoolverlatersPercentage_4": "Voortijdig schoolverlaters (percentage) (%)"
+    },
+    "_kolomtypes": {
+      "Geslacht": "dimensie",
+      "Leeftijd": "dimensie",
+      "Onderwijssoort": "dimensie",
+      "Herkomstland": "dimensie",
+      "Geboorteland (ouders)": "dimensie",
+      "Perioden": "tijd-dimensie",
+      "Leerlingen_1": "meetwaarde (aantal)",
+      "VoortijdigSchoolverlaters_2": "meetwaarde (aantal)",
+      "NietVoortijdigSchoolverlaters_3": "meetwaarde (aantal)",
+      "VoortijdigSchoolverlatersPercentage_4": "meetwaarde (%)"
+    },
+    "_dimensie_sleutels": {
+      "Geslacht": "Geslacht",
+      "Leeftijd": "Leeftijd",
+      "Onderwijssoort": "Onderwijssoort",
+      "Herkomstland": "Herkomstland",
+      "Geboorteland (ouders)": "GeboortelandOuders",
+      "Perioden": "Perioden"
+    },
+    "_periode_waarden": [
+      "2012/'13",
+      "2024/'25"
+    ],
+    "_verrijking": {
+      "versie": 2,
+      "inputhash": "2344e5787f820c73",
+      "bronrevisie": "8d93a4bcdb65466a"
+    }
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Caribisch NL; studenten mbo, niveau, sector, domein",
+    "periode": "2009/'10 - 2025/'26",
+    "onderwijstype": [
+      "MBO"
+    ],
+    "doel": "Mbo-studenten in Caribisch Nederland (Bonaire, Sint Eustatius en Saba) naar niveau, sector en domein. Meetwaarde: aantal mbo-studenten per studiejaar.",
+    "frequentie": "Perjaar",
+    "categorie": "Inschrijvingen en Studievoortgang",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 84312NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/84312NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "84312NED",
+    "_thema": "Onderwijs",
+    "_archief": false,
+    "_laatste_update": "2026-03-18",
+    "_dimensies": [
+      "Niveau",
+      "Sectoren en domeinen",
+      "Caribisch Nederland",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "MboStudenten_1"
+    ],
+    "_meetwaarden_details": {
+      "MboStudenten_1": {
+        "title": "Mbo studenten",
+        "unit": "aantal",
+        "description": "Op Caribisch Nederland zijn de mogelijkheden voor bekostigde opleidingen op mbo-niveau beperkt door de schaalgrootte. Vooral op Sint Eustatius en Saba, waar sinds het studiejaar 2012/'13 alleen de entreeopleiding wordt aangeboden en opleidingen op niveau 2 (basisberoepsopleiding). Op Bonaire is het al langer mogelijk om op alle vier de niveaus van het mbo onderwijs te volgen.",
+        "datatype": "Long",
+        "decimals": 0
+      }
+    },
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "_geo_niveau": [],
+    "voorbeeldvragen": [
+      "Hoeveel mbo-studenten zijn er op Bonaire?",
+      "Welke mbo-sectoren zijn het grootst in Caribisch Nederland?",
+      "Hoe is het aantal mbo-studenten in Caribisch Nederland gegroeid sinds 2009?"
+    ],
+    "tags": [
+      "mbo",
+      "caribisch nederland",
+      "bonaire",
+      "sint eustatius",
+      "saba",
+      "studenten",
+      "niveau",
+      "sector",
+      "domein"
+    ],
+    "samenvatting": "Mbo-studenten in Caribisch Nederland (Bonaire, Sint Eustatius en Saba) naar niveau, sector en domein. Meetwaarde: aantal mbo-studenten per studiejaar.",
+    "_kolommen": {
+      "Niveau": [
+        "Totaal",
+        "Mbo-entreeopleiding",
+        "Mbo niveau 2",
+        "Mbo niveau 3",
+        "Mbo niveau 4"
+      ],
+      "Sectoren en domeinen": [
+        "Totaal",
+        "Sector economie",
+        "Sector techniek",
+        "Sector zorg en welzijn",
+        "Combinatie van sectoren",
+        "79000 Bouw en infra",
+        "79010 Afbouw, hout en onderhoud",
+        "79020 Techniek en procesindustrie",
+        "79040 Media en vormgeving",
+        "79050 Informatie en communicatietechn...",
+        "79060 Mobiliteit en voertuigen",
+        "79090 Economie en administratie",
+        "79100 Veiligheid en sport",
+        "79110 Uiterlijke verzorging",
+        "79120 Horeca en bakkerij",
+        "79130 Toerisme en recreatie",
+        "79140 Zorg en welzijn",
+        "79170 Voedsel, natuur en leefomgeving",
+        "79999 Niet toebedeeld"
+      ],
+      "Caribisch Nederland": [
+        "Caribisch Nederland",
+        "Bonaire",
+        "Sint Eustatius",
+        "Saba"
+      ],
+      "MboStudenten_1": "Mbo studenten (aantal)"
+    },
+    "_kolomtypes": {
+      "Niveau": "dimensie",
+      "Sectoren en domeinen": "dimensie",
+      "Caribisch Nederland": "dimensie",
+      "Perioden": "tijd-dimensie",
+      "MboStudenten_1": "meetwaarde (aantal)"
+    },
+    "_dimensie_sleutels": {
+      "Niveau": "Niveau",
+      "Sectoren en domeinen": "SectorenEnDomeinen",
+      "Caribisch Nederland": "CaribischNederland",
+      "Perioden": "Perioden"
+    },
+    "_periode_waarden": [
+      "2009/'10",
+      "2025/'26"
+    ],
+    "_verrijking": {
+      "versie": 2,
+      "inputhash": "2ca273494835fda6",
+      "bronrevisie": "adf865d06b8ceb09"
     }
   }
 ]

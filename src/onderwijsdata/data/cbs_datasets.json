@@ -50265,5 +50265,120 @@
         "decimals": 0
       }
     }
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Voortijdig schoolverlaters; geslacht, leeftijd en herkomst",
+    "periode": "2012/'13 - 2024/'25",
+    "onderwijstype": [
+      "VO",
+      "MBO"
+    ],
+    "doel": "Voortijdig schoolverlaters (VSV) naar geslacht, leeftijd, onderwijssoort en herkomstland. Meetwaarden: leerlingen, aantal en percentage VSV. Onderwijssoort onderscheidt vo, mbo en vavo.",
+    "frequentie": "Perjaar",
+    "categorie": "Voortijdig schoolverlaten",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 85367NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/85367NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "85367NED",
+    "_thema": "Onderwijs",
+    "_archief": false,
+    "_laatste_update": "2026-05-29",
+    "_dimensies": [
+      "Geslacht",
+      "Leeftijd",
+      "Onderwijssoort",
+      "Herkomstland",
+      "Geboorteland (ouders)",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "Leerlingen_1",
+      "VoortijdigSchoolverlaters_2",
+      "NietVoortijdigSchoolverlaters_3",
+      "VoortijdigSchoolverlatersPercentage_4"
+    ],
+    "_meetwaarden_details": {
+      "Leerlingen_1": {
+        "title": "Leerlingen",
+        "unit": "aantal",
+        "description": "Leerlingen die op 1 oktober van een schooljaar staan ingeschreven in het voortgezet onderwijs, het middelbaar beroepsonderwijs en het voortgezet algemeen volwassenenonderwijs én die op dat moment en op 1 oktober van het volgend schooljaar staan ingeschreven in de Gemeentelijke Basis Administratie (GBA).\r\n\r\nLet op, door te kiezen voor leerlingen die op beide momenten staan ingeschreven in de GBA, wijkt het aantal leerlingen in de onderzoekspopulatie af van het totaal aantal leerlingen in het voortgezet onderwijs, het middelbaar beroepsonderwijs en het voortgezet algemeen volwassenenonderwijs.",
+        "datatype": "Long",
+        "decimals": 0
+      },
+      "VoortijdigSchoolverlaters_2": {
+        "title": "Voortijdig schoolverlaters",
+        "unit": "aantal",
+        "description": "Leerlingen die in een gegeven jaar het onderwijs verlaten zonder startkwalificatie. Het gaat hierbij dus om de jaarlijkse aanwas. De periode 2016/’17, bijvoorbeeld, beschrijft leerlingen die op 1 oktober 2016 staan ingeschreven in het voortgezet onderwijs, middelbaar beroepsonderwijs of voortgezet algemeen volwassenenonderwijs en op 1 oktober 2017 het onderwijs zonder startkwalificatie hebben verlaten. Een leerling beschikt over een startkwalificatie met een havo- of vwo-diploma of met een mbo-2 diploma. Een vmbo-diploma of een mbo-1 diploma volstaat niet als startkwalificatie. Een in Nederland gangbare leeftijdsgrens is 23 jaar bij schoolverlaten. Dat wil zeggen dat personen die bij schoolverlaten 23 jaar of ouder zijn en niet beschikken over een startkwalificatie niet tot de voortijdig schoolverlaters worden gerekend. In deze StatLinetabel is de leeftijdsgrens van 23 jaar gehanteerd bij de definitie van voortijdig schoolverlaters. \r\nDe Europese definitie van voortijdig schoolverlaters gaat uit van het totale volume in plaats van de jaarlijkse aanwas. Bij de Europese doelstelling om het aantal schoolverlaters terug te dringen wordt gekeken naar het totaal aantal niet-onderwijsvolgende personen van 18 tot 25 jaar zonder startkwalificatie.",
+        "datatype": "Long",
+        "decimals": 0
+      },
+      "NietVoortijdigSchoolverlaters_3": {
+        "title": "Niet-voortijdig schoolverlaters",
+        "unit": "aantal",
+        "description": "Aantal leerlingen dat op 1 oktober van het volgend schooljaar onderwijs volgt of dat geen onderwijs meer volgt, maar in het bezit is van een startkwalificatie (een havo- of vwo-diploma, of een diploma op mbo niveau 2 of hoger).",
+        "datatype": "Long",
+        "decimals": 0
+      },
+      "VoortijdigSchoolverlatersPercentage_4": {
+        "title": "Voortijdig schoolverlaters (percentage)",
+        "unit": "%",
+        "description": "Percentage leerlingen dat op 1 oktober van het volgend schooljaar het onderwijs heeft verlaten zonder startkwalificatie (een havo- of vwo-diploma, of een diploma op mbo niveau 2 of hoger). \r\nEr is gepercenteerd op het totaal aantal leerlingen in de betreffende (sub)groep van het totaal aantal leerlingen.",
+        "datatype": "Long",
+        "decimals": 0
+      }
+    },
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "_geo_niveau": []
+  },
+  {
+    "leverancier": "CBS",
+    "bron": "Caribisch NL; studenten mbo, niveau, sector, domein",
+    "periode": "2009/'10 - 2025/'26",
+    "onderwijstype": [
+      "MBO"
+    ],
+    "doel": "Mbo-studenten in Caribisch Nederland (Bonaire, Sint Eustatius en Saba) naar niveau, sector en domein. Meetwaarde: aantal mbo-studenten per studiejaar.",
+    "frequentie": "Perjaar",
+    "categorie": "Inschrijvingen en Studievoortgang",
+    "sectie": "Studentgegevens & Onderwijs",
+    "documentatie": {
+      "tekst": "CBS Open Data 84312NED",
+      "url": "https://opendata.cbs.nl/ODataApi/OData/84312NED"
+    },
+    "repositories": [],
+    "publieke_producten": [],
+    "_cbs_id": "84312NED",
+    "_thema": "Onderwijs",
+    "_archief": false,
+    "_laatste_update": "2026-03-18",
+    "_dimensies": [
+      "Niveau",
+      "Sectoren en domeinen",
+      "Caribisch Nederland",
+      "Perioden"
+    ],
+    "_meetwaarden": [
+      "MboStudenten_1"
+    ],
+    "_meetwaarden_details": {
+      "MboStudenten_1": {
+        "title": "Mbo studenten",
+        "unit": "aantal",
+        "description": "Op Caribisch Nederland zijn de mogelijkheden voor bekostigde opleidingen op mbo-niveau beperkt door de schaalgrootte. Vooral op Sint Eustatius en Saba, waar sinds het studiejaar 2012/'13 alleen de entreeopleiding wordt aangeboden en opleidingen op niveau 2 (basisberoepsopleiding). Op Bonaire is het al langer mogelijk om op alle vier de niveaus van het mbo onderwijs te volgen.",
+        "datatype": "Long",
+        "decimals": 0
+      }
+    },
+    "_perioden_formaat": [
+      "SJ"
+    ],
+    "_geo_niveau": []
   }
 ]
