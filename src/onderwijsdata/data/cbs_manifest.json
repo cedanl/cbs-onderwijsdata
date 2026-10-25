@@ -4,7 +4,7 @@
     "naam": "catalogus/bouw_artefact.py",
     "package_versie": "0.2.2"
   },
-  "catalogusrevisie": "076d42ee7c5ec9b8",
+  "catalogusrevisie": "21d8e17733056dba",
   "bestanden": {
     "cbs_datasets.json": {
       "sha256": "47f014a838ec747ff4fdf63f01ceac3f6024623460b17e278da0e10cbae013e4",
@@ -19,7 +19,7 @@
       "records": 268
     },
     "cbs_tableinfo.json": {
-      "sha256": "23c04ddd367ede7b1cdbef5709121c2cc879aa0ec9957a67cdde0d2dddb9e266",
+      "sha256": "f4fe82e725b1f237ea77ddd3f694e450c44cddcd4757b5d6a37afbd8a9b860a3",
       "records": 268
     }
   },
@@ -42,9 +42,9 @@
     "laatste_update_max": "2026-10-16",
     "metadata_modified_max": "2026-10-21T02:00:00"
   },
-  "laatste_succesvolle_controle": "2026-10-21",
+  "laatste_succesvolle_controle": "2026-10-25",
   "versheid": {
-    "oudste_controle": "2026-10-21",
+    "oudste_controle": "2026-10-25",
     "zonder_controle": 0,
     "perioden_verouderd": 0,
     "perioden_onbekend": 0,
